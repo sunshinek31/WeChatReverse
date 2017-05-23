@@ -8,8 +8,6 @@
 
 #import "MMCommonAdapterDelegate.h"
 #import "ResourceMonitorDelegate.h"
-#import "UIAlertViewDelegate.h"
-#import "UIApplicationDelegate.h"
 
 @class CAppObserverCenter, CAppViewControllerManager, CMainControll, MMSMStartViewController, MMServiceCenter, MMUIWindow, NSRecursiveLock, NSString, ResourceInfo, ResourceMonitor, UILabel, UIWindow, VoIPTokenRetriveObject;
 

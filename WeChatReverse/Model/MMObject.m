@@ -1,5 +1,5 @@
 //
-//  CAppViewControllerManager.h
+//  MMObject.m
 //  WeChatReverse
 //
 //  Created by sunshinek31 on 2017/5/14.
@@ -8,6 +8,6 @@
 
 #import "MMObject.h"
 
-@interface CAppViewControllerManager : MMObject
+@implementation MMObject
 
 @end

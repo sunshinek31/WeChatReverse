@@ -1,0 +1,13 @@
+//
+//  WeChatReverse-Prefix.pch
+//  WeChatReverse
+//
+//  Created by sunshinek31 on 2017/5/14.
+//  Copyright © 2017年 sunshinek31. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "WeChatReverseTypedef.h"
+#endif

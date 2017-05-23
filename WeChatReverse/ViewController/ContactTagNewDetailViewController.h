@@ -9,12 +9,12 @@
 #import "ContactTagNameEditViewControllerDelegate.h"
 #import "IContactLabelMgrExt.h"
 #import "MultiSelectContactsViewControllerDelegate.h"
-#import "UIAlertViewDelegate.h"
-#import "UITableViewDataSource.h"
-#import "UITableViewDelegate.h"
 
 @class ContactTagData, MMTableView, NSMutableArray, NSMutableDictionary, NSString;
 
+/**
+ 添加/更新通讯录标签
+ */
 @interface ContactTagNewDetailViewController : MMUIViewController <UITableViewDataSource, UITableViewDelegate, IContactLabelMgrExt, MultiSelectContactsViewControllerDelegate, ContactTagNameEditViewControllerDelegate, UIAlertViewDelegate>
 {
     _Bool _bIsAlreadyDisMissSelf;

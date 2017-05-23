@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UIView.h"
-
 @class MMProgressView, MMTimer, NSString, UIActivityIndicatorView, UIImageView, UILabel;
 
 @interface MMLoadingView : UIView
@@ -31,7 +29,6 @@
 @property(retain, nonatomic) UILabel *m_label; // @synthesize m_label;
 @property(retain, nonatomic) UIActivityIndicatorView *m_activityIndicatorView; // @synthesize m_activityIndicatorView;
 @property(retain, nonatomic) UIImageView *m_backgroundView; // @synthesize m_backgroundView;
-- (void).cxx_destruct;
 - (void)dealloc;
 - (void)setLabelText:(id)arg1;
 - (void)setActivityIndicatorViewCenter:(_Bool)arg1;
