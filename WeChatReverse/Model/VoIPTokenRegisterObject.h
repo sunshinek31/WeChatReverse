@@ -16,12 +16,11 @@
 }
 
 @property(nonatomic, weak) id <VoIPTokenRegisterObjectDelegate> m_delegate;
-@property(retain, nonatomic) NSData *m_token; // @synthesize m_token;
+@property(strong, nonatomic) NSData *m_token; // @synthesize m_token;
 - (void)callOkDelegate;
 - (void)callErrorDelegate;
-- (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
 - (void)startRequest;
-- (id)initWithToken:(id)arg1;
+- (instancetype)initWithToken:(id)arg1;
 
 
 @end

@@ -10,4 +10,42 @@
 
 @implementation ResourceMonitor
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    
+}
+
+#pragma mark - 
+
+- (void)startService
+{
+    
+}
+
+- (void)stopService
+{
+    
+}
+
+- (void)threadFunc
+{
+    
+}
+
+- (void)updateResourceInfo:(id)arg1
+{
+    
+}
+
+
+
 @end

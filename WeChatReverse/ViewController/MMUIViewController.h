@@ -4,26 +4,23 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UIViewController.h"
-
 #import "IUiUtilExt.h"
 #import "MMUIViewControllerDelegate.h"
-#import "UIGestureRecognizerDelegate.h"
 
 @class MMDelegateProxy<UIGestureRecognizerDelegate>, MMLoadingView, MMTitleView, MMUINavigationBar, NSMutableArray, NSMutableDictionary, NSString, UIBarButtonItem, UIColor, UILabel, UINavigationController, UIResponder, UIView;
 
 @interface MMUIViewController : UIViewController <IUiUtilExt, MMUIViewControllerDelegate, UIGestureRecognizerDelegate>
 {
-    _Bool m_isPopByClickingURL;
+    BOOL m_isPopByClickingURL;
     MMLoadingView *m_loadingViewX;
     unsigned int m_uiVcType;
-    _Bool m_bKeyboardShowForGesture;
+    BOOL m_bKeyboardShowForGesture;
     UILabel *m_newsTitleRecordLabel;
     NSMutableArray *m_fullScreenViews;
-    _Bool m_bAnimated;
-    _Bool m_bIsBeingPoped;
-    _Bool m_bInteractivePopEnabled;
-    _Bool m_bDisableAdjustInsetAndOffset;
+    BOOL m_bAnimated;
+    BOOL m_bIsBeingPoped;
+    BOOL m_bInteractivePopEnabled;
+    BOOL m_bDisableAdjustInsetAndOffset;
     double lastScreenWidth;
     UINavigationController *m_navigationController;
     MMTitleView *m_baseTitleView;
@@ -37,108 +34,116 @@
     UIBarButtonItem *m_rightBarBtnItem;
     UIColor *m_titleColor;
     MMUINavigationBar *fakeNaviView;
-    _Bool m_hasAppear;
-    _Bool _m_bAnimating;
-    _Bool _m_bStopPopWhenDeleteContact;
+    BOOL m_hasAppear;
     UIView *bottomView;
-    UIViewController *_presentingModalViewController;
-    UIViewController *_presentedModalViewController;
 }
 
-@property(nonatomic) _Bool m_bStopPopWhenDeleteContact; // @synthesize m_bStopPopWhenDeleteContact=_m_bStopPopWhenDeleteContact;
-@property(nonatomic) _Bool m_bAnimating; // @synthesize m_bAnimating=_m_bAnimating;
-@property(nonatomic) __weak UIViewController *presentedModalViewController; // @synthesize presentedModalViewController=_presentedModalViewController;
-@property(nonatomic) __weak UIViewController *presentingModalViewController; // @synthesize presentingModalViewController=_presentingModalViewController;
-@property(retain, nonatomic) NSMutableArray *m_arrEndUserOpInfo; // @synthesize m_arrEndUserOpInfo;
-@property(nonatomic) __weak UIResponder *previousResponder; // @synthesize previousResponder;
-@property(nonatomic) _Bool m_bDisableAdjustInsetAndOffset; // @synthesize m_bDisableAdjustInsetAndOffset;
-@property(nonatomic) _Bool m_bInteractivePopEnabled; // @synthesize m_bInteractivePopEnabled;
-@property(nonatomic) _Bool m_bIsBeingPoped; // @synthesize m_bIsBeingPoped;
-@property(nonatomic) _Bool m_bAnimated; // @synthesize m_bAnimated;
-@property(retain, nonatomic) NSMutableArray *m_fullScreenViews; // @synthesize m_fullScreenViews;
-@property(retain, nonatomic) UIView *bottomView; // @synthesize bottomView;
-@property(retain, nonatomic) UILabel *m_newsTitleRecordLabel; // @synthesize m_newsTitleRecordLabel;
+@property(nonatomic) BOOL m_bStopPopWhenDeleteContact;
+@property(nonatomic) BOOL m_bAnimating; // @synthesize m_bAnimating=_m_bAnimating;
+@property(nonatomic, weak) UIViewController *presentedModalViewController;
+@property(nonatomic, weak) UIViewController *presentingModalViewController;
+@property(strong, nonatomic) NSMutableArray *m_arrEndUserOpInfo; // @synthesize m_arrEndUserOpInfo;
+@property(nonatomic, weak) UIResponder *previousResponder; // @synthesize previousResponder;
+@property(nonatomic) BOOL m_bDisableAdjustInsetAndOffset; // @synthesize m_bDisableAdjustInsetAndOffset;
+@property(nonatomic) BOOL m_bInteractivePopEnabled; // @synthesize m_bInteractivePopEnabled;
+@property(nonatomic) BOOL m_bIsBeingPoped; // @synthesize m_bIsBeingPoped;
+@property(nonatomic) BOOL m_bAnimated; // @synthesize m_bAnimated;
+@property(strong, nonatomic) NSMutableArray *m_fullScreenViews; // @synthesize m_fullScreenViews;
+@property(strong, nonatomic) UIView *bottomView; // @synthesize bottomView;
+@property(strong, nonatomic) UILabel *m_newsTitleRecordLabel; // @synthesize m_newsTitleRecordLabel;
 @property(nonatomic) unsigned int m_uiVcType; // @synthesize m_uiVcType;
-@property(retain, nonatomic) MMLoadingView *loadingViewX; // @synthesize loadingViewX=m_loadingViewX;
-- (void).cxx_destruct;
-- (id)mmNavigationController:(id)arg1 animationControllerForOperation:(long long)arg2 fromViewController:(id)arg3 toViewController:(id)arg4;
+@property(strong, nonatomic) MMLoadingView *loadingViewX; // @synthesize loadingViewX=m_loadingViewX;
+
+/**
+ 控制器切换操作
+
+ @param navigationController 导航控制器
+ @param arg2 <#arg2 description#>
+ @param fromViewController 开始
+ @param toViewController 目标
+ @return id
+ */
+- (id)mmNavigationController:(UINavigationController *)navigationController
+animationControllerForOperation:(long long)arg2
+          fromViewController:(UIViewController *)fromViewController
+            toViewController:(UIViewController *)toViewController;
 - (void)reportEndOpInfo;
 - (void)appendEndOpInfo:(id)arg1;
-- (void)parseDeepLink:(id)arg1 animation:(_Bool)arg2;
+- (void)parseDeepLink:(id)arg1 animation:(BOOL)arg2;
 - (id)getVCWithDeepLinkName:(id)arg1;
 - (void)setDeepLinkParam:(id)arg1;
 - (void)initDeepLinkConfig;
 - (void)safeSetEdgesForExtendedLayout:(unsigned long long)arg1;
-- (_Bool)gestureRecognizer:(id)arg1 shouldBeRequiredToFailByGestureRecognizer:(id)arg2;
-- (_Bool)gestureRecognizer:(id)arg1 shouldRequireFailureOfGestureRecognizer:(id)arg2;
-- (_Bool)shouldEnableKeyboardInteractivePop;
-- (_Bool)shouldInteractivePop;
-- (_Bool)gestureRecognizerShouldBegin:(id)arg1;
-- (_Bool)interactivePopGestureRecognizerShouldBegin:(id)arg1;
-- (_Bool)gestureRecognizer:(id)arg1 shouldReceiveTouch:(id)arg2;
+- (BOOL)gestureRecognizer:(id)arg1 shouldBeRequiredToFailByGestureRecognizer:(id)arg2;
+- (BOOL)gestureRecognizer:(id)arg1 shouldRequireFailureOfGestureRecognizer:(id)arg2;
+- (BOOL)shouldEnableKeyboardInteractivePop;
+- (BOOL)shouldInteractivePop;
+- (BOOL)gestureRecognizerShouldBegin:(id)arg1;
+- (BOOL)interactivePopGestureRecognizerShouldBegin:(id)arg1;
+- (BOOL)gestureRecognizer:(id)arg1 shouldReceiveTouch:(id)arg2;
 - (void)keyboardDidHide:(id)arg1;
 - (void)keyboardWillShow:(id)arg1;
 - (void)didEndEditing:(id)arg1;
 - (void)didBeginEditing:(id)arg1;
-- (_Bool)isSubviewResponder:(id)arg1;
+- (BOOL)isSubviewResponder:(id)arg1;
 - (void)resignSubviewResponder:(id)arg1;
-- (void)viewWillDismiss:(_Bool)arg1;
-- (void)viewWillPresent:(_Bool)arg1;
-- (void)viewDidPop:(_Bool)arg1;
-- (void)viewWillPop:(_Bool)arg1;
-- (void)viewDidPush:(_Bool)arg1;
-- (void)viewWillPush:(_Bool)arg1;
-- (void)viewDidBeDismissed:(_Bool)arg1;
-- (void)viewWillBeDismissed:(_Bool)arg1;
-- (void)viewDidBePresented:(_Bool)arg1;
-- (void)viewWillBePresented:(_Bool)arg1;
-- (void)viewDidBePoped:(_Bool)arg1;
-- (void)viewWillBePoped:(_Bool)arg1;
-- (void)viewDidBePushed:(_Bool)arg1;
-- (void)viewWillBePushed:(_Bool)arg1;
+- (void)viewWillDismiss:(BOOL)arg1;
+- (void)viewWillPresent:(BOOL)arg1;
+- (void)viewDidPop:(BOOL)arg1;
+- (void)viewWillPop:(BOOL)arg1;
+- (void)viewDidPush:(BOOL)arg1;
+- (void)viewWillPush:(BOOL)arg1;
+- (void)viewDidBeDismissed:(BOOL)arg1;
+- (void)viewWillBeDismissed:(BOOL)arg1;
+- (void)viewDidBePresented:(BOOL)arg1;
+- (void)viewWillBePresented:(BOOL)arg1;
+- (void)viewDidBePoped:(BOOL)arg1;
+- (void)viewWillBePoped:(BOOL)arg1;
+- (void)viewDidBePushed:(BOOL)arg1;
+- (void)viewWillBePushed:(BOOL)arg1;
 - (void)removeFakeNaviView;
 - (void)internalAddFakeNaviView:(id)arg1;
 - (void)addFakeNaviView;
-- (_Bool)useCustomNavibar;
-- (_Bool)useTransparentNavibar;
-- (_Bool)useBlackStatusbar;
-- (void)viewDidDisappear:(_Bool)arg1;
-- (void)viewWillDisappear:(_Bool)arg1;
-- (void)viewDidAppear:(_Bool)arg1;
+- (BOOL)useCustomNavibar;
+- (BOOL)useTransparentNavibar;
+- (BOOL)useBlackStatusbar;
+- (void)viewDidDisappear:(BOOL)arg1;
+- (void)viewWillDisappear:(BOOL)arg1;
+- (void)viewDidAppear:(BOOL)arg1;
 - (void)setBackBarButton;
 - (void)removeDuplicateBarButton;
 - (void)didMoveToParentViewController:(id)arg1;
 - (id)getNavigationRightButton:(id)arg1;
 - (id)getNavigationLeftButton:(id)arg1;
-- (void)viewWillAppear:(_Bool)arg1;
-- (void)beginAppearanceTransition:(_Bool)arg1 animated:(_Bool)arg2;
+- (void)viewWillAppear:(BOOL)arg1;
+- (void)beginAppearanceTransition:(BOOL)arg1 animated:(BOOL)arg2;
 - (void)willAppearanceTransition;
-- (_Bool)isPresentedIn;
-- (_Bool)isPushedIn;
+- (BOOL)isPresentedIn;
+- (BOOL)isPushedIn;
 - (id)tagForCurrentPage;
 - (id)tagForActivePage;
 - (id)getViewController;
 - (void)resetViewStatus;
 - (void)startForcedRotationToPortrait;
 - (unsigned long long)supportedInterfaceOrientations;
-- (_Bool)shouldAutorotate;
+- (BOOL)shouldAutorotate;
 - (void)didRotateFromInterfaceOrientation:(long long)arg1;
 - (void)willAnimateRotationToInterfaceOrientation:(long long)arg1 duration:(double)arg2;
 - (void)willRotateToInterfaceOrientation:(long long)arg1 duration:(double)arg2;
-- (_Bool)isSvrErrorTipForbidden;
+- (BOOL)isSvrErrorTipForbidden;
 - (long long)preferredInterfaceOrientationForPresentation;
 - (void)protectStatusBarFromBeingFuckedByForeGround:(SEL)arg1;
 - (long long)preferredStatusBarStyle;
-- (_Bool)prefersStatusBarHidden;
+- (BOOL)prefersStatusBarHidden;
 - (void)setStatusBarFontBlack;
 - (void)setStatusBarFontWhite;
-- (void)setStatusBarHidden:(_Bool)arg1 withAnimation:(long long)arg2;
-- (void)setStatusBarHidden:(_Bool)arg1;
-- (void)setTopBarsHidden:(_Bool)arg1 animated:(_Bool)arg2;
-- (void)changeTopBarsHiddenAnimated:(_Bool)arg1;
+- (void)setStatusBarHidden:(BOOL)arg1 withAnimation:(long long)arg2;
+- (void)setStatusBarHidden:(BOOL)arg1;
+- (void)setTopBarsHidden:(BOOL)arg1 animated:(BOOL)arg2;
+- (void)changeTopBarsHiddenAnimated:(BOOL)arg1;
 - (void)postNotification;
-- (void)setOutLine:(_Bool)arg1;
-- (void)setSubView:(id)arg1 OutLine:(_Bool)arg2;
+- (void)setOutLine:(BOOL)arg1;
+- (void)setSubView:(id)arg1 OutLine:(BOOL)arg2;
 - (double)tableView:(id)arg1 heightForFooterInSection:(long long)arg2;
 - (double)tableView:(id)arg1 heightForHeaderInSection:(long long)arg2;
 - (id)tableView:(id)arg1 viewForFooterInSection:(long long)arg2;
@@ -160,7 +165,7 @@
 - (void)adjustView;
 - (void)willAppear;
 - (void)setIsPopByClickingURL;
-- (void)handleUrl:(id)arg1 DisableFirstGetA8Key:(_Bool)arg2 extraInfo:(id)arg3;
+- (void)handleUrl:(id)arg1 DisableFirstGetA8Key:(BOOL)arg2 extraInfo:(id)arg3;
 - (void)restoreNavigationBarBkg;
 - (void)removeNavigationBarBkg;
 - (void)resetTableViewOffset:(id)arg1;
@@ -168,7 +173,7 @@
 - (void)RemoveFullScreenViewList;
 - (void)AddViewToFullScreenViewList:(id)arg1;
 - (void)onTopBarHiddenChanged:(long long)arg1;
-- (void)onTaskBarHiddenChanged:(_Bool)arg1 withAnimation:(long long)arg2;
+- (void)onTaskBarHiddenChanged:(BOOL)arg1 withAnimation:(long long)arg2;
 - (void)onTopBarFrameChanged;
 - (void)ReLayoutFullScreenViews;
 - (void)viewDidLayoutSubviews;
@@ -186,7 +191,7 @@
 - (id)init;
 - (void)didReceiveMemoryWarning;
 - (void)viewDidLoad;
-- (_Bool)accessibilityPerformEscape;
+- (BOOL)accessibilityPerformEscape;
 - (void)disMissSelf;
 - (void)adjustViewAndNavBarRect;
 - (void)adjustSubviewRects;
@@ -195,19 +200,13 @@
 - (void)stopLoading;
 - (void)startLoadingNonBlock;
 - (void)startLoadingBlocked;
-- (void)startLoadingWithText:(id)arg1 block:(_Bool)arg2;
+- (void)startLoadingWithText:(id)arg1 block:(BOOL)arg2;
 - (void)stopLoadingWithFailText:(id)arg1;
 - (void)stopLoadingWithOKText:(id)arg1;
 - (void)startLoadingWithText:(id)arg1;
 - (void)stopBizLoading;
 - (void)startBizLoading;
 - (void)setWCBizAuthTitle:(id)arg1;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UIButton.h"
-
 @interface MMBarButton : UIButton
 {
     long long iContentWidth;
@@ -20,10 +18,6 @@
 @property(nonatomic) long long iOriginWidth; // @synthesize iOriginWidth;
 @property(nonatomic) long long iContentHight; // @synthesize iContentHight;
 @property(nonatomic) long long iContentWidth; // @synthesize iContentWidth;
-- (void)tintColorDidChange;
-- (struct CGRect)backgroundRectForBounds:(struct CGRect)arg1;
-- (_Bool)pointInside:(struct CGPoint)arg1 withEvent:(id)arg2;
-- (id)hitTest:(struct CGPoint)arg1 withEvent:(id)arg2;
 
 @end
 

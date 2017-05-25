@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (ModalView)
-- (void)DismissMyselfAnimated:(_Bool)arg1;
-- (void)DismissModalViewControllerAnimated:(_Bool)arg1;
-- (void)PresentModalViewController:(id)arg1 animated:(_Bool)arg2;
+- (void)DismissMyselfAnimated:(BOOL)animated;
+- (void)DismissModalViewControllerAnimated:(BOOL)animated;
+- (void)PresentModalViewController:(UIViewController *)viewController animated:(BOOL)animated;
 @end

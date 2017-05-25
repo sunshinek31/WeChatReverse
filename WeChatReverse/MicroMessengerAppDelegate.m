@@ -13,6 +13,18 @@
 @end
 
 @implementation MicroMessengerAppDelegate
+@synthesize mActiveLock = mActiveLock;
+@synthesize m_ui64BackGroundFetchStopTime = m_ui64BackGroundFetchStopTime;
+@synthesize mInBackGroundFetch = mInBackGroundFetch;
+@synthesize m_isActive = m_isActive;
+@synthesize m_appObserverCenter = m_appObserverCenter;
+@synthesize m_appViewControllerMgr = m_appViewControllerMgr;
+@synthesize m_nsVoipSound = m_nsVoipSound;
+@synthesize m_nsSound = m_nsSound;
+@synthesize m_nsToken = m_nsToken;
+@synthesize m_mainController = m_mainController;
+
+#pragma mark - UIApplication delegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -45,6 +57,76 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
+}
+
+#pragma mark - MMCommonAdapterDelegate
+
+- (void)LogFeatureIdKey:(unsigned int)arg1 key:(unsigned int)arg2 value:(unsigned int)arg3 isKeyLog:(BOOL)arg4
+{
+    
+}
+
+- (void)LogFeatureExt:(unsigned int)arg1 logExt:(NSString *)logExt isReportNow:(BOOL)arg3 isImportant:(BOOL)arg4
+{
+    
+}
+
+- (void)LogWithinCommon:(int)arg1 module:(const char *)module file:(const char *)file line:(int)arg4 funcName:(const char *)name message:(NSString *)message
+{
+    
+}
+
+- (void)NetworkLogOutput:(id)arg1
+{
+    
+}
+
+- (BOOL)ShouldLog:(int)arg1
+{
+    return NO;
+}
+
+- (BOOL)IsChinese
+{
+    return YES;
+}
+
+#pragma mark - ResouceMonitorDelegate
+
+- (void)onUpdateResourceInfo:(ResourceInfo *)resourceInfo
+{
+    
+}
+
+
+
+#pragma mark -
+
+- (void)setupMMCommonAdapter
+{
+    
+}
+
+- (BOOL)isWeWorkURL:(id)arg1
+{
+    return YES;
+}
+
+- (void)setInBackground:(BOOL)arg1
+{
+    mInBackground = arg1;
+}
+
+- (BOOL)getInBackground
+{
+    return mInBackground;
+}
+
+#pragma mark - UIAlertView delegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
 }
 
 @end

@@ -10,4 +10,19 @@
 
 @implementation UIViewController (ModalView)
 
+- (void)DismissMyselfAnimated:(BOOL)animated
+{
+    
+}
+
+- (void)DismissModalViewControllerAnimated:(BOOL)animated
+{
+    
+}
+
+- (void)PresentModalViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    
+}
+
 @end

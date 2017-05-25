@@ -9,15 +9,15 @@
 @interface __BlueChannel : NSObject
 {
     int _m_state;
-    long long _m_deviceId;
-    long long _m_channelId;
-    long long _m_sessionId;
+    NSInteger _m_deviceId;
+    NSInteger _m_channelId;
+    NSInteger _m_sessionId;
 }
 
 @property(nonatomic) int m_state; // @synthesize m_state=_m_state;
-@property(nonatomic) long long m_sessionId; // @synthesize m_sessionId=_m_sessionId;
-@property(nonatomic) long long m_channelId; // @synthesize m_channelId=_m_channelId;
-@property(nonatomic) long long m_deviceId; // @synthesize m_deviceId=_m_deviceId;
+@property(nonatomic) NSInteger m_sessionId; // @synthesize m_sessionId=_m_sessionId;
+@property(nonatomic) NSInteger m_channelId; // @synthesize m_channelId=_m_channelId;
+@property(nonatomic) NSInteger m_deviceId; // @synthesize m_deviceId=_m_deviceId;
 
 @end
 

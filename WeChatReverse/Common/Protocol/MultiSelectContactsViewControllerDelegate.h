@@ -4,10 +4,10 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
 
-@class NSArray;
-
+/**
+ 多选通讯录成员视图控制器协议
+ */
 @protocol MultiSelectContactsViewControllerDelegate <NSObject>
 - (void)onMultiSelectContactReturn:(NSArray *)arg1;
 

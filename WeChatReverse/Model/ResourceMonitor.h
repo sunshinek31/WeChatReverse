@@ -13,14 +13,12 @@
 {
     NSThread *_monitorThread;
     NSRecursiveLock *_lock;
-    _Bool _monitoring;
+    BOOL _monitoring;
     int m_nCnt;
 }
 
 @property(nonatomic, weak) id <ResourceMonitorDelegate> delegate; // @synthesize delegate=_delegate;
 
-- (void)dealloc;
-- (id)init;
 - (void)startService;
 - (void)threadFunc;
 - (void)updateResourceInfo:(id)arg1;

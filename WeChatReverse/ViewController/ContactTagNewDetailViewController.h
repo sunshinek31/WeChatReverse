@@ -16,47 +16,34 @@
  添加/更新通讯录标签
  */
 @interface ContactTagNewDetailViewController : MMUIViewController <UITableViewDataSource, UITableViewDelegate, IContactLabelMgrExt, MultiSelectContactsViewControllerDelegate, ContactTagNameEditViewControllerDelegate, UIAlertViewDelegate>
-{
-    _Bool _bIsAlreadyDisMissSelf;
-    _Bool _bIsTagNameChange;
-    int _commonSearchScene;
-    unsigned int _curEventID;
-    MMTableView *_tableView;
-    long long _curActionType;
-    ContactTagData *_contactTagData;
-    NSMutableArray *_curMemberContactList;
-    NSString *_curDisplayTagName;
-    NSMutableArray *_contactsKeyArray;
-    NSMutableDictionary *_contactsDict;
-}
 
-@property(retain, nonatomic) NSMutableDictionary *contactsDict; // @synthesize contactsDict=_contactsDict;
-@property(retain, nonatomic) NSMutableArray *contactsKeyArray; // @synthesize contactsKeyArray=_contactsKeyArray;
-@property(retain, nonatomic) NSString *curDisplayTagName; // @synthesize curDisplayTagName=_curDisplayTagName;
-@property(nonatomic) _Bool bIsTagNameChange; // @synthesize bIsTagNameChange=_bIsTagNameChange;
-@property(nonatomic) _Bool bIsAlreadyDisMissSelf; // @synthesize bIsAlreadyDisMissSelf=_bIsAlreadyDisMissSelf;
+@property(strong, nonatomic) NSMutableDictionary *contactsDict;
+@property(strong, nonatomic) NSMutableArray *contactsKeyArray;
+@property(strong, nonatomic) NSString *curDisplayTagName;
+@property(nonatomic) BOOL bIsTagNameChange; // @synthesize bIsTagNameChange=_bIsTagNameChange;
+@property(nonatomic) BOOL bIsAlreadyDisMissSelf; // @synthesize bIsAlreadyDisMissSelf=_bIsAlreadyDisMissSelf;
 @property(nonatomic) unsigned int curEventID; // @synthesize curEventID=_curEventID;
-@property(retain, nonatomic) NSMutableArray *curMemberContactList; // @synthesize curMemberContactList=_curMemberContactList;
-@property(retain, nonatomic) ContactTagData *contactTagData; // @synthesize contactTagData=_contactTagData;
+@property(strong, nonatomic) NSMutableArray *curMemberContactList; // @synthesize curMemberContactList=_curMemberContactList;
+@property(strong, nonatomic) ContactTagData *contactTagData; // @synthesize contactTagData=_contactTagData;
 @property(nonatomic) long long curActionType; // @synthesize curActionType=_curActionType;
-@property(retain, nonatomic) MMTableView *tableView; // @synthesize tableView=_tableView;
+@property(strong, nonatomic) MMTableView *tableView; // @synthesize tableView=_tableView;
 @property(nonatomic) int commonSearchScene; // @synthesize commonSearchScene=_commonSearchScene;
-- (void).cxx_destruct;
+
 - (void)setContactLabel:(id)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
 - (void)onAddContactLabel:(id)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
 - (void)updateContactLabelName:(id)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
 - (unsigned int)updateTagMember;
-- (_Bool)isTagNameEmptyOrExist:(id)arg1;
+- (BOOL)isTagNameEmptyOrExist:(id)arg1;
 - (unsigned int)createOrUpdateTagName;
 - (void)updateRightBarButtonStatus;
 - (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2;
 - (void)onTagNameEditViewControllerRetWithTagName:(id)arg1;
-- (void)reloadMemberListAndView:(id)arg1 isChatRoomList:(_Bool)arg2;
+- (void)reloadMemberListAndView:(id)arg1 isChatRoomList:(BOOL)arg2;
 - (void)onMultiSelectContactReturn:(id)arg1;
 - (void)onSaveBarButtonPress:(id)arg1;
 - (void)onDismissBarButtonPress:(id)arg1;
-- (void)internalDisMissSelfAnimated:(_Bool)arg1;
-- (void)setSaveButtonEnable:(_Bool)arg1;
+- (void)internalDisMissSelfAnimated:(BOOL)arg1;
+- (void)setSaveButtonEnable:(BOOL)arg1;
 - (void)onClickContactItemCellWithIndexPath:(id)arg1;
 - (void)onClickAddMemberCell;
 - (void)onClickTagNameCell;
@@ -68,7 +55,7 @@
 - (id)sectionIndexTitlesForTableView:(id)arg1;
 - (void)handleDeleteContactAtIndexPath:(id)arg1;
 - (void)tableView:(id)arg1 commitEditingStyle:(long long)arg2 forRowAtIndexPath:(id)arg3;
-- (_Bool)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2;
+- (BOOL)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2;
 - (long long)tableView:(id)arg1 editingStyleForRowAtIndexPath:(id)arg2;
 - (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2;
 - (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2;
@@ -91,12 +78,6 @@
 - (id)initViewControllerWithContactTagData:(id)arg1;
 - (id)init;
 - (void)dealloc;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

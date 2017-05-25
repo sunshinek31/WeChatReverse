@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "MMService.h"
-
 #import "IClearDataMgrExt.h"
 #import "MMService.h"
 
@@ -17,36 +15,34 @@
     NSString *m_curLanguage;
     NSBundle *m_curBundle;
     NSBundle *m_backupBundle;
-    _Bool bDownloadPackageRightNow;
+    BOOL bDownloadPackageRightNow;
 }
 
-- (void).cxx_destruct;
 - (void)onDiskStorageWarningCleanedSize:(unsigned long long *)arg1 subQueue:(id)arg2;
 - (void)onDiskStorageWarningCleanedSize:(unsigned long long *)arg1 CacheMask:(unsigned int)arg2;
 - (void)onDiskStorageWarningCleanedSize:(unsigned long long *)arg1;
-- (_Bool)isVersionString:(id)arg1 olderThanMajor:(unsigned int *)arg2 minor:(unsigned int *)arg3 minorex:(unsigned int *)arg4;
+- (BOOL)isVersionString:(id)arg1 olderThanMajor:(unsigned int *)arg2 minor:(unsigned int *)arg3 minorex:(unsigned int *)arg4;
 - (void)ClearOlderVersionData;
 - (void)refreshNewVersionForCurLanguage:(id)arg1 fromViewScene:(unsigned int)arg2;
-- (void)setCurLanguage:(id)arg1 shouldChangeMainFrame:(_Bool)arg2;
-- (void)setCurLanguage:(id)arg1 forRefresh:(_Bool)arg2 withViewScene:(unsigned int)arg3 shouldChangeMainFrame:(_Bool)arg4;
-- (_Bool)curLanguageIsChineseTraditional;
-- (id)getStringForLanguage:(id)arg1 withID:(id)arg2 defaultTo:(id)arg3;
-- (id)getStringForCurLanguage:(id)arg1 defaultTo:(id)arg2 table:(id)arg3;
-- (id)getStringForCurLanguage:(id)arg1 defaultTo:(id)arg2;
-- (id)getStringForCurLanguage:(id)arg1 defaultString:(id)arg2;
-- (id)getStringForCurLanguageWithBackupBundle:(id)arg1 defaultTo:(id)arg2 table:(id)arg3;
-- (id)getStringForCurLanguageWithBackupBundle:(id)arg1 defaultTo:(id)arg2;
-- (id)getSupportedLanguageDisplayNames;
+- (void)setCurLanguage:(id)arg1 shouldChangeMainFrame:(BOOL)arg2;
+- (void)setCurLanguage:(id)arg1 forRefresh:(BOOL)arg2 withViewScene:(unsigned int)arg3 shouldChangeMainFrame:(BOOL)arg4;
+- (BOOL)curLanguageIsChineseTraditional;
+- (NSString *)getStringForLanguage:(id)arg1 withID:(id)arg2 defaultTo:(id)arg3;
+- (NSString *)getStringForCurLanguage:(id)arg1 defaultTo:(id)arg2 table:(id)arg3;
+- (NSString *)getStringForCurLanguage:(id)arg1 defaultTo:(id)arg2;
+- (NSString *)getStringForCurLanguage:(id)arg1 defaultString:(id)arg2;
+- (NSString *)getStringForCurLanguageWithBackupBundle:(id)arg1 defaultTo:(id)arg2 table:(id)arg3;
+- (NSString *)getStringForCurLanguageWithBackupBundle:(id)arg1 defaultTo:(id)arg2;
+- (NSString *)getSupportedLanguageDisplayNames;
 - (id)getSupportedLanguages;
-- (id)getCurLanguageDisplayName;
+- (NSString *)getCurLanguageDisplayName;
 - (id)getCurLanguage;
 - (id)getCurBundle;
-- (void)dealloc;
-- (id)init;
+
 - (void)initLanguage;
-- (_Bool)isLanaguageValid;
+- (BOOL)isLanaguageValid;
 - (void)initBackUpLanguage;
-- (_Bool)ifNeedBackupBundle;
+- (BOOL)ifNeedBackupBundle;
 - (id)getBackUpLanguage;
 - (id)isSupportedLanguage:(id)arg1;
 - (id)getRealCurSystemLanguage;
@@ -61,12 +57,6 @@
 - (id)getLangPackageZipFileForLang:(id)arg1;
 - (id)getLangPackagePathForLang:(id)arg1;
 - (id)getLangPackageRootPath;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

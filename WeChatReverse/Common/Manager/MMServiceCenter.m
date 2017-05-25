@@ -7,6 +7,7 @@
 //
 
 #import "MMServiceCenter.h"
+#import "MMService.h"
 
 @implementation MMServiceCenter
 
@@ -34,4 +35,47 @@
     m_dicService = nil;
     m_lock = nil;
 }
+
+#pragma mark - 
+
+- (void)callClearData
+{
+    
+}
+
+- (void)callReloadData
+{
+    
+}
+
+- (void)callServiceMemoryWarning
+{
+    
+}
+
+- (void)callTerminate
+{
+    
+}
+
+- (void)callEnterBackground
+{
+    
+}
+
+- (void)callEnterForeground
+{
+    
+}
+
+- (void)removeService:(Class)serviceClass
+{
+    
+}
+
+- (MMService *)getService:(Class)serviceClass
+{
+    return nil;
+}
+
 @end

@@ -23,6 +23,5 @@
 - (void)stopLoading;
 - (void)startLoadingBlockedWithText:(id)arg1;
 - (void)startLoadingBlocked;
-- (void)viewDidLoad;
-- (id)init;
+
 @end
