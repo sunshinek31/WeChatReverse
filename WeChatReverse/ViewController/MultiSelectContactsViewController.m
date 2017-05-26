@@ -8,6 +8,8 @@
 
 #import "MultiSelectContactsViewController.h"
 #import "MMBarButton.h"
+#import "MMServiceCenter.h"
+#import "MMLanguageMgr.h"
 
 @implementation MultiSelectContactsViewController
 @synthesize m_commonSearchScene = m_commonSearchScene;
@@ -22,6 +24,74 @@
 @synthesize m_bShowHistoryGroup = m_bShowHistoryGroup;
 @synthesize m_dicIgnoreContact = m_dicIgnoreContact;
 @synthesize m_dicExistContact = m_dicExistContact;
+
+#pragma mark - View Construct
+
+- (void)dealloc
+{
+    
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidLoad];
+    
+//    if (self getm70) {
+//        <#statements#>
+//    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+
+- (void)updateSelectedHeadImgView
+{
+    
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+}
+
+- (void)initView
+{
+    
+}
+
+- (void)initTitleArea
+{
+    
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
 
 
 #pragma mark - SelectTagContactsViewControllerDelegate
@@ -146,68 +216,6 @@
 - (void)onTipsViewClick:(TipsView *)tipsView
 {
     
-}
-
-#pragma mark - View Construct
-
-- (void)dealloc
-{
-    
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidLoad];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
-- (void)willAnimateRotationToInterfaceOrientation:(NSInteger)interfaceOrientation duration:(CGFloat)duration
-{
-    
-}
-
-- (void)viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-
-- (void)updateSelectedHeadImgView
-{
-    
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
-- (void)initView
-{
-    
-}
-
-- (void)initTitleArea
-{
-    
-}
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
 }
 
 #pragma mark - 

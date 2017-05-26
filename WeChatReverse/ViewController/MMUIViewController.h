@@ -7,7 +7,7 @@
 #import "IUiUtilExt.h"
 #import "MMUIViewControllerDelegate.h"
 
-@class MMDelegateProxy<UIGestureRecognizerDelegate>, MMLoadingView, MMTitleView, MMUINavigationBar, NSMutableArray, NSMutableDictionary, NSString, UIBarButtonItem, UIColor, UILabel, UINavigationController, UIResponder, UIView;
+@class MMDelegateProxy<UIGestureRecognizerDelegate>, MMLoadingView, MMTitleView, MMUINavigationBar;
 
 @interface MMUIViewController : UIViewController <IUiUtilExt, MMUIViewControllerDelegate, UIGestureRecognizerDelegate>
 {
@@ -74,11 +74,8 @@ animationControllerForOperation:(NSInteger)arg2
 - (void)setDeepLinkParam:(id)arg1;
 - (void)initDeepLinkConfig;
 - (void)safeSetEdgesForExtendedLayout:(NSUInteger)arg1;
-- (BOOL)gestureRecognizer:(id)arg1 shouldBeRequiredToFailByGestureRecognizer:(id)arg2;
-- (BOOL)gestureRecognizer:(id)arg1 shouldRequireFailureOfGestureRecognizer:(id)arg2;
 - (BOOL)shouldEnableKeyboardInteractivePop;
 - (BOOL)shouldInteractivePop;
-- (BOOL)gestureRecognizerShouldBegin:(id)arg1;
 - (BOOL)interactivePopGestureRecognizerShouldBegin:(id)arg1;
 - (BOOL)gestureRecognizer:(id)arg1 shouldReceiveTouch:(id)arg2;
 - (void)keyboardDidHide:(id)arg1;
@@ -87,76 +84,65 @@ animationControllerForOperation:(NSInteger)arg2
 - (void)didBeginEditing:(id)arg1;
 - (BOOL)isSubviewResponder:(id)arg1;
 - (void)resignSubviewResponder:(id)arg1;
-- (void)viewWillDismiss:(BOOL)arg1;
-- (void)viewWillPresent:(BOOL)arg1;
-- (void)viewDidPop:(BOOL)arg1;
-- (void)viewWillPop:(BOOL)arg1;
-- (void)viewDidPush:(BOOL)arg1;
-- (void)viewWillPush:(BOOL)arg1;
-- (void)viewDidBeDismissed:(BOOL)arg1;
-- (void)viewWillBeDismissed:(BOOL)arg1;
-- (void)viewDidBePresented:(BOOL)arg1;
-- (void)viewWillBePresented:(BOOL)arg1;
-- (void)viewDidBePoped:(BOOL)arg1;
-- (void)viewWillBePoped:(BOOL)arg1;
-- (void)viewDidBePushed:(BOOL)arg1;
-- (void)viewWillBePushed:(BOOL)arg1;
 - (void)removeFakeNaviView;
 - (void)internalAddFakeNaviView:(id)arg1;
 - (void)addFakeNaviView;
 - (BOOL)useCustomNavibar;
 - (BOOL)useTransparentNavibar;
 - (BOOL)useBlackStatusbar;
+
+
+
+- (void)viewWillDismiss:(BOOL)animated;
+- (void)viewWillPresent:(BOOL)animated;
+- (void)viewDidPop:(BOOL)animated;
+- (void)viewWillPop:(BOOL)animated;
+- (void)viewDidPush:(BOOL)animated;
+- (void)viewWillPush:(BOOL)animated;
+- (void)viewDidBeDismissed:(BOOL)animated;
+- (void)viewWillBeDismissed:(BOOL)animated;
+- (void)viewDidBePresented:(BOOL)animated;
+- (void)viewWillBePresented:(BOOL)animated;
+- (void)viewDidBePoped:(BOOL)animated;
+- (void)viewWillBePoped:(BOOL)animated;
+- (void)viewDidBePushed:(BOOL)animated;
+- (void)viewWillBePushed:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)viewDidAppear:(BOOL)animated;
 - (void)setBackBarButton;
 - (void)removeDuplicateBarButton;
-- (void)didMoveToParentViewController:(id)arg1;
-- (id)getNavigationRightButton:(id)arg1;
-- (id)getNavigationLeftButton:(id)arg1;
-- (void)viewWillAppear:(BOOL)arg1;
-- (void)beginAppearanceTransition:(BOOL)arg1 animated:(BOOL)arg2;
+- (UIButton *)getNavigationRightButton:(UIButton *)rightButton;
+- (UIButton *)getNavigationLeftButton:(UIButton *)leftButton;
+
 - (void)willAppearanceTransition;
 - (BOOL)isPresentedIn;
 - (BOOL)isPushedIn;
 - (id)tagForCurrentPage;
 - (id)tagForActivePage;
-- (id)getViewController;
 - (void)resetViewStatus;
 - (void)startForcedRotationToPortrait;
-- (NSUInteger)supportedInterfaceOrientations;
-- (BOOL)shouldAutorotate;
-- (void)didRotateFromInterfaceOrientation:(NSInteger)arg1;
-- (void)willAnimateRotationToInterfaceOrientation:(NSInteger)arg1 duration:(CGFloat)arg2;
-- (void)willRotateToInterfaceOrientation:(NSInteger)arg1 duration:(CGFloat)arg2;
 - (BOOL)isSvrErrorTipForbidden;
-- (NSInteger)preferredInterfaceOrientationForPresentation;
-- (void)protectStatusBarFromBeingFuckedByForeGround:(SEL)arg1;
-- (NSInteger)preferredStatusBarStyle;
-- (BOOL)prefersStatusBarHidden;
+- (void)protectStatusBarFromBeingFuckedByForeGround:(SEL)selector;
 - (void)setStatusBarFontBlack;
 - (void)setStatusBarFontWhite;
-- (void)setStatusBarHidden:(BOOL)arg1 withAnimation:(NSInteger)arg2;
-- (void)setStatusBarHidden:(BOOL)arg1;
-- (void)setTopBarsHidden:(BOOL)arg1 animated:(BOOL)arg2;
-- (void)changeTopBarsHiddenAnimated:(BOOL)arg1;
+- (void)setStatusBarHidden:(BOOL)hidden withAnimation:(NSInteger)animation;
+- (void)setStatusBarHidden:(BOOL)hidden;
+- (void)setTopBarsHidden:(BOOL)hidden animated:(BOOL)animated;
+- (void)changeTopBarsHiddenAnimated:(BOOL)animated;
 - (void)postNotification;
-- (void)setOutLine:(BOOL)arg1;
+- (void)setOutLine:(BOOL)outLine;
 - (void)setSubView:(id)arg1 OutLine:(BOOL)arg2;
-- (CGFloat)tableView:(id)arg1 heightForFooterInSection:(NSInteger)arg2;
-- (CGFloat)tableView:(id)arg1 heightForHeaderInSection:(NSInteger)arg2;
-- (id)tableView:(id)arg1 viewForFooterInSection:(NSInteger)arg2;
-- (id)tableView:(id)arg1 viewForHeaderInSection:(NSInteger)arg2;
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section;
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section;
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section;
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section;
 - (void)setTitleOnly:(id)arg1;
 - (void)willDismissAndShow;
-- (void)setTitleInterfaceOritation:(NSInteger)arg1;
+- (void)setTitleInterfaceOritation:(NSInteger)interfaceOritation;
 - (CGFloat)getRightBarButtonWidth;
 - (CGFloat)getLeftBarButtonWidth;
-- (void)setTitleView:(id)arg1;
-- (id)getTitleColor;
-- (void)setTitleColor:(id)arg1;
-- (void)setTitle:(id)arg1;
+- (void)setTitleView:(UIView *)titleView;
+- (UIColor *)getTitleColor;
+- (void)setTitleColor:(UIColor *)color;
 - (void)willShow;
 - (void)willDisshow;
 - (void)didDisshow;
@@ -169,29 +155,23 @@ animationControllerForOperation:(NSInteger)arg2
 - (void)restoreNavigationBarBkg;
 - (void)removeNavigationBarBkg;
 - (void)resetTableViewOffset:(id)arg1;
-- (void)onMainWindowFrameChanged;
 - (void)RemoveFullScreenViewList;
 - (void)AddViewToFullScreenViewList:(id)arg1;
 - (void)onTopBarHiddenChanged:(NSInteger)arg1;
-- (void)onTaskBarHiddenChanged:(BOOL)arg1 withAnimation:(NSInteger)arg2;
-- (void)onTopBarFrameChanged;
 - (void)ReLayoutFullScreenViews;
-- (void)viewDidLayoutSubviews;
+
+
 - (void)viewDidTransitionToNewSize;
-- (void)setAutolayoutTopOffset:(CGFloat)arg1 forView:(id)arg2;
+- (void)setAutolayoutTopOffset:(CGFloat)offset forView:(id)arg2;
 - (void)setAutolayoutContentInset:(UIEdgeInsets)edgeInsets forScrollView:(id)arg2;
 - (CGFloat)getSearchBarSearchingY;
-- (CGFloat)getVisibleHeightOri:(NSInteger)arg1;
+- (CGFloat)getVisibleHeightOri:(NSInteger)height;
 - (CGFloat)getVisibleHeight;
 - (CGFloat)getContentViewHeight;
 - (CGFloat)getContentViewYforTranslucentNaviBar;
 - (CGFloat)getContentViewY;
-- (void)dealloc;
-- (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
-- (id)init;
-- (void)didReceiveMemoryWarning;
-- (void)viewDidLoad;
-- (BOOL)accessibilityPerformEscape;
+
+
 - (void)disMissSelf;
 - (void)adjustViewAndNavBarRect;
 - (void)adjustSubviewRects;
@@ -200,7 +180,7 @@ animationControllerForOperation:(NSInteger)arg2
 - (void)stopLoading;
 - (void)startLoadingNonBlock;
 - (void)startLoadingBlocked;
-- (void)startLoadingWithText:(id)arg1 block:(BOOL)arg2;
+- (void)startLoadingWithText:(id)arg1 block:(BOOL)isBlock;
 - (void)stopLoadingWithFailText:(id)arg1;
 - (void)stopLoadingWithOKText:(id)arg1;
 - (void)startLoadingWithText:(id)arg1;

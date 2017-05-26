@@ -7,9 +7,9 @@
 @protocol IUiUtilExt <NSObject>
 
 @optional
-- (void)onTaskBarHiddenChanged:(_Bool)arg1 withAnimation:(long long)arg2;
-- (void)onTopBarHiddenChanged:(_Bool)arg1 withAnimation:(long long)arg2;
-- (void)onStatusBarHiddenChanged:(long long)arg1;
+- (void)onTaskBarHiddenChanged:(BOOL)changed withAnimation:(NSInteger)animation;
+- (void)onTopBarHiddenChanged:(BOOL)changed withAnimation:(NSInteger)animation;
+- (void)onStatusBarHiddenChanged:(NSInteger)status;
 - (void)onTopBarFrameChanged;
 - (void)onStatusBarFrameChanged;
 - (void)onMainWindowFrameChanged;
