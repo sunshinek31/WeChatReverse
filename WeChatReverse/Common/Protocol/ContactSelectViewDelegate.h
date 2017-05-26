@@ -5,18 +5,17 @@
 //
 
 #import "MMUIViewControllerDelegate.h"
-
-@class CContact, NSArray, NSDictionary;
+@class CContact;
 
 @protocol ContactSelectViewDelegate <MMUIViewControllerDelegate>
-- (void)onSelectContact:(CContact *)arg1;
+- (void)onSelectContact:(CContact *)contact;
 
 @optional
 - (void)onSelectBrandContact;
 - (void)onSelectRadarCreateRoom;
 - (void)onSelectHistoryGroup;
-- (void)onContactSelectSearchSections:(NSArray *)arg1 sectionTitles:(NSDictionary *)arg2 sectionResults:(NSDictionary *)arg3;
-- (_Bool)onFilterContactCandidate:(CContact *)arg1;
-- (_Bool)onShouldSelectContact:(CContact *)arg1;
+- (void)onContactSelectSearchSections:(NSArray *)sectionList sectionTitles:(NSDictionary *)titlesDic sectionResults:(NSDictionary *)resultsDic;
+- (BOOL)onFilterContactCandidate:(CContact *)contact;
+- (BOOL)onShouldSelectContact:(CContact *)contact;
 @end
 

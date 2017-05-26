@@ -13,10 +13,10 @@
 @optional
 - (void)onContactTagNameUpdate:(NSDictionary *)arg1;
 - (void)onAllTagNameUpdate;
-- (void)setContactLabel:(NSArray *)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
-- (void)updateContactLabelName:(NSArray *)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
-- (void)onDeleteContactLabel:(NSArray *)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
-- (void)onAddContactLabel:(NSArray *)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
-- (void)onAllContactLabelUpdated:(NSArray *)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
+- (void)setContactLabel:(NSArray *)arg1 withRetCode:(int)retCode andEventId:(NSUInteger)eventId;
+- (void)updateContactLabelName:(NSArray *)arg1 withRetCode:(int)retCode andEventId:(NSUInteger)eventId;
+- (void)onDeleteContactLabel:(NSArray *)arg1 withRetCode:(int)retCode andEventId:(NSUInteger)eventId;
+- (void)onAddContactLabel:(NSArray *)arg1 withRetCode:(int)retCode andEventId:(NSUInteger)eventId;
+- (void)onAllContactLabelUpdated:(NSArray *)arg1 withRetCode:(int)retCode andEventId:(NSUInteger)eventId;
 @end
 

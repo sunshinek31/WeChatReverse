@@ -10,36 +10,33 @@
 #import "IContactLabelMgrExt.h"
 #import "MultiSelectContactsViewControllerDelegate.h"
 
-@class ContactTagData, MMTableView, NSMutableArray, NSMutableDictionary, NSString;
+@class ContactTagData, MMTableView, NSMutableArray, NSMutableDictionary, NSString,CContact;
 
-/**
- 添加/更新通讯录标签
- */
 @interface ContactTagNewDetailViewController : MMUIViewController <UITableViewDataSource, UITableViewDelegate, IContactLabelMgrExt, MultiSelectContactsViewControllerDelegate, ContactTagNameEditViewControllerDelegate, UIAlertViewDelegate>
 
-@property(strong, nonatomic) NSMutableDictionary *contactsDict;
-@property(strong, nonatomic) NSMutableArray *contactsKeyArray;
-@property(strong, nonatomic) NSString *curDisplayTagName;
+@property(strong, nonatomic) NSMutableDictionary *contactsDict; // @synthesize contactsDict=_contactsDict;
+@property(strong, nonatomic) NSMutableArray *contactsKeyArray; // @synthesize contactsKeyArray=_contactsKeyArray;
+@property(strong, nonatomic) NSString *curDisplayTagName; // @synthesize curDisplayTagName=_curDisplayTagName;
 @property(nonatomic) BOOL bIsTagNameChange; // @synthesize bIsTagNameChange=_bIsTagNameChange;
 @property(nonatomic) BOOL bIsAlreadyDisMissSelf; // @synthesize bIsAlreadyDisMissSelf=_bIsAlreadyDisMissSelf;
-@property(nonatomic) unsigned int curEventID; // @synthesize curEventID=_curEventID;
-@property(strong, nonatomic) NSMutableArray *curMemberContactList; // @synthesize curMemberContactList=_curMemberContactList;
+@property(nonatomic) NSUInteger curEventID; // @synthesize curEventID=_curEventID;
+@property(strong, nonatomic) NSMutableArray<CContact *> *curMemberContactList; // @synthesize curMemberContactList=_curMemberContactList;
 @property(strong, nonatomic) ContactTagData *contactTagData; // @synthesize contactTagData=_contactTagData;
-@property(nonatomic) long long curActionType; // @synthesize curActionType=_curActionType;
+
+/**
+ 标签详情页面类型:
+ 1-创建标签,
+ 2-更新标签
+ */
+@property(nonatomic) NSInteger curActionType; // @synthesize curActionType=_curActionType;
 @property(strong, nonatomic) MMTableView *tableView; // @synthesize tableView=_tableView;
 @property(nonatomic) int commonSearchScene; // @synthesize commonSearchScene=_commonSearchScene;
 
-- (void)setContactLabel:(id)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
-- (void)onAddContactLabel:(id)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
-- (void)updateContactLabelName:(id)arg1 withRetCode:(int)arg2 andEventId:(unsigned int)arg3;
-- (unsigned int)updateTagMember;
+- (NSUInteger)updateTagMember;
 - (BOOL)isTagNameEmptyOrExist:(id)arg1;
-- (unsigned int)createOrUpdateTagName;
+- (NSUInteger)createOrUpdateTagName;
 - (void)updateRightBarButtonStatus;
-- (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2;
-- (void)onTagNameEditViewControllerRetWithTagName:(id)arg1;
-- (void)reloadMemberListAndView:(id)arg1 isChatRoomList:(BOOL)arg2;
-- (void)onMultiSelectContactReturn:(id)arg1;
+- (void)reloadMemberListAndView:(id)arg1 isChatRoomList:(BOOL)isChatRoomList;
 - (void)onSaveBarButtonPress:(id)arg1;
 - (void)onDismissBarButtonPress:(id)arg1;
 - (void)internalDisMissSelfAnimated:(BOOL)arg1;
@@ -51,33 +48,15 @@
 - (void)makeAddMemberCellContent:(id)arg1;
 - (void)makeTagNameCellContent:(id)arg1;
 - (void)makeTagDetailEditHeaderContent:(id)arg1;
-- (long long)tableView:(id)arg1 sectionForSectionIndexTitle:(id)arg2 atIndex:(long long)arg3;
 - (id)sectionIndexTitlesForTableView:(id)arg1;
 - (void)handleDeleteContactAtIndexPath:(id)arg1;
-- (void)tableView:(id)arg1 commitEditingStyle:(long long)arg2 forRowAtIndexPath:(id)arg3;
-- (BOOL)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2;
-- (long long)tableView:(id)arg1 editingStyleForRowAtIndexPath:(id)arg2;
-- (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2;
-- (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2;
-- (id)tableView:(id)arg1 viewForHeaderInSection:(long long)arg2;
-- (id)tableView:(id)arg1 titleForHeaderInSection:(long long)arg2;
-- (double)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2;
-- (double)tableView:(id)arg1 heightForHeaderInSection:(long long)arg2;
-- (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2;
-- (long long)numberOfSectionsInTableView:(id)arg1;
 - (void)sortTagContactsV2;
 - (void)sortTagContacts;
 - (id)addContactSectionKey:(id)arg1;
 - (void)processContactSectionData:(id)arg1;
-- (void)initView;
-- (void)reloadData;
-- (void)initData;
-- (void)viewDidLayoutSubviews;
-- (void)viewDidLoad;
-- (id)initViewControllerWithCreateNewTag;
-- (id)initViewControllerWithContactTagData:(id)arg1;
-- (id)init;
-- (void)dealloc;
+
+
+
 
 @end
 

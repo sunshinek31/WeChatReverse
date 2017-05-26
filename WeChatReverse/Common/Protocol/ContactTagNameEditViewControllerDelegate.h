@@ -5,6 +5,6 @@
 //
 
 @protocol ContactTagNameEditViewControllerDelegate <NSObject>
-- (void)onTagNameEditViewControllerRetWithTagName:(NSString *)arg1;
+- (void)onTagNameEditViewControllerRetWithTagName:(NSString *)tagName;
 @end
 
