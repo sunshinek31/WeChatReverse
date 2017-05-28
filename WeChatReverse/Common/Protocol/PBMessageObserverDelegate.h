@@ -10,5 +10,5 @@
 @class ProtobufCGIWrap;
 
 @protocol PBMessageObserverDelegate <NSObject>
-- (void)MessageReturn:(ProtobufCGIWrap *)arg1 Event:(unsigned int)arg2;
+- (void)MessageReturn:(ProtobufCGIWrap *)aProtobufCGIWrap Event:(unsigned int)event;
 @end

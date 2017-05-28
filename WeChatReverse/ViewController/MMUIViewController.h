@@ -54,6 +54,8 @@
 @property(nonatomic) unsigned int m_uiVcType; // @synthesize m_uiVcType;
 @property(strong, nonatomic) MMLoadingView *loadingViewX; // @synthesize loadingViewX=m_loadingViewX;
 
+- (void)setTitle:(NSString *)title;
+
 /**
  控制器切换操作
 

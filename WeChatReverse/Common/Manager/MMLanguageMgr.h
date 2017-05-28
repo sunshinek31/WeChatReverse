@@ -27,10 +27,10 @@
 - (void)setCurLanguage:(id)arg1 shouldChangeMainFrame:(BOOL)arg2;
 - (void)setCurLanguage:(id)arg1 forRefresh:(BOOL)arg2 withViewScene:(unsigned int)arg3 shouldChangeMainFrame:(BOOL)arg4;
 - (BOOL)curLanguageIsChineseTraditional;
-- (NSString *)getStringForLanguage:(id)arg1 withID:(id)arg2 defaultTo:(id)arg3;
-- (NSString *)getStringForCurLanguage:(id)arg1 defaultTo:(id)arg2 table:(id)arg3;
-- (NSString *)getStringForCurLanguage:(id)arg1 defaultTo:(id)arg2;
-- (NSString *)getStringForCurLanguage:(id)arg1 defaultString:(id)arg2;
+- (NSString *)getStringForLanguage:(NSString *)arg1 withID:(id)arg2 defaultTo:(NSString *)arg3;
+- (NSString *)getStringForCurLanguage:(NSString *)arg1 defaultTo:(NSString *)arg2 table:(id)arg3;
+- (NSString *)getStringForCurLanguage:(NSString *)arg1 defaultTo:(NSString *)arg2;
+- (NSString *)getStringForCurLanguage:(NSString *)arg1 defaultString:(NSString *)arg2;
 - (NSString *)getStringForCurLanguageWithBackupBundle:(id)arg1 defaultTo:(id)arg2 table:(id)arg3;
 - (NSString *)getStringForCurLanguageWithBackupBundle:(id)arg1 defaultTo:(id)arg2;
 - (NSString *)getSupportedLanguageDisplayNames;

@@ -4,11 +4,10 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
 
 @class OplogErrMsg, ProtobufCGIWrap;
 
 @protocol IOplogExt <NSObject>
-- (void)oplogRet:(int)arg1 errMsg:(OplogErrMsg *)arg2 eventID:(unsigned int)arg3 cgiWrap:(ProtobufCGIWrap *)arg4;
+- (void)oplogRet:(int)ret errMsg:(OplogErrMsg *)errorMsg eventID:(NSUInteger)eventID cgiWrap:(ProtobufCGIWrap *)aProtobufCGIWrap;
 @end
 

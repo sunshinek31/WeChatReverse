@@ -4,28 +4,28 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
 
 @class NSMutableDictionary;
+@class CContact;
 
 @interface CContactOPLog : NSObject
 {
     NSMutableDictionary *m_dicSkipContacts;
 }
 
-+ (unsigned int)start_ModifyContact:(id)arg1;
-+ (id)getModifyContactData:(id)arg1 addScene:(unsigned int)arg2 delScene:(unsigned int)arg3;
-- (void).cxx_destruct;
-- (_Bool)add_ModifyNotifyStatus:(id)arg1 withStatus:(unsigned int)arg2 NeedSync:(_Bool)arg3;
-- (_Bool)add_DeleteChatMsg:(id)arg1 sync:(_Bool)arg2;
-- (_Bool)add_DeleteChatContact:(id)arg1 sync:(_Bool)arg2;
-- (_Bool)add_ModifyContact:(id)arg1 delScene:(unsigned int)arg2 sync:(_Bool)arg3;
-- (_Bool)add_ModifyContact:(id)arg1 addScene:(unsigned int)arg2 sync:(_Bool)arg3;
-- (_Bool)add_ModifyContact:(id)arg1 sync:(_Bool)arg2;
-- (_Bool)add_ModifyContact:(id)arg1 addScene:(unsigned int)arg2 delScene:(unsigned int)arg3 sync:(_Bool)arg4;
-- (_Bool)isSkipContact:(id)arg1;
++ (NSUInteger)start_ModifyContact:(CContact *)contact;
++ (id)getModifyContactData:(id)arg1 addScene:(NSUInteger)addScene delScene:(NSUInteger)delScene;
+
+- (BOOL)add_ModifyNotifyStatus:(id)arg1 withStatus:(NSUInteger)status NeedSync:(BOOL)isNeed;
+- (BOOL)add_DeleteChatMsg:(id)arg1 sync:(BOOL)isSync;
+- (BOOL)add_DeleteChatContact:(id)arg1 sync:(BOOL)isSync;
+- (BOOL)add_ModifyContact:(id)arg1 delScene:(NSUInteger)delScene sync:(BOOL)isSync;
+- (BOOL)add_ModifyContact:(id)arg1 addScene:(NSUInteger)addScene sync:(BOOL)isSync;
+- (BOOL)add_ModifyContact:(id)arg1 sync:(BOOL)arg2;
+- (BOOL)add_ModifyContact:(id)arg1 addScene:(NSUInteger)addScene delScene:(NSUInteger)delScene sync:(BOOL)isSync;
+- (BOOL)isSkipContact:(id)arg1;
 - (void)add_SkipContact:(id)arg1;
-- (id)init;
+- (instancetype)init;
 
 @end
 

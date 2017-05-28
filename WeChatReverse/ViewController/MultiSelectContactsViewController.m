@@ -10,6 +10,11 @@
 #import "MMBarButton.h"
 #import "MMServiceCenter.h"
 #import "MMLanguageMgr.h"
+#import "WCDeviceM7Logic.h"
+#import "MMThemeManager.h"
+#import "MMColor.h"
+#import "UiUtil.h"
+#import "ContactSelectView.h"
 
 @implementation MultiSelectContactsViewController
 @synthesize m_commonSearchScene = m_commonSearchScene;
@@ -27,6 +32,91 @@
 
 #pragma mark - View Construct
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    NSString *title = @"";
+    
+    if ([self m_uiGroupScene] != 18 && [self m_uiGroupScene] != 19) {
+        
+        MMLanguageMgr *lmgr = [[MMServiceCenter defaultCenter] getService:[MMLanguageMgr class]];
+        
+        NSString *str = @"Contacts_SelectContact";
+        
+        title = [lmgr getStringForCurLanguage:str defaultTo:str];
+        
+    }else{
+        
+        MMLanguageMgr *lmgr = [[MMServiceCenter defaultCenter] getService:[MMLanguageMgr class]];
+        
+        NSString *str = @"WC_Also_Send_To";
+        
+        title = [lmgr getStringForCurLanguage:str defaultTo:str];
+    }
+    
+    [self setTitle:title];
+    
+    [self initView];
+    [self updateSelectedHeadImgView];
+    
+}
+
+- (void)initView
+{
+    UIView *selfView = self.view;
+    
+    MMThemeManager *themeMgr = [MMThemeManager sharedThemeManager];
+    
+    MMColor *mColor = [themeMgr colorList];
+    
+    UIColor *color = [mColor getColorByName:@"SETTING_TABLE_BACKGROUND_COLOR"];
+    
+    if (color != nil ) {
+        
+    }else{
+        
+        color = [UIColor clearColor];
+    }
+    
+    [selfView setBackgroundColor:color];
+    
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+    
+    [self setExtendedLayoutIncludesOpaqueBars:YES];
+    
+    [self initTitleArea];
+    
+    CGFloat y = [self getContentViewY];
+    
+    CGFloat width = [UiUtil screenWidthCurOri];
+    CGFloat height = [self getVisibleHeight ];
+    
+    ContactSelectView *selectView = [[ContactSelectView alloc]initWithFrame:CGRectMake(0, y, width, height) delegate:self];
+    
+    m_selectView = selectView;
+    
+    [selectView setM_bShowHistoryGroup:[self m_bShowHistoryGroup]];
+    [selectView setM_bShowRadarCreateRoom:[self m_bShowRadarCreateRoom]];
+    [selectView setM_uiGroupScene:[self m_uiGroupScene]];
+    [selectView setM_bMultiSelect:YES];
+    [selectView setM_dicExistContact:[self m_dicExistContact]];
+    [selectView setM_dicMultiSelect:[self m_dicMultiSelect]];
+    
+//    !m_bShowRadarCreateRoom
+    [selectView initData:YES];
+    
+    [selectView initView];
+    
+    [selfView addSubview:selectView];
+    
+}
+
+- (void)updateSelectedHeadImgView
+{
+    
+}
+
 - (void)dealloc
 {
     
@@ -34,11 +124,8 @@
 
 - (void)viewDidUnload
 {
-    [super viewDidLoad];
+    [super viewDidUnload];
     
-//    if (self getm70) {
-//        <#statements#>
-//    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -59,24 +146,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-}
-
-
-- (void)updateSelectedHeadImgView
-{
-    
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    
-}
-
-- (void)initView
-{
-    
 }
 
 - (void)initTitleArea

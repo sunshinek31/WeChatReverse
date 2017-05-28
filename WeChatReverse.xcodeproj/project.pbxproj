@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B3BBDDC1EDAB755002602B6 /* CContactOPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBDDB1EDAB755002602B6 /* CContactOPLog.m */; };
+		6B3BBE151EDAC097002602B6 /* MMExtensionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE141EDAC097002602B6 /* MMExtensionCenter.m */; };
+		6B3BBE171EDACF5C002602B6 /* UiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE161EDACF5C002602B6 /* UiUtil.m */; };
+		6B3BBE191EDAD281002602B6 /* CContactMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE181EDAD281002602B6 /* CContactMgr.m */; };
 		6B4C7D681ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C7D671ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m */; };
 		6B4C7D6C1ED3FC1A00CAF1EB /* UIViewController+ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C7D6B1ED3FC1A00CAF1EB /* UIViewController+ModalView.m */; };
+		6B5163BB1ED916320089CEAC /* WCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163BA1ED916320089CEAC /* WCActionSheet.m */; };
+		6B5163BD1ED919820089CEAC /* ContactSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163BC1ED919820089CEAC /* ContactSelectView.m */; };
+		6B5163C31ED91CD90089CEAC /* ContactSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163C21ED91CD90089CEAC /* ContactSettingViewController.m */; };
+		6B5163C61ED920880089CEAC /* WAAppMsgItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163C51ED920880089CEAC /* WAAppMsgItem.m */; };
 		6B71B58C1ED7CEA80010DFEF /* MultiSelectContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B71B58B1ED7CEA80010DFEF /* MultiSelectContactsViewController.m */; };
 		6B71B5911ED7DA410010DFEF /* WCDeviceM7Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B71B5901ED7DA410010DFEF /* WCDeviceM7Logic.m */; };
+		6B71B5971ED825D80010DFEF /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B71B5961ED825D80010DFEF /* MMThemeManager.m */; };
 		6B80317F1EC8ACA00090657F /* MMUIResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B80317E1EC8ACA00090657F /* MMUIResponder.m */; };
 		6B8031821EC8ACF50090657F /* MicroMessengerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8031811EC8ACF50090657F /* MicroMessengerAppDelegate.m */; };
 		6B8031871EC8B01F0090657F /* CAppObserverCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8031861EC8B01F0090657F /* CAppObserverCenter.m */; };
@@ -115,12 +124,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B3BBDDB1EDAB755002602B6 /* CContactOPLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CContactOPLog.m; sourceTree = "<group>"; };
+		6B3BBE131EDAC097002602B6 /* MMExtensionCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExtensionCenter.h; sourceTree = "<group>"; };
+		6B3BBE141EDAC097002602B6 /* MMExtensionCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExtensionCenter.m; sourceTree = "<group>"; };
+		6B3BBE161EDACF5C002602B6 /* UiUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiUtil.m; sourceTree = "<group>"; };
+		6B3BBE181EDAD281002602B6 /* CContactMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CContactMgr.m; sourceTree = "<group>"; };
 		6B4C7D671ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTagNewDetailViewController.m; sourceTree = "<group>"; };
 		6B4C7D6A1ED3FC1A00CAF1EB /* UIViewController+ModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ModalView.h"; path = "WeChatReverse/ViewController/UIViewController+ModalView.h"; sourceTree = SOURCE_ROOT; };
 		6B4C7D6B1ED3FC1A00CAF1EB /* UIViewController+ModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ModalView.m"; path = "WeChatReverse/ViewController/UIViewController+ModalView.m"; sourceTree = SOURCE_ROOT; };
+		6B5163B91ED916320089CEAC /* WCActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCActionSheet.h; path = WeChatReverse/Common/Manager/WCActionSheet.h; sourceTree = SOURCE_ROOT; };
+		6B5163BA1ED916320089CEAC /* WCActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCActionSheet.m; path = WeChatReverse/Common/Manager/WCActionSheet.m; sourceTree = SOURCE_ROOT; };
+		6B5163BC1ED919820089CEAC /* ContactSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSelectView.m; sourceTree = "<group>"; };
+		6B5163C21ED91CD90089CEAC /* ContactSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSettingViewController.m; sourceTree = "<group>"; };
+		6B5163C41ED920880089CEAC /* WAAppMsgItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppMsgItem.h; sourceTree = "<group>"; };
+		6B5163C51ED920880089CEAC /* WAAppMsgItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAAppMsgItem.m; sourceTree = "<group>"; };
 		6B71B58B1ED7CEA80010DFEF /* MultiSelectContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSelectContactsViewController.m; sourceTree = "<group>"; };
 		6B71B58F1ED7DA410010DFEF /* WCDeviceM7Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDeviceM7Logic.h; sourceTree = "<group>"; };
 		6B71B5901ED7DA410010DFEF /* WCDeviceM7Logic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDeviceM7Logic.m; sourceTree = "<group>"; };
+		6B71B5961ED825D80010DFEF /* MMThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMThemeManager.m; sourceTree = "<group>"; };
 		6B80317D1EC8ACA00090657F /* MMUIResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUIResponder.h; sourceTree = "<group>"; };
 		6B80317E1EC8ACA00090657F /* MMUIResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUIResponder.m; sourceTree = "<group>"; };
 		6B8031801EC8ACF50090657F /* MicroMessengerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroMessengerAppDelegate.h; sourceTree = "<group>"; };
@@ -163,7 +184,7 @@
 		6BA400011EC77EE600283DB5 /* MemberDataLogicProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MemberDataLogicProtocol-Protocol.h"; sourceTree = "<group>"; };
 		6BA400021EC77EE600283DB5 /* MessageDBExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MessageDBExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA400031EC77EE600283DB5 /* MessageNodeViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MessageNodeViewDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA400041EC77EE600283DB5 /* MessageObserverDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MessageObserverDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA400041EC77EE600283DB5 /* MessageObserverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageObserverDelegate.h; sourceTree = "<group>"; };
 		6BA400051EC77EE600283DB5 /* MessageWrapImgDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MessageWrapImgDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400061EC77EE600283DB5 /* MFBanner-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFBanner-Protocol.h"; sourceTree = "<group>"; };
 		6BA400071EC77EE600283DB5 /* MFMailComposeViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFMailComposeViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -372,7 +393,7 @@
 		6BA400D61EC77EE800283DB5 /* PageScrollViewDataSource-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PageScrollViewDataSource-Protocol.h"; sourceTree = "<group>"; };
 		6BA400D71EC77EE800283DB5 /* PageScrollViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PageScrollViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400D81EC77EE800283DB5 /* PasswordLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PasswordLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA400D91EC77EE800283DB5 /* PBCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PBCoding-Protocol.h"; sourceTree = "<group>"; };
+		6BA400D91EC77EE800283DB5 /* PBCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBCoding.h; sourceTree = "<group>"; };
 		6BA400DB1EC77EE800283DB5 /* PeopleNearByListHeaderViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PeopleNearByListHeaderViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400DC1EC77EE800283DB5 /* PeopleNearByListViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PeopleNearByListViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400DD1EC77EE800283DB5 /* PhotoViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotoViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -721,7 +742,6 @@
 		6BA402371EC77EEE00283DB5 /* WCAccountVoice2ndVerifyControlLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCAccountVoice2ndVerifyControlLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA402381EC77EEE00283DB5 /* WCAccountVoice2ndVerifyViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCAccountVoice2ndVerifyViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA402391EC77EEE00283DB5 /* WCAccountVoiceVerifyViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCAccountVoiceVerifyViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA4023A1EC77EEE00283DB5 /* WCActionSheetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCActionSheetDelegate.h; sourceTree = "<group>"; };
 		6BA4023B1EC77EEE00283DB5 /* WCAddressInfoViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCAddressInfoViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4023C1EC77EEE00283DB5 /* WCAddressListViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCAddressListViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4023D1EC77EEE00283DB5 /* WCAddressLogicMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCAddressLogicMgrExt-Protocol.h"; sourceTree = "<group>"; };
@@ -4443,7 +4463,7 @@
 		6BA4E1BB1EC77A9400283DB5 /* CDownloadVideoWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDownloadVideoWrap.h; sourceTree = "<group>"; };
 		6BA4E1BC1EC77A9400283DB5 /* CDownloadVoicePrtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDownloadVoicePrtl.h; sourceTree = "<group>"; };
 		6BA4E1BD1EC77A9400283DB5 /* CDownloadVoiceWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDownloadVoiceWrap.h; sourceTree = "<group>"; };
-		6BA4E1BE1EC77A9400283DB5 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		6BA4E1BE1EC77A9400283DB5 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDStructures.h; path = Model/CDStructures.h; sourceTree = "<group>"; };
 		6BA4E1BF1EC77A9400283DB5 /* CellWithIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellWithIndex.h; sourceTree = "<group>"; };
 		6BA4E1C01EC77A9400283DB5 /* CEmojiCataLogWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEmojiCataLogWrap.h; sourceTree = "<group>"; };
 		6BA4E1C11EC77A9400283DB5 /* CEmojiWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEmojiWrap.h; sourceTree = "<group>"; };
@@ -5337,7 +5357,6 @@
 		6BA4E8A21EC77B6200283DB5 /* MFWeAppBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFWeAppBtn.h; sourceTree = "<group>"; };
 		6BA4E8A31EC77B6200283DB5 /* MFWebMMBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFWebMMBtn.h; sourceTree = "<group>"; };
 		6BA4E8A41EC77B6200283DB5 /* MFWebViewVCKeepHoldBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFWebViewVCKeepHoldBtn.h; sourceTree = "<group>"; };
-		6BA4E8A51EC77B6200283DB5 /* MicroMessengerAppDelegate-.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MicroMessengerAppDelegate-.h"; path = "Header/MicroMessengerAppDelegate-.h"; sourceTree = "<group>"; };
 		6BA4E8A61EC77B6200283DB5 /* MicroMsgRequestNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroMsgRequestNew.h; sourceTree = "<group>"; };
 		6BA4E8A71EC77B6200283DB5 /* MicroMsgResponseNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroMsgResponseNew.h; sourceTree = "<group>"; };
 		6BA4E8A81EC77B6200283DB5 /* MIMEInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMEInfo.h; sourceTree = "<group>"; };
@@ -5452,7 +5471,6 @@
 		6BA4E9891EC77B6900283DB5 /* MMExposeReasonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExposeReasonItem.h; sourceTree = "<group>"; };
 		6BA4E98E1EC77B6900283DB5 /* MMExposeWithProofCgi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExposeWithProofCgi.h; sourceTree = "<group>"; };
 		6BA4E98F1EC77B6900283DB5 /* MMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExtension.h; sourceTree = "<group>"; };
-		6BA4E9901EC77B6900283DB5 /* MMExtensionCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExtensionCenter.h; sourceTree = "<group>"; };
 		6BA4E9911EC77B6900283DB5 /* MMExtensionDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExtensionDictionary.h; sourceTree = "<group>"; };
 		6BA4E9931EC77B6900283DB5 /* MMExtensionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExtensionObject.h; sourceTree = "<group>"; };
 		6BA4E9961EC77B6900283DB5 /* MMFavCellComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMFavCellComponent.h; sourceTree = "<group>"; };
@@ -6564,7 +6582,6 @@
 		6BA4F4001EC77CBD00283DB5 /* WAAppContactPreLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppContactPreLoader.h; sourceTree = "<group>"; };
 		6BA4F4031EC77CBE00283DB5 /* WAAppItemData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppItemData.h; sourceTree = "<group>"; };
 		6BA4F4061EC77CBE00283DB5 /* WAAppItemOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppItemOperation.h; sourceTree = "<group>"; };
-		6BA4F40C1EC77CBE00283DB5 /* WAAppMsgItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppMsgItem.h; sourceTree = "<group>"; };
 		6BA4F40D1EC77CBE00283DB5 /* WAAppOperateLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppOperateLogic.h; sourceTree = "<group>"; };
 		6BA4F40F1EC77CBF00283DB5 /* WAAppPackageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppPackageInfo.h; sourceTree = "<group>"; };
 		6BA4F4141EC77CBF00283DB5 /* WAAppTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppTask.h; sourceTree = "<group>"; };
@@ -6743,7 +6760,6 @@
 		6BA4F6101EC77CEF00283DB5 /* WCAccountTextFieldItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAccountTextFieldItem.h; sourceTree = "<group>"; };
 		6BA4F6121EC77CEF00283DB5 /* WCAccountVoice2ndVerifyControlLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAccountVoice2ndVerifyControlLogic.h; sourceTree = "<group>"; };
 		6BA4F6181EC77CF000283DB5 /* WCActionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCActionInfo.h; sourceTree = "<group>"; };
-		6BA4F6191EC77CF000283DB5 /* WCActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCActionSheet.h; sourceTree = "<group>"; };
 		6BA4F61B1EC77CF000283DB5 /* WCADBodyWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCADBodyWrap.h; sourceTree = "<group>"; };
 		6BA4F61C1EC77CF000283DB5 /* WCADCanvasInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCADCanvasInfo.h; sourceTree = "<group>"; };
 		6BA4F61D1EC77CF000283DB5 /* WCADCanvasPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCADCanvasPage.h; sourceTree = "<group>"; };
@@ -7703,7 +7719,7 @@
 		6BA4FED01EC77EE400283DB5 /* HeadImgDownloaderDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HeadImgDownloaderDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FED11EC77EE400283DB5 /* HijackBlockProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HijackBlockProtocol.h; sourceTree = "<group>"; };
 		6BA4FED21EC77EE400283DB5 /* IABtestMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IABtestMgrExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FED31EC77EE400283DB5 /* IAcctStorageMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAcctStorageMgrExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FED31EC77EE400283DB5 /* IAcctStorageMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAcctStorageMgrExt.h; sourceTree = "<group>"; };
 		6BA4FED41EC77EE400283DB5 /* IAddressBookFriendMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAddressBookFriendMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FED51EC77EE400283DB5 /* IAddressBookMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAddressBookMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FED61EC77EE400283DB5 /* IAPExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPExt-Protocol.h"; sourceTree = "<group>"; };
@@ -7728,7 +7744,7 @@
 		6BA4FEE91EC77EE400283DB5 /* IBottleContactMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBottleContactMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FEEA1EC77EE400283DB5 /* IBottleMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBottleMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FEEB1EC77EE400283DB5 /* IBottleSessionExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBottleSessionExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FEEC1EC77EE400283DB5 /* IBrandAttrMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBrandAttrMgrExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FEEC1EC77EE400283DB5 /* IBrandAttrMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBrandAttrMgrExt.h; sourceTree = "<group>"; };
 		6BA4FEED1EC77EE400283DB5 /* IBrandCustomReportExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBrandCustomReportExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FEEE1EC77EE400283DB5 /* IBrandIAPMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBrandIAPMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FEEF1EC77EE400283DB5 /* IBrandServiceSearchExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBrandServiceSearchExt-Protocol.h"; sourceTree = "<group>"; };
@@ -7739,7 +7755,7 @@
 		6BA4FEF41EC77EE400283DB5 /* IClearDataMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IClearDataMgrExt.h; sourceTree = "<group>"; };
 		6BA4FEF51EC77EE400283DB5 /* IContactLabelMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IContactLabelMgrExt.h; sourceTree = "<group>"; };
 		6BA4FEF61EC77EE400283DB5 /* IContactMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IContactMgrExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FEF71EC77EE400283DB5 /* IContactProfileMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IContactProfileMgrExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FEF71EC77EE400283DB5 /* IContactProfileMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IContactProfileMgrExt.h; sourceTree = "<group>"; };
 		6BA4FEF81EC77EE400283DB5 /* IContactVerifyExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IContactVerifyExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FEF91EC77EE400283DB5 /* ICreatePOIMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ICreatePOIMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FEFA1EC77EE400283DB5 /* IDCHostMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDCHostMgrExt-Protocol.h"; sourceTree = "<group>"; };
@@ -7814,7 +7830,7 @@
 		6BA4FF3F1EC77EE400283DB5 /* IMMFontMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMMFontMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF401EC77EE400283DB5 /* IMMGrowTextViewExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMMGrowTextViewExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF411EC77EE400283DB5 /* IMMImagePickerManagerExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMMImagePickerManagerExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FF421EC77EE400283DB5 /* IMMLanguageMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMMLanguageMgrExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FF421EC77EE400283DB5 /* IMMLanguageMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMLanguageMgrExt.h; sourceTree = "<group>"; };
 		6BA4FF431EC77EE400283DB5 /* IMMNewSessionMgrComparerExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMMNewSessionMgrComparerExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF441EC77EE400283DB5 /* IMMNewSessionMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMMNewSessionMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF451EC77EE400283DB5 /* IMMQRCodeExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMMQRCodeExt-Protocol.h"; sourceTree = "<group>"; };
@@ -7848,7 +7864,7 @@
 		6BA4FF611EC77EE400283DB5 /* IOCRTransMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOCRTransMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF621EC77EE400283DB5 /* IOnlineClientMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOnlineClientMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF631EC77EE500283DB5 /* IOnlineDeviceMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOnlineDeviceMgrExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FF641EC77EE500283DB5 /* IOplogExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOplogExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FF641EC77EE500283DB5 /* IOplogExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOplogExt.h; sourceTree = "<group>"; };
 		6BA4FF651EC77EE500283DB5 /* IPluginOperateMusicExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IPluginOperateMusicExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF661EC77EE500283DB5 /* IPOILocationDisplayExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IPOILocationDisplayExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF671EC77EE500283DB5 /* IPreEnterWechatLogicExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IPreEnterWechatLogicExt-Protocol.h"; sourceTree = "<group>"; };
@@ -8002,7 +8018,7 @@
 		6BA4FFFC1EC77EE600283DB5 /* MCNearbyServiceAdvertiserDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCNearbyServiceAdvertiserDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FFFD1EC77EE600283DB5 /* MCNearbyServiceBrowserDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCNearbyServiceBrowserDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FFFE1EC77EE600283DB5 /* MCSessionDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCSessionDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FFFF1EC77EE600283DB5 /* MCssParserDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCssParserDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FFFF1EC77EE600283DB5 /* MCssParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCssParserDelegate.h; sourceTree = "<group>"; };
 		6BB5DA5B1EC7734F001AF22F /* __ARCLiteKeyedSubscripting__-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "__ARCLiteKeyedSubscripting__-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DA5C1EC7734F001AF22F /* ABNewPersonViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABNewPersonViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DA5D1EC7734F001AF22F /* ABPeoplePickerNavigationControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABPeoplePickerNavigationControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -8100,14 +8116,14 @@
 		6BB5DAB91EC7734F001AF22F /* CommonImageBrowserDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CommonImageBrowserDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DABA1EC7734F001AF22F /* CommonPlayerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CommonPlayerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DABB1EC7734F001AF22F /* ComposeSendDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComposeSendDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BB5DABC1EC7734F001AF22F /* ContactInfoAssistDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfoAssistDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BB5DABC1EC7734F001AF22F /* ContactInfoAssistDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactInfoAssistDelegate.h; sourceTree = "<group>"; };
 		6BB5DABD1EC7734F001AF22F /* contactInfoDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "contactInfoDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DABE1EC7734F001AF22F /* ContactInfoViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfoViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DABF1EC7734F001AF22F /* ContactPickerViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactPickerViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DAC01EC7734F001AF22F /* ContactRemarkImgExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactRemarkImgExt-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DAC11EC7734F001AF22F /* ContactsAllSelectPanelViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsAllSelectPanelViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DAC21EC7734F001AF22F /* ContactsCreateChatRoomLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsCreateChatRoomLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BB5DAC31EC7734F001AF22F /* ContactsDataLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsDataLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BB5DAC31EC7734F001AF22F /* ContactsDataLogicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsDataLogicDelegate.h; sourceTree = "<group>"; };
 		6BB5DAC41EC7734F001AF22F /* ContactSelectViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSelectViewDelegate.h; sourceTree = "<group>"; };
 		6BB5DAC51EC7734F001AF22F /* ContactsItemViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsItemViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DAC61EC7734F001AF22F /* ContactsPanelViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsPanelViewDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -8250,7 +8266,7 @@
 		6BB5DB4F1EC77350001AF22F /* FICEntity-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FICEntity-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DB501EC77350001AF22F /* FirstUnReadTipViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FirstUnReadTipViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DB511EC77350001AF22F /* FloatBottleContentLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FloatBottleContentLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BB5DB521EC77350001AF22F /* ForwardMessageLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ForwardMessageLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BB5DB521EC77350001AF22F /* ForwardMessageLogicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardMessageLogicDelegate.h; sourceTree = "<group>"; };
 		6BB5DB531EC77350001AF22F /* FriendAsistSessionExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FriendAsistSessionExt-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DB541EC77350001AF22F /* FTSAddressBookFriendCellDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTSAddressBookFriendCellDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DB551EC77350001AF22F /* FTSContactCellDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTSContactCellDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -9100,6 +9116,955 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B3BBDDD1EDAB7ED002602B6 /* AA */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0A41EC77A9300283DB5 /* AAAlertItem.h */,
+				6BA4E0A51EC77A9300283DB5 /* AACloseNotifyRes.h */,
+				6BA4E0A61EC77A9300283DB5 /* AACloseRes.h */,
+				6BA4E0A71EC77A9300283DB5 /* AALaunchByMoneyRes.h */,
+				6BA4E0A81EC77A9300283DB5 /* AALaunchByPersonRes.h */,
+				6BA4E0A91EC77A9300283DB5 /* AALaunchItem.h */,
+				6BA4E0AA1EC77A9300283DB5 /* AAListRecord.h */,
+				6BA4E0AB1EC77A9300283DB5 /* AAOperationRes.h */,
+				6BA4E0AC1EC77A9300283DB5 /* AAPayer.h */,
+				6BA4E0AD1EC77A9300283DB5 /* AAPayRes.h */,
+				6BA4E0AE1EC77A9300283DB5 /* AAPayUrgeRes.h */,
+				6BA4E0AF1EC77A9300283DB5 /* AAQueryDetailRes.h */,
+				6BA4E0B01EC77A9300283DB5 /* AAQueryListRes.h */,
+				6BA4E0B11EC77A9300283DB5 /* AARealNameItem.h */,
+				6BA4E0B21EC77A9300283DB5 /* AAReceiver.h */,
+			);
+			name = AA;
+			sourceTree = "<group>";
+		};
+		6B3BBDDE1EDAB803002602B6 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0C21EC77A9300283DB5 /* ActionDetail.h */,
+				6BA4E0C31EC77A9300283DB5 /* ActionGridItem.h */,
+				6BA4E0C41EC77A9300283DB5 /* ActionGridRow.h */,
+				6BA4E0C51EC77A9300283DB5 /* ActionHeader.h */,
+				6BA4E0C61EC77A9300283DB5 /* ActionList.h */,
+				6BA4E0C71EC77A9300283DB5 /* ActionLocation.h */,
+				6BA4E0C81EC77A9300283DB5 /* ActionMedia.h */,
+				6BA4E0C91EC77A9300283DB5 /* ActionMusic.h */,
+				6BA4E0CA1EC77A9300283DB5 /* ActionProductDetail.h */,
+				6BA4E0CB1EC77A9300283DB5 /* ActionRecognition.h */,
+				6BA4E0CC1EC77A9300283DB5 /* ActionRefer.h */,
+				6BA4E0CD1EC77A9300283DB5 /* ActionText.h */,
+				6BA4E0CE1EC77A9300283DB5 /* ActionUrl.h */,
+				6BA4E0CF1EC77A9300283DB5 /* ActionUser.h */,
+				6BA4E0BE1EC77A9300283DB5 /* ActionAttr.h */,
+				6BA4E0BF1EC77A9300283DB5 /* ActionBase.h */,
+				6BA4E0C01EC77A9300283DB5 /* ActionCardDetail.h */,
+				6BA4E0C11EC77A9300283DB5 /* ActionComment.h */,
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
+		6B3BBDDF1EDAB81A002602B6 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0BA1EC77A9300283DB5 /* AccountBindPhoneInfo.h */,
+				6BA4E0BB1EC77A9300283DB5 /* AccountErrorInfo.h */,
+				6BA4E0BC1EC77A9300283DB5 /* AccountReportInfo.h */,
+				6BA4E0BD1EC77A9300283DB5 /* AccountUploadAddressInfo.h */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		6B3BBDE01EDAB837002602B6 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1141EC77A9300283DB5 /* AUAudioDevice.h */,
+				6BA4E1151EC77A9300283DB5 /* AudioData.h */,
+				6BA4E1161EC77A9300283DB5 /* AudioFile.h */,
+				6BA4E1171EC77A9300283DB5 /* AudioP2S.h */,
+				6BA4E1181EC77A9300283DB5 /* AudioPlayerReport.h */,
+				6BA4E1191EC77A9300283DB5 /* AudioPlayerUserData.h */,
+				6BA4E11A1EC77A9300283DB5 /* AudioReceiver.h */,
+				6BA4E11B1EC77A9300283DB5 /* AudioRecorderUserData.h */,
+				6BA4E11C1EC77A9300283DB5 /* AudioS2P.h */,
+				6BA4E11D1EC77A9300283DB5 /* AudioSender.h */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		6B3BBDE11EDAB84A002602B6 /* Backup */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E12B1EC77A9300283DB5 /* BackupInfoItem.h */,
+				6BA4E12C1EC77A9300283DB5 /* BackupInfoReport.h */,
+				6BA4E12D1EC77A9300283DB5 /* BackupReportItem.h */,
+				6BA4E12E1EC77A9300283DB5 /* BackupReportList.h */,
+				6BA4E12F1EC77A9300283DB5 /* BackupSessionInfo.h */,
+				6BA4E1301EC77A9300283DB5 /* BackupSessionInfoList.h */,
+				6BA4E1311EC77A9300283DB5 /* BackupStartGeneralInfo.h */,
+			);
+			name = Backup;
+			sourceTree = "<group>";
+		};
+		6B3BBDE21EDAB85F002602B6 /* Biz */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1471EC77A9300283DB5 /* BizApiInfo.h */,
+				6BA4E1481EC77A9300283DB5 /* BizAppInfo.h */,
+				6BA4E1491EC77A9300283DB5 /* BizAttrSyncBufferCacheItem.h */,
+				6BA4E14A1EC77A9300283DB5 /* BizAttrSyncCtrl.h */,
+				6BA4E14B1EC77A9300283DB5 /* BizAttrSyncResp_KeyValue.h */,
+				6BA4E14C1EC77A9300283DB5 /* BizAttrSyncSingleReqInfo.h */,
+				6BA4E14D1EC77A9300283DB5 /* BizAttrSyncSingleRespInfo.h */,
+				6BA4E14E1EC77A9300283DB5 /* BizChat.h */,
+				6BA4E14F1EC77A9300283DB5 /* BizChatMember.h */,
+				6BA4E1501EC77A9300283DB5 /* BizChatMemberList.h */,
+				6BA4E1511EC77A9300283DB5 /* BizChatSearchContactMatchedUser.h */,
+				6BA4E1521EC77A9300283DB5 /* BizChatUser.h */,
+				6BA4E1531EC77A9300283DB5 /* BizEnterpriseAttr.h */,
+				6BA4E1541EC77A9300283DB5 /* BizScopeInfo.h */,
+			);
+			name = Biz;
+			sourceTree = "<group>";
+		};
+		6B3BBDE31EDAB86F002602B6 /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1641EC77A9300283DB5 /* BrandArticleSearchEventWrap.h */,
+				6BA4E1651EC77A9300283DB5 /* BrandArticleSearchLogic.h */,
+				6BA4E1661EC77A9300283DB5 /* BrandArticleSearchPageBaseLogic.h */,
+				6BA4E1671EC77A9300283DB5 /* BrandArticleSearchResultLogic.h */,
+				6BA4E1681EC77A9300283DB5 /* BrandContactItem.h */,
+				6BA4E1691EC77A9300283DB5 /* BrandLocationReportLogicAlertOberserver.h */,
+				6BA4E16A1EC77A9300283DB5 /* BrandServiceContinueLocationReportLogic.h */,
+				6BA4E16B1EC77A9300283DB5 /* BrandServiceDataItem.h */,
+				6BA4E16C1EC77A9300283DB5 /* BrandServiceEnterConversationLogic.h */,
+				6BA4E16D1EC77A9300283DB5 /* BrandServiceHeadImageProvider.h */,
+				6BA4E16E1EC77A9300283DB5 /* BrandServiceStorage.h */,
+				6BA4E16F1EC77A9300283DB5 /* BrandSessionCache.h */,
+				6BA4E1701EC77A9300283DB5 /* BrandUserContactInfoAssist.h */,
+			);
+			name = Brand;
+			sourceTree = "<group>";
+		};
+		6B3BBDE41EDAB884002602B6 /* CContact */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1A11EC77A9300283DB5 /* CContact.h */,
+				6BA4E1A21EC77A9300283DB5 /* CContactDB.h */,
+				6BA4E1A31EC77A9300283DB5 /* CContactExtendCode.h */,
+				6BA4E1A41EC77A9300283DB5 /* CContactForSearch.h */,
+				6BA4E1A51EC77A9300283DB5 /* CContactOPLog.h */,
+				6BA4E1A61EC77A9300283DB5 /* CContactVerifyLogic.h */,
+			);
+			name = CContact;
+			sourceTree = "<group>";
+		};
+		6B3BBDE51EDAB894002602B6 /* CDownload */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1B81EC77A9400283DB5 /* CDownloadFile.h */,
+				6BA4E1B91EC77A9400283DB5 /* CDownloadVideoInfo.h */,
+				6BA4E1BA1EC77A9400283DB5 /* CDownloadVideoPrtl.h */,
+				6BA4E1BB1EC77A9400283DB5 /* CDownloadVideoWrap.h */,
+				6BA4E1BC1EC77A9400283DB5 /* CDownloadVoicePrtl.h */,
+				6BA4E1BD1EC77A9400283DB5 /* CDownloadVoiceWrap.h */,
+			);
+			name = CDownload;
+			sourceTree = "<group>";
+		};
+		6B3BBDE61EDAB8AC002602B6 /* CExtendInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1C91EC77A9400283DB5 /* CExtendInfoOfAPP.h */,
+				6BA4E1CA1EC77A9400283DB5 /* CExtendInfoOfEmoticon.h */,
+				6BA4E1CB1EC77A9400283DB5 /* CExtendInfoOfImg.h */,
+				6BA4E1CC1EC77A9400283DB5 /* CExtendInfoOfLocation.h */,
+				6BA4E1CD1EC77A9400283DB5 /* CExtendInfoOfMassSend.h */,
+				6BA4E1CE1EC77A9400283DB5 /* CExtendInfoOfPushMail.h */,
+				6BA4E1CF1EC77A9400283DB5 /* CExtendInfoOfQQ.h */,
+				6BA4E1D01EC77A9400283DB5 /* CExtendInfoOfReader.h */,
+				6BA4E1D11EC77A9400283DB5 /* CExtendInfoOfSysNewXmlForBiz.h */,
+				6BA4E1D21EC77A9400283DB5 /* CExtendInfoOfTextForBiz.h */,
+				6BA4E1D31EC77A9400283DB5 /* CExtendInfoOfVideo.h */,
+				6BA4E1D41EC77A9400283DB5 /* CExtendInfoOfVoiceMsg.h */,
+				6BA4E1D51EC77A9400283DB5 /* CExtendInfoOfVoip.h */,
+			);
+			name = CExtendInfo;
+			sourceTree = "<group>";
+		};
+		6B3BBDE71EDAB8BD002602B6 /* CEmo */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1C01EC77A9400283DB5 /* CEmojiCataLogWrap.h */,
+				6BA4E1C11EC77A9400283DB5 /* CEmojiWrap.h */,
+				6BA4E1C21EC77A9400283DB5 /* CEmoticonDB.h */,
+				6BA4E1C31EC77A9400283DB5 /* CEmoticonPackageDB.h */,
+				6BA4E1C41EC77A9400283DB5 /* CEmoticonPackageWrap.h */,
+				6BA4E1C51EC77A9400283DB5 /* CEmoticonUploadInfo.h */,
+				6BA4E1C61EC77A9400283DB5 /* CEmoticonWrap.h */,
+			);
+			name = CEmo;
+			sourceTree = "<group>";
+		};
+		6B3BBDE81EDAB8F1002602B6 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1DE1EC77A9400283DB5 /* ChatBackgroundItem.h */,
+				6BA4E1DF1EC77A9400283DB5 /* ChatBackgroundSettings.h */,
+				6BA4E1E01EC77A9400283DB5 /* ChatContact.h */,
+				6BA4E1E11EC77A9400283DB5 /* ChatMigrationCreateQRCode.h */,
+				6BA4E1E21EC77A9400283DB5 /* ChatMigrationGetConnectInfo.h */,
+				6BA4E1E31EC77A9400283DB5 /* ChatMigrationHeartBeatMonitor.h */,
+				6BA4E1E41EC77A9400283DB5 /* ChatRoomData.h */,
+				6BA4E1E51EC77A9400283DB5 /* ChatRoomDetail.h */,
+				6BA4E1E61EC77A9400283DB5 /* ChatRoomInfo.h */,
+				6BA4E1E71EC77A9400283DB5 /* ChatRoomInfoSetting.h */,
+				6BA4E1E81EC77A9400283DB5 /* ChatRoomMemberData.h */,
+				6BA4E1E91EC77A9400283DB5 /* ChatRoomMemberInfo.h */,
+				6BA4E1EA1EC77A9400283DB5 /* ChatRoomMemMsgDataLogic.h */,
+				6BA4E1EB1EC77A9400283DB5 /* ChatRoomNoticeMsg.h */,
+				6BA4E1EC1EC77A9400283DB5 /* ChatRoomRemindMsg.h */,
+				6BA4E1ED1EC77A9400283DB5 /* ChatRoomUpgradeInfo.h */,
+				6BA4E1EE1EC77A9400283DB5 /* ChatRoomUpgradeProductItem.h */,
+				6BA4E1EF1EC77A9400283DB5 /* ChatRoomVerifyMsg.h */,
+				6BA4E1F01EC77A9400283DB5 /* ChatRoomVerifyMsgIndex.h */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		6B3BBDE91EDAB907002602B6 /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E3061EC77A9500283DB5 /* FacebookAuth.h */,
+				6BA4E3071EC77A9500283DB5 /* FacebookContactInfoAssist.h */,
+				6BA4E3081EC77A9500283DB5 /* FaceDetector.h */,
+				6BA4E3091EC77A9500283DB5 /* FaceDetectorFeature.h */,
+				6BA4E30A1EC77A9500283DB5 /* FaceRecog3rdVerifyConfirmLogic.h */,
+				6BA4E30B1EC77A9500283DB5 /* FaceRecogBindVideoLogic.h */,
+				6BA4E30C1EC77A9500283DB5 /* FaceRecogConfigLogic.h */,
+				6BA4E30D1EC77A9500283DB5 /* FaceRecogProcessor.h */,
+				6BA4E30E1EC77A9500283DB5 /* FaceRecogReporter.h */,
+				6BA4E30F1EC77A9500283DB5 /* FaceRecogReporterFaceErrCounter.h */,
+				6BA4E3101EC77A9500283DB5 /* FaceRecogReporterFaceTimeMeter.h */,
+				6BA4E3111EC77A9600283DB5 /* FaceRecogUploadLogic.h */,
+				6BA4E3121EC77A9600283DB5 /* FaceRecogVideoWriter.h */,
+				6BA4E3131EC77A9600283DB5 /* FacingMember.h */,
+			);
+			name = Face;
+			sourceTree = "<group>";
+		};
+		6B3BBDEA1EDAB920002602B6 /* Fav */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E3151EC77A9600283DB5 /* FavAudioInfo.h */,
+				6BA4E3161EC77A9600283DB5 /* FavAudioPlayer.h */,
+				6BA4E3171EC77A9600283DB5 /* FavAudioRecorder.h */,
+				6BA4E3181EC77A9600283DB5 /* FavCDNItem.h */,
+				6BA4E3191EC77A9600283DB5 /* FavCdnTaskInfo.h */,
+				6BA4E31A1EC77A9600283DB5 /* FavDataItemWrap.h */,
+				6BA4E31B1EC77A9600283DB5 /* FavDataSaveLogic.h */,
+				6BA4E31C1EC77A9600283DB5 /* FavFileRetainCount.h */,
+				6BA4E31D1EC77A9600283DB5 /* FavFullScreenImageWindow.h */,
+				6BA4E31E1EC77A9600283DB5 /* FavImageDataManager.h */,
+				6BA4E31F1EC77A9600283DB5 /* FavImageFullScreenViewContainer.h */,
+				6BA4E3201EC77A9600283DB5 /* FavLocationItem.h */,
+				6BA4E3211EC77A9600283DB5 /* FavObject.h */,
+				6BA4E3221EC77A9600283DB5 /* FavoritesAsyncUploader.h */,
+				6BA4E3231EC77A9600283DB5 /* FavoritesCDNInfo.h */,
+				6BA4E3241EC77A9600283DB5 /* FavoritesCDNInfoDB.h */,
+				6BA4E3251EC77A9600283DB5 /* FavoritesDataItemSource.h */,
+				6BA4E3261EC77A9600283DB5 /* FavoritesDownloadCDNInfo.h */,
+				6BA4E3271EC77A9600283DB5 /* FavoritesDownloadCDNInfoDB.h */,
+				6BA4E3281EC77A9600283DB5 /* FavoritesDownloader.h */,
+				6BA4E3291EC77A9600283DB5 /* FavoritesFileRetainCountDB.h */,
+				6BA4E32A1EC77A9600283DB5 /* FavoritesItem.h */,
+				6BA4E32B1EC77A9600283DB5 /* FavoritesItemDataField.h */,
+				6BA4E32C1EC77A9600283DB5 /* FavoritesItemDB.h */,
+				6BA4E32D1EC77A9600283DB5 /* FavoritesRecordDataField.h */,
+				6BA4E32E1EC77A9600283DB5 /* FavoritesReportLogic.h */,
+				6BA4E32F1EC77A9600283DB5 /* FavoritesSearchDB.h */,
+				6BA4E3301EC77A9600283DB5 /* FavoritesSetting.h */,
+				6BA4E3311EC77A9600283DB5 /* FavoritesTagDB.h */,
+				6BA4E3321EC77A9600283DB5 /* FavoritesUploader.h */,
+				6BA4E3331EC77A9600283DB5 /* FavProductItem.h */,
+				6BA4E3341EC77A9600283DB5 /* FavSearchItem.h */,
+				6BA4E3351EC77A9600283DB5 /* FavSightWindow.h */,
+				6BA4E3361EC77A9600283DB5 /* FavStreamVideoItem.h */,
+				6BA4E3371EC77A9600283DB5 /* FavTag.h */,
+				6BA4E3381EC77A9600283DB5 /* FavTagSearchFilter.h */,
+				6BA4E3391EC77A9600283DB5 /* FavTagTextField.h */,
+				6BA4E33A1EC77A9600283DB5 /* FavTVItem.h */,
+				6BA4E33B1EC77A9600283DB5 /* FavTypeObjectItem.h */,
+				6BA4E33C1EC77A9600283DB5 /* FavURLItem.h */,
+				6BA4E33D1EC77A9600283DB5 /* FavWeAppItem.h */,
+			);
+			name = Fav;
+			sourceTree = "<group>";
+		};
+		6B3BBDEB1EDAB936002602B6 /* FB */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E33F1EC77A9600283DB5 /* FBSDKAccessToken.h */,
+				6BA4E3401EC77A9600283DB5 /* FBSDKAccessTokenCacheV4.h */,
+				6BA4E3411EC77A9600283DB5 /* FBSDKApplicationDelegate.h */,
+				6BA4E3421EC77A9600283DB5 /* FBSDKBase64.h */,
+				6BA4E3431EC77A9600283DB5 /* FBSDKDynamicFrameworkLoader.h */,
+				6BA4E3441EC77A9600283DB5 /* FBSDKError.h */,
+				6BA4E3451EC77A9600283DB5 /* FBSDKKeychainStore.h */,
+				6BA4E3461EC77A9600283DB5 /* FBSDKLoginCompletionParameters.h */,
+				6BA4E3471EC77A9600283DB5 /* FBSDKLoginError.h */,
+				6BA4E3481EC77A9600283DB5 /* FBSDKLoginManager.h */,
+				6BA4E3491EC77A9600283DB5 /* FBSDKLoginManagerLogger.h */,
+				6BA4E34A1EC77A9600283DB5 /* FBSDKLoginManagerLoginResult.h */,
+				6BA4E34B1EC77A9600283DB5 /* FBSDKLoginURLCompleter.h */,
+				6BA4E34C1EC77A9600283DB5 /* FBSDKSettings.h */,
+				6BA4E34D1EC77A9600283DB5 /* FBSDKSystemAccountStoreAdapter.h */,
+				6BA4E34E1EC77A9600283DB5 /* FBSDKURLConnection.h */,
+				6BA4E33E1EC77A9600283DB5 /* FBFriend.h */,
+			);
+			name = FB;
+			sourceTree = "<group>";
+		};
+		6B3BBDEC1EDAB94B002602B6 /* FTS */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E3651EC77A9600283DB5 /* FTSBussinessActionInfo.h */,
+				6BA4E3661EC77A9600283DB5 /* FTSBussinessCommonItem.h */,
+				6BA4E3671EC77A9600283DB5 /* FTSBussinessContactItem.h */,
+				6BA4E3681EC77A9600283DB5 /* FTSBussinessDetailInfo.h */,
+				6BA4E3691EC77A9600283DB5 /* FTSBussinessPOIItem.h */,
+				6BA4E36A1EC77A9600283DB5 /* FTSBussinessResult.h */,
+				6BA4E36B1EC77A9600283DB5 /* FTSBussinessResultItem.h */,
+				6BA4E36C1EC77A9600283DB5 /* FTSBussinessSnsItem.h */,
+				6BA4E36D1EC77A9600283DB5 /* FTSCommonLogItem.h */,
+				6BA4E36E1EC77A9600283DB5 /* FTSContactDataProvider.h */,
+				6BA4E36F1EC77A9600283DB5 /* FTSDB.h */,
+				6BA4E3701EC77A9600283DB5 /* FTSFacade.h */,
+				6BA4E3711EC77A9600283DB5 /* FTSFavDB.h */,
+				6BA4E3721EC77A9600283DB5 /* FTSFavIndexState.h */,
+				6BA4E3731EC77A9600283DB5 /* FTSFavSearchItem.h */,
+				6BA4E3741EC77A9600283DB5 /* FTSFeatureItem.h */,
+				6BA4E3751EC77A9600283DB5 /* FTSLogItem.h */,
+				6BA4E3761EC77A9600283DB5 /* FTSMCSItem.h */,
+				6BA4E3771EC77A9600283DB5 /* FTSMessageDB.h */,
+				6BA4E3781EC77A9600283DB5 /* FTSMsgContentItem.h */,
+				6BA4E3791EC77A9600283DB5 /* FTSMsgItem.h */,
+				6BA4E37A1EC77A9600283DB5 /* FTSMsgUserNameIdItem.h */,
+				6BA4E37B1EC77A9600283DB5 /* FTSMultiContactResultWrap.h */,
+				6BA4E37C1EC77A9600283DB5 /* FTSMultiContactSearchLogic.h */,
+				6BA4E37D1EC77A9600283DB5 /* FTSResultActionItem.h */,
+				6BA4E37E1EC77A9600283DB5 /* FTSTopHitComparableItem.h */,
+				6BA4E37F1EC77A9600283DB5 /* FTSTopHitExtList.h */,
+				6BA4E3801EC77A9600283DB5 /* FTSTopHitGroupMember.h */,
+				6BA4E3811EC77A9600283DB5 /* FTSTopHitItem.h */,
+				6BA4E3821EC77A9600283DB5 /* FTSTopHitValue.h */,
+				6BA4E3831EC77A9600283DB5 /* FTSWebSearchClickReportItem.h */,
+			);
+			name = FTS;
+			sourceTree = "<group>";
+		};
+		6B3BBDED1EDAB969002602B6 /* Enterprise */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2E81EC77A9500283DB5 /* EnterpriseBrandAttr.h */,
+				6BA4E2E91EC77A9500283DB5 /* EnterpriseBrandAttrCacheItem.h */,
+				6BA4E2EA1EC77A9500283DB5 /* EnterpriseBrandAttrDB.h */,
+				6BA4E2EB1EC77A9500283DB5 /* EnterpriseConnectorContext.h */,
+				6BA4E2EC1EC77A9500283DB5 /* EnterpriseConnectorLogic.h */,
+				6BA4E2ED1EC77A9500283DB5 /* EnterpriseContactDB.h */,
+				6BA4E2EE1EC77A9500283DB5 /* EnterpriseMemberItem.h */,
+				6BA4E2EF1EC77A9500283DB5 /* EnterpriseMemberViewItem.h */,
+				6BA4E2F01EC77A9500283DB5 /* EnterpriseMsgDB.h */,
+				6BA4E2F11EC77A9500283DB5 /* EnterpriseMsgDBItem.h */,
+				6BA4E2F21EC77A9500283DB5 /* EnterpriseRemoteSearchResult.h */,
+				6BA4E2F31EC77A9500283DB5 /* EnterpriseRoomData.h */,
+				6BA4E2F41EC77A9500283DB5 /* EnterpriseSearchContactCellData.h */,
+				6BA4E2F51EC77A9500283DB5 /* EnterpriseSearchResultItem.h */,
+				6BA4E2F61EC77A9500283DB5 /* EnterpriseSessionCellData.h */,
+				6BA4E2F71EC77A9500283DB5 /* EnterpriseSessionCellLayoutParam.h */,
+				6BA4E2F81EC77A9500283DB5 /* EnterpriseSessionControllerMenuItemBtn.h */,
+				6BA4E2F91EC77A9500283DB5 /* EnterpriseSessionInfo.h */,
+			);
+			name = Enterprise;
+			sourceTree = "<group>";
+		};
+		6B3BBDEE1EDAB97E002602B6 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2A31EC77A9500283DB5 /* EmoticonAddFromServerLogicObject.h */,
+				6BA4E2A41EC77A9500283DB5 /* EmoticonAddToServerLogicObject.h */,
+				6BA4E2A51EC77A9500283DB5 /* EmoticonBackupInfoObject.h */,
+				6BA4E2A61EC77A9500283DB5 /* EmoticonBackupLogicObject.h */,
+				6BA4E2A71EC77A9500283DB5 /* EmoticonBackupMd5ListCgi.h */,
+				6BA4E2A81EC77A9500283DB5 /* EmoticonboardPageOffset.h */,
+				6BA4E2A91EC77A9500283DB5 /* EmoticonBoardPageSectionInfo.h */,
+				6BA4E2AA1EC77A9500283DB5 /* EmoticonBoardPageWrap.h */,
+				6BA4E2AB1EC77A9500283DB5 /* EmoticonBoughtListCache.h */,
+				6BA4E2AC1EC77A9500283DB5 /* EmoticonCdnDownloadConnection.h */,
+				6BA4E2AD1EC77A9500283DB5 /* EmoticonCustomManageAddLogic.h */,
+				6BA4E2AE1EC77A9500283DB5 /* EmoticonCustomManageDataLogic.h */,
+				6BA4E2AF1EC77A9500283DB5 /* EmoticonCustomManageWrap.h */,
+				6BA4E2B01EC77A9500283DB5 /* EmoticonCustomReportData.h */,
+				6BA4E2B11EC77A9500283DB5 /* EmoticonDeleteFromServerLogicObject.h */,
+				6BA4E2B21EC77A9500283DB5 /* EmoticonDesc.h */,
+				6BA4E2B31EC77A9500283DB5 /* EmoticonDownloadInfo.h */,
+				6BA4E2B41EC77A9500283DB5 /* EmoticonDownloadMd5ListCgi.h */,
+				6BA4E2B51EC77A9500283DB5 /* EmoticonDownloadMd5ListObject.h */,
+				6BA4E2B61EC77A9500283DB5 /* EmoticonDownloadProxy.h */,
+				6BA4E2B71EC77A9500283DB5 /* EmoticonHybridDownloadProxy.h */,
+				6BA4E2B81EC77A9500283DB5 /* EmoticonLangDesc.h */,
+				6BA4E2B91EC77A9500283DB5 /* EmoticonMd5DownloadProxy.h */,
+				6BA4E2BA1EC77A9500283DB5 /* EmoticonMd5Object.h */,
+				6BA4E2BB1EC77A9500283DB5 /* EmoticonOperateCgi.h */,
+				6BA4E2BC1EC77A9500283DB5 /* EmoticonPackageDesc.h */,
+				6BA4E2BD1EC77A9500283DB5 /* EmoticonPackageStateItem.h */,
+				6BA4E2BE1EC77A9500283DB5 /* EmoticonParser.h */,
+				6BA4E2BF1EC77A9500283DB5 /* EmoticonRecommendCache.h */,
+				6BA4E2C01EC77A9500283DB5 /* EmoticonRecoverFromServerLogicObject.h */,
+				6BA4E2C11EC77A9500283DB5 /* EmoticonRecoverLogicObject.h */,
+				6BA4E2C21EC77A9500283DB5 /* EmoticonReportData.h */,
+				6BA4E2C31EC77A9500283DB5 /* EmoticonRestartBackupWhenDeleteTask.h */,
+				6BA4E2C41EC77A9500283DB5 /* EmoticonServerNotifyTask.h */,
+				6BA4E2C51EC77A9500283DB5 /* EmoticonServerNotifyTaskGenerator.h */,
+				6BA4E2C61EC77A9500283DB5 /* EmoticonServerTip.h */,
+				6BA4E2C71EC77A9500283DB5 /* EmoticonSharedItem.h */,
+				6BA4E2C81EC77A9500283DB5 /* EmoticonSortSetting.h */,
+				6BA4E2C91EC77A9500283DB5 /* EmoticonStoreGetListBuff.h */,
+				6BA4E2CA1EC77A9500283DB5 /* EmoticonStoreItem.h */,
+				6BA4E2CB1EC77A9500283DB5 /* EmoticonStoreItemPreviewThumb.h */,
+				6BA4E2CC1EC77A9500283DB5 /* EmoticonStoreListCache.h */,
+				6BA4E2CD1EC77A9500283DB5 /* EmoticonStoreReportData.h */,
+				6BA4E2CE1EC77A9500283DB5 /* EmoticonStoreReportInfo.h */,
+				6BA4E2CF1EC77A9500283DB5 /* EmoticonStoreSession.h */,
+				6BA4E2D01EC77A9500283DB5 /* EmoticonTabItem.h */,
+				6BA4E2D11EC77A9500283DB5 /* EmoticonTabRecommendData.h */,
+				6BA4E2D21EC77A9500283DB5 /* EmoticonTabRecommendItem.h */,
+				6BA4E2D31EC77A9500283DB5 /* EmoticonUploadCgi.h */,
+				6BA4E2D41EC77A9500283DB5 /* EmotionBanner.h */,
+				6BA4E2D51EC77A9500283DB5 /* EmotionBannerImg.h */,
+				6BA4E2D61EC77A9500283DB5 /* EmotionBannerSet.h */,
+				6BA4E2D71EC77A9500283DB5 /* EmotionCDNUrl.h */,
+				6BA4E2D81EC77A9500283DB5 /* EmotionDesc.h */,
+				6BA4E2D91EC77A9500283DB5 /* EmotionDesigner.h */,
+				6BA4E2DA1EC77A9500283DB5 /* EmotionDesignerSharedItem.h */,
+				6BA4E2DB1EC77A9500283DB5 /* EmotionDetail.h */,
+				6BA4E2DC1EC77A9500283DB5 /* EmotionDonor.h */,
+				6BA4E2DD1EC77A9500283DB5 /* EmotionPageSharedItem.h */,
+				6BA4E2DE1EC77A9500283DB5 /* EmotionPrice.h */,
+				6BA4E2DF1EC77A9500283DB5 /* EmotionReward.h */,
+				6BA4E2E01EC77A9500283DB5 /* EmotionRewardExtInfo.h */,
+				6BA4E2E11EC77A9500283DB5 /* EmotionRewardTipsStatisticsData.h */,
+				6BA4E2E21EC77A9500283DB5 /* EmotionSendCountWrap.h */,
+				6BA4E2E31EC77A9500283DB5 /* EmotionStoreRewardDonorHeader.h */,
+				6BA4E2E41EC77A9500283DB5 /* EmotionSummary.h */,
+			);
+			name = Emoticon;
+			sourceTree = "<group>";
+		};
+		6B3BBDEF1EDAB9A4002602B6 /* EditImage */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2981EC77A9500283DB5 /* EditImageAttr.h */,
+				6BA4E2991EC77A9500283DB5 /* EditImageColorSquareBar.h */,
+				6BA4E29A1EC77A9500283DB5 /* EditImageEmotionTool.h */,
+				6BA4E29B1EC77A9500283DB5 /* EditImageMosaicTool.h */,
+				6BA4E29C1EC77A9500283DB5 /* EditImagePenTool.h */,
+				6BA4E29D1EC77A9500283DB5 /* EditImagePoint.h */,
+				6BA4E29E1EC77A9500283DB5 /* EditImageReport.h */,
+				6BA4E29F1EC77A9500283DB5 /* EditImageTextTool.h */,
+				6BA4E2A01EC77A9500283DB5 /* EditImageWidgetTool.h */,
+			);
+			name = EditImage;
+			sourceTree = "<group>";
+		};
+		6B3BBDF01EDAB9B5002602B6 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E28D1EC77A9500283DB5 /* DownloadGuidance.h */,
+				6BA4E28E1EC77A9500283DB5 /* DownloadImageCache.h */,
+				6BA4E28F1EC77A9500283DB5 /* DownloadImageInfo.h */,
+				6BA4E2901EC77A9500283DB5 /* DownloadInfo.h */,
+				6BA4E2911EC77A9500283DB5 /* DownloadMediaWrap.h */,
+				6BA4E2921EC77A9500283DB5 /* DownloadVideoCache.h */,
+				6BA4E2931EC77A9500283DB5 /* DownloadVoiceWrap.h */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
+		6B3BBDF11EDAB9C6002602B6 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2871EC77A9500283DB5 /* DeviceStepItem.h */,
+				6BA4E27C1EC77A9500283DB5 /* Device.h */,
+				6BA4E27D1EC77A9500283DB5 /* DeviceFollowItem.h */,
+				6BA4E27E1EC77A9500283DB5 /* DeviceInfo.h */,
+				6BA4E27F1EC77A9500283DB5 /* DeviceRankDetailResonse.h */,
+				6BA4E2801EC77A9500283DB5 /* DeviceRankInfo.h */,
+				6BA4E2811EC77A9500283DB5 /* DeviceRankItem.h */,
+				6BA4E2821EC77A9500283DB5 /* DeviceRankLikeCellInfo.h */,
+				6BA4E2831EC77A9500283DB5 /* DeviceRankLikeDetailInfo.h */,
+				6BA4E2841EC77A9500283DB5 /* DeviceRankRecordItem.h */,
+				6BA4E2851EC77A9500283DB5 /* DeviceRankSetting.h */,
+				6BA4E2861EC77A9500283DB5 /* DeviceRankUserProfile.h */,
+			);
+			name = Device;
+			sourceTree = "<group>";
+		};
+		6B3BBDF21EDAB9DB002602B6 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E26B1EC77A9400283DB5 /* DBSendMessage.h */,
+				6BA4E2521EC77A9400283DB5 /* DBBottle.h */,
+				6BA4E2531EC77A9400283DB5 /* DBBottleContact.h */,
+				6BA4E2541EC77A9400283DB5 /* DBContact.h */,
+				6BA4E2551EC77A9400283DB5 /* DBContactBrand.h */,
+				6BA4E2561EC77A9400283DB5 /* DBContactChatRoom.h */,
+				6BA4E2571EC77A9400283DB5 /* DBContactChatRoomDetail.h */,
+				6BA4E2581EC77A9400283DB5 /* DBContactExt.h */,
+				6BA4E2591EC77A9400283DB5 /* DBContactHeadImage.h */,
+				6BA4E25A1EC77A9400283DB5 /* DBContactLocal.h */,
+				6BA4E25B1EC77A9400283DB5 /* DBContactMeta.h */,
+				6BA4E25C1EC77A9400283DB5 /* DBContactOther.h */,
+				6BA4E25D1EC77A9400283DB5 /* DBContactProfile.h */,
+				6BA4E25E1EC77A9400283DB5 /* DBContactRemark.h */,
+				6BA4E25F1EC77A9400283DB5 /* DBContactSocial.h */,
+				6BA4E2601EC77A9400283DB5 /* DBContactTable.h */,
+				6BA4E2611EC77A9400283DB5 /* DBContactTableForSearch.h */,
+				6BA4E2621EC77A9400283DB5 /* DBEmoticon.h */,
+				6BA4E2631EC77A9400283DB5 /* DBEmoticonDownload.h */,
+				6BA4E2641EC77A9400283DB5 /* DBEmoticonUpload.h */,
+				6BA4E2651EC77A9400283DB5 /* DBFavoritesItem.h */,
+				6BA4E2661EC77A9400283DB5 /* DBHello.h */,
+				6BA4E2671EC77A9400283DB5 /* DBMessage.h */,
+				6BA4E2681EC77A9400283DB5 /* DBMessageBizExt.h */,
+				6BA4E2691EC77A9400283DB5 /* DBMessageExt.h */,
+				6BA4E26A1EC77A9400283DB5 /* DBQQContact.h */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		6B3BBDF31EDABA03002602B6 /* ExtDevice */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E3021EC77A9500283DB5 /* ExtDeviceLoginConfirmErrorRet.h */,
+				6BA4E3031EC77A9500283DB5 /* ExtDeviceLoginConfirmExpiredRet.h */,
+				6BA4E3041EC77A9500283DB5 /* ExtDeviceLoginConfirmOKRet.h */,
+			);
+			name = ExtDevice;
+			sourceTree = "<group>";
+		};
+		6B3BBDF41EDABA19002602B6 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E3561EC77A9600283DB5 /* FileFragment.h */,
+				6BA4E3571EC77A9600283DB5 /* FileQueue.h */,
+				6BA4E3581EC77A9600283DB5 /* FileSealer.h */,
+				6BA4E3591EC77A9600283DB5 /* FileSealerHookInfo.h */,
+				6BA4E35A1EC77A9600283DB5 /* FileSealerInfo.h */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		6B3BBDF51EDABA2D002602B6 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E35B1EC77A9600283DB5 /* FindBrandRecommendCache.h */,
+				6BA4E35C1EC77A9600283DB5 /* FindBrandRecommendGroup.h */,
+				6BA4E35D1EC77A9600283DB5 /* FindContactSearchViewCellInfo.h */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+		6B3BBDF61EDABA3C002602B6 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E3851EC77A9600283DB5 /* FunctionMessage.h */,
+				6BA4E3861EC77A9600283DB5 /* FunctionNewXml.h */,
+				6BA4E3871EC77A9600283DB5 /* FunctionSwitch.h */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		6B3BBDF71EDABA4E002602B6 /* MM */ = {
+			isa = PBXGroup;
+			children = (
+				6BF847681ED7304400EAD5E1 /* MMService.h */,
+				6BF847691ED7304400EAD5E1 /* MMService.m */,
+				6B80317E1EC8ACA00090657F /* MMUIResponder.m */,
+				6B80317D1EC8ACA00090657F /* MMUIResponder.h */,
+				6B8031881EC8B2130090657F /* MMObject.h */,
+				6B8031891EC8B2130090657F /* MMObject.m */,
+			);
+			name = MM;
+			sourceTree = "<group>";
+		};
+		6B3BBDF81EDABA69002602B6 /* WA */ = {
+			isa = PBXGroup;
+			children = (
+				6B5163C41ED920880089CEAC /* WAAppMsgItem.h */,
+				6B5163C51ED920880089CEAC /* WAAppMsgItem.m */,
+			);
+			name = WA;
+			sourceTree = "<group>";
+		};
+		6B3BBDF91EDABA73002602B6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6B8031931EC8B43B0090657F /* ResourceInfo.h */,
+				6B8031941EC8B43B0090657F /* ResourceInfo.m */,
+				6B80319E1EC8B7770090657F /* ResourceMonitor.m */,
+				6B80319D1EC8B7770090657F /* ResourceMonitor.h */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		6B3BBDFA1EDABA93002602B6 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2161EC77A9400283DB5 /* ContactExtendCodePB.h */,
+				6BA4E2171EC77A9400283DB5 /* ContactProfile.h */,
+				6BA4E2181EC77A9400283DB5 /* ContactRemarkLogic.h */,
+				6BA4E2191EC77A9400283DB5 /* ContactsCommon.h */,
+				6BA4E21A1EC77A9400283DB5 /* ContactsCreateChatRoomLogic.h */,
+				6BA4E21B1EC77A9400283DB5 /* ContactsDataLogic.h */,
+				6BA4E21C1EC77A9400283DB5 /* ContactsGenerator.h */,
+				6BA4E21D1EC77A9400283DB5 /* ContactTagData.h */,
+				6BA4E21E1EC77A9400283DB5 /* ContactTagEditLogic.h */,
+				6BA4E21F1EC77A9400283DB5 /* ContactTagItem.h */,
+			);
+			name = Contact;
+			sourceTree = "<group>";
+		};
+		6B3BBDFB1EDABAA7002602B6 /* CQQ */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E22C1EC77A9400283DB5 /* CQQContact.h */,
+				6BA4E22D1EC77A9400283DB5 /* CQQContactDB.h */,
+				6BA4E22E1EC77A9400283DB5 /* CQQContactInfoAssist.h */,
+			);
+			name = CQQ;
+			sourceTree = "<group>";
+		};
+		6B3BBDFC1EDABAB2002602B6 /* COpen */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2231EC77A9400283DB5 /* COpenBottleInfo.h */,
+				6BA4E2241EC77A9400283DB5 /* COpenBottlePrtl.h */,
+				6BA4E2251EC77A9400283DB5 /* COpenBottleWrap.h */,
+			);
+			name = COpen;
+			sourceTree = "<group>";
+		};
+		6B3BBDFD1EDABACB002602B6 /* CDN */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1B61EC77A9400283DB5 /* CdnUploadTaskInfo.h */,
+				6BA4E1A81EC77A9300283DB5 /* CdnChannel.h */,
+				6BA4E1A91EC77A9300283DB5 /* CdnComMediaInfo.h */,
+				6BA4E1AA1EC77A9300283DB5 /* CdnComVideoProcessInfo.h */,
+				6BA4E1AB1EC77A9300283DB5 /* CDNDnsInfo.h */,
+				6BA4E1AC1EC77A9300283DB5 /* CDNDnsPortInfo.h */,
+				6BA4E1AD1EC77A9300283DB5 /* CdnDownloadTaskInfo.h */,
+				6BA4E1AE1EC77A9300283DB5 /* CdnFavMediaInfo.h */,
+				6BA4E1AF1EC77A9300283DB5 /* CdnProgressInfo.h */,
+				6BA4E1B01EC77A9300283DB5 /* CdnRecordMediaInfo.h */,
+				6BA4E1B11EC77A9300283DB5 /* CdnSnsTaskInfo.h */,
+				6BA4E1B21EC77A9300283DB5 /* CdnStoreMediaInfo.h */,
+				6BA4E1B31EC77A9300283DB5 /* CdnTaskInfo.h */,
+				6BA4E1B41EC77A9400283DB5 /* CdnTimelineMediaInfo.h */,
+				6BA4E1B51EC77A9400283DB5 /* CdnTimelineMediaOfSightInfo.h */,
+			);
+			name = CDN;
+			sourceTree = "<group>";
+		};
+		6B3BBDFE1EDABAE5002602B6 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1911EC77A9300283DB5 /* CardListItem.h */,
+				6BA4E1921EC77A9300283DB5 /* CardTicketItem.h */,
+				6BA4E1931EC77A9300283DB5 /* CardTpInfoItem.h */,
+				6BA4E1941EC77A9300283DB5 /* CardUserItem.h */,
+			);
+			name = Card;
+			sourceTree = "<group>";
+		};
+		6B3BBDFF1EDABAF2002602B6 /* CBottle */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1991EC77A9300283DB5 /* CBottle.h */,
+				6BA4E19A1EC77A9300283DB5 /* CBottleContact.h */,
+				6BA4E19B1EC77A9300283DB5 /* CBottleContactDB.h */,
+				6BA4E19C1EC77A9300283DB5 /* CBottleExtendCode.h */,
+				6BA4E19D1EC77A9300283DB5 /* CBottleSetting.h */,
+			);
+			name = CBottle;
+			sourceTree = "<group>";
+		};
+		6B3BBE001EDABB00002602B6 /* BS */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1711EC77A9300283DB5 /* BSBusinessCommonItem.h */,
+				6BA4E1721EC77A9300283DB5 /* BSBusinessContactItem.h */,
+				6BA4E1731EC77A9300283DB5 /* BSBusinessContent.h */,
+				6BA4E1741EC77A9300283DB5 /* BSBusinessProductItem.h */,
+				6BA4E1751EC77A9300283DB5 /* BSBusinessResultItem.h */,
+				6BA4E1761EC77A9300283DB5 /* BSBusinessServiceInfo.h */,
+			);
+			name = BS;
+			sourceTree = "<group>";
+		};
+		6B3BBE011EDABB0D002602B6 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E17B1EC77A9300283DB5 /* BusinessActionInfo.h */,
+				6BA4E17C1EC77A9300283DB5 /* BusinessCommonItem.h */,
+				6BA4E17D1EC77A9300283DB5 /* BusinessContactItem.h */,
+				6BA4E17E1EC77A9300283DB5 /* BusinessContent.h */,
+				6BA4E17F1EC77A9300283DB5 /* BusinessDetailInfo.h */,
+				6BA4E1801EC77A9300283DB5 /* BusinessExtendInfo.h */,
+				6BA4E1811EC77A9300283DB5 /* BusinessPOIItem.h */,
+				6BA4E1821EC77A9300283DB5 /* BusinessProductItem.h */,
+				6BA4E1831EC77A9300283DB5 /* BusinessResultItem.h */,
+				6BA4E1841EC77A9300283DB5 /* BusinessServiceInfo.h */,
+				6BA4E1851EC77A9300283DB5 /* BusinessSnsItem.h */,
+				6BA4E1861EC77A9300283DB5 /* BussinessExtendItem.h */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		6B3BBE021EDABB1E002602B6 /* Blue */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1561EC77A9300283DB5 /* BlueAdapterBase.h */,
+				6BA4E1571EC77A9300283DB5 /* BlueBLEAdapter.h */,
+				6BA4E1581EC77A9300283DB5 /* BlueDevicePool.h */,
+				6BA4E1591EC77A9300283DB5 /* BlueEAAdapter.h */,
+				6BA4E15A1EC77A9300283DB5 /* BlueIDPool.h */,
+				6BA4E15B1EC77A9300283DB5 /* BlueManager.h */,
+				6BA4E15C1EC77A9300283DB5 /* BlueProfilePedometerInfo.h */,
+				6BA4E15D1EC77A9300283DB5 /* BluetoothLoginLogic.h */,
+			);
+			name = Blue;
+			sourceTree = "<group>";
+		};
+		6B3BBE031EDABB2B002602B6 /* Batch */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1401EC77A9300283DB5 /* BatchAddMsgInfo.h */,
+				6BA4E1411EC77A9300283DB5 /* BatchSearchHardDeviceFilter.h */,
+				6BA4E1421EC77A9300283DB5 /* BatchSearchHardDeviceInfo.h */,
+				6BA4E1431EC77A9300283DB5 /* BatchSearchHardDeviceResult.h */,
+			);
+			name = Batch;
+			sourceTree = "<group>";
+		};
+		6B3BBE041EDABB39002602B6 /* Bak */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E12A1EC77A9300283DB5 /* BackPageInfo.h */,
+				6BA4E1321EC77A9300283DB5 /* BakChatItem.h */,
+				6BA4E1331EC77A9300283DB5 /* BakChatMsgItem.h */,
+				6BA4E1341EC77A9300283DB5 /* BakChatMsgList.h */,
+			);
+			name = Bak;
+			sourceTree = "<group>";
+		};
+		6B3BBE051EDABB44002602B6 /* AV */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1231EC77A9300283DB5 /* AVAudioPlayWraper.h */,
+				6BA4E1241EC77A9300283DB5 /* AVAudioSessionRouteDescription-Swizzle.h */,
+				6BA4E1251EC77A9300283DB5 /* AVCaptureVideoPreviewLayer-extend.h */,
+				6BA4E1261EC77A9300283DB5 /* AVRSLoadingRuestTaskInfo.h */,
+				6BA4E1271EC77A9300283DB5 /* AVVideoDevice.h */,
+				6BA4E1281EC77A9300283DB5 /* AVVideoDeviceSessionQueue.h */,
+			);
+			name = AV;
+			sourceTree = "<group>";
+		};
+		6B3BBE061EDABB4E002602B6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E11F1EC77A9300283DB5 /* AuthAppItem.h */,
+				6BA4E1201EC77A9300283DB5 /* AutoAuthAesReqData.h */,
+				6BA4E1211EC77A9300283DB5 /* AutoAuthKey.h */,
+				6BA4E1221EC77A9300283DB5 /* AutoAuthRsaReqData.h */,
+				6BA4E11E1EC77A9300283DB5 /* AuthAppBaseInfo.h */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		6B3BBE071EDABB5B002602B6 /* Async */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E10C1EC77A9300283DB5 /* AsyncReadPacket.h */,
+				6BA4E10D1EC77A9300283DB5 /* AsyncSocket.h */,
+				6BA4E10E1EC77A9300283DB5 /* AsyncSpecialPacket.h */,
+				6BA4E10F1EC77A9300283DB5 /* AsyncTaskQueueEngine.h */,
+				6BA4E1101EC77A9300283DB5 /* AsyncWritePacket.h */,
+			);
+			name = Async;
+			sourceTree = "<group>";
+		};
+		6B3BBE081EDABB68002602B6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0F31EC77A9300283DB5 /* AppCommentItem.h */,
+				6BA4E0F41EC77A9300283DB5 /* AppCommentMsg.h */,
+				6BA4E0F51EC77A9300283DB5 /* AppCommunicate.h */,
+				6BA4E0F61EC77A9300283DB5 /* AppCommunicateData.h */,
+				6BA4E0F71EC77A9300283DB5 /* AppConfig.h */,
+				6BA4E0F81EC77A9300283DB5 /* AppData.h */,
+				6BA4E0F91EC77A9300283DB5 /* AppIconItem.h */,
+				6BA4E0FA1EC77A9300283DB5 /* AppInnerJumpItem.h */,
+				6BA4E0FB1EC77A9300283DB5 /* AppItem.h */,
+				6BA4E0FC1EC77A9300283DB5 /* AppMsg.h */,
+				6BA4E0FD1EC77A9300283DB5 /* APPortal.h */,
+				6BA4E0FE1EC77A9300283DB5 /* APPortal33.h */,
+				6BA4E0FF1EC77A9300283DB5 /* AppPersonalInfo.h */,
+				6BA4E1001EC77A9300283DB5 /* AppPersonalInfoData.h */,
+				6BA4E1011EC77A9300283DB5 /* AppPersonalInfoItem.h */,
+				6BA4E1021EC77A9300283DB5 /* AppProductItem.h */,
+				6BA4E1031EC77A9300283DB5 /* AppRecordItem.h */,
+				6BA4E1041EC77A9300283DB5 /* AppRegisterInfo.h */,
+				6BA4E1051EC77A9300283DB5 /* ApproveAddChatRoomMemberResp_Result.h */,
+				6BA4E1061EC77A9300283DB5 /* AppSetting.h */,
+				6BA4E1071EC77A9300283DB5 /* AppSettingItem.h */,
+				6BA4E1081EC77A9300283DB5 /* AppStoreControl.h */,
+				6BA4E1091EC77A9300283DB5 /* AppTVItem.h */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		6B3BBE091EDABB7C002602B6 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0D81EC77A9300283DB5 /* Address.h */,
+				6BA4E0D91EC77A9300283DB5 /* AddressBookArchive.h */,
+				6BA4E0DA1EC77A9300283DB5 /* AddressBookFriend.h */,
+			);
+			name = Address;
+			sourceTree = "<group>";
+		};
+		6B3BBE0A1EDABB8E002602B6 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0DB1EC77A9300283DB5 /* AddShareObject.h */,
+				6BA4E0D11EC77A9300283DB5 /* AddEmoticonWrap.h */,
+				6BA4E0D21EC77A9300283DB5 /* AddFavItem.h */,
+				6BA4E0D31EC77A9300283DB5 /* AdditionalContactList.h */,
+				6BA4E0D41EC77A9300283DB5 /* AddMemLogic.h */,
+				6BA4E0D51EC77A9300283DB5 /* AddMsg.h */,
+				6BA4E0D61EC77A9300283DB5 /* AddMsgDigest.h */,
+				6BA4E0D71EC77A9300283DB5 /* AddMsgWrap.h */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		6B3BBE0B1EDABBA7002602B6 /* AB */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0B41EC77A9300283DB5 /* ABTestExpKeyItem.h */,
+				6BA4E0B51EC77A9300283DB5 /* ABTestItem.h */,
+				6BA4E0B61EC77A9300283DB5 /* ABTestListWrap.h */,
+				6BA4E0B71EC77A9300283DB5 /* ABtestPoint.h */,
+				6BA4E0B81EC77A9300283DB5 /* ABtestPointPeriod.h */,
+				6BA4E0B31EC77A9300283DB5 /* ABtestCase.h */,
+			);
+			name = AB;
+			sourceTree = "<group>";
+		};
+		6B3BBE0C1EDABBC7002602B6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1391EC77A9300283DB5 /* BaseAudioPlayer.h */,
+				6BA4E13A1EC77A9300283DB5 /* BaseAudioRecorder.h */,
+				6BA4E13B1EC77A9300283DB5 /* BaseAuthReqInfo.h */,
+				6BA4E13C1EC77A9300283DB5 /* BaseCRC.h */,
+				6BA4E13D1EC77A9300283DB5 /* BaseParser.h */,
+				6BA4E13E1EC77A9300283DB5 /* BasePatternGenerator.h */,
+				6BA4E13F1EC77A9300283DB5 /* BaseStyle.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6B3BBE0D1EDABBE4002602B6 /* CMail */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E1FB1EC77A9400283DB5 /* CMail.h */,
+				6BA4E1FC1EC77A9400283DB5 /* CMailContact.h */,
+				6BA4E1FD1EC77A9400283DB5 /* CMailContactInfo.h */,
+				6BA4E1FE1EC77A9400283DB5 /* CMainControll-.h */,
+			);
+			name = CMail;
+			sourceTree = "<group>";
+		};
+		6B3BBE0E1EDABBEF002602B6 /* CM */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2021EC77A9400283DB5 /* CMessage.h */,
+				6BA4E2031EC77A9400283DB5 /* CMessageDB.h */,
+				6BA4E2041EC77A9400283DB5 /* CMessageWrap.h */,
+				6BA4E2051EC77A9400283DB5 /* CMMDB.h */,
+				6BA4E2061EC77A9400283DB5 /* CMMKVCommReport.h */,
+				6BA4E2071EC77A9400283DB5 /* CMMVector.h */,
+				6BA4E2081EC77A9400283DB5 /* CModUserImgWrap.h */,
+			);
+			name = CM;
+			sourceTree = "<group>";
+		};
+		6B3BBE0F1EDABC09002602B6 /* CUpload */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2411EC77A9400283DB5 /* CUploadHDHeadImg.h */,
+				6BA4E2421EC77A9400283DB5 /* CUploadHDHeadImgWrap.h */,
+				6BA4E2431EC77A9400283DB5 /* CUploadImgWrap.h */,
+				6BA4E2441EC77A9400283DB5 /* CUploadMContactPrtl.h */,
+				6BA4E2451EC77A9400283DB5 /* CUploadVideoInfo.h */,
+				6BA4E2461EC77A9400283DB5 /* CUploadVideoPrtl.h */,
+				6BA4E2471EC77A9400283DB5 /* CUploadVideoWrap.h */,
+				6BA4E2481EC77A9400283DB5 /* CUploadVoicePrtl.h */,
+				6BA4E2491EC77A9400283DB5 /* CUploadVoiceWrap.h */,
+			);
+			name = CUpload;
+			sourceTree = "<group>";
+		};
+		6B3BBE101EDABC16002602B6 /* Deep */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E26C1EC77A9400283DB5 /* DeepLinkBitSet.h */,
+				6BA4E26D1EC77A9400283DB5 /* DeepLinkDef.h */,
+				6BA4E26E1EC77A9400283DB5 /* DeepLinkParam.h */,
+				6BA4E26F1EC77A9400283DB5 /* DeepLinkVCConfigItem.h */,
+				6BA4E2701EC77A9400283DB5 /* DeepSearchP5EM1B9.h */,
+			);
+			name = Deep;
+			sourceTree = "<group>";
+		};
+		6B3BBE111EDABC2B002602B6 /* Delete */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2771EC77A9400283DB5 /* DeletePathService.h */,
+				6BA4E2781EC77A9400283DB5 /* DeleteSnsOldGroup.h */,
+				6BA4E2791EC77A9400283DB5 /* DelFavItemRsp.h */,
+				6BA4E27A1EC77A9500283DB5 /* DelMemLogic.h */,
+				6BA4E27B1EC77A9500283DB5 /* DelWxAppContact.h */,
+				6BA4E2741EC77A9400283DB5 /* DelChatContact.h */,
+				6BA4E2761EC77A9400283DB5 /* DeletedMsg.h */,
+			);
+			name = Delete;
+			sourceTree = "<group>";
+		};
+		6B3BBE121EDABC3D002602B6 /* Delay */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2721EC77A9400283DB5 /* DelayPresentationLogic.h */,
+				6BA4E2731EC77A9400283DB5 /* DelaySwitchSettingLogic.h */,
+				6BA4E2711EC77A9400283DB5 /* DelayInfo.h */,
+			);
+			name = Delay;
+			sourceTree = "<group>";
+		};
 		6B4C7D651ED3FAE600CAF1EB /* Contact */ = {
 			isa = PBXGroup;
 			children = (
@@ -9114,6 +10079,7 @@
 				6BB5DCDD1EC7753A001AF22F /* ContactNoWeixinViewController.h */,
 				6BB5DCDE1EC7753A001AF22F /* ContactPickerViewController.h */,
 				6BB5DCDF1EC7753A001AF22F /* ContactSettingViewController.h */,
+				6B5163C21ED91CD90089CEAC /* ContactSettingViewController.m */,
 				6BB5DCE01EC7753A001AF22F /* ContactsGenericViewController.h */,
 				6BB5DCE11EC7753A001AF22F /* ContactsGoogleNoWeChatViewController.h */,
 				6BB5DCE21EC7753A001AF22F /* ContactsViewController.h */,
@@ -9357,6 +10323,7 @@
 				6BA405DE1EC77FF700283DB5 /* MMShareExtMgr.h */,
 				6BA405DF1EC77FF700283DB5 /* MMStaticResourcePatchMgr.h */,
 				6BA405E01EC77FF700283DB5 /* MMThemeManager.h */,
+				6B71B5961ED825D80010DFEF /* MMThemeManager.m */,
 				6BA405E11EC77FF700283DB5 /* MMTwitterMgr.h */,
 				6BA405E21EC77FF700283DB5 /* MMWCResCleanupMgr.h */,
 				6BA405E31EC77FF700283DB5 /* MMWCResourceMgr.h */,
@@ -9526,6 +10493,7 @@
 				6BB5DCA31EC774DB001AF22F /* FBSDKLoginManager.h */,
 				6BB5DC621EC774DB001AF22F /* CBottleContactMgr.h */,
 				6BB5DC631EC774DB001AF22F /* CContactMgr.h */,
+				6B3BBE181EDAD281002602B6 /* CContactMgr.m */,
 				6BB5DC641EC774DB001AF22F /* CdnComMgr.h */,
 				6BB5DC651EC774DB001AF22F /* CDownloadVideoMgr.h */,
 				6BB5DC661EC774DB001AF22F /* CDownloadVoiceMgr.h */,
@@ -9782,488 +10750,8 @@
 		6BA409531EC780A500283DB5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6BA40E901EC7848100283DB5 /* GetUserRankDetailResponse_Button.h */,
-				6BA40E911EC7848100283DB5 /* MailContactButton.h */,
-				6BA40E931EC7848100283DB5 /* MMBottomBarButton.h */,
-				6BA40E941EC7848100283DB5 /* MMCustomHighlightColorButton.h */,
-				6BA40E951EC7848100283DB5 /* MMSayHelloButton.h */,
-				6BA40E961EC7848100283DB5 /* MMTransparentButton.h */,
-				6BA40E971EC7848100283DB5 /* MMUIButton.h */,
-				6BA40E981EC7848100283DB5 /* MMWebBackgroundImageButton.h */,
-				6BA40E991EC7848100283DB5 /* MMWebImageButton.h */,
-				6BA40E9A1EC7848100283DB5 /* ProductMusicPlayButton.h */,
-				6BA40E9B1EC7848100283DB5 /* PromptButton.h */,
-				6BA40E9C1EC7848100283DB5 /* RCDraggableButton.h */,
-				6BA40E9D1EC7848100283DB5 /* SGBarButton.h */,
-				6BA40E9E1EC7848100283DB5 /* SGCustomButton.h */,
-				6BA40E9F1EC7848100283DB5 /* ShakeMsgUnreadButton.h */,
-				6BA40EA01EC7848100283DB5 /* TPIDKeyboardButton.h */,
-				6BA40EA11EC7848100283DB5 /* VoipDescriptionButton.h */,
-				6BA40EA21EC7848100283DB5 /* WCCardPkgMsgButton.h */,
-				6BA40EA31EC7848100283DB5 /* WCCardPkgMsgJumpButton.h */,
-				6BA40EA41EC7848100283DB5 /* WCLikeButton.h */,
-				6BA40EA51EC7848100283DB5 /* WCOutPadButton.h */,
-				6BA40EA61EC7848100283DB5 /* WCPayNewOrderRecordButton.h */,
-				6BA40EA71EC7848100283DB5 /* WCPayOfflinePayBottomButton.h */,
 				6BB5DD161EC775CA001AF22F /* AnimationStatusView.h */,
 				6BB5DD171EC775CA001AF22F /* AppDefaultMessageCellView.h */,
-				6BA407891EC7809E00283DB5 /* GameCenterAppstorePromptView.h */,
-				6BA4078A1EC7809E00283DB5 /* GameCenterBottomView.h */,
-				6BA4078B1EC7809E00283DB5 /* GameCenterHeaderView.h */,
-				6BA4078C1EC7809E00283DB5 /* GameCenterHotAdListView.h */,
-				6BA4078D1EC7809E00283DB5 /* GameCenterLoadingFooterView.h */,
-				6BA4078E1EC7809E00283DB5 /* GameCenterMsgCenterCellView.h */,
-				6BA4078F1EC7809E00283DB5 /* GameCenterMyGameView.h */,
-				6BA407901EC7809E00283DB5 /* GameCenterNavCategoryView.h */,
-				6BA407911EC7809E00283DB5 /* GameCenterPlayInfoView.h */,
-				6BA407921EC7809E00283DB5 /* GameCenterRecommendView.h */,
-				6BA407931EC7809E00283DB5 /* GameCenterTodayRecommendView.h */,
-				6BA407941EC7809E00283DB5 /* GameCenterTopRecommendView.h */,
-				6BA407951EC7809E00283DB5 /* GameMessageCellView.h */,
-				6BA407961EC7809E00283DB5 /* GKCropBorderView.h */,
-				6BA407971EC7809E00283DB5 /* GKImageCropOverlayView.h */,
-				6BA407981EC7809E00283DB5 /* GKImageCropView.h */,
-				6BA407991EC7809E00283DB5 /* GKResizeableCropOverlayView.h */,
-				6BA4079A1EC7809E00283DB5 /* HeadClusterView.h */,
-				6BA4079B1EC7809E00283DB5 /* HelloMsgsPanelView.h */,
-				6BA4079C1EC7809E00283DB5 /* HorizontalTableView.h */,
-				6BA4079D1EC7809E00283DB5 /* ImageMessageCellView.h */,
-				6BA4079E1EC7809E00283DB5 /* ImageScrollView.h */,
-				6BA4079F1EC7809E00283DB5 /* ImageTextReaderMessageCellView.h */,
-				6BA407A01EC7809E00283DB5 /* ImplicitView.h */,
-				6BA407A11EC7809E00283DB5 /* IntroView.h */,
-				6BA407A21EC7809E00283DB5 /* InviteFriendView.h */,
-				6BA407A31EC7809E00283DB5 /* JSAPIScopeConfirmContainterView.h */,
-				6BA407A41EC7809E00283DB5 /* LALALAView.h */,
-				6BA407A51EC7809E00283DB5 /* LocationMessageCellView.h */,
-				6BA407A61EC7809E00283DB5 /* LoopPageScrollView.h */,
-				6BA407A71EC7809E00283DB5 /* LView.h */,
-				6BA407A81EC7809E00283DB5 /* MailAttachmentControlView.h */,
-				6BA407A91EC7809E00283DB5 /* MailAttachmentsView.h */,
-				6BA407AA1EC7809E00283DB5 /* MailAttachmentView.h */,
-				6BA407AB1EC7809E00283DB5 /* MailContactFilterView.h */,
-				6BA407AC1EC7809E00283DB5 /* MailContentView.h */,
-				6BA407AD1EC7809E00283DB5 /* MailMessageCellView.h */,
-				6BA407AE1EC7809E00283DB5 /* MailReceiverEditView.h */,
-				6BA407AF1EC7809E00283DB5 /* MailSubjectEditView.h */,
-				6BA407B01EC7809E00283DB5 /* MainFrameActionFloatView.h */,
-				6BA407B11EC7809E00283DB5 /* MainFrameItemView.h */,
-				6BA407B21EC7809E00283DB5 /* MassSendMessageCellView.h */,
-				6BA407B31EC7809E00283DB5 /* MFTitleView.h */,
-				6BA407B41EC7809E00283DB5 /* MMActionSheetScrollView.h */,
-				6BA407B51EC7809E00283DB5 /* MMAnimationTipView.h */,
-				6BA407B61EC7809E00283DB5 /* MMAssetView.h */,
-				6BA407B71EC7809E00283DB5 /* MMBadgeView.h */,
-				6BA407B81EC7809E00283DB5 /* MMBezelAvatarView.h */,
-				6BA407B91EC7809E00283DB5 /* MMBorderView.h */,
-				6BA407BA1EC7809E00283DB5 /* MMBrandHeadImageView.h */,
-				6BA407BB1EC7809E00283DB5 /* MMCDNImageView.h */,
-				6BA407BC1EC7809E00283DB5 /* MMCircularProgressView.h */,
-				6BA407BD1EC7809E00283DB5 /* MMCursorView.h */,
-				6BA407BE1EC7809E00283DB5 /* MMDeviceHeadImageView.h */,
-				6BA407BF1EC7809E00283DB5 /* MMEmoticonView.h */,
-				6BA407C01EC7809E00283DB5 /* MMFullScreenItemView.h */,
-				6BA407C11EC7809E00283DB5 /* MMGifPreviewScrollView.h */,
-				6BA407C21EC7809E00283DB5 /* MMGifView.h */,
-				6BA407C31EC7809E00283DB5 /* MMGridImageView.h */,
-				6BA407C41EC7809E00283DB5 /* MMGridView.h */,
-				6BA407C51EC7809E00283DB5 /* MMGroupView.h */,
-				6BA407C61EC7809E00283DB5 /* MMGrowTextView.h */,
-				6BA407C71EC7809E00283DB5 /* MMHDHeadImageView.h */,
-				6BA407C81EC7809E00283DB5 /* MMHeadImageAnnotationView.h */,
-				6BA407C91EC7809E00283DB5 /* MMHeadImageView.h */,
-				6BA407CA1EC7809E00283DB5 /* MMHorizontalTableView.h */,
-				6BA407CB1EC7809E00283DB5 /* MMIconActionSheetContentView.h */,
-				6BA407CC1EC7809E00283DB5 /* MMImageBrowseView.h */,
-				6BA407CD1EC7809E00283DB5 /* MMImageGridView.h */,
-				6BA407CE1EC7809E00283DB5 /* MMImageView.h */,
-				6BA407CF1EC7809E00283DB5 /* MMInputAccessoryView.h */,
-				6BA407D01EC7809E00283DB5 /* MMInputToolView.h */,
-				6BA407D11EC7809E00283DB5 /* MMLoadingView.h */,
-				6BA407D21EC7809E00283DB5 /* MMLocationPinView.h */,
-				6BA407D31EC7809E00283DB5 /* MMLockOverlayView.h */,
-				6BA407D41EC7809E00283DB5 /* MMMagnifiterView.h */,
-				6BA407D51EC7809E00283DB5 /* MMMainTableView.h */,
-				6BA407D61EC7809E00283DB5 /* MMMarkSelectedImageView.h */,
-				6BA407D71EC7809E00283DB5 /* MMMaskHeadImageView.h */,
-				6BA407D81EC7809E00283DB5 /* MMMultiSelectContactsItemView.h */,
-				6BA407D91EC7809E00283DB5 /* MMMultiSelectedContactDisplayView.h */,
-				6BA407DA1EC7809E00283DB5 /* MMMultiSelectToolView.h */,
-				6BA407DB1EC7809E00283DB5 /* MMMusicPageView.h */,
-				6BA407DC1EC7809E00283DB5 /* MMMusicPlayerModeTipView.h */,
-				6BA407DD1EC7809E00283DB5 /* MMNearByHeaderView.h */,
-				6BA407DE1EC7809E00283DB5 /* MMPatternLockTipsView.h */,
-				6BA407DF1EC7809E00283DB5 /* MMPatternLockView.h */,
-				6BA407E01EC7809E00283DB5 /* MMPickerMaskView.h */,
-				6BA407E11EC7809E00283DB5 /* MMPickerView.h */,
-				6BA407E21EC7809E00283DB5 /* MMPieChartView.h */,
-				6BA407E31EC7809E00283DB5 /* MMProgressView.h */,
-				6BA407E41EC7809E00283DB5 /* MMQRStrokeView.h */,
-				6BA407E51EC7809E00283DB5 /* MMQuartz2DView.h */,
-				6BA407E61EC7809E00283DB5 /* MMRefreshTableFooterView.h */,
-				6BA407E71EC7809E00283DB5 /* MMRichTextCoverView.h */,
-				6BA407E81EC7809E00283DB5 /* MMScrollActionSheetIconView.h */,
-				6BA407E91EC7809E00283DB5 /* MMScrollView.h */,
-				6BA407EA1EC7809E00283DB5 /* MMSightRecordView.h */,
-				6BA407EB1EC7809E00283DB5 /* MMStoreEmotionHotCellFrameView.h */,
-				6BA407EC1EC7809E00283DB5 /* MMStoreEmotionRecommendCellFrameView.h */,
-				6BA407ED1EC7809E00283DB5 /* MMStreamPlayerView.h */,
-				6BA407EE1EC7809E00283DB5 /* MMStringToastView.h */,
-				6BA407EF1EC7809E00283DB5 /* MMTableView.h */,
-				6BA407F01EC7809E00283DB5 /* MMTextView.h */,
-				6BA407F11EC7809E00283DB5 /* MMTipsView.h */,
-				6BA407F21EC7809E00283DB5 /* MMTitleView.h */,
-				6BA407F31EC7809E00283DB5 /* MMUIAlertView.h */,
-				6BA407F41EC7809E00283DB5 /* MMUIHookView.h */,
-				6BA407F51EC7809E00283DB5 /* MMUIImageView.h */,
-				6BA407F61EC7809E00283DB5 /* MMUILongPressImageView.h */,
-				6BA407F71EC7809E00283DB5 /* MMUILongPressMenuView.h */,
-				6BA407F81EC7809E00283DB5 /* MMUILongPressView.h */,
-				6BA407F91EC7809E00283DB5 /* MMUIScrollView.h */,
-				6BA407FA1EC7809E00283DB5 /* MMUITextView.h */,
-				6BA407FB1EC7809E00283DB5 /* MMUIView.h */,
-				6BA407FC1EC7809E00283DB5 /* MMWebAddContactView.h */,
-				6BA407FD1EC7809E00283DB5 /* MMWebImageView.h */,
-				6BA407FE1EC7809E00283DB5 /* MMWebImageViewWithThumbPreview.h */,
-				6BA407FF1EC7809E00283DB5 /* MMWebViewFontFloatView.h */,
-				6BA408001EC7809E00283DB5 /* MMWebViewPullDownRefreshView.h */,
-				6BA408011EC7809E00283DB5 /* MsgFastBrowseView.h */,
-				6BA408021EC7809E00283DB5 /* MsgImageDownloadView.h */,
-				6BA408031EC7809E00283DB5 /* MsgImageSquareThumbView.h */,
-				6BA408041EC7809E00283DB5 /* MultiColumnReaderMessageCellView.h */,
-				6BA408051EC7809E00283DB5 /* MultiImageScrollView.h */,
-				6BA408061EC7809E00283DB5 /* MultiReaderMessageCellView.h */,
-				6BA408071EC7809E00283DB5 /* MultiTalkBeforeTalkingOperateView.h */,
-				6BA408081EC7809E00283DB5 /* MultiTalkContactsCollectionView.h */,
-				6BA408091EC7809E00283DB5 /* MultiTalkHDHeadView.h */,
-				6BA4080A1EC7809E00283DB5 /* MultiTalkMessageCellView.h */,
-				6BA4080B1EC7809E00283DB5 /* MultitalkSecondOperateView.h */,
-				6BA4080C1EC7809E00283DB5 /* MultiTalkTalkingOperateView.h */,
-				6BA4080D1EC7809E00283DB5 /* MultiTalkTipsView.h */,
-				6BA4080E1EC7809E00283DB5 /* MVideoPlayerView.h */,
-				6BA4080F1EC7809E00283DB5 /* MyUIScrollView.h */,
-				6BA408101EC7809E00283DB5 /* NewChatRoomMemberContainView.h */,
-				6BA408111EC7809E00283DB5 /* NewChatRoomMemberItemView.h */,
-				6BA408121EC7809E00283DB5 /* NewContactsSearchPanelView.h */,
-				6BA408131EC7809E00283DB5 /* OpenBottleLogicView.h */,
-				6BA408141EC7809E00283DB5 /* OpenglRenderView.h */,
-				6BA408151EC7809E00283DB5 /* PageScrollView.h */,
-				6BA408161EC7809F00283DB5 /* PeopleNearByListHeaderView.h */,
-				6BA408171EC7809F00283DB5 /* ProductHistoryCellView.h */,
-				6BA408181EC7809F00283DB5 /* ProductMediaItemView.h */,
-				6BA408191EC7809F00283DB5 /* ProductTableView.h */,
-				6BA4081A1EC7809F00283DB5 /* PublicWifiLoadingView.h */,
-				6BA4081B1EC7809F00283DB5 /* PurchasedEmoticonNoDataView.h */,
-				6BA4081C1EC7809F00283DB5 /* PushSystemMsgView.h */,
-				6BA4081D1EC7809F00283DB5 /* QAnnotationView.h */,
-				6BA4081E1EC7809F00283DB5 /* QBarCodeView.h */,
-				6BA4081F1EC7809F00283DB5 /* QBaseView.h */,
-				6BA408201EC7809F00283DB5 /* QCircleView.h */,
-				6BA408211EC7809F00283DB5 /* QMapView.h */,
-				6BA408221EC7809F00283DB5 /* QOverlayPathView.h */,
-				6BA408231EC7809F00283DB5 /* QOverlayView.h */,
-				6BA408241EC7809F00283DB5 /* QPinAnnotationView.h */,
-				6BA408251EC7809F00283DB5 /* QPolygonView.h */,
-				6BA408261EC7809F00283DB5 /* QPolylineView.h */,
-				6BA408271EC7809F00283DB5 /* QQEmojiGridView.h */,
-				6BA408281EC7809F00283DB5 /* QQEmojiViewWithPreview.h */,
-				6BA408291EC7809F00283DB5 /* QRCodeCardView.h */,
-				6BA4082A1EC7809F00283DB5 /* QScaleUnitsView.h */,
-				6BA4082B1EC7809F00283DB5 /* QScaleView.h */,
-				6BA4082C1EC7809F00283DB5 /* QSMCalloutBackgroundView.h */,
-				6BA4082D1EC7809F00283DB5 /* QSMCalloutDrawnBackgroundView.h */,
-				6BA4082E1EC7809F00283DB5 /* QSMCalloutView.h */,
-				6BA4082F1EC7809F00283DB5 /* QStyledPolylineView.h */,
-				6BA408301EC7809F00283DB5 /* RadarSearchView.h */,
-				6BA408311EC7809F00283DB5 /* ReaderItemView.h */,
-				6BA408321EC7809F00283DB5 /* ReaderMessageCellView.h */,
-				6BA408331EC7809F00283DB5 /* RecommendGridView.h */,
-				6BA408341EC7809F00283DB5 /* RecordView.h */,
-				6BA408351EC7809F00283DB5 /* RichTextView.h */,
-				6BA408361EC7809F00283DB5 /* RSAnimationHeadImgView.h */,
-				6BA408371EC7809F00283DB5 /* RSCreateRoomHeadImageView.h */,
-				6BA408381EC7809F00283DB5 /* RSHeadImageView.h */,
-				6BA408391EC7809F00283DB5 /* RSVerifyAnimationView.h */,
-				6BA4083A1EC7809F00283DB5 /* RSVerifyView.h */,
-				6BA4083B1EC7809F00283DB5 /* ScanLicenceBackgroundView.h */,
-				6BA4083C1EC7809F00283DB5 /* ScanLicenceBankCardEditView.h */,
-				6BA4083D1EC7809F00283DB5 /* ScreenshotView.h */,
-				6BA4083E1EC7809F00283DB5 /* ScrollView.h */,
-				6BA4083F1EC7809F00283DB5 /* SearchGuideView.h */,
-				6BA408401EC7809F00283DB5 /* SelectAttachmentView.h */,
-				6BA408411EC7809F00283DB5 /* SequencePageScrollView.h */,
-				6BA408421EC7809F00283DB5 /* SessionSelectView.h */,
-				6BA408431EC7809F00283DB5 /* SetTrustedFriendTipsView.h */,
-				6BA408441EC7809F00283DB5 /* SGTopEntryView.h */,
-				6BA408451EC7809F00283DB5 /* ShakeBeaconSingleView.h */,
-				6BA408461EC7809F00283DB5 /* ShakeCardDetailView.h */,
-				6BA408471EC7809F00283DB5 /* ShakeMainView.h */,
-				6BA408481EC7809F00283DB5 /* ShakeSingleView.h */,
-				6BA408491EC7809F00283DB5 /* ShakeTvHistoryView.h */,
-				6BA4084A1EC7809F00283DB5 /* ShareCardMessageCellView.h */,
-				6BA4084B1EC7809F00283DB5 /* ShareConfirmView.h */,
-				6BA4084C1EC7809F00283DB5 /* SharePreConfirmView.h */,
-				6BA4084D1EC7809F00283DB5 /* ShareView.h */,
-				6BA4084E1EC7809F00283DB5 /* ShortVideoToolbarPreviewView.h */,
-				6BA4084F1EC7809F00283DB5 /* SightAssetPreviewView.h */,
-				6BA408501EC7809F00283DB5 /* SightCameraTopToolView.h */,
-				6BA408511EC7809F00283DB5 /* SightDraftBoxView.h */,
-				6BA408521EC7809F00283DB5 /* SightFileMaskView.h */,
-				6BA408531EC7809F00283DB5 /* SightGradientView.h */,
-				6BA408541EC7809F00283DB5 /* SightIconView.h */,
-				6BA408551EC7809F00283DB5 /* SightLocalVideoDurationSelectView.h */,
-				6BA408561EC7809F00283DB5 /* SightLocalVideoSwipeToSelectScrollView.h */,
-				6BA408571EC7809F00283DB5 /* SightLocalViewSliderMaskView.h */,
-				6BA408581EC7809F00283DB5 /* SightPlayerView.h */,
-				6BA408591EC7809F00283DB5 /* SightView.h */,
-				6BA4085A1EC7809F00283DB5 /* SmallCameraView.h */,
-				6BA4085B1EC7809F00283DB5 /* SonicView.h */,
-				6BA4085C1EC7809F00283DB5 /* StoreEmotionCollectionHeaderView.h */,
-				6BA4085D1EC7809F00283DB5 /* StoreEmotionSynchronizeView.h */,
-				6BA4085E1EC7809F00283DB5 /* StreamVoiceInputBkgView.h */,
-				6BA4085F1EC7809F00283DB5 /* StreamVoiceInputControlView.h */,
-				6BA408601EC7809F00283DB5 /* StreamVoiceInputPrepareView.h */,
-				6BA408611EC7809F00283DB5 /* StrokeView.h */,
-				6BA408621EC7809F00283DB5 /* SummaryItemView.h */,
-				6BA408631EC7809F00283DB5 /* SystemMessageCellView.h */,
-				6BA408641EC7809F00283DB5 /* SystemTipBkgView.h */,
-				6BA408651EC7809F00283DB5 /* TenpayPasswordView.h */,
-				6BA408661EC7809F00283DB5 /* TextFloatPreview.h */,
-				6BA408671EC7809F00283DB5 /* TextFlowView.h */,
-				6BA408681EC7809F00283DB5 /* TextMessageCellView.h */,
-				6BA408691EC7809F00283DB5 /* ThreeWayExpandImageView.h */,
-				6BA4086A1EC7809F00283DB5 /* ThrowBottleLogicView.h */,
-				6BA4086B1EC7809F00283DB5 /* TipsView.h */,
-				6BA4086C1EC7809F00283DB5 /* TouchDownView.h */,
-				6BA4086D1EC7809F00283DB5 /* TPIDKeyboardView.h */,
-				6BA4086E1EC7809F00283DB5 /* TrackRoomTipsView.h */,
-				6BA4086F1EC7809F00283DB5 /* TrackRoomTopBarView.h */,
-				6BA408701EC7809F00283DB5 /* TrackRoomView.h */,
-				6BA408711EC7809F00283DB5 /* TransformView.h */,
-				6BA408731EC7809F00283DB5 /* UIWeRunStepsView.h */,
-				6BA408741EC7809F00283DB5 /* VideoMessageCellView.h */,
-				6BA408751EC7809F00283DB5 /* VideoReaderMessageCellView.h */,
-				6BA408761EC7809F00283DB5 /* VideoStreamPlayerView.h */,
-				6BA408771EC7809F00283DB5 /* VideoVoipCallerView.h */,
-				6BA408781EC7809F00283DB5 /* VideoVoipCSCallerView.h */,
-				6BA408791EC7809F00283DB5 /* VideoVoipCSTalkingView.h */,
-				6BA4087A1EC7809F00283DB5 /* VideoVoipCSView.h */,
-				6BA4087B1EC7809F00283DB5 /* VideoVoipReceiverView.h */,
-				6BA4087C1EC7809F00283DB5 /* VideoVoipTalkingView.h */,
-				6BA4087D1EC7809F00283DB5 /* VideoVoipView.h */,
-				6BA4087E1EC7809F00283DB5 /* VoiceInputView.h */,
-				6BA4087F1EC7809F00283DB5 /* VoiceMessageCellView.h */,
-				6BA408801EC7809F00283DB5 /* VoiceRecogView.h */,
-				6BA408811EC7809F00283DB5 /* VoiceReminderConfirmCellView.h */,
-				6BA408821EC7809F00283DB5 /* VoiceReminderRemindCellView.h */,
-				6BA408831EC7809F00283DB5 /* VoiceTransFloatPreview.h */,
-				6BA408841EC7809F00283DB5 /* VoipAlertView.h */,
-				6BA408851EC7809F00283DB5 /* VoipContentCellView.h */,
-				6BA408861EC7809F00283DB5 /* VOIPVideoToVoiceView.h */,
-				6BA408871EC7809F00283DB5 /* VolumeTipView.h */,
-				6BA408881EC7809F00283DB5 /* VolumeView.h */,
-				6BA408891EC7809F00283DB5 /* WAAppMessageBaseCellView.h */,
-				6BA4088A1EC7809F00283DB5 /* WAAppMessageCellView.h */,
-				6BA4088B1EC7809F00283DB5 /* WAAppPageCellView.h */,
-				6BA4088C1EC7809F00283DB5 /* WAAppProfileCellView.h */,
-				6BA4088D1EC7809F00283DB5 /* WABrandBindWeAppListTableCellView.h */,
-				6BA4088E1EC7809F00283DB5 /* WACommonPickerView.h */,
-				6BA4088F1EC7809F00283DB5 /* WADateTimePickerView.h */,
-				6BA408901EC7809F00283DB5 /* WAEmotionView.h */,
-				6BA408911EC7809F00283DB5 /* WAHeaderStackDisplayView.h */,
-				6BA408921EC7809F00283DB5 /* WAIconHeadView.h */,
-				6BA408931EC7809F00283DB5 /* WAJSEventHandler_showDatePickerView.h */,
-				6BA408941EC7809F00283DB5 /* WAJSEventHandler_showPickerView.h */,
-				6BA408951EC7809F00283DB5 /* WAMapView.h */,
-				6BA408961EC7809F00283DB5 /* WANativeScrollView.h */,
-				6BA408971EC7809F00283DB5 /* WASearchGuideView.h */,
-				6BA408981EC7809F00283DB5 /* WASessionMsgRightBtnActionSheetTopView.h */,
-				6BA408991EC7809F00283DB5 /* WAStreamPlayerView.h */,
-				6BA4089A1EC7809F00283DB5 /* WATextView.h */,
-				6BA4089B1EC7809F00283DB5 /* WAWebErrorView.h */,
-				6BA4089C1EC7809F00283DB5 /* WAWebToastView.h */,
-				6BA4089D1EC7809F00283DB5 /* WAWebViewPlugin_embedView.h */,
-				6BA4089E1EC7809F00283DB5 /* WAWebViewPlugin_NativeView.h */,
-				6BA4089F1EC7809F00283DB5 /* WAWebViewPullDownRefreshView.h */,
-				6BA408A01EC7809F00283DB5 /* WCAdvertiseActionFloatView.h */,
-				6BA408A11EC7809F00283DB5 /* WCAtomicRedEnvReceiveHomeView.h */,
-				6BA408A21EC7809F00283DB5 /* WCAtomicRedEnvReceiveWelcomeView.h */,
-				6BA408A31EC780A000283DB5 /* WCBizFullImageView.h */,
-				6BA408A41EC780A000283DB5 /* WCBizLoadingView.h */,
-				6BA408A51EC780A000283DB5 /* WCBizPickerView.h */,
-				6BA408A61EC780A000283DB5 /* WCBizTipView.h */,
-				6BA408A71EC780A000283DB5 /* WCCanvasFullScreenImageScrollView.h */,
-				6BA408A81EC780A000283DB5 /* WCCardBaseCardDetailContentView.h */,
-				6BA408A91EC780A000283DB5 /* WCCardChooseEmptyView.h */,
-				6BA408AA1EC780A000283DB5 /* WCCardChooseItemView.h */,
-				6BA408AB1EC780A000283DB5 /* WCCardChoosePeopleLabelView.h */,
-				6BA408AC1EC780A000283DB5 /* WCCardChooseSubPeopleLabelView.h */,
-				6BA408AD1EC780A000283DB5 /* WCCardCollectionView.h */,
-				6BA408AE1EC780A000283DB5 /* WCCardEmptyBackView.h */,
-				6BA408AF1EC780A000283DB5 /* WCCardGeneralCardDetailContentView.h */,
-				6BA408B01EC780A000283DB5 /* WCCardGeneralCardView.h */,
-				6BA408B11EC780A000283DB5 /* WCCardGiftView.h */,
-				6BA408B21EC780A000283DB5 /* WCCardHomeBubbleHeaderView.h */,
-				6BA408B31EC780A000283DB5 /* WCCardHomeCommonDetailIconsView.h */,
-				6BA408B41EC780A000283DB5 /* WCCardHomeDetailIconImageView.h */,
-				6BA408B51EC780A000283DB5 /* WCCardHomeHeaderView.h */,
-				6BA408B61EC780A000283DB5 /* WCCardInvoiceCardDetailContentView.h */,
-				6BA408B71EC780A000283DB5 /* WCCardMemberCardDetailContentView.h */,
-				6BA408B81EC780A000283DB5 /* WCCardMemberCardView.h */,
-				6BA408B91EC780A000283DB5 /* WCCardMoneyView.h */,
-				6BA408BA1EC780A000283DB5 /* WCCardMsgView.h */,
-				6BA408BB1EC780A000283DB5 /* WCCardNewPkgItemView.h */,
-				6BA408BC1EC780A000283DB5 /* WCCardNewTicketDetailContentView.h */,
-				6BA408BD1EC780A000283DB5 /* WCCardPackageTableView.h */,
-				6BA408BE1EC780A000283DB5 /* WCCardPkgBackTableView.h */,
-				6BA408BF1EC780A000283DB5 /* WCCardPkgBackView.h */,
-				6BA408C01EC780A000283DB5 /* WCCardPkgCellView.h */,
-				6BA408C11EC780A000283DB5 /* WCCardPkgItemView.h */,
-				6BA408C21EC780A000283DB5 /* WCCardRedEnvelopesCardView.h */,
-				6BA408C31EC780A000283DB5 /* WCCardSawtoothBgView.h */,
-				6BA408C41EC780A000283DB5 /* WCCardSecondaryView.h */,
-				6BA408C51EC780A000283DB5 /* WCCardSunkenBgView.h */,
-				6BA408C61EC780A000283DB5 /* WCCardTicketCardDetailContentView.h */,
-				6BA408C71EC780A000283DB5 /* WCCardTicketCardView.h */,
-				6BA408C81EC780A000283DB5 /* WCCardTicketCodeCellView.h */,
-				6BA408C91EC780A000283DB5 /* WCCardTicketHeaderBgView.h */,
-				6BA408CA1EC780A000283DB5 /* WCCardTitleView.h */,
-				6BA408CB1EC780A000283DB5 /* WCCardUsedStoreView.h */,
-				6BA408CC1EC780A000283DB5 /* WCCircularProgressView.h */,
-				6BA408CD1EC780A000283DB5 /* WCCommentView.h */,
-				6BA408CE1EC780A000283DB5 /* WCContactItemDeleteView.h */,
-				6BA408CF1EC780A000283DB5 /* WCContentItemBaseView.h */,
-				6BA408D01EC780A000283DB5 /* WCDeviceNameEditConfirmView.h */,
-				6BA408D11EC780A000283DB5 /* WCFacingReceiveMoneyDisplayView.h */,
-				6BA408D21EC780A000283DB5 /* WCFestivalRedEnvFinishView.h */,
-				6BA408D31EC780A000283DB5 /* WCFestivalRedEnvShareView.h */,
-				6BA408D41EC780A000283DB5 /* WCFitLayoutView.h */,
-				6BA408D51EC780A000283DB5 /* WCGiftCardDetailView.h */,
-				6BA408D61EC780A000283DB5 /* WCGiftCardEnvelopeView.h */,
-				6BA408D71EC780A000283DB5 /* WCGiftCardLetterView.h */,
-				6BA408D81EC780A000283DB5 /* WCHeaderGridView.h */,
-				6BA408D91EC780A000283DB5 /* WCImageScrollView.h */,
-				6BA408DA1EC780A000283DB5 /* WCImageView.h */,
-				6BA408DB1EC780A000283DB5 /* WCLanDeviceSearchingDefaultView.h */,
-				6BA408DC1EC780A000283DB5 /* WCLanDeviceStateItemProgressView.h */,
-				6BA408DD1EC780A000283DB5 /* WCListBaseCellView.h */,
-				6BA408DE1EC780A000283DB5 /* WCListCPWarningCellView.h */,
-				6BA408DF1EC780A000283DB5 /* WCListFeedCellView.h */,
-				6BA408E01EC780A000283DB5 /* WCListHeaderView.h */,
-				6BA408E11EC780A000283DB5 /* WCListMusicCellView.h */,
-				6BA408E21EC780A000283DB5 /* WCListPhotoCellView.h */,
-				6BA408E31EC780A000283DB5 /* WCListSightCellView.h */,
-				6BA408E41EC780A000283DB5 /* WCListTextCellView.h */,
-				6BA408E51EC780A000283DB5 /* WCListTipCellView.h */,
-				6BA408E61EC780A000283DB5 /* WCListVideoCellView.h */,
-				6BA408E71EC780A000283DB5 /* WCListView.h */,
-				6BA408E81EC780A000283DB5 /* WCListYearCellView.h */,
-				6BA408E91EC780A000283DB5 /* WCListYearFloatView.h */,
-				6BA408EA1EC780A000283DB5 /* WCMallAcrivityLoopPageScrollView.h */,
-				6BA408EB1EC780A000283DB5 /* WCMallCandidateTelephoneView.h */,
-				6BA408EC1EC780A000283DB5 /* WCMallFunctionActivityView.h */,
-				6BA408ED1EC780A000283DB5 /* WCMallOldTelephoneView.h */,
-				6BA408EE1EC780A000283DB5 /* WCNewShareCardConsumedView.h */,
-				6BA408EF1EC780A000283DB5 /* WCOperateFloatView.h */,
-				6BA408F01EC780A000283DB5 /* WCOrderKeyValueView.h */,
-				6BA408F11EC780A000283DB5 /* WCPanoramaImageView.h */,
-				6BA408F21EC780A000283DB5 /* WCPayAvaliableFavorView.h */,
-				6BA408F31EC780A000283DB5 /* WCPayAvaliablePayCardListView.h */,
-				6BA408F41EC780A000283DB5 /* WCPayBankLogoView.h */,
-				6BA408F51EC780A000283DB5 /* WCPayBaseMessageCellView.h */,
-				6BA408F61EC780A000283DB5 /* WCPayC2CFestivalMsgCellView.h */,
-				6BA408F71EC780A000283DB5 /* WCPayC2CMessageCellView.h */,
-				6BA408F81EC780A000283DB5 /* WCPayC2CUnPayNotifyTextCellView.h */,
-				6BA408F91EC780A000283DB5 /* WCPayCardDetailView.h */,
-				6BA408FA1EC780A000283DB5 /* WCPayCardNumberScanForeView.h */,
-				6BA408FB1EC780A000283DB5 /* WCPayCommentTextView.h */,
-				6BA408FC1EC780A000283DB5 /* WCPayCouponsListView.h */,
-				6BA408FD1EC780A000283DB5 /* WCPayCurrencyInputView.h */,
-				6BA408FE1EC780A000283DB5 /* WCPayFaceHBFaceView.h */,
-				6BA408FF1EC780A000283DB5 /* WCPayFaceHBGetView.h */,
-				6BA409001EC780A000283DB5 /* WCPayFaceHBPayView.h */,
-				6BA409011EC780A000283DB5 /* WCPayFaceHBQRCodeView.h */,
-				6BA409021EC780A000283DB5 /* WCPayFaceReceiverView.h */,
-				6BA409031EC780A000283DB5 /* WCPayFacingQRCodeImageView.h */,
-				6BA409041EC780A000283DB5 /* WCPayFacingReceiveFixedMoneyQRCodeView.h */,
-				6BA409051EC780A000283DB5 /* WCPayGoldenStatusView.h */,
-				6BA409061EC780A000283DB5 /* WCPayGPLaunchActivityAAView.h */,
-				6BA409071EC780A000283DB5 /* WCPayGPLaunchCommonAAView.h */,
-				6BA409081EC780A000283DB5 /* WCPayGPLaunchParamInvalidTipsView.h */,
-				6BA409091EC780A000283DB5 /* WCPayGPMemberFillMoneyView.h */,
-				6BA4090A1EC780A000283DB5 /* WCPayGPOrderStatusHeaderView.h */,
-				6BA4090B1EC780A000283DB5 /* WCPayGPSelectMemberCellView.h */,
-				6BA4090C1EC780A000283DB5 /* WCPayHistoryOrderDetailView.h */,
-				6BA4090D1EC780A000283DB5 /* WCPayNewPaidOrderDetailView.h */,
-				6BA4090E1EC780A000283DB5 /* WCPayNoticeBannerView.h */,
-				6BA4090F1EC780A000283DB5 /* WCPayOfflinePayAddNewCardTipsView.h */,
-				6BA409101EC780A000283DB5 /* WCPayOfflinePayCodeView.h */,
-				6BA409111EC780A000283DB5 /* WCPayOfflinePayConfirmView.h */,
-				6BA409121EC780A000283DB5 /* WCPayOfflinePayCreateOfflinePayTipsView.h */,
-				6BA409131EC780A000283DB5 /* WCPayOfflinePayInvalidCheckTipsView.h */,
-				6BA409141EC780A000283DB5 /* WCPayOfflinePaySelectPayCardView.h */,
-				6BA409151EC780A000283DB5 /* WCPayOfflineUpdatedTipsView.h */,
-				6BA409161EC780A000283DB5 /* WCPayOpenTouchIDAuthConfirmView.h */,
-				6BA409171EC780A000283DB5 /* WCPayOrderDetailBarView.h */,
-				6BA409181EC780A000283DB5 /* WCPayOrderDetailView.h */,
-				6BA409191EC780A100283DB5 /* WCPayOrderPayConfirmView.h */,
-				6BA4091A1EC780A100283DB5 /* WCPayOverseaMainWalletFooterView.h */,
-				6BA4091B1EC780A100283DB5 /* WCPayOverseaMainWalletHeaderView.h */,
-				6BA4091C1EC780A100283DB5 /* WCPayOverseasCardTipView.h */,
-				6BA4091D1EC780A100283DB5 /* WCPayPickerView.h */,
-				6BA4091E1EC780A100283DB5 /* WCPayPwdCtrlPanelView.h */,
-				6BA4091F1EC780A100283DB5 /* WCPayResetBindedCardInfoView.h */,
-				6BA409201EC780A100283DB5 /* WCPaySpecifySelectePayCardListView.h */,
-				6BA409211EC780A100283DB5 /* WCPayTransferMessageCellView.h */,
-				6BA409221EC780A100283DB5 /* WCPayVirtualCardDetailView.h */,
-				6BA409231EC780A100283DB5 /* WCPayWXBorrowMoneyItemView.h */,
-				6BA409241EC780A100283DB5 /* WCPlainTextTipFullScreenView.h */,
-				6BA409251EC780A100283DB5 /* WCPuzzleImageView.h */,
-				6BA409261EC780A100283DB5 /* WCRecommandGroupView.h */,
-				6BA409271EC780A100283DB5 /* WCRedEnvelopesCommentInputToolView.h */,
-				6BA409281EC780A100283DB5 /* WCRedEnvelopesMadeHBSuccessView.h */,
-				6BA409291EC780A100283DB5 /* WCRedEnvelopesReceiveHomeView.h */,
-				6BA4092A1EC780A100283DB5 /* WCSelectorView.h */,
-				6BA4092B1EC780A100283DB5 /* WCShareCardBaseHeaderView.h */,
-				6BA4092C1EC780A100283DB5 /* WCShareCardCodeView.h */,
-				6BA4092D1EC780A100283DB5 /* WCShareCardGeneralHeaderView.h */,
-				6BA4092E1EC780A100283DB5 /* WCShareCardGeneralReceiveHeaderView.h */,
-				6BA4092F1EC780A100283DB5 /* WCShareCardInvoiceHeaderView.h */,
-				6BA409301EC780A100283DB5 /* WCShareCardItemView.h */,
-				6BA409311EC780A100283DB5 /* WCShareCardMemberCustomImgHeaderView.h */,
-				6BA409321EC780A100283DB5 /* WCShareCardMemberHeaderCardImageView.h */,
-				6BA409331EC780A100283DB5 /* WCShareCardMemberHeaderView.h */,
-				6BA409341EC780A100283DB5 /* WCShareCardMyCardEntryView.h */,
-				6BA409351EC780A100283DB5 /* WCShareCardNewTicketHeaderView.h */,
-				6BA409361EC780A100283DB5 /* WCShareCardTicketHeaderView.h */,
-				6BA409371EC780A100283DB5 /* WCSightFullPlayView.h */,
-				6BA409381EC780A100283DB5 /* WCSightView.h */,
-				6BA409391EC780A100283DB5 /* WCSKUButtonDisableBgView.h */,
-				6BA4093A1EC780A100283DB5 /* WCSnsCommentDetailRewardView.h */,
-				6BA4093B1EC780A100283DB5 /* WCSNSNodeVideoView.h */,
-				6BA4093C1EC780A100283DB5 /* WCSnsNYParticipateFullScreenView.h */,
-				6BA4093D1EC780A100283DB5 /* WCTimeLineCellView.h */,
-				6BA4093E1EC780A100283DB5 /* WCTimeLineCommentCellView.h */,
-				6BA4093F1EC780A100283DB5 /* WCTimeLineFooterView.h */,
-				6BA409401EC780A100283DB5 /* WCTimeLineHeaderView.h */,
-				6BA409411EC780A100283DB5 /* WCTimelineTipView.h */,
-				6BA409421EC780A100283DB5 /* WCUIAlertView.h */,
-				6BA409431EC780A100283DB5 /* WCWatchChatRoomImageView.h */,
-				6BA409441EC780A100283DB5 /* WCYoAvatarView.h */,
-				6BA409451EC780A100283DB5 /* WCYoGlowView.h */,
-				6BA409461EC780A100283DB5 /* WebSearchView.h */,
-				6BA409471EC780A100283DB5 /* WNNoteVoicePlayView.h */,
-				6BA409481EC780A100283DB5 /* WNNoteVoiceRecordView.h */,
-				6BA409491EC780A100283DB5 /* WNRichEditWebView.h */,
-				6BA4094A1EC780A100283DB5 /* WSWebSearchContainerView.h */,
-				6BA4094B1EC780A100283DB5 /* WXVideoPlayerView.h */,
-				6BA4094C1EC780A100283DB5 /* YYAsyncImageView.h */,
-				6BA4094D1EC780A100283DB5 /* YYTableView.h */,
-				6BA4094E1EC780A100283DB5 /* YYUIWebView.h */,
-				6BA4094F1EC780A100283DB5 /* YYWKWebView.h */,
-				6BA409501EC780A100283DB5 /* ZCWScrollDigitView.h */,
-				6BA409511EC780A100283DB5 /* ZCWScrollNumView.h */,
-				6BA409521EC780A100283DB5 /* ZoomingScrollView.h */,
 				6BB5DD181EC775CA001AF22F /* AppEmoticonMessageCellView.h */,
 				6BB5DD191EC775CA001AF22F /* AppFileMessageCellView.h */,
 				6BB5DD1A1EC775CA001AF22F /* AppFileNodeProgressView.h */,
@@ -10319,6 +10807,7 @@
 				6BB5DD4C1EC775CA001AF22F /* CommonMessageCellView.h */,
 				6BB5DD4D1EC775CA001AF22F /* ContactsAllSelectPanelView.h */,
 				6BB5DD4E1EC775CA001AF22F /* ContactSelectView.h */,
+				6B5163BC1ED919820089CEAC /* ContactSelectView.m */,
 				6BB5DD4F1EC775CA001AF22F /* ContactsItemView.h */,
 				6BB5DD501EC775CA001AF22F /* ContactsPanelView.h */,
 				6BB5DD511EC775CA001AF22F /* CTRichTextView.h */,
@@ -10410,6 +10899,486 @@
 				6BB5DDA71EC775CA001AF22F /* FTSGameDetailView.h */,
 				6BB5DDA81EC775CA001AF22F /* FTSMsgDetailView.h */,
 				6BB5DDA91EC775CA001AF22F /* FTSResultView.h */,
+				6BA407891EC7809E00283DB5 /* GameCenterAppstorePromptView.h */,
+				6BA4078A1EC7809E00283DB5 /* GameCenterBottomView.h */,
+				6BA4078B1EC7809E00283DB5 /* GameCenterHeaderView.h */,
+				6BA4078C1EC7809E00283DB5 /* GameCenterHotAdListView.h */,
+				6BA4078D1EC7809E00283DB5 /* GameCenterLoadingFooterView.h */,
+				6BA4078E1EC7809E00283DB5 /* GameCenterMsgCenterCellView.h */,
+				6BA4078F1EC7809E00283DB5 /* GameCenterMyGameView.h */,
+				6BA407901EC7809E00283DB5 /* GameCenterNavCategoryView.h */,
+				6BA407911EC7809E00283DB5 /* GameCenterPlayInfoView.h */,
+				6BA407921EC7809E00283DB5 /* GameCenterRecommendView.h */,
+				6BA407931EC7809E00283DB5 /* GameCenterTodayRecommendView.h */,
+				6BA407941EC7809E00283DB5 /* GameCenterTopRecommendView.h */,
+				6BA407951EC7809E00283DB5 /* GameMessageCellView.h */,
+				6BA40E901EC7848100283DB5 /* GetUserRankDetailResponse_Button.h */,
+				6BA407961EC7809E00283DB5 /* GKCropBorderView.h */,
+				6BA407971EC7809E00283DB5 /* GKImageCropOverlayView.h */,
+				6BA407981EC7809E00283DB5 /* GKImageCropView.h */,
+				6BA407991EC7809E00283DB5 /* GKResizeableCropOverlayView.h */,
+				6BA4079A1EC7809E00283DB5 /* HeadClusterView.h */,
+				6BA4079B1EC7809E00283DB5 /* HelloMsgsPanelView.h */,
+				6BA4079C1EC7809E00283DB5 /* HorizontalTableView.h */,
+				6BA4079D1EC7809E00283DB5 /* ImageMessageCellView.h */,
+				6BA4079E1EC7809E00283DB5 /* ImageScrollView.h */,
+				6BA4079F1EC7809E00283DB5 /* ImageTextReaderMessageCellView.h */,
+				6BA407A01EC7809E00283DB5 /* ImplicitView.h */,
+				6BA407A11EC7809E00283DB5 /* IntroView.h */,
+				6BA407A21EC7809E00283DB5 /* InviteFriendView.h */,
+				6BA407A31EC7809E00283DB5 /* JSAPIScopeConfirmContainterView.h */,
+				6BA407A41EC7809E00283DB5 /* LALALAView.h */,
+				6BA407A51EC7809E00283DB5 /* LocationMessageCellView.h */,
+				6BA407A61EC7809E00283DB5 /* LoopPageScrollView.h */,
+				6BA407A71EC7809E00283DB5 /* LView.h */,
+				6BA407A81EC7809E00283DB5 /* MailAttachmentControlView.h */,
+				6BA407A91EC7809E00283DB5 /* MailAttachmentsView.h */,
+				6BA407AA1EC7809E00283DB5 /* MailAttachmentView.h */,
+				6BA40E911EC7848100283DB5 /* MailContactButton.h */,
+				6BA407AB1EC7809E00283DB5 /* MailContactFilterView.h */,
+				6BA407AC1EC7809E00283DB5 /* MailContentView.h */,
+				6BA407AD1EC7809E00283DB5 /* MailMessageCellView.h */,
+				6BA407AE1EC7809E00283DB5 /* MailReceiverEditView.h */,
+				6BA407AF1EC7809E00283DB5 /* MailSubjectEditView.h */,
+				6BA407B01EC7809E00283DB5 /* MainFrameActionFloatView.h */,
+				6BA407B11EC7809E00283DB5 /* MainFrameItemView.h */,
+				6BA407B21EC7809E00283DB5 /* MassSendMessageCellView.h */,
+				6BA407B31EC7809E00283DB5 /* MFTitleView.h */,
+				6BA407B41EC7809E00283DB5 /* MMActionSheetScrollView.h */,
+				6BA407B51EC7809E00283DB5 /* MMAnimationTipView.h */,
+				6BA407B61EC7809E00283DB5 /* MMAssetView.h */,
+				6BA407B71EC7809E00283DB5 /* MMBadgeView.h */,
+				6BA407B81EC7809E00283DB5 /* MMBezelAvatarView.h */,
+				6BA407B91EC7809E00283DB5 /* MMBorderView.h */,
+				6BA40E931EC7848100283DB5 /* MMBottomBarButton.h */,
+				6BA407BA1EC7809E00283DB5 /* MMBrandHeadImageView.h */,
+				6BA407BB1EC7809E00283DB5 /* MMCDNImageView.h */,
+				6BA407BC1EC7809E00283DB5 /* MMCircularProgressView.h */,
+				6BA407BD1EC7809E00283DB5 /* MMCursorView.h */,
+				6BA40E941EC7848100283DB5 /* MMCustomHighlightColorButton.h */,
+				6BA407BE1EC7809E00283DB5 /* MMDeviceHeadImageView.h */,
+				6BA407BF1EC7809E00283DB5 /* MMEmoticonView.h */,
+				6BA407C01EC7809E00283DB5 /* MMFullScreenItemView.h */,
+				6BA407C11EC7809E00283DB5 /* MMGifPreviewScrollView.h */,
+				6BA407C21EC7809E00283DB5 /* MMGifView.h */,
+				6BA407C31EC7809E00283DB5 /* MMGridImageView.h */,
+				6BA407C41EC7809E00283DB5 /* MMGridView.h */,
+				6BA407C51EC7809E00283DB5 /* MMGroupView.h */,
+				6BA407C61EC7809E00283DB5 /* MMGrowTextView.h */,
+				6BA407C71EC7809E00283DB5 /* MMHDHeadImageView.h */,
+				6BA407C81EC7809E00283DB5 /* MMHeadImageAnnotationView.h */,
+				6BA407C91EC7809E00283DB5 /* MMHeadImageView.h */,
+				6BA407CA1EC7809E00283DB5 /* MMHorizontalTableView.h */,
+				6BA407CB1EC7809E00283DB5 /* MMIconActionSheetContentView.h */,
+				6BA407CC1EC7809E00283DB5 /* MMImageBrowseView.h */,
+				6BA407CD1EC7809E00283DB5 /* MMImageGridView.h */,
+				6BA407CE1EC7809E00283DB5 /* MMImageView.h */,
+				6BA407CF1EC7809E00283DB5 /* MMInputAccessoryView.h */,
+				6BA407D01EC7809E00283DB5 /* MMInputToolView.h */,
+				6BA407D11EC7809E00283DB5 /* MMLoadingView.h */,
+				6BA407D21EC7809E00283DB5 /* MMLocationPinView.h */,
+				6BA407D31EC7809E00283DB5 /* MMLockOverlayView.h */,
+				6BA407D41EC7809E00283DB5 /* MMMagnifiterView.h */,
+				6BA407D51EC7809E00283DB5 /* MMMainTableView.h */,
+				6BA407D61EC7809E00283DB5 /* MMMarkSelectedImageView.h */,
+				6BA407D71EC7809E00283DB5 /* MMMaskHeadImageView.h */,
+				6BA407D81EC7809E00283DB5 /* MMMultiSelectContactsItemView.h */,
+				6BA407D91EC7809E00283DB5 /* MMMultiSelectedContactDisplayView.h */,
+				6BA407DA1EC7809E00283DB5 /* MMMultiSelectToolView.h */,
+				6BA407DB1EC7809E00283DB5 /* MMMusicPageView.h */,
+				6BA407DC1EC7809E00283DB5 /* MMMusicPlayerModeTipView.h */,
+				6BA407DD1EC7809E00283DB5 /* MMNearByHeaderView.h */,
+				6BA407DE1EC7809E00283DB5 /* MMPatternLockTipsView.h */,
+				6BA407DF1EC7809E00283DB5 /* MMPatternLockView.h */,
+				6BA407E01EC7809E00283DB5 /* MMPickerMaskView.h */,
+				6BA407E11EC7809E00283DB5 /* MMPickerView.h */,
+				6BA407E21EC7809E00283DB5 /* MMPieChartView.h */,
+				6BA407E31EC7809E00283DB5 /* MMProgressView.h */,
+				6BA407E41EC7809E00283DB5 /* MMQRStrokeView.h */,
+				6BA407E51EC7809E00283DB5 /* MMQuartz2DView.h */,
+				6BA407E61EC7809E00283DB5 /* MMRefreshTableFooterView.h */,
+				6BA407E71EC7809E00283DB5 /* MMRichTextCoverView.h */,
+				6BA40E951EC7848100283DB5 /* MMSayHelloButton.h */,
+				6BA407E81EC7809E00283DB5 /* MMScrollActionSheetIconView.h */,
+				6BA407E91EC7809E00283DB5 /* MMScrollView.h */,
+				6BA407EA1EC7809E00283DB5 /* MMSightRecordView.h */,
+				6BA407EB1EC7809E00283DB5 /* MMStoreEmotionHotCellFrameView.h */,
+				6BA407EC1EC7809E00283DB5 /* MMStoreEmotionRecommendCellFrameView.h */,
+				6BA407ED1EC7809E00283DB5 /* MMStreamPlayerView.h */,
+				6BA407EE1EC7809E00283DB5 /* MMStringToastView.h */,
+				6BA407EF1EC7809E00283DB5 /* MMTableView.h */,
+				6BA407F01EC7809E00283DB5 /* MMTextView.h */,
+				6BA407F11EC7809E00283DB5 /* MMTipsView.h */,
+				6BA407F21EC7809E00283DB5 /* MMTitleView.h */,
+				6BA40E961EC7848100283DB5 /* MMTransparentButton.h */,
+				6BA407F31EC7809E00283DB5 /* MMUIAlertView.h */,
+				6BA40E971EC7848100283DB5 /* MMUIButton.h */,
+				6BA407F41EC7809E00283DB5 /* MMUIHookView.h */,
+				6BA407F51EC7809E00283DB5 /* MMUIImageView.h */,
+				6BA407F61EC7809E00283DB5 /* MMUILongPressImageView.h */,
+				6BA407F71EC7809E00283DB5 /* MMUILongPressMenuView.h */,
+				6BA407F81EC7809E00283DB5 /* MMUILongPressView.h */,
+				6BA407F91EC7809E00283DB5 /* MMUIScrollView.h */,
+				6BA407FA1EC7809E00283DB5 /* MMUITextView.h */,
+				6BA407FB1EC7809E00283DB5 /* MMUIView.h */,
+				6BA407FC1EC7809E00283DB5 /* MMWebAddContactView.h */,
+				6BA40E981EC7848100283DB5 /* MMWebBackgroundImageButton.h */,
+				6BA40E991EC7848100283DB5 /* MMWebImageButton.h */,
+				6BA407FD1EC7809E00283DB5 /* MMWebImageView.h */,
+				6BA407FE1EC7809E00283DB5 /* MMWebImageViewWithThumbPreview.h */,
+				6BA407FF1EC7809E00283DB5 /* MMWebViewFontFloatView.h */,
+				6BA408001EC7809E00283DB5 /* MMWebViewPullDownRefreshView.h */,
+				6BA408011EC7809E00283DB5 /* MsgFastBrowseView.h */,
+				6BA408021EC7809E00283DB5 /* MsgImageDownloadView.h */,
+				6BA408031EC7809E00283DB5 /* MsgImageSquareThumbView.h */,
+				6BA408041EC7809E00283DB5 /* MultiColumnReaderMessageCellView.h */,
+				6BA408051EC7809E00283DB5 /* MultiImageScrollView.h */,
+				6BA408061EC7809E00283DB5 /* MultiReaderMessageCellView.h */,
+				6BA408071EC7809E00283DB5 /* MultiTalkBeforeTalkingOperateView.h */,
+				6BA408081EC7809E00283DB5 /* MultiTalkContactsCollectionView.h */,
+				6BA408091EC7809E00283DB5 /* MultiTalkHDHeadView.h */,
+				6BA4080A1EC7809E00283DB5 /* MultiTalkMessageCellView.h */,
+				6BA4080B1EC7809E00283DB5 /* MultitalkSecondOperateView.h */,
+				6BA4080C1EC7809E00283DB5 /* MultiTalkTalkingOperateView.h */,
+				6BA4080D1EC7809E00283DB5 /* MultiTalkTipsView.h */,
+				6BA4080E1EC7809E00283DB5 /* MVideoPlayerView.h */,
+				6BA4080F1EC7809E00283DB5 /* MyUIScrollView.h */,
+				6BA408101EC7809E00283DB5 /* NewChatRoomMemberContainView.h */,
+				6BA408111EC7809E00283DB5 /* NewChatRoomMemberItemView.h */,
+				6BA408121EC7809E00283DB5 /* NewContactsSearchPanelView.h */,
+				6BA408131EC7809E00283DB5 /* OpenBottleLogicView.h */,
+				6BA408141EC7809E00283DB5 /* OpenglRenderView.h */,
+				6BA408151EC7809E00283DB5 /* PageScrollView.h */,
+				6BA408161EC7809F00283DB5 /* PeopleNearByListHeaderView.h */,
+				6BA408171EC7809F00283DB5 /* ProductHistoryCellView.h */,
+				6BA408181EC7809F00283DB5 /* ProductMediaItemView.h */,
+				6BA40E9A1EC7848100283DB5 /* ProductMusicPlayButton.h */,
+				6BA408191EC7809F00283DB5 /* ProductTableView.h */,
+				6BA40E9B1EC7848100283DB5 /* PromptButton.h */,
+				6BA4081A1EC7809F00283DB5 /* PublicWifiLoadingView.h */,
+				6BA4081B1EC7809F00283DB5 /* PurchasedEmoticonNoDataView.h */,
+				6BA4081C1EC7809F00283DB5 /* PushSystemMsgView.h */,
+				6BA4081D1EC7809F00283DB5 /* QAnnotationView.h */,
+				6BA4081E1EC7809F00283DB5 /* QBarCodeView.h */,
+				6BA4081F1EC7809F00283DB5 /* QBaseView.h */,
+				6BA408201EC7809F00283DB5 /* QCircleView.h */,
+				6BA408211EC7809F00283DB5 /* QMapView.h */,
+				6BA408221EC7809F00283DB5 /* QOverlayPathView.h */,
+				6BA408231EC7809F00283DB5 /* QOverlayView.h */,
+				6BA408241EC7809F00283DB5 /* QPinAnnotationView.h */,
+				6BA408251EC7809F00283DB5 /* QPolygonView.h */,
+				6BA408261EC7809F00283DB5 /* QPolylineView.h */,
+				6BA408271EC7809F00283DB5 /* QQEmojiGridView.h */,
+				6BA408281EC7809F00283DB5 /* QQEmojiViewWithPreview.h */,
+				6BA408291EC7809F00283DB5 /* QRCodeCardView.h */,
+				6BA4082A1EC7809F00283DB5 /* QScaleUnitsView.h */,
+				6BA4082B1EC7809F00283DB5 /* QScaleView.h */,
+				6BA4082C1EC7809F00283DB5 /* QSMCalloutBackgroundView.h */,
+				6BA4082D1EC7809F00283DB5 /* QSMCalloutDrawnBackgroundView.h */,
+				6BA4082E1EC7809F00283DB5 /* QSMCalloutView.h */,
+				6BA4082F1EC7809F00283DB5 /* QStyledPolylineView.h */,
+				6BA408301EC7809F00283DB5 /* RadarSearchView.h */,
+				6BA40E9C1EC7848100283DB5 /* RCDraggableButton.h */,
+				6BA408311EC7809F00283DB5 /* ReaderItemView.h */,
+				6BA408321EC7809F00283DB5 /* ReaderMessageCellView.h */,
+				6BA408331EC7809F00283DB5 /* RecommendGridView.h */,
+				6BA408341EC7809F00283DB5 /* RecordView.h */,
+				6BA408351EC7809F00283DB5 /* RichTextView.h */,
+				6BA408361EC7809F00283DB5 /* RSAnimationHeadImgView.h */,
+				6BA408371EC7809F00283DB5 /* RSCreateRoomHeadImageView.h */,
+				6BA408381EC7809F00283DB5 /* RSHeadImageView.h */,
+				6BA408391EC7809F00283DB5 /* RSVerifyAnimationView.h */,
+				6BA4083A1EC7809F00283DB5 /* RSVerifyView.h */,
+				6BA4083B1EC7809F00283DB5 /* ScanLicenceBackgroundView.h */,
+				6BA4083C1EC7809F00283DB5 /* ScanLicenceBankCardEditView.h */,
+				6BA4083D1EC7809F00283DB5 /* ScreenshotView.h */,
+				6BA4083E1EC7809F00283DB5 /* ScrollView.h */,
+				6BA4083F1EC7809F00283DB5 /* SearchGuideView.h */,
+				6BA408401EC7809F00283DB5 /* SelectAttachmentView.h */,
+				6BA408411EC7809F00283DB5 /* SequencePageScrollView.h */,
+				6BA408421EC7809F00283DB5 /* SessionSelectView.h */,
+				6BA408431EC7809F00283DB5 /* SetTrustedFriendTipsView.h */,
+				6BA40E9D1EC7848100283DB5 /* SGBarButton.h */,
+				6BA40E9E1EC7848100283DB5 /* SGCustomButton.h */,
+				6BA408441EC7809F00283DB5 /* SGTopEntryView.h */,
+				6BA408451EC7809F00283DB5 /* ShakeBeaconSingleView.h */,
+				6BA408461EC7809F00283DB5 /* ShakeCardDetailView.h */,
+				6BA408471EC7809F00283DB5 /* ShakeMainView.h */,
+				6BA40E9F1EC7848100283DB5 /* ShakeMsgUnreadButton.h */,
+				6BA408481EC7809F00283DB5 /* ShakeSingleView.h */,
+				6BA408491EC7809F00283DB5 /* ShakeTvHistoryView.h */,
+				6BA4084A1EC7809F00283DB5 /* ShareCardMessageCellView.h */,
+				6BA4084B1EC7809F00283DB5 /* ShareConfirmView.h */,
+				6BA4084C1EC7809F00283DB5 /* SharePreConfirmView.h */,
+				6BA4084D1EC7809F00283DB5 /* ShareView.h */,
+				6BA4084E1EC7809F00283DB5 /* ShortVideoToolbarPreviewView.h */,
+				6BA4084F1EC7809F00283DB5 /* SightAssetPreviewView.h */,
+				6BA408501EC7809F00283DB5 /* SightCameraTopToolView.h */,
+				6BA408511EC7809F00283DB5 /* SightDraftBoxView.h */,
+				6BA408521EC7809F00283DB5 /* SightFileMaskView.h */,
+				6BA408531EC7809F00283DB5 /* SightGradientView.h */,
+				6BA408541EC7809F00283DB5 /* SightIconView.h */,
+				6BA408551EC7809F00283DB5 /* SightLocalVideoDurationSelectView.h */,
+				6BA408561EC7809F00283DB5 /* SightLocalVideoSwipeToSelectScrollView.h */,
+				6BA408571EC7809F00283DB5 /* SightLocalViewSliderMaskView.h */,
+				6BA408581EC7809F00283DB5 /* SightPlayerView.h */,
+				6BA408591EC7809F00283DB5 /* SightView.h */,
+				6BA4085A1EC7809F00283DB5 /* SmallCameraView.h */,
+				6BA4085B1EC7809F00283DB5 /* SonicView.h */,
+				6BA4085C1EC7809F00283DB5 /* StoreEmotionCollectionHeaderView.h */,
+				6BA4085D1EC7809F00283DB5 /* StoreEmotionSynchronizeView.h */,
+				6BA4085E1EC7809F00283DB5 /* StreamVoiceInputBkgView.h */,
+				6BA4085F1EC7809F00283DB5 /* StreamVoiceInputControlView.h */,
+				6BA408601EC7809F00283DB5 /* StreamVoiceInputPrepareView.h */,
+				6BA408611EC7809F00283DB5 /* StrokeView.h */,
+				6BA408621EC7809F00283DB5 /* SummaryItemView.h */,
+				6BA408631EC7809F00283DB5 /* SystemMessageCellView.h */,
+				6BA408641EC7809F00283DB5 /* SystemTipBkgView.h */,
+				6BA408651EC7809F00283DB5 /* TenpayPasswordView.h */,
+				6BA408661EC7809F00283DB5 /* TextFloatPreview.h */,
+				6BA408671EC7809F00283DB5 /* TextFlowView.h */,
+				6BA408681EC7809F00283DB5 /* TextMessageCellView.h */,
+				6BA408691EC7809F00283DB5 /* ThreeWayExpandImageView.h */,
+				6BA4086A1EC7809F00283DB5 /* ThrowBottleLogicView.h */,
+				6BA4086B1EC7809F00283DB5 /* TipsView.h */,
+				6BA4086C1EC7809F00283DB5 /* TouchDownView.h */,
+				6BA40EA01EC7848100283DB5 /* TPIDKeyboardButton.h */,
+				6BA4086D1EC7809F00283DB5 /* TPIDKeyboardView.h */,
+				6BA4086E1EC7809F00283DB5 /* TrackRoomTipsView.h */,
+				6BA4086F1EC7809F00283DB5 /* TrackRoomTopBarView.h */,
+				6BA408701EC7809F00283DB5 /* TrackRoomView.h */,
+				6BA408711EC7809F00283DB5 /* TransformView.h */,
+				6BA408731EC7809F00283DB5 /* UIWeRunStepsView.h */,
+				6BA408741EC7809F00283DB5 /* VideoMessageCellView.h */,
+				6BA408751EC7809F00283DB5 /* VideoReaderMessageCellView.h */,
+				6BA408761EC7809F00283DB5 /* VideoStreamPlayerView.h */,
+				6BA408771EC7809F00283DB5 /* VideoVoipCallerView.h */,
+				6BA408781EC7809F00283DB5 /* VideoVoipCSCallerView.h */,
+				6BA408791EC7809F00283DB5 /* VideoVoipCSTalkingView.h */,
+				6BA4087A1EC7809F00283DB5 /* VideoVoipCSView.h */,
+				6BA4087B1EC7809F00283DB5 /* VideoVoipReceiverView.h */,
+				6BA4087C1EC7809F00283DB5 /* VideoVoipTalkingView.h */,
+				6BA4087D1EC7809F00283DB5 /* VideoVoipView.h */,
+				6BA4087E1EC7809F00283DB5 /* VoiceInputView.h */,
+				6BA4087F1EC7809F00283DB5 /* VoiceMessageCellView.h */,
+				6BA408801EC7809F00283DB5 /* VoiceRecogView.h */,
+				6BA408811EC7809F00283DB5 /* VoiceReminderConfirmCellView.h */,
+				6BA408821EC7809F00283DB5 /* VoiceReminderRemindCellView.h */,
+				6BA408831EC7809F00283DB5 /* VoiceTransFloatPreview.h */,
+				6BA408841EC7809F00283DB5 /* VoipAlertView.h */,
+				6BA408851EC7809F00283DB5 /* VoipContentCellView.h */,
+				6BA40EA11EC7848100283DB5 /* VoipDescriptionButton.h */,
+				6BA408861EC7809F00283DB5 /* VOIPVideoToVoiceView.h */,
+				6BA408871EC7809F00283DB5 /* VolumeTipView.h */,
+				6BA408881EC7809F00283DB5 /* VolumeView.h */,
+				6BA408891EC7809F00283DB5 /* WAAppMessageBaseCellView.h */,
+				6BA4088A1EC7809F00283DB5 /* WAAppMessageCellView.h */,
+				6BA4088B1EC7809F00283DB5 /* WAAppPageCellView.h */,
+				6BA4088C1EC7809F00283DB5 /* WAAppProfileCellView.h */,
+				6BA4088D1EC7809F00283DB5 /* WABrandBindWeAppListTableCellView.h */,
+				6BA4088E1EC7809F00283DB5 /* WACommonPickerView.h */,
+				6BA4088F1EC7809F00283DB5 /* WADateTimePickerView.h */,
+				6BA408901EC7809F00283DB5 /* WAEmotionView.h */,
+				6BA408911EC7809F00283DB5 /* WAHeaderStackDisplayView.h */,
+				6BA408921EC7809F00283DB5 /* WAIconHeadView.h */,
+				6BA408931EC7809F00283DB5 /* WAJSEventHandler_showDatePickerView.h */,
+				6BA408941EC7809F00283DB5 /* WAJSEventHandler_showPickerView.h */,
+				6BA408951EC7809F00283DB5 /* WAMapView.h */,
+				6BA408961EC7809F00283DB5 /* WANativeScrollView.h */,
+				6BA408971EC7809F00283DB5 /* WASearchGuideView.h */,
+				6BA408981EC7809F00283DB5 /* WASessionMsgRightBtnActionSheetTopView.h */,
+				6BA408991EC7809F00283DB5 /* WAStreamPlayerView.h */,
+				6BA4089A1EC7809F00283DB5 /* WATextView.h */,
+				6BA4089B1EC7809F00283DB5 /* WAWebErrorView.h */,
+				6BA4089C1EC7809F00283DB5 /* WAWebToastView.h */,
+				6BA4089D1EC7809F00283DB5 /* WAWebViewPlugin_embedView.h */,
+				6BA4089E1EC7809F00283DB5 /* WAWebViewPlugin_NativeView.h */,
+				6BA4089F1EC7809F00283DB5 /* WAWebViewPullDownRefreshView.h */,
+				6BA408A01EC7809F00283DB5 /* WCAdvertiseActionFloatView.h */,
+				6BA408A11EC7809F00283DB5 /* WCAtomicRedEnvReceiveHomeView.h */,
+				6BA408A21EC7809F00283DB5 /* WCAtomicRedEnvReceiveWelcomeView.h */,
+				6BA408A31EC780A000283DB5 /* WCBizFullImageView.h */,
+				6BA408A41EC780A000283DB5 /* WCBizLoadingView.h */,
+				6BA408A51EC780A000283DB5 /* WCBizPickerView.h */,
+				6BA408A61EC780A000283DB5 /* WCBizTipView.h */,
+				6BA408A71EC780A000283DB5 /* WCCanvasFullScreenImageScrollView.h */,
+				6BA408A81EC780A000283DB5 /* WCCardBaseCardDetailContentView.h */,
+				6BA408A91EC780A000283DB5 /* WCCardChooseEmptyView.h */,
+				6BA408AA1EC780A000283DB5 /* WCCardChooseItemView.h */,
+				6BA408AB1EC780A000283DB5 /* WCCardChoosePeopleLabelView.h */,
+				6BA408AC1EC780A000283DB5 /* WCCardChooseSubPeopleLabelView.h */,
+				6BA408AD1EC780A000283DB5 /* WCCardCollectionView.h */,
+				6BA408AE1EC780A000283DB5 /* WCCardEmptyBackView.h */,
+				6BA408AF1EC780A000283DB5 /* WCCardGeneralCardDetailContentView.h */,
+				6BA408B01EC780A000283DB5 /* WCCardGeneralCardView.h */,
+				6BA408B11EC780A000283DB5 /* WCCardGiftView.h */,
+				6BA408B21EC780A000283DB5 /* WCCardHomeBubbleHeaderView.h */,
+				6BA408B31EC780A000283DB5 /* WCCardHomeCommonDetailIconsView.h */,
+				6BA408B41EC780A000283DB5 /* WCCardHomeDetailIconImageView.h */,
+				6BA408B51EC780A000283DB5 /* WCCardHomeHeaderView.h */,
+				6BA408B61EC780A000283DB5 /* WCCardInvoiceCardDetailContentView.h */,
+				6BA408B71EC780A000283DB5 /* WCCardMemberCardDetailContentView.h */,
+				6BA408B81EC780A000283DB5 /* WCCardMemberCardView.h */,
+				6BA408B91EC780A000283DB5 /* WCCardMoneyView.h */,
+				6BA408BA1EC780A000283DB5 /* WCCardMsgView.h */,
+				6BA408BB1EC780A000283DB5 /* WCCardNewPkgItemView.h */,
+				6BA408BC1EC780A000283DB5 /* WCCardNewTicketDetailContentView.h */,
+				6BA408BD1EC780A000283DB5 /* WCCardPackageTableView.h */,
+				6BA408BE1EC780A000283DB5 /* WCCardPkgBackTableView.h */,
+				6BA408BF1EC780A000283DB5 /* WCCardPkgBackView.h */,
+				6BA408C01EC780A000283DB5 /* WCCardPkgCellView.h */,
+				6BA408C11EC780A000283DB5 /* WCCardPkgItemView.h */,
+				6BA40EA21EC7848100283DB5 /* WCCardPkgMsgButton.h */,
+				6BA40EA31EC7848100283DB5 /* WCCardPkgMsgJumpButton.h */,
+				6BA408C21EC780A000283DB5 /* WCCardRedEnvelopesCardView.h */,
+				6BA408C31EC780A000283DB5 /* WCCardSawtoothBgView.h */,
+				6BA408C41EC780A000283DB5 /* WCCardSecondaryView.h */,
+				6BA408C51EC780A000283DB5 /* WCCardSunkenBgView.h */,
+				6BA408C61EC780A000283DB5 /* WCCardTicketCardDetailContentView.h */,
+				6BA408C71EC780A000283DB5 /* WCCardTicketCardView.h */,
+				6BA408C81EC780A000283DB5 /* WCCardTicketCodeCellView.h */,
+				6BA408C91EC780A000283DB5 /* WCCardTicketHeaderBgView.h */,
+				6BA408CA1EC780A000283DB5 /* WCCardTitleView.h */,
+				6BA408CB1EC780A000283DB5 /* WCCardUsedStoreView.h */,
+				6BA408CC1EC780A000283DB5 /* WCCircularProgressView.h */,
+				6BA408CD1EC780A000283DB5 /* WCCommentView.h */,
+				6BA408CE1EC780A000283DB5 /* WCContactItemDeleteView.h */,
+				6BA408CF1EC780A000283DB5 /* WCContentItemBaseView.h */,
+				6BA408D01EC780A000283DB5 /* WCDeviceNameEditConfirmView.h */,
+				6BA408D11EC780A000283DB5 /* WCFacingReceiveMoneyDisplayView.h */,
+				6BA408D21EC780A000283DB5 /* WCFestivalRedEnvFinishView.h */,
+				6BA408D31EC780A000283DB5 /* WCFestivalRedEnvShareView.h */,
+				6BA408D41EC780A000283DB5 /* WCFitLayoutView.h */,
+				6BA408D51EC780A000283DB5 /* WCGiftCardDetailView.h */,
+				6BA408D61EC780A000283DB5 /* WCGiftCardEnvelopeView.h */,
+				6BA408D71EC780A000283DB5 /* WCGiftCardLetterView.h */,
+				6BA408D81EC780A000283DB5 /* WCHeaderGridView.h */,
+				6BA408D91EC780A000283DB5 /* WCImageScrollView.h */,
+				6BA408DA1EC780A000283DB5 /* WCImageView.h */,
+				6BA408DB1EC780A000283DB5 /* WCLanDeviceSearchingDefaultView.h */,
+				6BA408DC1EC780A000283DB5 /* WCLanDeviceStateItemProgressView.h */,
+				6BA40EA41EC7848100283DB5 /* WCLikeButton.h */,
+				6BA408DD1EC780A000283DB5 /* WCListBaseCellView.h */,
+				6BA408DE1EC780A000283DB5 /* WCListCPWarningCellView.h */,
+				6BA408DF1EC780A000283DB5 /* WCListFeedCellView.h */,
+				6BA408E01EC780A000283DB5 /* WCListHeaderView.h */,
+				6BA408E11EC780A000283DB5 /* WCListMusicCellView.h */,
+				6BA408E21EC780A000283DB5 /* WCListPhotoCellView.h */,
+				6BA408E31EC780A000283DB5 /* WCListSightCellView.h */,
+				6BA408E41EC780A000283DB5 /* WCListTextCellView.h */,
+				6BA408E51EC780A000283DB5 /* WCListTipCellView.h */,
+				6BA408E61EC780A000283DB5 /* WCListVideoCellView.h */,
+				6BA408E71EC780A000283DB5 /* WCListView.h */,
+				6BA408E81EC780A000283DB5 /* WCListYearCellView.h */,
+				6BA408E91EC780A000283DB5 /* WCListYearFloatView.h */,
+				6BA408EA1EC780A000283DB5 /* WCMallAcrivityLoopPageScrollView.h */,
+				6BA408EB1EC780A000283DB5 /* WCMallCandidateTelephoneView.h */,
+				6BA408EC1EC780A000283DB5 /* WCMallFunctionActivityView.h */,
+				6BA408ED1EC780A000283DB5 /* WCMallOldTelephoneView.h */,
+				6BA408EE1EC780A000283DB5 /* WCNewShareCardConsumedView.h */,
+				6BA408EF1EC780A000283DB5 /* WCOperateFloatView.h */,
+				6BA408F01EC780A000283DB5 /* WCOrderKeyValueView.h */,
+				6BA40EA51EC7848100283DB5 /* WCOutPadButton.h */,
+				6BA408F11EC780A000283DB5 /* WCPanoramaImageView.h */,
+				6BA408F21EC780A000283DB5 /* WCPayAvaliableFavorView.h */,
+				6BA408F31EC780A000283DB5 /* WCPayAvaliablePayCardListView.h */,
+				6BA408F41EC780A000283DB5 /* WCPayBankLogoView.h */,
+				6BA408F51EC780A000283DB5 /* WCPayBaseMessageCellView.h */,
+				6BA408F61EC780A000283DB5 /* WCPayC2CFestivalMsgCellView.h */,
+				6BA408F71EC780A000283DB5 /* WCPayC2CMessageCellView.h */,
+				6BA408F81EC780A000283DB5 /* WCPayC2CUnPayNotifyTextCellView.h */,
+				6BA408F91EC780A000283DB5 /* WCPayCardDetailView.h */,
+				6BA408FA1EC780A000283DB5 /* WCPayCardNumberScanForeView.h */,
+				6BA408FB1EC780A000283DB5 /* WCPayCommentTextView.h */,
+				6BA408FC1EC780A000283DB5 /* WCPayCouponsListView.h */,
+				6BA408FD1EC780A000283DB5 /* WCPayCurrencyInputView.h */,
+				6BA408FE1EC780A000283DB5 /* WCPayFaceHBFaceView.h */,
+				6BA408FF1EC780A000283DB5 /* WCPayFaceHBGetView.h */,
+				6BA409001EC780A000283DB5 /* WCPayFaceHBPayView.h */,
+				6BA409011EC780A000283DB5 /* WCPayFaceHBQRCodeView.h */,
+				6BA409021EC780A000283DB5 /* WCPayFaceReceiverView.h */,
+				6BA409031EC780A000283DB5 /* WCPayFacingQRCodeImageView.h */,
+				6BA409041EC780A000283DB5 /* WCPayFacingReceiveFixedMoneyQRCodeView.h */,
+				6BA409051EC780A000283DB5 /* WCPayGoldenStatusView.h */,
+				6BA409061EC780A000283DB5 /* WCPayGPLaunchActivityAAView.h */,
+				6BA409071EC780A000283DB5 /* WCPayGPLaunchCommonAAView.h */,
+				6BA409081EC780A000283DB5 /* WCPayGPLaunchParamInvalidTipsView.h */,
+				6BA409091EC780A000283DB5 /* WCPayGPMemberFillMoneyView.h */,
+				6BA4090A1EC780A000283DB5 /* WCPayGPOrderStatusHeaderView.h */,
+				6BA4090B1EC780A000283DB5 /* WCPayGPSelectMemberCellView.h */,
+				6BA4090C1EC780A000283DB5 /* WCPayHistoryOrderDetailView.h */,
+				6BA40EA61EC7848100283DB5 /* WCPayNewOrderRecordButton.h */,
+				6BA4090D1EC780A000283DB5 /* WCPayNewPaidOrderDetailView.h */,
+				6BA4090E1EC780A000283DB5 /* WCPayNoticeBannerView.h */,
+				6BA4090F1EC780A000283DB5 /* WCPayOfflinePayAddNewCardTipsView.h */,
+				6BA40EA71EC7848100283DB5 /* WCPayOfflinePayBottomButton.h */,
+				6BA409101EC780A000283DB5 /* WCPayOfflinePayCodeView.h */,
+				6BA409111EC780A000283DB5 /* WCPayOfflinePayConfirmView.h */,
+				6BA409121EC780A000283DB5 /* WCPayOfflinePayCreateOfflinePayTipsView.h */,
+				6BA409131EC780A000283DB5 /* WCPayOfflinePayInvalidCheckTipsView.h */,
+				6BA409141EC780A000283DB5 /* WCPayOfflinePaySelectPayCardView.h */,
+				6BA409151EC780A000283DB5 /* WCPayOfflineUpdatedTipsView.h */,
+				6BA409161EC780A000283DB5 /* WCPayOpenTouchIDAuthConfirmView.h */,
+				6BA409171EC780A000283DB5 /* WCPayOrderDetailBarView.h */,
+				6BA409181EC780A000283DB5 /* WCPayOrderDetailView.h */,
+				6BA409191EC780A100283DB5 /* WCPayOrderPayConfirmView.h */,
+				6BA4091A1EC780A100283DB5 /* WCPayOverseaMainWalletFooterView.h */,
+				6BA4091B1EC780A100283DB5 /* WCPayOverseaMainWalletHeaderView.h */,
+				6BA4091C1EC780A100283DB5 /* WCPayOverseasCardTipView.h */,
+				6BA4091D1EC780A100283DB5 /* WCPayPickerView.h */,
+				6BA4091E1EC780A100283DB5 /* WCPayPwdCtrlPanelView.h */,
+				6BA4091F1EC780A100283DB5 /* WCPayResetBindedCardInfoView.h */,
+				6BA409201EC780A100283DB5 /* WCPaySpecifySelectePayCardListView.h */,
+				6BA409211EC780A100283DB5 /* WCPayTransferMessageCellView.h */,
+				6BA409221EC780A100283DB5 /* WCPayVirtualCardDetailView.h */,
+				6BA409231EC780A100283DB5 /* WCPayWXBorrowMoneyItemView.h */,
+				6BA409241EC780A100283DB5 /* WCPlainTextTipFullScreenView.h */,
+				6BA409251EC780A100283DB5 /* WCPuzzleImageView.h */,
+				6BA409261EC780A100283DB5 /* WCRecommandGroupView.h */,
+				6BA409271EC780A100283DB5 /* WCRedEnvelopesCommentInputToolView.h */,
+				6BA409281EC780A100283DB5 /* WCRedEnvelopesMadeHBSuccessView.h */,
+				6BA409291EC780A100283DB5 /* WCRedEnvelopesReceiveHomeView.h */,
+				6BA4092A1EC780A100283DB5 /* WCSelectorView.h */,
+				6BA4092B1EC780A100283DB5 /* WCShareCardBaseHeaderView.h */,
+				6BA4092C1EC780A100283DB5 /* WCShareCardCodeView.h */,
+				6BA4092D1EC780A100283DB5 /* WCShareCardGeneralHeaderView.h */,
+				6BA4092E1EC780A100283DB5 /* WCShareCardGeneralReceiveHeaderView.h */,
+				6BA4092F1EC780A100283DB5 /* WCShareCardInvoiceHeaderView.h */,
+				6BA409301EC780A100283DB5 /* WCShareCardItemView.h */,
+				6BA409311EC780A100283DB5 /* WCShareCardMemberCustomImgHeaderView.h */,
+				6BA409321EC780A100283DB5 /* WCShareCardMemberHeaderCardImageView.h */,
+				6BA409331EC780A100283DB5 /* WCShareCardMemberHeaderView.h */,
+				6BA409341EC780A100283DB5 /* WCShareCardMyCardEntryView.h */,
+				6BA409351EC780A100283DB5 /* WCShareCardNewTicketHeaderView.h */,
+				6BA409361EC780A100283DB5 /* WCShareCardTicketHeaderView.h */,
+				6BA409371EC780A100283DB5 /* WCSightFullPlayView.h */,
+				6BA409381EC780A100283DB5 /* WCSightView.h */,
+				6BA409391EC780A100283DB5 /* WCSKUButtonDisableBgView.h */,
+				6BA4093A1EC780A100283DB5 /* WCSnsCommentDetailRewardView.h */,
+				6BA4093B1EC780A100283DB5 /* WCSNSNodeVideoView.h */,
+				6BA4093C1EC780A100283DB5 /* WCSnsNYParticipateFullScreenView.h */,
+				6BA4093D1EC780A100283DB5 /* WCTimeLineCellView.h */,
+				6BA4093E1EC780A100283DB5 /* WCTimeLineCommentCellView.h */,
+				6BA4093F1EC780A100283DB5 /* WCTimeLineFooterView.h */,
+				6BA409401EC780A100283DB5 /* WCTimeLineHeaderView.h */,
+				6BA409411EC780A100283DB5 /* WCTimelineTipView.h */,
+				6BA409421EC780A100283DB5 /* WCUIAlertView.h */,
+				6BA409431EC780A100283DB5 /* WCWatchChatRoomImageView.h */,
+				6BA409441EC780A100283DB5 /* WCYoAvatarView.h */,
+				6BA409451EC780A100283DB5 /* WCYoGlowView.h */,
+				6BA409461EC780A100283DB5 /* WebSearchView.h */,
+				6BA409471EC780A100283DB5 /* WNNoteVoicePlayView.h */,
+				6BA409481EC780A100283DB5 /* WNNoteVoiceRecordView.h */,
+				6BA409491EC780A100283DB5 /* WNRichEditWebView.h */,
+				6BA4094A1EC780A100283DB5 /* WSWebSearchContainerView.h */,
+				6BA4094B1EC780A100283DB5 /* WXVideoPlayerView.h */,
+				6BA4094C1EC780A100283DB5 /* YYAsyncImageView.h */,
+				6BA4094D1EC780A100283DB5 /* YYTableView.h */,
+				6BA4094E1EC780A100283DB5 /* YYUIWebView.h */,
+				6BA4094F1EC780A100283DB5 /* YYWKWebView.h */,
+				6BA409501EC780A100283DB5 /* ZCWScrollDigitView.h */,
+				6BA409511EC780A100283DB5 /* ZCWScrollNumView.h */,
+				6BA409521EC780A100283DB5 /* ZoomingScrollView.h */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -10775,6 +11744,7 @@
 				6BA40DD71EC783F700283DB5 /* TranslateMsgUtil.h */,
 				6BA40DD81EC783F700283DB5 /* TranslateSnsUtil.h */,
 				6BA40DD91EC783F700283DB5 /* UiUtil.h */,
+				6B3BBE161EDACF5C002602B6 /* UiUtil.m */,
 				6BA40DDA1EC783F700283DB5 /* UserOpInfoUtil.h */,
 				6BA40DDB1EC783F700283DB5 /* VOIPSettingUtil.h */,
 				6BA40DDC1EC783F700283DB5 /* WALocalCacheFilePathUtil.h */,
@@ -11575,7 +12545,6 @@
 				6BA4E9891EC77B6900283DB5 /* MMExposeReasonItem.h */,
 				6BA4E98E1EC77B6900283DB5 /* MMExposeWithProofCgi.h */,
 				6BA4E98F1EC77B6900283DB5 /* MMExtension.h */,
-				6BA4E9901EC77B6900283DB5 /* MMExtensionCenter.h */,
 				6BA4E9911EC77B6900283DB5 /* MMExtensionDictionary.h */,
 				6BA4E9931EC77B6900283DB5 /* MMExtensionObject.h */,
 				6BA4E9961EC77B6900283DB5 /* MMFavCellComponent.h */,
@@ -12687,7 +13656,6 @@
 				6BA4F4001EC77CBD00283DB5 /* WAAppContactPreLoader.h */,
 				6BA4F4031EC77CBE00283DB5 /* WAAppItemData.h */,
 				6BA4F4061EC77CBE00283DB5 /* WAAppItemOperation.h */,
-				6BA4F40C1EC77CBE00283DB5 /* WAAppMsgItem.h */,
 				6BA4F40D1EC77CBE00283DB5 /* WAAppOperateLogic.h */,
 				6BA4F40F1EC77CBF00283DB5 /* WAAppPackageInfo.h */,
 				6BA4F4141EC77CBF00283DB5 /* WAAppTask.h */,
@@ -12866,7 +13834,6 @@
 				6BA4F6101EC77CEF00283DB5 /* WCAccountTextFieldItem.h */,
 				6BA4F6121EC77CEF00283DB5 /* WCAccountVoice2ndVerifyControlLogic.h */,
 				6BA4F6181EC77CF000283DB5 /* WCActionInfo.h */,
-				6BA4F6191EC77CF000283DB5 /* WCActionSheet.h */,
 				6BA4F61B1EC77CF000283DB5 /* WCADBodyWrap.h */,
 				6BA4F61C1EC77CF000283DB5 /* WCADCanvasInfo.h */,
 				6BA4F61D1EC77CF000283DB5 /* WCADCanvasPage.h */,
@@ -13897,14 +14864,14 @@
 				6BB5DAB91EC7734F001AF22F /* CommonImageBrowserDelegate-Protocol.h */,
 				6BB5DABA1EC7734F001AF22F /* CommonPlayerDelegate-Protocol.h */,
 				6BB5DABB1EC7734F001AF22F /* ComposeSendDelegate-Protocol.h */,
-				6BB5DABC1EC7734F001AF22F /* ContactInfoAssistDelegate-Protocol.h */,
+				6BB5DABC1EC7734F001AF22F /* ContactInfoAssistDelegate.h */,
 				6BB5DABD1EC7734F001AF22F /* contactInfoDelegate-Protocol.h */,
 				6BB5DABE1EC7734F001AF22F /* ContactInfoViewControllerDelegate-Protocol.h */,
 				6BB5DABF1EC7734F001AF22F /* ContactPickerViewDelegate-Protocol.h */,
 				6BB5DAC01EC7734F001AF22F /* ContactRemarkImgExt-Protocol.h */,
 				6BB5DAC11EC7734F001AF22F /* ContactsAllSelectPanelViewDelegate-Protocol.h */,
 				6BB5DAC21EC7734F001AF22F /* ContactsCreateChatRoomLogicDelegate-Protocol.h */,
-				6BB5DAC31EC7734F001AF22F /* ContactsDataLogicDelegate-Protocol.h */,
+				6BB5DAC31EC7734F001AF22F /* ContactsDataLogicDelegate.h */,
 				6BB5DAC41EC7734F001AF22F /* ContactSelectViewDelegate.h */,
 				6BB5DAC51EC7734F001AF22F /* ContactsItemViewDelegate-Protocol.h */,
 				6BB5DAC61EC7734F001AF22F /* ContactsPanelViewDelegate-Protocol.h */,
@@ -14047,7 +15014,7 @@
 				6BB5DB4F1EC77350001AF22F /* FICEntity-Protocol.h */,
 				6BB5DB501EC77350001AF22F /* FirstUnReadTipViewDelegate-Protocol.h */,
 				6BB5DB511EC77350001AF22F /* FloatBottleContentLogicDelegate-Protocol.h */,
-				6BB5DB521EC77350001AF22F /* ForwardMessageLogicDelegate-Protocol.h */,
+				6BB5DB521EC77350001AF22F /* ForwardMessageLogicDelegate.h */,
 				6BB5DB531EC77350001AF22F /* FriendAsistSessionExt-Protocol.h */,
 				6BB5DB541EC77350001AF22F /* FTSAddressBookFriendCellDelegate-Protocol.h */,
 				6BB5DB551EC77350001AF22F /* FTSContactCellDelegate-Protocol.h */,
@@ -14092,7 +15059,7 @@
 				6BA4FED01EC77EE400283DB5 /* HeadImgDownloaderDelegate-Protocol.h */,
 				6BA4FED11EC77EE400283DB5 /* HijackBlockProtocol.h */,
 				6BA4FED21EC77EE400283DB5 /* IABtestMgrExt-Protocol.h */,
-				6BA4FED31EC77EE400283DB5 /* IAcctStorageMgrExt-Protocol.h */,
+				6BA4FED31EC77EE400283DB5 /* IAcctStorageMgrExt.h */,
 				6BA4FED41EC77EE400283DB5 /* IAddressBookFriendMgrExt-Protocol.h */,
 				6BA4FED51EC77EE400283DB5 /* IAddressBookMgrExt-Protocol.h */,
 				6BA4FED61EC77EE400283DB5 /* IAPExt-Protocol.h */,
@@ -14117,7 +15084,7 @@
 				6BA4FEE91EC77EE400283DB5 /* IBottleContactMgrExt-Protocol.h */,
 				6BA4FEEA1EC77EE400283DB5 /* IBottleMgrExt-Protocol.h */,
 				6BA4FEEB1EC77EE400283DB5 /* IBottleSessionExt-Protocol.h */,
-				6BA4FEEC1EC77EE400283DB5 /* IBrandAttrMgrExt-Protocol.h */,
+				6BA4FEEC1EC77EE400283DB5 /* IBrandAttrMgrExt.h */,
 				6BA4FEED1EC77EE400283DB5 /* IBrandCustomReportExt-Protocol.h */,
 				6BA4FEEE1EC77EE400283DB5 /* IBrandIAPMgrExt-Protocol.h */,
 				6BA4FEEF1EC77EE400283DB5 /* IBrandServiceSearchExt-Protocol.h */,
@@ -14128,7 +15095,7 @@
 				6BA4FEF41EC77EE400283DB5 /* IClearDataMgrExt.h */,
 				6BA4FEF51EC77EE400283DB5 /* IContactLabelMgrExt.h */,
 				6BA4FEF61EC77EE400283DB5 /* IContactMgrExt-Protocol.h */,
-				6BA4FEF71EC77EE400283DB5 /* IContactProfileMgrExt-Protocol.h */,
+				6BA4FEF71EC77EE400283DB5 /* IContactProfileMgrExt.h */,
 				6BA4FEF81EC77EE400283DB5 /* IContactVerifyExt-Protocol.h */,
 				6BA4FEF91EC77EE400283DB5 /* ICreatePOIMgrExt-Protocol.h */,
 				6BA4FEFA1EC77EE400283DB5 /* IDCHostMgrExt-Protocol.h */,
@@ -14203,7 +15170,7 @@
 				6BA4FF3F1EC77EE400283DB5 /* IMMFontMgrExt-Protocol.h */,
 				6BA4FF401EC77EE400283DB5 /* IMMGrowTextViewExt-Protocol.h */,
 				6BA4FF411EC77EE400283DB5 /* IMMImagePickerManagerExt-Protocol.h */,
-				6BA4FF421EC77EE400283DB5 /* IMMLanguageMgrExt-Protocol.h */,
+				6BA4FF421EC77EE400283DB5 /* IMMLanguageMgrExt.h */,
 				6BA4FF431EC77EE400283DB5 /* IMMNewSessionMgrComparerExt-Protocol.h */,
 				6BA4FF441EC77EE400283DB5 /* IMMNewSessionMgrExt-Protocol.h */,
 				6BA4FF451EC77EE400283DB5 /* IMMQRCodeExt-Protocol.h */,
@@ -14237,7 +15204,7 @@
 				6BA4FF611EC77EE400283DB5 /* IOCRTransMgrExt-Protocol.h */,
 				6BA4FF621EC77EE400283DB5 /* IOnlineClientMgrExt-Protocol.h */,
 				6BA4FF631EC77EE500283DB5 /* IOnlineDeviceMgrExt-Protocol.h */,
-				6BA4FF641EC77EE500283DB5 /* IOplogExt-Protocol.h */,
+				6BA4FF641EC77EE500283DB5 /* IOplogExt.h */,
 				6BA4FF651EC77EE500283DB5 /* IPluginOperateMusicExt-Protocol.h */,
 				6BA4FF661EC77EE500283DB5 /* IPOILocationDisplayExt-Protocol.h */,
 				6BA4FF671EC77EE500283DB5 /* IPreEnterWechatLogicExt-Protocol.h */,
@@ -14391,12 +15358,12 @@
 				6BA4FFFC1EC77EE600283DB5 /* MCNearbyServiceAdvertiserDelegate-Protocol.h */,
 				6BA4FFFD1EC77EE600283DB5 /* MCNearbyServiceBrowserDelegate-Protocol.h */,
 				6BA4FFFE1EC77EE600283DB5 /* MCSessionDelegate-Protocol.h */,
-				6BA4FFFF1EC77EE600283DB5 /* MCssParserDelegate-Protocol.h */,
+				6BA4FFFF1EC77EE600283DB5 /* MCssParserDelegate.h */,
 				6BA400001EC77EE600283DB5 /* MemberDataDelegate-Protocol.h */,
 				6BA400011EC77EE600283DB5 /* MemberDataLogicProtocol-Protocol.h */,
 				6BA400021EC77EE600283DB5 /* MessageDBExt-Protocol.h */,
 				6BA400031EC77EE600283DB5 /* MessageNodeViewDelegate-Protocol.h */,
-				6BA400041EC77EE600283DB5 /* MessageObserverDelegate-Protocol.h */,
+				6BA400041EC77EE600283DB5 /* MessageObserverDelegate.h */,
 				6BA400051EC77EE600283DB5 /* MessageWrapImgDelegate-Protocol.h */,
 				6BA400061EC77EE600283DB5 /* MFBanner-Protocol.h */,
 				6BA400071EC77EE600283DB5 /* MFMailComposeViewControllerDelegate-Protocol.h */,
@@ -14605,7 +15572,7 @@
 				6BA400D61EC77EE800283DB5 /* PageScrollViewDataSource-Protocol.h */,
 				6BA400D71EC77EE800283DB5 /* PageScrollViewDelegate-Protocol.h */,
 				6BA400D81EC77EE800283DB5 /* PasswordLogicDelegate-Protocol.h */,
-				6BA400D91EC77EE800283DB5 /* PBCoding-Protocol.h */,
+				6BA400D91EC77EE800283DB5 /* PBCoding.h */,
 				6BA400DB1EC77EE800283DB5 /* PeopleNearByListHeaderViewDelegate-Protocol.h */,
 				6BA400DC1EC77EE800283DB5 /* PeopleNearByListViewControllerDelegate-Protocol.h */,
 				6BA400DD1EC77EE800283DB5 /* PhotoViewControllerDelegate-Protocol.h */,
@@ -14954,7 +15921,6 @@
 				6BA402371EC77EEE00283DB5 /* WCAccountVoice2ndVerifyControlLogicDelegate-Protocol.h */,
 				6BA402381EC77EEE00283DB5 /* WCAccountVoice2ndVerifyViewControllerDelegate-Protocol.h */,
 				6BA402391EC77EEE00283DB5 /* WCAccountVoiceVerifyViewControllerDelegate-Protocol.h */,
-				6BA4023A1EC77EEE00283DB5 /* WCActionSheetDelegate.h */,
 				6BA4023B1EC77EEE00283DB5 /* WCAddressInfoViewControllerDelegate-Protocol.h */,
 				6BA4023C1EC77EEE00283DB5 /* WCAddressListViewControllerDelegate-Protocol.h */,
 				6BA4023D1EC77EEE00283DB5 /* WCAddressLogicMgrExt-Protocol.h */,
@@ -16873,6 +17839,7 @@
 		6BF5385D1EC76BAE00D8D56C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6BA4E1BE1EC77A9400283DB5 /* CDStructures.h */,
 				6BF538601EC76BAE00D8D56C /* AppDelegate.h */,
 				6BF538611EC76BAE00D8D56C /* AppDelegate.m */,
 				6BF5386C1EC76BAE00D8D56C /* Assets.xcassets */,
@@ -16880,7 +17847,6 @@
 				6BF5386E1EC76BAE00D8D56C /* LaunchScreen.storyboard */,
 				6BF5385E1EC76BAE00D8D56C /* main.m */,
 				6BF538661EC76BAE00D8D56C /* Main.storyboard */,
-				6BA4E8A51EC77B6200283DB5 /* MicroMessengerAppDelegate-.h */,
 				6BF538631EC76BAE00D8D56C /* ViewController.h */,
 				6BF538641EC76BAE00D8D56C /* ViewController.m */,
 				6BF538691EC76BAE00D8D56C /* WeChatReverse.xcdatamodeld */,
@@ -16952,6 +17918,8 @@
 				6BB5DCA51EC774DB001AF22F /* FBSDKLoginManagerLoginResult.h */,
 				6B8031961EC8B50A0090657F /* MMServiceCenter.h */,
 				6B8031971EC8B50A0090657F /* MMServiceCenter.m */,
+				6B3BBE131EDAC097002602B6 /* MMExtensionCenter.h */,
+				6B3BBE141EDAC097002602B6 /* MMExtensionCenter.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -17129,62 +18097,14 @@
 				6BA4E0A11EC77A9300283DB5 /* __DeviceInfo.h */,
 				6BA4E0A21EC77A9300283DB5 /* __ThreadWarp.h */,
 				6BA4E0A31EC77A9300283DB5 /* __WCDeviceSendDataTask.h */,
-				6BA4E0A41EC77A9300283DB5 /* AAAlertItem.h */,
-				6BA4E0A51EC77A9300283DB5 /* AACloseNotifyRes.h */,
-				6BA4E0A61EC77A9300283DB5 /* AACloseRes.h */,
-				6BA4E0A71EC77A9300283DB5 /* AALaunchByMoneyRes.h */,
-				6BA4E0A81EC77A9300283DB5 /* AALaunchByPersonRes.h */,
-				6BA4E0A91EC77A9300283DB5 /* AALaunchItem.h */,
-				6BA4E0AA1EC77A9300283DB5 /* AAListRecord.h */,
-				6BA4E0AB1EC77A9300283DB5 /* AAOperationRes.h */,
-				6BA4E0AC1EC77A9300283DB5 /* AAPayer.h */,
-				6BA4E0AD1EC77A9300283DB5 /* AAPayRes.h */,
-				6BA4E0AE1EC77A9300283DB5 /* AAPayUrgeRes.h */,
-				6BA4E0AF1EC77A9300283DB5 /* AAQueryDetailRes.h */,
-				6BA4E0B01EC77A9300283DB5 /* AAQueryListRes.h */,
-				6BA4E0B11EC77A9300283DB5 /* AARealNameItem.h */,
-				6BA4E0B21EC77A9300283DB5 /* AAReceiver.h */,
-				6BA4E0B31EC77A9300283DB5 /* ABtestCase.h */,
-				6BA4E0B41EC77A9300283DB5 /* ABTestExpKeyItem.h */,
-				6BA4E0B51EC77A9300283DB5 /* ABTestItem.h */,
-				6BA4E0B61EC77A9300283DB5 /* ABTestListWrap.h */,
-				6BA4E0B71EC77A9300283DB5 /* ABtestPoint.h */,
-				6BA4E0B81EC77A9300283DB5 /* ABtestPointPeriod.h */,
+				6B3BBDDD1EDAB7ED002602B6 /* AA */,
+				6B3BBE0B1EDABBA7002602B6 /* AB */,
 				6BA4E0B91EC77A9300283DB5 /* AccelerometerFilter.h */,
-				6BA4E0BA1EC77A9300283DB5 /* AccountBindPhoneInfo.h */,
-				6BA4E0BB1EC77A9300283DB5 /* AccountErrorInfo.h */,
-				6BA4E0BC1EC77A9300283DB5 /* AccountReportInfo.h */,
-				6BA4E0BD1EC77A9300283DB5 /* AccountUploadAddressInfo.h */,
-				6BA4E0BE1EC77A9300283DB5 /* ActionAttr.h */,
-				6BA4E0BF1EC77A9300283DB5 /* ActionBase.h */,
-				6BA4E0C01EC77A9300283DB5 /* ActionCardDetail.h */,
-				6BA4E0C11EC77A9300283DB5 /* ActionComment.h */,
-				6BA4E0C21EC77A9300283DB5 /* ActionDetail.h */,
-				6BA4E0C31EC77A9300283DB5 /* ActionGridItem.h */,
-				6BA4E0C41EC77A9300283DB5 /* ActionGridRow.h */,
-				6BA4E0C51EC77A9300283DB5 /* ActionHeader.h */,
-				6BA4E0C61EC77A9300283DB5 /* ActionList.h */,
-				6BA4E0C71EC77A9300283DB5 /* ActionLocation.h */,
-				6BA4E0C81EC77A9300283DB5 /* ActionMedia.h */,
-				6BA4E0C91EC77A9300283DB5 /* ActionMusic.h */,
-				6BA4E0CA1EC77A9300283DB5 /* ActionProductDetail.h */,
-				6BA4E0CB1EC77A9300283DB5 /* ActionRecognition.h */,
-				6BA4E0CC1EC77A9300283DB5 /* ActionRefer.h */,
-				6BA4E0CD1EC77A9300283DB5 /* ActionText.h */,
-				6BA4E0CE1EC77A9300283DB5 /* ActionUrl.h */,
-				6BA4E0CF1EC77A9300283DB5 /* ActionUser.h */,
+				6B3BBDDF1EDAB81A002602B6 /* Account */,
+				6B3BBDDE1EDAB803002602B6 /* Action */,
 				6BA4E0D01EC77A9300283DB5 /* AdAppList.h */,
-				6BA4E0D11EC77A9300283DB5 /* AddEmoticonWrap.h */,
-				6BA4E0D21EC77A9300283DB5 /* AddFavItem.h */,
-				6BA4E0D31EC77A9300283DB5 /* AdditionalContactList.h */,
-				6BA4E0D41EC77A9300283DB5 /* AddMemLogic.h */,
-				6BA4E0D51EC77A9300283DB5 /* AddMsg.h */,
-				6BA4E0D61EC77A9300283DB5 /* AddMsgDigest.h */,
-				6BA4E0D71EC77A9300283DB5 /* AddMsgWrap.h */,
-				6BA4E0D81EC77A9300283DB5 /* Address.h */,
-				6BA4E0D91EC77A9300283DB5 /* AddressBookArchive.h */,
-				6BA4E0DA1EC77A9300283DB5 /* AddressBookFriend.h */,
-				6BA4E0DB1EC77A9300283DB5 /* AddShareObject.h */,
+				6B3BBE0A1EDABB8E002602B6 /* Add */,
+				6B3BBE091EDABB7C002602B6 /* Address */,
 				6BA4E0DC1EC77A9300283DB5 /* AdExposureInfo.h */,
 				6BA4E0DD1EC77A9300283DB5 /* AdExposureSocialInfo.h */,
 				6BA4E0DE1EC77A9300283DB5 /* AdItem.h */,
@@ -17208,154 +18128,44 @@
 				6BA4E0F01EC77A9300283DB5 /* APCheckPwd.h */,
 				6BA4E0F11EC77A9300283DB5 /* ApInfo.h */,
 				6BA4E0F21EC77A9300283DB5 /* ApKeyInfo.h */,
-				6BA4E0F31EC77A9300283DB5 /* AppCommentItem.h */,
-				6BA4E0F41EC77A9300283DB5 /* AppCommentMsg.h */,
-				6BA4E0F51EC77A9300283DB5 /* AppCommunicate.h */,
-				6BA4E0F61EC77A9300283DB5 /* AppCommunicateData.h */,
-				6BA4E0F71EC77A9300283DB5 /* AppConfig.h */,
-				6BA4E0F81EC77A9300283DB5 /* AppData.h */,
-				6BA4E0F91EC77A9300283DB5 /* AppIconItem.h */,
-				6BA4E0FA1EC77A9300283DB5 /* AppInnerJumpItem.h */,
-				6BA4E0FB1EC77A9300283DB5 /* AppItem.h */,
-				6BA4E0FC1EC77A9300283DB5 /* AppMsg.h */,
-				6BA4E0FD1EC77A9300283DB5 /* APPortal.h */,
-				6BA4E0FE1EC77A9300283DB5 /* APPortal33.h */,
-				6BA4E0FF1EC77A9300283DB5 /* AppPersonalInfo.h */,
-				6BA4E1001EC77A9300283DB5 /* AppPersonalInfoData.h */,
-				6BA4E1011EC77A9300283DB5 /* AppPersonalInfoItem.h */,
-				6BA4E1021EC77A9300283DB5 /* AppProductItem.h */,
-				6BA4E1031EC77A9300283DB5 /* AppRecordItem.h */,
-				6BA4E1041EC77A9300283DB5 /* AppRegisterInfo.h */,
-				6BA4E1051EC77A9300283DB5 /* ApproveAddChatRoomMemberResp_Result.h */,
-				6BA4E1061EC77A9300283DB5 /* AppSetting.h */,
-				6BA4E1071EC77A9300283DB5 /* AppSettingItem.h */,
-				6BA4E1081EC77A9300283DB5 /* AppStoreControl.h */,
-				6BA4E1091EC77A9300283DB5 /* AppTVItem.h */,
+				6B3BBE081EDABB68002602B6 /* App */,
 				6BA4E10A1EC77A9300283DB5 /* AQAudioPlayer.h */,
 				6BA4E10B1EC77A9300283DB5 /* AQAudioRecorder.h */,
-				6BA4E10C1EC77A9300283DB5 /* AsyncReadPacket.h */,
-				6BA4E10D1EC77A9300283DB5 /* AsyncSocket.h */,
-				6BA4E10E1EC77A9300283DB5 /* AsyncSpecialPacket.h */,
-				6BA4E10F1EC77A9300283DB5 /* AsyncTaskQueueEngine.h */,
-				6BA4E1101EC77A9300283DB5 /* AsyncWritePacket.h */,
+				6B3BBE071EDABB5B002602B6 /* Async */,
 				6BA4E1111EC77A9300283DB5 /* AttachementObjectItem.h */,
 				6BA4E1121EC77A9300283DB5 /* AttachmentFileInfo.h */,
 				6BA4E1131EC77A9300283DB5 /* AttributeLabel.h */,
-				6BA4E1141EC77A9300283DB5 /* AUAudioDevice.h */,
-				6BA4E1151EC77A9300283DB5 /* AudioData.h */,
-				6BA4E1161EC77A9300283DB5 /* AudioFile.h */,
-				6BA4E1171EC77A9300283DB5 /* AudioP2S.h */,
-				6BA4E1181EC77A9300283DB5 /* AudioPlayerReport.h */,
-				6BA4E1191EC77A9300283DB5 /* AudioPlayerUserData.h */,
-				6BA4E11A1EC77A9300283DB5 /* AudioReceiver.h */,
-				6BA4E11B1EC77A9300283DB5 /* AudioRecorderUserData.h */,
-				6BA4E11C1EC77A9300283DB5 /* AudioS2P.h */,
-				6BA4E11D1EC77A9300283DB5 /* AudioSender.h */,
-				6BA4E11E1EC77A9300283DB5 /* AuthAppBaseInfo.h */,
-				6BA4E11F1EC77A9300283DB5 /* AuthAppItem.h */,
-				6BA4E1201EC77A9300283DB5 /* AutoAuthAesReqData.h */,
-				6BA4E1211EC77A9300283DB5 /* AutoAuthKey.h */,
-				6BA4E1221EC77A9300283DB5 /* AutoAuthRsaReqData.h */,
-				6BA4E1231EC77A9300283DB5 /* AVAudioPlayWraper.h */,
-				6BA4E1241EC77A9300283DB5 /* AVAudioSessionRouteDescription-Swizzle.h */,
-				6BA4E1251EC77A9300283DB5 /* AVCaptureVideoPreviewLayer-extend.h */,
-				6BA4E1261EC77A9300283DB5 /* AVRSLoadingRuestTaskInfo.h */,
-				6BA4E1271EC77A9300283DB5 /* AVVideoDevice.h */,
-				6BA4E1281EC77A9300283DB5 /* AVVideoDeviceSessionQueue.h */,
+				6B3BBDE01EDAB837002602B6 /* Audio */,
+				6B3BBE061EDABB4E002602B6 /* Auth */,
+				6B3BBE051EDABB44002602B6 /* AV */,
 				6BA4E1291EC77A9300283DB5 /* BackgroundTask.h */,
-				6BA4E12A1EC77A9300283DB5 /* BackPageInfo.h */,
-				6BA4E12B1EC77A9300283DB5 /* BackupInfoItem.h */,
-				6BA4E12C1EC77A9300283DB5 /* BackupInfoReport.h */,
-				6BA4E12D1EC77A9300283DB5 /* BackupReportItem.h */,
-				6BA4E12E1EC77A9300283DB5 /* BackupReportList.h */,
-				6BA4E12F1EC77A9300283DB5 /* BackupSessionInfo.h */,
-				6BA4E1301EC77A9300283DB5 /* BackupSessionInfoList.h */,
-				6BA4E1311EC77A9300283DB5 /* BackupStartGeneralInfo.h */,
-				6BA4E1321EC77A9300283DB5 /* BakChatItem.h */,
-				6BA4E1331EC77A9300283DB5 /* BakChatMsgItem.h */,
-				6BA4E1341EC77A9300283DB5 /* BakChatMsgList.h */,
+				6B3BBDE11EDAB84A002602B6 /* Backup */,
+				6B3BBE041EDABB39002602B6 /* Bak */,
 				6BA4E1351EC77A9300283DB5 /* BalanceMobileInfo.h */,
 				6BA4E1361EC77A9300283DB5 /* BankCodeTextField.h */,
 				6BA4E1371EC77A9300283DB5 /* BannerBaseMsg.h */,
 				6BA4E1381EC77A9300283DB5 /* BannerWrap.h */,
-				6BA4E1391EC77A9300283DB5 /* BaseAudioPlayer.h */,
-				6BA4E13A1EC77A9300283DB5 /* BaseAudioRecorder.h */,
-				6BA4E13B1EC77A9300283DB5 /* BaseAuthReqInfo.h */,
-				6BA4E13C1EC77A9300283DB5 /* BaseCRC.h */,
-				6BA4E13D1EC77A9300283DB5 /* BaseParser.h */,
-				6BA4E13E1EC77A9300283DB5 /* BasePatternGenerator.h */,
-				6BA4E13F1EC77A9300283DB5 /* BaseStyle.h */,
-				6BA4E1401EC77A9300283DB5 /* BatchAddMsgInfo.h */,
-				6BA4E1411EC77A9300283DB5 /* BatchSearchHardDeviceFilter.h */,
-				6BA4E1421EC77A9300283DB5 /* BatchSearchHardDeviceInfo.h */,
-				6BA4E1431EC77A9300283DB5 /* BatchSearchHardDeviceResult.h */,
+				6B3BBE0C1EDABBC7002602B6 /* Base */,
+				6B3BBE031EDABB2B002602B6 /* Batch */,
 				6BA4E1441EC77A9300283DB5 /* BBHostInfo.h */,
 				6BA4E1451EC77A9300283DB5 /* BCDEncoding.h */,
 				6BA4E1461EC77A9300283DB5 /* BioBuffer.h */,
-				6BA4E1471EC77A9300283DB5 /* BizApiInfo.h */,
-				6BA4E1481EC77A9300283DB5 /* BizAppInfo.h */,
-				6BA4E1491EC77A9300283DB5 /* BizAttrSyncBufferCacheItem.h */,
-				6BA4E14A1EC77A9300283DB5 /* BizAttrSyncCtrl.h */,
-				6BA4E14B1EC77A9300283DB5 /* BizAttrSyncResp_KeyValue.h */,
-				6BA4E14C1EC77A9300283DB5 /* BizAttrSyncSingleReqInfo.h */,
-				6BA4E14D1EC77A9300283DB5 /* BizAttrSyncSingleRespInfo.h */,
-				6BA4E14E1EC77A9300283DB5 /* BizChat.h */,
-				6BA4E14F1EC77A9300283DB5 /* BizChatMember.h */,
-				6BA4E1501EC77A9300283DB5 /* BizChatMemberList.h */,
-				6BA4E1511EC77A9300283DB5 /* BizChatSearchContactMatchedUser.h */,
-				6BA4E1521EC77A9300283DB5 /* BizChatUser.h */,
-				6BA4E1531EC77A9300283DB5 /* BizEnterpriseAttr.h */,
-				6BA4E1541EC77A9300283DB5 /* BizScopeInfo.h */,
+				6B3BBDE21EDAB85F002602B6 /* Biz */,
 				6BA4E1551EC77A9300283DB5 /* BlockDumpList.h */,
-				6BA4E1561EC77A9300283DB5 /* BlueAdapterBase.h */,
-				6BA4E1571EC77A9300283DB5 /* BlueBLEAdapter.h */,
-				6BA4E1581EC77A9300283DB5 /* BlueDevicePool.h */,
-				6BA4E1591EC77A9300283DB5 /* BlueEAAdapter.h */,
-				6BA4E15A1EC77A9300283DB5 /* BlueIDPool.h */,
-				6BA4E15B1EC77A9300283DB5 /* BlueManager.h */,
-				6BA4E15C1EC77A9300283DB5 /* BlueProfilePedometerInfo.h */,
-				6BA4E15D1EC77A9300283DB5 /* BluetoothLoginLogic.h */,
+				6B3BBE021EDABB1E002602B6 /* Blue */,
 				6BA4E15E1EC77A9300283DB5 /* BoldTextParser.h */,
 				6BA4E15F1EC77A9300283DB5 /* BookScanner.h */,
 				6BA4E1601EC77A9300283DB5 /* BottleAnimation.h */,
 				6BA4E1611EC77A9300283DB5 /* BottleContactExtendCode.h */,
 				6BA4E1621EC77A9300283DB5 /* BottleSessionInfo.h */,
 				6BA4E1631EC77A9300283DB5 /* BraceletRankSwitch.h */,
-				6BA4E1641EC77A9300283DB5 /* BrandArticleSearchEventWrap.h */,
-				6BA4E1651EC77A9300283DB5 /* BrandArticleSearchLogic.h */,
-				6BA4E1661EC77A9300283DB5 /* BrandArticleSearchPageBaseLogic.h */,
-				6BA4E1671EC77A9300283DB5 /* BrandArticleSearchResultLogic.h */,
-				6BA4E1681EC77A9300283DB5 /* BrandContactItem.h */,
-				6BA4E1691EC77A9300283DB5 /* BrandLocationReportLogicAlertOberserver.h */,
-				6BA4E16A1EC77A9300283DB5 /* BrandServiceContinueLocationReportLogic.h */,
-				6BA4E16B1EC77A9300283DB5 /* BrandServiceDataItem.h */,
-				6BA4E16C1EC77A9300283DB5 /* BrandServiceEnterConversationLogic.h */,
-				6BA4E16D1EC77A9300283DB5 /* BrandServiceHeadImageProvider.h */,
-				6BA4E16E1EC77A9300283DB5 /* BrandServiceStorage.h */,
-				6BA4E16F1EC77A9300283DB5 /* BrandSessionCache.h */,
-				6BA4E1701EC77A9300283DB5 /* BrandUserContactInfoAssist.h */,
-				6BA4E1711EC77A9300283DB5 /* BSBusinessCommonItem.h */,
-				6BA4E1721EC77A9300283DB5 /* BSBusinessContactItem.h */,
-				6BA4E1731EC77A9300283DB5 /* BSBusinessContent.h */,
-				6BA4E1741EC77A9300283DB5 /* BSBusinessProductItem.h */,
-				6BA4E1751EC77A9300283DB5 /* BSBusinessResultItem.h */,
-				6BA4E1761EC77A9300283DB5 /* BSBusinessServiceInfo.h */,
+				6B3BBDE31EDAB86F002602B6 /* Brand */,
+				6B3BBE001EDABB00002602B6 /* BS */,
 				6BA4E1771EC77A9300283DB5 /* BubbleInfo.h */,
 				6BA4E1781EC77A9300283DB5 /* BubbleManager.h */,
 				6BA4E1791EC77A9300283DB5 /* BuiltinIP.h */,
 				6BA4E17A1EC77A9300283DB5 /* BuiltinIPList.h */,
-				6BA4E17B1EC77A9300283DB5 /* BusinessActionInfo.h */,
-				6BA4E17C1EC77A9300283DB5 /* BusinessCommonItem.h */,
-				6BA4E17D1EC77A9300283DB5 /* BusinessContactItem.h */,
-				6BA4E17E1EC77A9300283DB5 /* BusinessContent.h */,
-				6BA4E17F1EC77A9300283DB5 /* BusinessDetailInfo.h */,
-				6BA4E1801EC77A9300283DB5 /* BusinessExtendInfo.h */,
-				6BA4E1811EC77A9300283DB5 /* BusinessPOIItem.h */,
-				6BA4E1821EC77A9300283DB5 /* BusinessProductItem.h */,
-				6BA4E1831EC77A9300283DB5 /* BusinessResultItem.h */,
-				6BA4E1841EC77A9300283DB5 /* BusinessServiceInfo.h */,
-				6BA4E1851EC77A9300283DB5 /* BusinessSnsItem.h */,
-				6BA4E1861EC77A9300283DB5 /* BussinessExtendItem.h */,
+				6B3BBE011EDABB0D002602B6 /* Business */,
 				6BA4E1871EC77A9300283DB5 /* CAAnimation-POPAnimationExtras.h */,
 				6BA4E1881EC77A9300283DB5 /* CacheFileInfo.h */,
 				6BA4E1891EC77A9300283DB5 /* CADisplayLink-LX_userInfo.h */,
@@ -17364,75 +18174,26 @@
 				6BA4E18C1EC77A9300283DB5 /* CanvasInfo.h */,
 				6BA4E18D1EC77A9300283DB5 /* CAppBrandInfo.h */,
 				6BA4E1901EC77A9300283DB5 /* CaptureVideoInfo.h */,
-				6BA4E1911EC77A9300283DB5 /* CardListItem.h */,
-				6BA4E1921EC77A9300283DB5 /* CardTicketItem.h */,
-				6BA4E1931EC77A9300283DB5 /* CardTpInfoItem.h */,
-				6BA4E1941EC77A9300283DB5 /* CardUserItem.h */,
+				6B3BBDFE1EDABAE5002602B6 /* Card */,
 				6BA4E1951EC77A9300283DB5 /* CAttach.h */,
 				6BA4E1961EC77A9300283DB5 /* CBaseContact.h */,
 				6BA4E1971EC77A9300283DB5 /* CBaseContactInfoAssist.h */,
 				6BA4E1981EC77A9300283DB5 /* CBaseFile.h */,
-				6BA4E1991EC77A9300283DB5 /* CBottle.h */,
-				6BA4E19A1EC77A9300283DB5 /* CBottleContact.h */,
-				6BA4E19B1EC77A9300283DB5 /* CBottleContactDB.h */,
-				6BA4E19C1EC77A9300283DB5 /* CBottleExtendCode.h */,
-				6BA4E19D1EC77A9300283DB5 /* CBottleSetting.h */,
+				6B3BBDFF1EDABAF2002602B6 /* CBottle */,
 				6BA4E19E1EC77A9300283DB5 /* CBUUID-RepresentString.h */,
 				6BA4E19F1EC77A9300283DB5 /* CCatchUnImplementMethod.h */,
 				6BA4E1A01EC77A9300283DB5 /* CChatRoomVerifyContact.h */,
-				6BA4E1A11EC77A9300283DB5 /* CContact.h */,
-				6BA4E1A21EC77A9300283DB5 /* CContactDB.h */,
-				6BA4E1A31EC77A9300283DB5 /* CContactExtendCode.h */,
-				6BA4E1A41EC77A9300283DB5 /* CContactForSearch.h */,
-				6BA4E1A51EC77A9300283DB5 /* CContactOPLog.h */,
-				6BA4E1A61EC77A9300283DB5 /* CContactVerifyLogic.h */,
+				6B3BBDE41EDAB884002602B6 /* CContact */,
+				6B3BBDDB1EDAB755002602B6 /* CContactOPLog.m */,
 				6BA4E1A71EC77A9300283DB5 /* CDirectSend.h */,
-				6BA4E1A81EC77A9300283DB5 /* CdnChannel.h */,
-				6BA4E1A91EC77A9300283DB5 /* CdnComMediaInfo.h */,
-				6BA4E1AA1EC77A9300283DB5 /* CdnComVideoProcessInfo.h */,
-				6BA4E1AB1EC77A9300283DB5 /* CDNDnsInfo.h */,
-				6BA4E1AC1EC77A9300283DB5 /* CDNDnsPortInfo.h */,
-				6BA4E1AD1EC77A9300283DB5 /* CdnDownloadTaskInfo.h */,
-				6BA4E1AE1EC77A9300283DB5 /* CdnFavMediaInfo.h */,
-				6BA4E1AF1EC77A9300283DB5 /* CdnProgressInfo.h */,
-				6BA4E1B01EC77A9300283DB5 /* CdnRecordMediaInfo.h */,
-				6BA4E1B11EC77A9300283DB5 /* CdnSnsTaskInfo.h */,
-				6BA4E1B21EC77A9300283DB5 /* CdnStoreMediaInfo.h */,
-				6BA4E1B31EC77A9300283DB5 /* CdnTaskInfo.h */,
-				6BA4E1B41EC77A9400283DB5 /* CdnTimelineMediaInfo.h */,
-				6BA4E1B51EC77A9400283DB5 /* CdnTimelineMediaOfSightInfo.h */,
-				6BA4E1B61EC77A9400283DB5 /* CdnUploadTaskInfo.h */,
+				6B3BBDFD1EDABACB002602B6 /* CDN */,
 				6BA4E1B71EC77A9400283DB5 /* CDomainEmailWrap.h */,
-				6BA4E1B81EC77A9400283DB5 /* CDownloadFile.h */,
-				6BA4E1B91EC77A9400283DB5 /* CDownloadVideoInfo.h */,
-				6BA4E1BA1EC77A9400283DB5 /* CDownloadVideoPrtl.h */,
-				6BA4E1BB1EC77A9400283DB5 /* CDownloadVideoWrap.h */,
-				6BA4E1BC1EC77A9400283DB5 /* CDownloadVoicePrtl.h */,
-				6BA4E1BD1EC77A9400283DB5 /* CDownloadVoiceWrap.h */,
-				6BA4E1BE1EC77A9400283DB5 /* CDStructures.h */,
+				6B3BBDE51EDAB894002602B6 /* CDownload */,
 				6BA4E1BF1EC77A9400283DB5 /* CellWithIndex.h */,
-				6BA4E1C01EC77A9400283DB5 /* CEmojiCataLogWrap.h */,
-				6BA4E1C11EC77A9400283DB5 /* CEmojiWrap.h */,
-				6BA4E1C21EC77A9400283DB5 /* CEmoticonDB.h */,
-				6BA4E1C31EC77A9400283DB5 /* CEmoticonPackageDB.h */,
-				6BA4E1C41EC77A9400283DB5 /* CEmoticonPackageWrap.h */,
-				6BA4E1C51EC77A9400283DB5 /* CEmoticonUploadInfo.h */,
-				6BA4E1C61EC77A9400283DB5 /* CEmoticonWrap.h */,
+				6B3BBDE71EDAB8BD002602B6 /* CEmo */,
 				6BA4E1C71EC77A9400283DB5 /* CEnterpriseContact.h */,
 				6BA4E1C81EC77A9400283DB5 /* CertInfo.h */,
-				6BA4E1C91EC77A9400283DB5 /* CExtendInfoOfAPP.h */,
-				6BA4E1CA1EC77A9400283DB5 /* CExtendInfoOfEmoticon.h */,
-				6BA4E1CB1EC77A9400283DB5 /* CExtendInfoOfImg.h */,
-				6BA4E1CC1EC77A9400283DB5 /* CExtendInfoOfLocation.h */,
-				6BA4E1CD1EC77A9400283DB5 /* CExtendInfoOfMassSend.h */,
-				6BA4E1CE1EC77A9400283DB5 /* CExtendInfoOfPushMail.h */,
-				6BA4E1CF1EC77A9400283DB5 /* CExtendInfoOfQQ.h */,
-				6BA4E1D01EC77A9400283DB5 /* CExtendInfoOfReader.h */,
-				6BA4E1D11EC77A9400283DB5 /* CExtendInfoOfSysNewXmlForBiz.h */,
-				6BA4E1D21EC77A9400283DB5 /* CExtendInfoOfTextForBiz.h */,
-				6BA4E1D31EC77A9400283DB5 /* CExtendInfoOfVideo.h */,
-				6BA4E1D41EC77A9400283DB5 /* CExtendInfoOfVoiceMsg.h */,
-				6BA4E1D51EC77A9400283DB5 /* CExtendInfoOfVoip.h */,
+				6B3BBDE61EDAB8AC002602B6 /* CExtendInfo */,
 				6BA4E1D61EC77A9400283DB5 /* CFishBottlePrtl.h */,
 				6BA4E1D71EC77A9400283DB5 /* CFishBottleWrap.h */,
 				6BA4E1D81EC77A9400283DB5 /* CFloatBottleContactInfoAssist.h */,
@@ -17441,25 +18202,7 @@
 				6BA4E1DB1EC77A9400283DB5 /* CGroupDB.h */,
 				6BA4E1DC1EC77A9400283DB5 /* CGroupOpLog.h */,
 				6BA4E1DD1EC77A9400283DB5 /* ChangeOwnerLogic.h */,
-				6BA4E1DE1EC77A9400283DB5 /* ChatBackgroundItem.h */,
-				6BA4E1DF1EC77A9400283DB5 /* ChatBackgroundSettings.h */,
-				6BA4E1E01EC77A9400283DB5 /* ChatContact.h */,
-				6BA4E1E11EC77A9400283DB5 /* ChatMigrationCreateQRCode.h */,
-				6BA4E1E21EC77A9400283DB5 /* ChatMigrationGetConnectInfo.h */,
-				6BA4E1E31EC77A9400283DB5 /* ChatMigrationHeartBeatMonitor.h */,
-				6BA4E1E41EC77A9400283DB5 /* ChatRoomData.h */,
-				6BA4E1E51EC77A9400283DB5 /* ChatRoomDetail.h */,
-				6BA4E1E61EC77A9400283DB5 /* ChatRoomInfo.h */,
-				6BA4E1E71EC77A9400283DB5 /* ChatRoomInfoSetting.h */,
-				6BA4E1E81EC77A9400283DB5 /* ChatRoomMemberData.h */,
-				6BA4E1E91EC77A9400283DB5 /* ChatRoomMemberInfo.h */,
-				6BA4E1EA1EC77A9400283DB5 /* ChatRoomMemMsgDataLogic.h */,
-				6BA4E1EB1EC77A9400283DB5 /* ChatRoomNoticeMsg.h */,
-				6BA4E1EC1EC77A9400283DB5 /* ChatRoomRemindMsg.h */,
-				6BA4E1ED1EC77A9400283DB5 /* ChatRoomUpgradeInfo.h */,
-				6BA4E1EE1EC77A9400283DB5 /* ChatRoomUpgradeProductItem.h */,
-				6BA4E1EF1EC77A9400283DB5 /* ChatRoomVerifyMsg.h */,
-				6BA4E1F01EC77A9400283DB5 /* ChatRoomVerifyMsgIndex.h */,
+				6B3BBDE81EDAB8F1002602B6 /* Chat */,
 				6BA4E1F11EC77A9400283DB5 /* CheckCDN.h */,
 				6BA4E1F21EC77A9400283DB5 /* CheckQRCodeLoginCGI.h */,
 				6BA4E1F31EC77A9400283DB5 /* CInviteFriendWrap.h */,
@@ -17470,20 +18213,11 @@
 				6BA4E1F81EC77A9400283DB5 /* CleanTaskInfo.h */,
 				6BA4E1F91EC77A9400283DB5 /* CliReportKVDataPackage.h */,
 				6BA4E1FA1EC77A9400283DB5 /* CLocalInfo.h */,
-				6BA4E1FB1EC77A9400283DB5 /* CMail.h */,
-				6BA4E1FC1EC77A9400283DB5 /* CMailContact.h */,
-				6BA4E1FD1EC77A9400283DB5 /* CMailContactInfo.h */,
-				6BA4E1FE1EC77A9400283DB5 /* CMainControll-.h */,
+				6B3BBE0E1EDABBEF002602B6 /* CM */,
+				6B3BBE0D1EDABBE4002602B6 /* CMail */,
 				6BA4E1FF1EC77A9400283DB5 /* CmdItem.h */,
 				6BA4E2001EC77A9400283DB5 /* CmdList.h */,
 				6BA4E2011EC77A9400283DB5 /* CMediaNoteContactInfoAssist.h */,
-				6BA4E2021EC77A9400283DB5 /* CMessage.h */,
-				6BA4E2031EC77A9400283DB5 /* CMessageDB.h */,
-				6BA4E2041EC77A9400283DB5 /* CMessageWrap.h */,
-				6BA4E2051EC77A9400283DB5 /* CMMDB.h */,
-				6BA4E2061EC77A9400283DB5 /* CMMKVCommReport.h */,
-				6BA4E2071EC77A9400283DB5 /* CMMVector.h */,
-				6BA4E2081EC77A9400283DB5 /* CModUserImgWrap.h */,
 				6BA4E2091EC77A9400283DB5 /* CNetworkStatus.h */,
 				6BA4E20A1EC77A9400283DB5 /* CNetworkStatusReportArchive.h */,
 				6BA4E20B1EC77A9400283DB5 /* CNewInitPrtl.h */,
@@ -17497,31 +18231,18 @@
 				6BA4E2131EC77A9400283DB5 /* Config.h */,
 				6BA4E2141EC77A9400283DB5 /* ConfigureReader.h */,
 				6BA4E2151EC77A9400283DB5 /* ConnectInfoAddr.h */,
-				6BA4E2161EC77A9400283DB5 /* ContactExtendCodePB.h */,
-				6BA4E2171EC77A9400283DB5 /* ContactProfile.h */,
-				6BA4E2181EC77A9400283DB5 /* ContactRemarkLogic.h */,
-				6BA4E2191EC77A9400283DB5 /* ContactsCommon.h */,
-				6BA4E21A1EC77A9400283DB5 /* ContactsCreateChatRoomLogic.h */,
-				6BA4E21B1EC77A9400283DB5 /* ContactsDataLogic.h */,
-				6BA4E21C1EC77A9400283DB5 /* ContactsGenerator.h */,
-				6BA4E21D1EC77A9400283DB5 /* ContactTagData.h */,
-				6BA4E21E1EC77A9400283DB5 /* ContactTagEditLogic.h */,
-				6BA4E21F1EC77A9400283DB5 /* ContactTagItem.h */,
+				6B3BBDFA1EDABA93002602B6 /* Contact */,
 				6BA4E2201EC77A9400283DB5 /* ConversationFileInfo.h */,
 				6BA4E2211EC77A9400283DB5 /* ConversationMsgInfo.h */,
 				6BA4E2221EC77A9400283DB5 /* COOBData.h */,
-				6BA4E2231EC77A9400283DB5 /* COpenBottleInfo.h */,
-				6BA4E2241EC77A9400283DB5 /* COpenBottlePrtl.h */,
-				6BA4E2251EC77A9400283DB5 /* COpenBottleWrap.h */,
+				6B3BBDFC1EDABAB2002602B6 /* COpen */,
 				6BA4E2261EC77A9400283DB5 /* CountryCodeWrap.h */,
 				6BA4E2271EC77A9400283DB5 /* CountryFormatConfig.h */,
 				6BA4E2281EC77A9400283DB5 /* CPKeyIncreaseInfo.h */,
 				6BA4E2291EC77A9400283DB5 /* CPreViewMsg.h */,
 				6BA4E22A1EC77A9400283DB5 /* CPushContact.h */,
 				6BA4E22B1EC77A9400283DB5 /* CPushMailContactInfoAssist.h */,
-				6BA4E22C1EC77A9400283DB5 /* CQQContact.h */,
-				6BA4E22D1EC77A9400283DB5 /* CQQContactDB.h */,
-				6BA4E22E1EC77A9400283DB5 /* CQQContactInfoAssist.h */,
+				6B3BBDFB1EDABAA7002602B6 /* CQQ */,
 				6BA4E22F1EC77A9400283DB5 /* CrashReportInfo.h */,
 				6BA4E2301EC77A9400283DB5 /* CreateChatLogic.h */,
 				6BA4E2311EC77A9400283DB5 /* CSearchedContact.h */,
@@ -17540,15 +18261,7 @@
 				6BA4E23E1EC77A9400283DB5 /* CThrowBottlePrtl.h */,
 				6BA4E23F1EC77A9400283DB5 /* CThrowBottleWrap.h */,
 				6BA4E2401EC77A9400283DB5 /* CUpdateInfo.h */,
-				6BA4E2411EC77A9400283DB5 /* CUploadHDHeadImg.h */,
-				6BA4E2421EC77A9400283DB5 /* CUploadHDHeadImgWrap.h */,
-				6BA4E2431EC77A9400283DB5 /* CUploadImgWrap.h */,
-				6BA4E2441EC77A9400283DB5 /* CUploadMContactPrtl.h */,
-				6BA4E2451EC77A9400283DB5 /* CUploadVideoInfo.h */,
-				6BA4E2461EC77A9400283DB5 /* CUploadVideoPrtl.h */,
-				6BA4E2471EC77A9400283DB5 /* CUploadVideoWrap.h */,
-				6BA4E2481EC77A9400283DB5 /* CUploadVoicePrtl.h */,
-				6BA4E2491EC77A9400283DB5 /* CUploadVoiceWrap.h */,
+				6B3BBE0F1EDABC09002602B6 /* CUpload */,
 				6BA4E24A1EC77A9400283DB5 /* CUsrInfo.h */,
 				6BA4E24B1EC77A9400283DB5 /* CustomizedInfo.h */,
 				6BA4E24C1EC77A9400283DB5 /* CustomizedInfoNew.h */,
@@ -17557,174 +18270,30 @@
 				6BA4E24F1EC77A9400283DB5 /* CVerifyContactWrap.h */,
 				6BA4E2501EC77A9400283DB5 /* CVerifyEmailPrtl.h */,
 				6BA4E2511EC77A9400283DB5 /* DataMatrix.h */,
-				6BA4E2521EC77A9400283DB5 /* DBBottle.h */,
-				6BA4E2531EC77A9400283DB5 /* DBBottleContact.h */,
-				6BA4E2541EC77A9400283DB5 /* DBContact.h */,
-				6BA4E2551EC77A9400283DB5 /* DBContactBrand.h */,
-				6BA4E2561EC77A9400283DB5 /* DBContactChatRoom.h */,
-				6BA4E2571EC77A9400283DB5 /* DBContactChatRoomDetail.h */,
-				6BA4E2581EC77A9400283DB5 /* DBContactExt.h */,
-				6BA4E2591EC77A9400283DB5 /* DBContactHeadImage.h */,
-				6BA4E25A1EC77A9400283DB5 /* DBContactLocal.h */,
-				6BA4E25B1EC77A9400283DB5 /* DBContactMeta.h */,
-				6BA4E25C1EC77A9400283DB5 /* DBContactOther.h */,
-				6BA4E25D1EC77A9400283DB5 /* DBContactProfile.h */,
-				6BA4E25E1EC77A9400283DB5 /* DBContactRemark.h */,
-				6BA4E25F1EC77A9400283DB5 /* DBContactSocial.h */,
-				6BA4E2601EC77A9400283DB5 /* DBContactTable.h */,
-				6BA4E2611EC77A9400283DB5 /* DBContactTableForSearch.h */,
-				6BA4E2621EC77A9400283DB5 /* DBEmoticon.h */,
-				6BA4E2631EC77A9400283DB5 /* DBEmoticonDownload.h */,
-				6BA4E2641EC77A9400283DB5 /* DBEmoticonUpload.h */,
-				6BA4E2651EC77A9400283DB5 /* DBFavoritesItem.h */,
-				6BA4E2661EC77A9400283DB5 /* DBHello.h */,
-				6BA4E2671EC77A9400283DB5 /* DBMessage.h */,
-				6BA4E2681EC77A9400283DB5 /* DBMessageBizExt.h */,
-				6BA4E2691EC77A9400283DB5 /* DBMessageExt.h */,
-				6BA4E26A1EC77A9400283DB5 /* DBQQContact.h */,
-				6BA4E26B1EC77A9400283DB5 /* DBSendMessage.h */,
-				6BA4E26C1EC77A9400283DB5 /* DeepLinkBitSet.h */,
-				6BA4E26D1EC77A9400283DB5 /* DeepLinkDef.h */,
-				6BA4E26E1EC77A9400283DB5 /* DeepLinkParam.h */,
-				6BA4E26F1EC77A9400283DB5 /* DeepLinkVCConfigItem.h */,
-				6BA4E2701EC77A9400283DB5 /* DeepSearchP5EM1B9.h */,
-				6BA4E2711EC77A9400283DB5 /* DelayInfo.h */,
-				6BA4E2721EC77A9400283DB5 /* DelayPresentationLogic.h */,
-				6BA4E2731EC77A9400283DB5 /* DelaySwitchSettingLogic.h */,
-				6BA4E2741EC77A9400283DB5 /* DelChatContact.h */,
+				6B3BBDF21EDAB9DB002602B6 /* DB */,
+				6B3BBE101EDABC16002602B6 /* Deep */,
+				6B3BBE121EDABC3D002602B6 /* Delay */,
 				6BA4E2751EC77A9400283DB5 /* DeleagateProxyCatchUnImplementMethod.h */,
-				6BA4E2761EC77A9400283DB5 /* DeletedMsg.h */,
-				6BA4E2771EC77A9400283DB5 /* DeletePathService.h */,
-				6BA4E2781EC77A9400283DB5 /* DeleteSnsOldGroup.h */,
-				6BA4E2791EC77A9400283DB5 /* DelFavItemRsp.h */,
-				6BA4E27A1EC77A9500283DB5 /* DelMemLogic.h */,
-				6BA4E27B1EC77A9500283DB5 /* DelWxAppContact.h */,
-				6BA4E27C1EC77A9500283DB5 /* Device.h */,
-				6BA4E27D1EC77A9500283DB5 /* DeviceFollowItem.h */,
-				6BA4E27E1EC77A9500283DB5 /* DeviceInfo.h */,
-				6BA4E27F1EC77A9500283DB5 /* DeviceRankDetailResonse.h */,
-				6BA4E2801EC77A9500283DB5 /* DeviceRankInfo.h */,
-				6BA4E2811EC77A9500283DB5 /* DeviceRankItem.h */,
-				6BA4E2821EC77A9500283DB5 /* DeviceRankLikeCellInfo.h */,
-				6BA4E2831EC77A9500283DB5 /* DeviceRankLikeDetailInfo.h */,
-				6BA4E2841EC77A9500283DB5 /* DeviceRankRecordItem.h */,
-				6BA4E2851EC77A9500283DB5 /* DeviceRankSetting.h */,
-				6BA4E2861EC77A9500283DB5 /* DeviceRankUserProfile.h */,
-				6BA4E2871EC77A9500283DB5 /* DeviceStepItem.h */,
+				6B3BBE111EDABC2B002602B6 /* Delete */,
+				6B3BBDF11EDAB9C6002602B6 /* Device */,
 				6BA4E2881EC77A9500283DB5 /* Discount.h */,
 				6BA4E2891EC77A9500283DB5 /* DisturbSetting.h */,
 				6BA4E28A1EC77A9500283DB5 /* DisturbTimeSpan.h */,
 				6BA4E28B1EC77A9500283DB5 /* DoubleLinkP2S.h */,
 				6BA4E28C1EC77A9500283DB5 /* DoubleLinkS2P.h */,
-				6BA4E28D1EC77A9500283DB5 /* DownloadGuidance.h */,
-				6BA4E28E1EC77A9500283DB5 /* DownloadImageCache.h */,
-				6BA4E28F1EC77A9500283DB5 /* DownloadImageInfo.h */,
-				6BA4E2901EC77A9500283DB5 /* DownloadInfo.h */,
-				6BA4E2911EC77A9500283DB5 /* DownloadMediaWrap.h */,
-				6BA4E2921EC77A9500283DB5 /* DownloadVideoCache.h */,
-				6BA4E2931EC77A9500283DB5 /* DownloadVoiceWrap.h */,
+				6B3BBDF01EDAB9B5002602B6 /* Download */,
 				6BA4E2941EC77A9500283DB5 /* DropdownItem.h */,
 				6BA4E2951EC77A9500283DB5 /* DropdownMenu.h */,
 				6BA4E2961EC77A9500283DB5 /* EAGLView_v2.h */,
 				6BA4E2971EC77A9500283DB5 /* ECDHKey.h */,
-				6BA4E2981EC77A9500283DB5 /* EditImageAttr.h */,
-				6BA4E2991EC77A9500283DB5 /* EditImageColorSquareBar.h */,
-				6BA4E29A1EC77A9500283DB5 /* EditImageEmotionTool.h */,
-				6BA4E29B1EC77A9500283DB5 /* EditImageMosaicTool.h */,
-				6BA4E29C1EC77A9500283DB5 /* EditImagePenTool.h */,
-				6BA4E29D1EC77A9500283DB5 /* EditImagePoint.h */,
-				6BA4E29E1EC77A9500283DB5 /* EditImageReport.h */,
-				6BA4E29F1EC77A9500283DB5 /* EditImageTextTool.h */,
-				6BA4E2A01EC77A9500283DB5 /* EditImageWidgetTool.h */,
+				6B3BBDEF1EDAB9A4002602B6 /* EditImage */,
 				6BA4E2A11EC77A9500283DB5 /* EmojiInfo.h */,
 				6BA4E2A21EC77A9500283DB5 /* EmojiTag.h */,
-				6BA4E2A31EC77A9500283DB5 /* EmoticonAddFromServerLogicObject.h */,
-				6BA4E2A41EC77A9500283DB5 /* EmoticonAddToServerLogicObject.h */,
-				6BA4E2A51EC77A9500283DB5 /* EmoticonBackupInfoObject.h */,
-				6BA4E2A61EC77A9500283DB5 /* EmoticonBackupLogicObject.h */,
-				6BA4E2A71EC77A9500283DB5 /* EmoticonBackupMd5ListCgi.h */,
-				6BA4E2A81EC77A9500283DB5 /* EmoticonboardPageOffset.h */,
-				6BA4E2A91EC77A9500283DB5 /* EmoticonBoardPageSectionInfo.h */,
-				6BA4E2AA1EC77A9500283DB5 /* EmoticonBoardPageWrap.h */,
-				6BA4E2AB1EC77A9500283DB5 /* EmoticonBoughtListCache.h */,
-				6BA4E2AC1EC77A9500283DB5 /* EmoticonCdnDownloadConnection.h */,
-				6BA4E2AD1EC77A9500283DB5 /* EmoticonCustomManageAddLogic.h */,
-				6BA4E2AE1EC77A9500283DB5 /* EmoticonCustomManageDataLogic.h */,
-				6BA4E2AF1EC77A9500283DB5 /* EmoticonCustomManageWrap.h */,
-				6BA4E2B01EC77A9500283DB5 /* EmoticonCustomReportData.h */,
-				6BA4E2B11EC77A9500283DB5 /* EmoticonDeleteFromServerLogicObject.h */,
-				6BA4E2B21EC77A9500283DB5 /* EmoticonDesc.h */,
-				6BA4E2B31EC77A9500283DB5 /* EmoticonDownloadInfo.h */,
-				6BA4E2B41EC77A9500283DB5 /* EmoticonDownloadMd5ListCgi.h */,
-				6BA4E2B51EC77A9500283DB5 /* EmoticonDownloadMd5ListObject.h */,
-				6BA4E2B61EC77A9500283DB5 /* EmoticonDownloadProxy.h */,
-				6BA4E2B71EC77A9500283DB5 /* EmoticonHybridDownloadProxy.h */,
-				6BA4E2B81EC77A9500283DB5 /* EmoticonLangDesc.h */,
-				6BA4E2B91EC77A9500283DB5 /* EmoticonMd5DownloadProxy.h */,
-				6BA4E2BA1EC77A9500283DB5 /* EmoticonMd5Object.h */,
-				6BA4E2BB1EC77A9500283DB5 /* EmoticonOperateCgi.h */,
-				6BA4E2BC1EC77A9500283DB5 /* EmoticonPackageDesc.h */,
-				6BA4E2BD1EC77A9500283DB5 /* EmoticonPackageStateItem.h */,
-				6BA4E2BE1EC77A9500283DB5 /* EmoticonParser.h */,
-				6BA4E2BF1EC77A9500283DB5 /* EmoticonRecommendCache.h */,
-				6BA4E2C01EC77A9500283DB5 /* EmoticonRecoverFromServerLogicObject.h */,
-				6BA4E2C11EC77A9500283DB5 /* EmoticonRecoverLogicObject.h */,
-				6BA4E2C21EC77A9500283DB5 /* EmoticonReportData.h */,
-				6BA4E2C31EC77A9500283DB5 /* EmoticonRestartBackupWhenDeleteTask.h */,
-				6BA4E2C41EC77A9500283DB5 /* EmoticonServerNotifyTask.h */,
-				6BA4E2C51EC77A9500283DB5 /* EmoticonServerNotifyTaskGenerator.h */,
-				6BA4E2C61EC77A9500283DB5 /* EmoticonServerTip.h */,
-				6BA4E2C71EC77A9500283DB5 /* EmoticonSharedItem.h */,
-				6BA4E2C81EC77A9500283DB5 /* EmoticonSortSetting.h */,
-				6BA4E2C91EC77A9500283DB5 /* EmoticonStoreGetListBuff.h */,
-				6BA4E2CA1EC77A9500283DB5 /* EmoticonStoreItem.h */,
-				6BA4E2CB1EC77A9500283DB5 /* EmoticonStoreItemPreviewThumb.h */,
-				6BA4E2CC1EC77A9500283DB5 /* EmoticonStoreListCache.h */,
-				6BA4E2CD1EC77A9500283DB5 /* EmoticonStoreReportData.h */,
-				6BA4E2CE1EC77A9500283DB5 /* EmoticonStoreReportInfo.h */,
-				6BA4E2CF1EC77A9500283DB5 /* EmoticonStoreSession.h */,
-				6BA4E2D01EC77A9500283DB5 /* EmoticonTabItem.h */,
-				6BA4E2D11EC77A9500283DB5 /* EmoticonTabRecommendData.h */,
-				6BA4E2D21EC77A9500283DB5 /* EmoticonTabRecommendItem.h */,
-				6BA4E2D31EC77A9500283DB5 /* EmoticonUploadCgi.h */,
-				6BA4E2D41EC77A9500283DB5 /* EmotionBanner.h */,
-				6BA4E2D51EC77A9500283DB5 /* EmotionBannerImg.h */,
-				6BA4E2D61EC77A9500283DB5 /* EmotionBannerSet.h */,
-				6BA4E2D71EC77A9500283DB5 /* EmotionCDNUrl.h */,
-				6BA4E2D81EC77A9500283DB5 /* EmotionDesc.h */,
-				6BA4E2D91EC77A9500283DB5 /* EmotionDesigner.h */,
-				6BA4E2DA1EC77A9500283DB5 /* EmotionDesignerSharedItem.h */,
-				6BA4E2DB1EC77A9500283DB5 /* EmotionDetail.h */,
-				6BA4E2DC1EC77A9500283DB5 /* EmotionDonor.h */,
-				6BA4E2DD1EC77A9500283DB5 /* EmotionPageSharedItem.h */,
-				6BA4E2DE1EC77A9500283DB5 /* EmotionPrice.h */,
-				6BA4E2DF1EC77A9500283DB5 /* EmotionReward.h */,
-				6BA4E2E01EC77A9500283DB5 /* EmotionRewardExtInfo.h */,
-				6BA4E2E11EC77A9500283DB5 /* EmotionRewardTipsStatisticsData.h */,
-				6BA4E2E21EC77A9500283DB5 /* EmotionSendCountWrap.h */,
-				6BA4E2E31EC77A9500283DB5 /* EmotionStoreRewardDonorHeader.h */,
-				6BA4E2E41EC77A9500283DB5 /* EmotionSummary.h */,
+				6B3BBDEE1EDAB97E002602B6 /* Emoticon */,
 				6BA4E2E51EC77A9500283DB5 /* EncryptCheckResUpdateAesReqData.h */,
 				6BA4E2E61EC77A9500283DB5 /* EncryptCheckResUpdateReqData.h */,
 				6BA4E2E71EC77A9500283DB5 /* EncryptCheckResUpdateRsaReqData.h */,
-				6BA4E2E81EC77A9500283DB5 /* EnterpriseBrandAttr.h */,
-				6BA4E2E91EC77A9500283DB5 /* EnterpriseBrandAttrCacheItem.h */,
-				6BA4E2EA1EC77A9500283DB5 /* EnterpriseBrandAttrDB.h */,
-				6BA4E2EB1EC77A9500283DB5 /* EnterpriseConnectorContext.h */,
-				6BA4E2EC1EC77A9500283DB5 /* EnterpriseConnectorLogic.h */,
-				6BA4E2ED1EC77A9500283DB5 /* EnterpriseContactDB.h */,
-				6BA4E2EE1EC77A9500283DB5 /* EnterpriseMemberItem.h */,
-				6BA4E2EF1EC77A9500283DB5 /* EnterpriseMemberViewItem.h */,
-				6BA4E2F01EC77A9500283DB5 /* EnterpriseMsgDB.h */,
-				6BA4E2F11EC77A9500283DB5 /* EnterpriseMsgDBItem.h */,
-				6BA4E2F21EC77A9500283DB5 /* EnterpriseRemoteSearchResult.h */,
-				6BA4E2F31EC77A9500283DB5 /* EnterpriseRoomData.h */,
-				6BA4E2F41EC77A9500283DB5 /* EnterpriseSearchContactCellData.h */,
-				6BA4E2F51EC77A9500283DB5 /* EnterpriseSearchResultItem.h */,
-				6BA4E2F61EC77A9500283DB5 /* EnterpriseSessionCellData.h */,
-				6BA4E2F71EC77A9500283DB5 /* EnterpriseSessionCellLayoutParam.h */,
-				6BA4E2F81EC77A9500283DB5 /* EnterpriseSessionControllerMenuItemBtn.h */,
-				6BA4E2F91EC77A9500283DB5 /* EnterpriseSessionInfo.h */,
+				6B3BBDED1EDAB969002602B6 /* Enterprise */,
 				6BA4E2FA1EC77A9500283DB5 /* EntranceRedDot.h */,
 				6BA4E2FB1EC77A9500283DB5 /* EVADProcessor.h */,
 				6BA4E2FC1EC77A9500283DB5 /* EventService.h */,
@@ -17733,83 +18302,12 @@
 				6BA4E2FF1EC77A9500283DB5 /* ExposeReasonItem.h */,
 				6BA4E3001EC77A9500283DB5 /* Express.h */,
 				6BA4E3011EC77A9500283DB5 /* ExpressionWrap.h */,
-				6BA4E3021EC77A9500283DB5 /* ExtDeviceLoginConfirmErrorRet.h */,
-				6BA4E3031EC77A9500283DB5 /* ExtDeviceLoginConfirmExpiredRet.h */,
-				6BA4E3041EC77A9500283DB5 /* ExtDeviceLoginConfirmOKRet.h */,
+				6B3BBDF31EDABA03002602B6 /* ExtDevice */,
 				6BA4E3051EC77A9500283DB5 /* ExtSession.h */,
-				6BA4E3061EC77A9500283DB5 /* FacebookAuth.h */,
-				6BA4E3071EC77A9500283DB5 /* FacebookContactInfoAssist.h */,
-				6BA4E3081EC77A9500283DB5 /* FaceDetector.h */,
-				6BA4E3091EC77A9500283DB5 /* FaceDetectorFeature.h */,
-				6BA4E30A1EC77A9500283DB5 /* FaceRecog3rdVerifyConfirmLogic.h */,
-				6BA4E30B1EC77A9500283DB5 /* FaceRecogBindVideoLogic.h */,
-				6BA4E30C1EC77A9500283DB5 /* FaceRecogConfigLogic.h */,
-				6BA4E30D1EC77A9500283DB5 /* FaceRecogProcessor.h */,
-				6BA4E30E1EC77A9500283DB5 /* FaceRecogReporter.h */,
-				6BA4E30F1EC77A9500283DB5 /* FaceRecogReporterFaceErrCounter.h */,
-				6BA4E3101EC77A9500283DB5 /* FaceRecogReporterFaceTimeMeter.h */,
-				6BA4E3111EC77A9600283DB5 /* FaceRecogUploadLogic.h */,
-				6BA4E3121EC77A9600283DB5 /* FaceRecogVideoWriter.h */,
-				6BA4E3131EC77A9600283DB5 /* FacingMember.h */,
+				6B3BBDE91EDAB907002602B6 /* Face */,
 				6BA4E3141EC77A9600283DB5 /* FastDetector.h */,
-				6BA4E3151EC77A9600283DB5 /* FavAudioInfo.h */,
-				6BA4E3161EC77A9600283DB5 /* FavAudioPlayer.h */,
-				6BA4E3171EC77A9600283DB5 /* FavAudioRecorder.h */,
-				6BA4E3181EC77A9600283DB5 /* FavCDNItem.h */,
-				6BA4E3191EC77A9600283DB5 /* FavCdnTaskInfo.h */,
-				6BA4E31A1EC77A9600283DB5 /* FavDataItemWrap.h */,
-				6BA4E31B1EC77A9600283DB5 /* FavDataSaveLogic.h */,
-				6BA4E31C1EC77A9600283DB5 /* FavFileRetainCount.h */,
-				6BA4E31D1EC77A9600283DB5 /* FavFullScreenImageWindow.h */,
-				6BA4E31E1EC77A9600283DB5 /* FavImageDataManager.h */,
-				6BA4E31F1EC77A9600283DB5 /* FavImageFullScreenViewContainer.h */,
-				6BA4E3201EC77A9600283DB5 /* FavLocationItem.h */,
-				6BA4E3211EC77A9600283DB5 /* FavObject.h */,
-				6BA4E3221EC77A9600283DB5 /* FavoritesAsyncUploader.h */,
-				6BA4E3231EC77A9600283DB5 /* FavoritesCDNInfo.h */,
-				6BA4E3241EC77A9600283DB5 /* FavoritesCDNInfoDB.h */,
-				6BA4E3251EC77A9600283DB5 /* FavoritesDataItemSource.h */,
-				6BA4E3261EC77A9600283DB5 /* FavoritesDownloadCDNInfo.h */,
-				6BA4E3271EC77A9600283DB5 /* FavoritesDownloadCDNInfoDB.h */,
-				6BA4E3281EC77A9600283DB5 /* FavoritesDownloader.h */,
-				6BA4E3291EC77A9600283DB5 /* FavoritesFileRetainCountDB.h */,
-				6BA4E32A1EC77A9600283DB5 /* FavoritesItem.h */,
-				6BA4E32B1EC77A9600283DB5 /* FavoritesItemDataField.h */,
-				6BA4E32C1EC77A9600283DB5 /* FavoritesItemDB.h */,
-				6BA4E32D1EC77A9600283DB5 /* FavoritesRecordDataField.h */,
-				6BA4E32E1EC77A9600283DB5 /* FavoritesReportLogic.h */,
-				6BA4E32F1EC77A9600283DB5 /* FavoritesSearchDB.h */,
-				6BA4E3301EC77A9600283DB5 /* FavoritesSetting.h */,
-				6BA4E3311EC77A9600283DB5 /* FavoritesTagDB.h */,
-				6BA4E3321EC77A9600283DB5 /* FavoritesUploader.h */,
-				6BA4E3331EC77A9600283DB5 /* FavProductItem.h */,
-				6BA4E3341EC77A9600283DB5 /* FavSearchItem.h */,
-				6BA4E3351EC77A9600283DB5 /* FavSightWindow.h */,
-				6BA4E3361EC77A9600283DB5 /* FavStreamVideoItem.h */,
-				6BA4E3371EC77A9600283DB5 /* FavTag.h */,
-				6BA4E3381EC77A9600283DB5 /* FavTagSearchFilter.h */,
-				6BA4E3391EC77A9600283DB5 /* FavTagTextField.h */,
-				6BA4E33A1EC77A9600283DB5 /* FavTVItem.h */,
-				6BA4E33B1EC77A9600283DB5 /* FavTypeObjectItem.h */,
-				6BA4E33C1EC77A9600283DB5 /* FavURLItem.h */,
-				6BA4E33D1EC77A9600283DB5 /* FavWeAppItem.h */,
-				6BA4E33E1EC77A9600283DB5 /* FBFriend.h */,
-				6BA4E33F1EC77A9600283DB5 /* FBSDKAccessToken.h */,
-				6BA4E3401EC77A9600283DB5 /* FBSDKAccessTokenCacheV4.h */,
-				6BA4E3411EC77A9600283DB5 /* FBSDKApplicationDelegate.h */,
-				6BA4E3421EC77A9600283DB5 /* FBSDKBase64.h */,
-				6BA4E3431EC77A9600283DB5 /* FBSDKDynamicFrameworkLoader.h */,
-				6BA4E3441EC77A9600283DB5 /* FBSDKError.h */,
-				6BA4E3451EC77A9600283DB5 /* FBSDKKeychainStore.h */,
-				6BA4E3461EC77A9600283DB5 /* FBSDKLoginCompletionParameters.h */,
-				6BA4E3471EC77A9600283DB5 /* FBSDKLoginError.h */,
-				6BA4E3481EC77A9600283DB5 /* FBSDKLoginManager.h */,
-				6BA4E3491EC77A9600283DB5 /* FBSDKLoginManagerLogger.h */,
-				6BA4E34A1EC77A9600283DB5 /* FBSDKLoginManagerLoginResult.h */,
-				6BA4E34B1EC77A9600283DB5 /* FBSDKLoginURLCompleter.h */,
-				6BA4E34C1EC77A9600283DB5 /* FBSDKSettings.h */,
-				6BA4E34D1EC77A9600283DB5 /* FBSDKSystemAccountStoreAdapter.h */,
-				6BA4E34E1EC77A9600283DB5 /* FBSDKURLConnection.h */,
+				6B3BBDEA1EDAB920002602B6 /* Fav */,
+				6B3BBDEB1EDAB936002602B6 /* FB */,
 				6BA4E34F1EC77A9600283DB5 /* FeedBackEntrance.h */,
 				6BA4E3501EC77A9600283DB5 /* Feeds.h */,
 				6BA4E3511EC77A9600283DB5 /* FeedsInfo.h */,
@@ -17817,14 +18315,8 @@
 				6BA4E3531EC77A9600283DB5 /* FICEntityMetadata.h */,
 				6BA4E3541EC77A9600283DB5 /* FICImageTableMetadata.h */,
 				6BA4E3551EC77A9600283DB5 /* FIFOFileQueue.h */,
-				6BA4E3561EC77A9600283DB5 /* FileFragment.h */,
-				6BA4E3571EC77A9600283DB5 /* FileQueue.h */,
-				6BA4E3581EC77A9600283DB5 /* FileSealer.h */,
-				6BA4E3591EC77A9600283DB5 /* FileSealerHookInfo.h */,
-				6BA4E35A1EC77A9600283DB5 /* FileSealerInfo.h */,
-				6BA4E35B1EC77A9600283DB5 /* FindBrandRecommendCache.h */,
-				6BA4E35C1EC77A9600283DB5 /* FindBrandRecommendGroup.h */,
-				6BA4E35D1EC77A9600283DB5 /* FindContactSearchViewCellInfo.h */,
+				6B3BBDF41EDABA19002602B6 /* File */,
+				6B3BBDF51EDABA2D002602B6 /* Find */,
 				6BA4E35E1EC77A9600283DB5 /* FMSearchBar.h */,
 				6BA4E35F1EC77A9600283DB5 /* Follow.h */,
 				6BA4E3601EC77A9600283DB5 /* FrameTextBtn.h */,
@@ -17832,52 +18324,13 @@
 				6BA4E3621EC77A9600283DB5 /* FriendFeedItem.h */,
 				6BA4E3631EC77A9600283DB5 /* FriendPlayItem.h */,
 				6BA4E3641EC77A9600283DB5 /* FrontPageInfo.h */,
-				6BA4E3651EC77A9600283DB5 /* FTSBussinessActionInfo.h */,
-				6BA4E3661EC77A9600283DB5 /* FTSBussinessCommonItem.h */,
-				6BA4E3671EC77A9600283DB5 /* FTSBussinessContactItem.h */,
-				6BA4E3681EC77A9600283DB5 /* FTSBussinessDetailInfo.h */,
-				6BA4E3691EC77A9600283DB5 /* FTSBussinessPOIItem.h */,
-				6BA4E36A1EC77A9600283DB5 /* FTSBussinessResult.h */,
-				6BA4E36B1EC77A9600283DB5 /* FTSBussinessResultItem.h */,
-				6BA4E36C1EC77A9600283DB5 /* FTSBussinessSnsItem.h */,
-				6BA4E36D1EC77A9600283DB5 /* FTSCommonLogItem.h */,
-				6BA4E36E1EC77A9600283DB5 /* FTSContactDataProvider.h */,
-				6BA4E36F1EC77A9600283DB5 /* FTSDB.h */,
-				6BA4E3701EC77A9600283DB5 /* FTSFacade.h */,
-				6BA4E3711EC77A9600283DB5 /* FTSFavDB.h */,
-				6BA4E3721EC77A9600283DB5 /* FTSFavIndexState.h */,
-				6BA4E3731EC77A9600283DB5 /* FTSFavSearchItem.h */,
-				6BA4E3741EC77A9600283DB5 /* FTSFeatureItem.h */,
-				6BA4E3751EC77A9600283DB5 /* FTSLogItem.h */,
-				6BA4E3761EC77A9600283DB5 /* FTSMCSItem.h */,
-				6BA4E3771EC77A9600283DB5 /* FTSMessageDB.h */,
-				6BA4E3781EC77A9600283DB5 /* FTSMsgContentItem.h */,
-				6BA4E3791EC77A9600283DB5 /* FTSMsgItem.h */,
-				6BA4E37A1EC77A9600283DB5 /* FTSMsgUserNameIdItem.h */,
-				6BA4E37B1EC77A9600283DB5 /* FTSMultiContactResultWrap.h */,
-				6BA4E37C1EC77A9600283DB5 /* FTSMultiContactSearchLogic.h */,
-				6BA4E37D1EC77A9600283DB5 /* FTSResultActionItem.h */,
-				6BA4E37E1EC77A9600283DB5 /* FTSTopHitComparableItem.h */,
-				6BA4E37F1EC77A9600283DB5 /* FTSTopHitExtList.h */,
-				6BA4E3801EC77A9600283DB5 /* FTSTopHitGroupMember.h */,
-				6BA4E3811EC77A9600283DB5 /* FTSTopHitItem.h */,
-				6BA4E3821EC77A9600283DB5 /* FTSTopHitValue.h */,
-				6BA4E3831EC77A9600283DB5 /* FTSWebSearchClickReportItem.h */,
+				6B3BBDEC1EDAB94B002602B6 /* FTS */,
 				6BA4E3841EC77A9600283DB5 /* FullBizChat.h */,
-				6BA4E3851EC77A9600283DB5 /* FunctionMessage.h */,
-				6BA4E3861EC77A9600283DB5 /* FunctionNewXml.h */,
-				6BA4E3871EC77A9600283DB5 /* FunctionSwitch.h */,
-				6B80317D1EC8ACA00090657F /* MMUIResponder.h */,
-				6B80317E1EC8ACA00090657F /* MMUIResponder.m */,
-				6B8031881EC8B2130090657F /* MMObject.h */,
-				6B8031891EC8B2130090657F /* MMObject.m */,
-				6B8031931EC8B43B0090657F /* ResourceInfo.h */,
-				6B8031941EC8B43B0090657F /* ResourceInfo.m */,
-				6B80319D1EC8B7770090657F /* ResourceMonitor.h */,
-				6B80319E1EC8B7770090657F /* ResourceMonitor.m */,
+				6B3BBDF61EDABA3C002602B6 /* Function */,
+				6B3BBDF71EDABA4E002602B6 /* MM */,
+				6B3BBDF91EDABA73002602B6 /* Resource */,
 				6B8031B01EC8BB0D0090657F /* VoipToken */,
-				6BF847681ED7304400EAD5E1 /* MMService.h */,
-				6BF847691ED7304400EAD5E1 /* MMService.m */,
+				6B3BBDF81EDABA69002602B6 /* WA */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -17894,6 +18347,8 @@
 			children = (
 				6B80319A1EC8B69F0090657F /* MMUIWindow.h */,
 				6B80319B1EC8B69F0090657F /* MMUIWindow.m */,
+				6B5163B91ED916320089CEAC /* WCActionSheet.h */,
+				6B5163BA1ED916320089CEAC /* WCActionSheet.m */,
 			);
 			path = Window;
 			sourceTree = "<group>";
@@ -18652,28 +19107,37 @@
 				6BF847651ED72ECC00EAD5E1 /* MMBarButtonItem.m in Sources */,
 				6BF538651EC76BAE00D8D56C /* ViewController.m in Sources */,
 				6B8031871EC8B01F0090657F /* CAppObserverCenter.m in Sources */,
+				6B5163C31ED91CD90089CEAC /* ContactSettingViewController.m in Sources */,
 				6B4C7D6C1ED3FC1A00CAF1EB /* UIViewController+ModalView.m in Sources */,
 				6B4C7D681ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m in Sources */,
 				6B80318D1EC8B2470090657F /* CAppViewControllerManager.m in Sources */,
 				6B71B5911ED7DA410010DFEF /* WCDeviceM7Logic.m in Sources */,
 				6BF538621EC76BAE00D8D56C /* AppDelegate.m in Sources */,
+				6B5163BB1ED916320089CEAC /* WCActionSheet.m in Sources */,
 				6B80317F1EC8ACA00090657F /* MMUIResponder.m in Sources */,
 				6B80319F1EC8B7770090657F /* ResourceMonitor.m in Sources */,
 				6B8031901EC8B2BC0090657F /* CMainControll.m in Sources */,
+				6B5163BD1ED919820089CEAC /* ContactSelectView.m in Sources */,
 				6B8031A31EC8B83D0090657F /* MMSMBaseViewController.m in Sources */,
 				6B8031821EC8ACF50090657F /* MicroMessengerAppDelegate.m in Sources */,
 				6BF5386B1EC76BAE00D8D56C /* WeChatReverse.xcdatamodeld in Sources */,
+				6B71B5971ED825D80010DFEF /* MMThemeManager.m in Sources */,
 				6B8031A61EC8B8BE0090657F /* MMSMStartViewController.m in Sources */,
+				6B3BBE171EDACF5C002602B6 /* UiUtil.m in Sources */,
+				6B3BBE191EDAD281002602B6 /* CContactMgr.m in Sources */,
 				6BF847671ED72EF200EAD5E1 /* MMBarButton.m in Sources */,
 				6B8031981EC8B50A0090657F /* MMServiceCenter.m in Sources */,
 				6B71B58C1ED7CEA80010DFEF /* MultiSelectContactsViewController.m in Sources */,
+				6B3BBDDC1EDAB755002602B6 /* CContactOPLog.m in Sources */,
 				6B8031AF1EC8BB000090657F /* VoIPTokenRegisterObject.m in Sources */,
+				6B5163C61ED920880089CEAC /* WAAppMsgItem.m in Sources */,
 				6BF847831ED73B1700EAD5E1 /* MMLanguageMgr.m in Sources */,
 				6B8031951EC8B43B0090657F /* ResourceInfo.m in Sources */,
 				6B8031A91EC8B94B0090657F /* VoIPTokenRetriveObject.m in Sources */,
 				6B80318A1EC8B2130090657F /* MMObject.m in Sources */,
 				6BF5385F1EC76BAE00D8D56C /* main.m in Sources */,
 				6BF8476C1ED737E700EAD5E1 /* MMUIViewController.m in Sources */,
+				6B3BBE151EDAC097002602B6 /* MMExtensionCenter.m in Sources */,
 				6BF8476A1ED7304400EAD5E1 /* MMService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

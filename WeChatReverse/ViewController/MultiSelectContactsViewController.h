@@ -12,7 +12,7 @@
 #import "NewContactsSearchPanelViewDelegate.h"
 #import "SelectTagContactsViewControllerDelegate.h"
 #import "TipsViewDelegate.h"
-#import "WCActionSheetDelegate.h"
+#import "WCActionSheet.h"
 #import "MultiSelectContactsViewControllerDelegate.h"
 
 @class ContactSelectView, NSDictionary, NSIndexPath, NSMutableDictionary, NSString, NewContactsSearchPanelView, TipsView, UIBarButtonItem, UIButton, UIView;

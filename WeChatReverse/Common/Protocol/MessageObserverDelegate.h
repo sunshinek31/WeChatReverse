@@ -4,9 +4,7 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-@class NSDictionary;
-
 @protocol MessageObserverDelegate
-- (void)MessageReturn:(unsigned int)arg1 MessageInfo:(NSDictionary *)arg2 Event:(unsigned int)arg3;
+- (void)MessageReturn:(unsigned int)returnTag MessageInfo:(NSDictionary *)messageInfo Event:(unsigned int)event;
 @end
 

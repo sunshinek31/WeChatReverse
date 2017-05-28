@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 @class CMMDB;
 
 @interface CContactDB : NSObject
@@ -13,35 +11,34 @@
     CMMDB *m_oMMDB;
 }
 
-- (void).cxx_destruct;
-- (_Bool)SetFriendMetaFlag:(unsigned int)arg1 ForUser:(id)arg2;
-- (_Bool)SetLastUpdateTime:(unsigned int)arg1 ForUser:(id)arg2;
+- (BOOL)SetFriendMetaFlag:(unsigned int)arg1 ForUser:(id)arg2;
+- (BOOL)SetLastUpdateTime:(unsigned int)arg1 ForUser:(id)arg2;
 - (void)getContactQueryProperty:(vector_24c76cbd *)arg1;
-- (_Bool)isFriendExtTableExist:(id)arg1;
+- (BOOL)isFriendExtTableExist:(id)arg1;
 - (void)getFriendExtTableValue:(id)arg1 fromDBObject:(id)arg2;
 - (void)getFriendTableValue:(id)arg1 fromDBObject:(id)arg2;
 - (unsigned int)GetFriendMetaFlag:(id)arg1;
 - (unsigned int)GetLastUpdateTimeOfUser:(id)arg1;
-- (_Bool)updateContact:(id)arg1;
-- (_Bool)deleteContact:(id)arg1;
-- (_Bool)addContact:(id)arg1;
-- (_Bool)getAllRemarkList:(id)arg1 listType:(unsigned int)arg2;
-- (_Bool)getAllUserName:(id)arg1;
-- (_Bool)getAllContactNoExtInfoList:(id)arg1 listType:(unsigned int)arg2;
-- (_Bool)getAllContactList:(id)arg1 listType:(unsigned int)arg2;
-- (_Bool)getContactList:(id)arg1 listType:(unsigned int)arg2 limit:(unsigned int)arg3;
+- (BOOL)updateContact:(id)arg1;
+- (BOOL)deleteContact:(id)arg1;
+- (BOOL)addContact:(id)arg1;
+- (BOOL)getAllRemarkList:(id)arg1 listType:(unsigned int)arg2;
+- (BOOL)getAllUserName:(id)arg1;
+- (BOOL)getAllContactNoExtInfoList:(id)arg1 listType:(unsigned int)arg2;
+- (BOOL)getAllContactList:(id)arg1 listType:(unsigned int)arg2;
+- (BOOL)getContactList:(id)arg1 listType:(unsigned int)arg2 limit:(unsigned int)arg3;
 - (unsigned int)getContactCount;
 - (void)getFriendAndExtTableValue:(id)arg1 fromDBContact:(id)arg2 DBContactExt:(id)arg3;
-- (_Bool)loadContactExtInfo:(id)arg1;
+- (BOOL)loadContactExtInfo:(id)arg1;
 - (id)getContact:(id)arg1;
-- (_Bool)updateContactKeyExtInfo:(id)arg1;
-- (_Bool)modifyFriendExtTable:(id)arg1;
-- (_Bool)modifyFriendTable:(id)arg1;
-- (_Bool)addFriendExtTable:(id)arg1;
-- (_Bool)addFriendTable:(id)arg1;
+- (BOOL)updateContactKeyExtInfo:(id)arg1;
+- (BOOL)modifyFriendExtTable:(id)arg1;
+- (BOOL)modifyFriendTable:(id)arg1;
+- (BOOL)addFriendExtTable:(id)arg1;
+- (BOOL)addFriendTable:(id)arg1;
 - (void)saveUserImage:(id)arg1;
-- (_Bool)runTransaction:(CDUnknownBlockType)arg1 stateDidChanged:(CDUnknownBlockType)arg2;
-- (_Bool)runTransaction:(CDUnknownBlockType)arg1;
+- (BOOL)runTransaction:(CDUnknownBlockType)arg1 stateDidChanged:(CDUnknownBlockType)arg2;
+- (BOOL)runTransaction:(CDUnknownBlockType)arg1;
 - (void)initDB:(id)arg1;
 - (id)init;
 

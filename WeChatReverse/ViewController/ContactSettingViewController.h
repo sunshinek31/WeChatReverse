@@ -8,10 +8,14 @@
 
 #import "ForwardMessageLogicDelegate.h"
 #import "IOplogExt.h"
-#import "WCActionSheetDelegate.h"
+#import "WCActionSheet.h"
+#import "ContactInfoAssistDelegate.h"
 
-@class CContact, DelaySwitchSettingLogic, ForwardMessageLogicController, MMTableViewInfo, NSString, WCOpLog;
+@class DelaySwitchSettingLogic, ForwardMessageLogicController, MMTableViewInfo, WCOpLog;
 
+/**
+ 通讯录好友-资料设置-视图控制器
+ */
 @interface ContactSettingViewController : MMUIViewController <WCActionSheetDelegate, ForwardMessageLogicDelegate, IOplogExt>
 {
     MMTableViewInfo *m_tableViewInfo;
@@ -22,49 +26,64 @@
     unsigned int m_scene;
     ForwardMessageLogicController *m_forwardLogic;
     DelaySwitchSettingLogic *m_delaySwitchLogic;
-    _Bool m_toBeDeleted;
+    BOOL m_toBeDeleted;
 }
 
 @property(retain, nonatomic) NSString *m_recommandRemark; // @synthesize m_recommandRemark;
-- (void).cxx_destruct;
-- (void)viewWillDisappear:(_Bool)arg1;
-- (void)viewDidLoad;
-- (void)viewDidLayoutSubviews;
-- (void)viewWillAppear:(_Bool)arg1;
+
+/**
+ 构造函数
+
+ @param contact 联系对象
+ @param scene scene
+ @return ContactSettingViewController对象
+ */
+- (instancetype)initWithContact:(CContact *)contact inScene:(NSUInteger)scene;
+
+/**
+ 构造函数
+
+ @param contact 联系对象
+ @return ContactSettingViewController对象
+ */
+- (instancetype)initWithContact:(CContact *)contact;
+
+/**
+ 设置代理对象
+ @see ContactInfoAssistDelegate
+ @param delegate 代理对象
+ */
+- (void)setDelegate:(id<ContactInfoAssistDelegate>) delegate;
+
+/**
+ 重载tableView, 刷新UI显示数据
+ */
 - (void)reloadTableView;
 - (void)opFavour;
 - (void)opWCBlacklist:(id)arg1;
 - (void)opOutsider:(id)arg1;
 - (void)opEditRemarkName;
-- (id)getCurrentViewController;
 - (void)opShareMyFriend;
-- (void)opDelete:(id)arg1;
-- (void)oplogRet:(int)arg1 errMsg:(id)arg2 eventID:(unsigned int)arg3 cgiWrap:(id)arg4;
+
+- (void)opDelete:(UIButton *)sender;
 - (void)doDelete;
 - (void)doDeleteLocal;
+- (void)doDeleteAndExpose;
+
 - (void)doExpose:(int)arg1;
 - (void)opExpose;
+
 - (void)opBlackList;
 - (void)cancelBlackListSwitch;
 - (void)doAddToBlackList;
-- (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;
-- (void)viewDidAppear:(_Bool)arg1;
-- (void)doDeleteAndExpose;
 - (void)doAddToBlackListAndExpose;
 - (void)addToBlackList;
 - (void)removeFromBlackList;
-- (_Bool)isShowBlackAction;
-- (_Bool)isInMyContactList;
-- (void)setDelegate:(id)arg1;
-- (void)dealloc;
-- (id)initWithContact:(id)arg1 inScene:(unsigned int)arg2;
-- (id)initWithContact:(id)arg1;
+- (BOOL)isShowBlackAction;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
+- (BOOL)isInMyContactList;
+
+
 
 @end
 

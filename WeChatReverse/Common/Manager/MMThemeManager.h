@@ -6,8 +6,6 @@
 
 #import "MMService.h"
 
-#import "MMService.h"
-
 @class MMColor, MMDrawScript, MMRuleSetList, MMScriptInterpreter, MMTheme, NSMutableArray, NSMutableDictionary, NSRecursiveLock, NSString, NSThread;
 
 @interface MMThemeManager : MMService <MMService>
@@ -16,7 +14,7 @@
     MMTheme *m_currentTheme;
     MMColor *m_colorList;
     NSMutableDictionary *m_imageCache;
-    long long m_cachedImageSize;
+    NSInteger m_cachedImageSize;
     MMRuleSetList *m_ruleSetList;
     MMRuleSetList *m_imageMapList;
     MMRuleSetList *m_resMapList;
@@ -27,38 +25,38 @@
     NSRecursiveLock *m_lock;
 }
 
-+ (_Bool)useiPhone6CssForIpadCompact;
-+ (_Bool)useiPadCss;
++ (BOOL)useiPhone6CssForIpadCompact;
++ (BOOL)useiPadCss;
 + (int)getIpadStyleType;
-+ (id)allocWithZone:(struct _NSZone *)arg1;
-+ (id)sharedThemeManager;
++ (MMThemeManager *)allocWithZone:(NSZone *)zone;
++ (instancetype)sharedThemeManager;
 + (void)initialize;
-@property(retain, nonatomic) MMScriptInterpreter *m_scriptInterpreter; // @synthesize m_scriptInterpreter;
-@property(retain, nonatomic) MMDrawScript *m_drawScripts; // @synthesize m_drawScripts;
-@property(retain, nonatomic) MMRuleSetList *m_resMapList; // @synthesize m_resMapList;
-@property(retain, nonatomic) MMRuleSetList *m_imageMapList; // @synthesize m_imageMapList;
-@property(retain, nonatomic) NSRecursiveLock *lock; // @synthesize lock=m_lock;
-@property(retain, nonatomic) NSThread *backgroundWorkerThread; // @synthesize backgroundWorkerThread=m_backgroundWorkerThread;
-@property(retain, nonatomic) MMRuleSetList *ruleSetList; // @synthesize ruleSetList=m_ruleSetList;
-@property(retain, nonatomic) NSMutableDictionary *imageCache; // @synthesize imageCache=m_imageCache;
-@property(retain, nonatomic) MMColor *colorList; // @synthesize colorList=m_colorList;
-@property(retain, nonatomic) MMTheme *currentTheme; // @synthesize currentTheme=m_currentTheme;
-@property(retain, nonatomic) NSMutableArray *themeList; // @synthesize themeList=m_themeList;
-- (void).cxx_destruct;
+@property(strong, nonatomic) MMScriptInterpreter *m_scriptInterpreter; // @synthesize m_scriptInterpreter;
+@property(strong, nonatomic) MMDrawScript *m_drawScripts; // @synthesize m_drawScripts;
+@property(strong, nonatomic) MMRuleSetList *m_resMapList; // @synthesize m_resMapList;
+@property(strong, nonatomic) MMRuleSetList *m_imageMapList; // @synthesize m_imageMapList;
+@property(strong, nonatomic) NSRecursiveLock *lock; // @synthesize lock=m_lock;
+@property(strong, nonatomic) NSThread *backgroundWorkerThread; // @synthesize backgroundWorkerThread=m_backgroundWorkerThread;
+@property(strong, nonatomic) MMRuleSetList *ruleSetList; // @synthesize ruleSetList=m_ruleSetList;
+@property(strong, nonatomic) NSMutableDictionary *imageCache; // @synthesize imageCache=m_imageCache;
+@property(strong, nonatomic) MMColor *colorList; // @synthesize colorList=m_colorList;
+@property(strong, nonatomic) MMTheme *currentTheme; // @synthesize currentTheme=m_currentTheme;
+@property(strong, nonatomic) NSMutableArray *themeList; // @synthesize themeList=m_themeList;
+
 - (void)reloadCssForMultiTaskingIfNeed;
-- (_Bool)onServiceMemoryWarning;
+- (BOOL)onServiceMemoryWarning;
 - (void)onFirstRun;
-- (_Bool)changeThemeByThemeID:(id)arg1;
-- (long long)reloadThemeList;
+- (BOOL)changeThemeByThemeID:(id)arg1;
+- (NSInteger)reloadThemeList;
 - (void)waitForInstallDone;
-- (_Bool)isInstallDone;
-- (void)installThemeInBundleInBackground:(long long)arg1;
+- (BOOL)isInstallDone;
+- (void)installThemeInBundleInBackground:(NSInteger)arg1;
 - (void)startInstallThreadAfterDelay;
 - (void)installThemeInBundle;
 - (void)onBackgroundInstallDone;
-- (_Bool)installThemeUpdatePack:(id)arg1;
+- (BOOL)installThemeUpdatePack:(id)arg1;
 - (void)uninstallAllThemes;
-- (_Bool)isThemeDirExist;
+- (BOOL)isThemeDirExist;
 - (id)getThemeDir;
 - (id)imageFromScript:(id)arg1 withArguments:(id)arg2;
 - (void)runScript:(id)arg1 withArguments:(id)arg2;
@@ -71,7 +69,7 @@
 - (id)localizedImageNamed:(id)arg1 inTheme:(id)arg2;
 - (id)makeImageWithFitScale:(id)arg1;
 - (id)translateToHDImageName:(id)arg1;
-- (id)imageNamed:(id)arg1 Alpha:(float)arg2 Suffix:(id)arg3 ForDifferentIosVersion:(_Bool)arg4;
+- (id)imageNamed:(id)arg1 Alpha:(float)arg2 Suffix:(id)arg3 ForDifferentIosVersion:(BOOL)arg4;
 - (id)imageDisableNamed:(id)arg1;
 - (id)imageHighlightNamed:(id)arg1;
 - (id)getIconImageByName:(id)arg1;
@@ -91,40 +89,34 @@
 - (id)imageNamed:(id)arg1 inTheme:(id)arg2;
 - (id)imageNamedWithCurTheme:(id)arg1;
 - (void)setUserPreferedTheme:(id)arg1;
-- (_Bool)loadUserPreferedThemeNoCallExtension;
-- (_Bool)loadUserPreferedTheme;
-- (_Bool)loadDefaultTheme;
+- (BOOL)loadUserPreferedThemeNoCallExtension;
+- (BOOL)loadUserPreferedTheme;
+- (BOOL)loadDefaultTheme;
 - (id)getUserThemeIDPrefKey;
-- (_Bool)needToClearCache;
+- (BOOL)needToClearCache;
 - (void)removeImageSizeFromCachedSize:(id)arg1;
 - (void)addImageSizeToCachedSize:(id)arg1;
 - (void)reloadThemeResource;
 - (void)loadScripts;
 - (void)loadColors;
-- (_Bool)loadCSSFromPath:(id)arg1 IntoRuleSetList:(id)arg2;
+- (BOOL)loadCSSFromPath:(id)arg1 IntoRuleSetList:(id)arg2;
 - (void)loadImageMap;
 - (void)loadResPackageSetting;
 - (void)loadRuleSets;
-- (_Bool)unPackThemePackToThemeDir;
-- (_Bool)isThemesZipInBundle;
+- (BOOL)unPackThemePackToThemeDir;
+- (BOOL)isThemesZipInBundle;
 - (id)getThemeByThemeID:(id)arg1;
 - (id)getDefaultTheme;
 - (id)fileOfImageNamed:(id)arg1;
-- (_Bool)is568H2xScreen;
-- (_Bool)is3xScreen;
-- (_Bool)is2xScreen;
+- (BOOL)is568H2xScreen;
+- (BOOL)is3xScreen;
+- (BOOL)is2xScreen;
 - (id)init;
 - (void)removeFromThemeList:(id)arg1;
 - (void)addToThemeList:(id)arg1;
 - (id)getImageCacheObjectForKey:(id)arg1;
 - (void)removeImageCacheObjectForKey:(id)arg1;
 - (void)setImageCacheObject:(id)arg1 forKey:(id)arg2;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

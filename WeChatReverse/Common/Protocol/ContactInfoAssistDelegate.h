@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 @class CContact, CContactVerifyLogic, MMUIViewController, NSString;
 
 @protocol ContactInfoAssistDelegate <NSObject>
@@ -15,23 +13,23 @@
 - (void)reloadFloatView;
 - (void)delAllMsg;
 - (MMUIViewController *)getViewController;
-- (void)stopLoadingWithFailText:(NSString *)arg1;
-- (void)stopLoadingWithOKText:(NSString *)arg1;
-- (void)startLoadingWithText:(NSString *)arg1;
+- (void)stopLoadingWithFailText:(NSString *)text;
+- (void)stopLoadingWithOKText:(NSString *)text;
+- (void)startLoadingWithText:(NSString *)text;
 - (void)onRemoveContact;
 - (void)onExpose;
-- (void)onPopViewController:(_Bool)arg1;
+- (void)onPopViewController:(BOOL)animated;
 - (void)onSayHello;
 - (void)onShareMyFriend;
 - (void)onFriendRequestSend;
-- (void)contactVerifyOk:(CContact *)arg1;
-- (void)onNewMessage:(CContact *)arg1;
-- (void)onTalk:(CContact *)arg1;
+- (void)contactVerifyOk:(CContact *)contact;
+- (void)onNewMessage:(CContact *)contact;
+- (void)onTalk:(CContact *)contact;
 
 @optional
 - (NSString *)getSearchId;
 - (void)onVerifyOK;
 - (void)onAddToContact;
-- (unsigned int)GetFromScene;
+- (NSUInteger)GetFromScene;
 @end
 

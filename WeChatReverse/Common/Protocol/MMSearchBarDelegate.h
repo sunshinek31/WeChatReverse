@@ -12,12 +12,12 @@
 - (BOOL)shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath;
 - (NSString *)titleForHeaderInSection:(NSInteger)section ForSearchViewTable:(UITableView *)tableView;
 - (UIView *)viewForHeaderInSection:(NSInteger)section ForSearchViewTable:(UITableView *)tableView;
-- (double)heightForHeaderInSection:(NSInteger)section ForSearchViewTable:(UITableView *)tableView;
+- (CGFloat)heightForHeaderInSection:(NSInteger)section ForSearchViewTable:(UITableView *)tableView;
 - (NSInteger)numberOfRowsInSection:(NSInteger)section ForSearchViewTable:(UITableView *)tableView;
 - (NSInteger)numberOfSectionsForSearchViewTable:(UITableView *)tableView;
 - (UITableViewCell *)cellForIndex:(NSIndexPath *)indexPath ForSearchViewTable:(UITableView *)tableView;
 - (void)didSearchViewTableSelect:(NSIndexPath *)indexPath;
-- (double)heightForSearchViewTable:(NSIndexPath *)indexPath;
+- (CGFloat)heightForSearchViewTable:(NSIndexPath *)indexPath;
 - (UITableViewCell *)cellForSearchViewTable:(UITableViewCell *)tableViewCell index:(NSIndexPath *)indexPath;
 - (void)didScrollViewBeginDragging:(UIScrollView *)scrollView;
 - (void)didScrollViewScroll:(UIScrollView *)scrollView;

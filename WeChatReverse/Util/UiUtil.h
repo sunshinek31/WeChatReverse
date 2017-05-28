@@ -4,60 +4,58 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 @interface UiUtil : NSObject
 {
 }
 
-+ (double)screenScale;
-+ (void)showCameraAlertForSplitViewIfNeed:(id)arg1 currentWidth:(double)arg2;
-+ (_Bool)isiPadSplitViewModeNow;
-+ (_Bool)isiPadSplitViewMinimizeModeNow;
-+ (void)setStatusBarStyle:(long long)arg1;
++ (CGFloat)screenScale;
++ (void)showCameraAlertForSplitViewIfNeed:(id)arg1 currentWidth:(CGFloat)width;
++ (BOOL)isiPadSplitViewModeNow;
++ (BOOL)isiPadSplitViewMinimizeModeNow;
++ (void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle;
 + (void)refreshStatusBarStyle;
 + (void)setStatusBarFontBlack;
 + (void)setStatusBarFontWhite;
-+ (double)tabBarHeight;
-+ (struct CGRect)screenRectRelativeToView:(id)arg1;
++ (CGFloat)tabBarHeight;
++ (CGRect)screenRectRelativeToView:(id)arg1;
 + (void)fixNavigationController:(id)arg1;
-+ (double)groupedStyleCellSubViewRight;
-+ (double)groupedStyleCellWidth;
-+ (double)topBarNormalOffset;
-+ (_Bool)isTopBarInNormalState;
-+ (double)keyboardHeightByNotification:(id)arg1;
-+ (double)keyboardHeightCurOri;
-+ (double)taskBarHeight;
-+ (void)setTaskBarHeight:(double)arg1 Animated:(_Bool)arg2;
-+ (_Bool)isTaskBarHidden;
-+ (void)setTopBarHidden:(_Bool)arg1 withAnimation:(long long)arg2;
-+ (void)setTopBarHidden:(_Bool)arg1;
-+ (_Bool)isTopBarHidden;
-+ (long long)getRotatedOrientation;
-+ (void)setStatusBarHidden:(_Bool)arg1 withAnimation:(long long)arg2;
-+ (void)setStatusBarHidden:(_Bool)arg1;
-+ (_Bool)isStatusBarLandscape;
-+ (_Bool)isStatusBarHidden;
++ (CGFloat)groupedStyleCellSubViewRight;
++ (CGFloat)groupedStyleCellWidth;
++ (CGFloat)topBarNormalOffset;
++ (BOOL)isTopBarInNormalState;
++ (CGFloat)keyboardHeightByNotification:(NSNotification *)notification;
++ (CGFloat)keyboardHeightCurOri;
++ (CGFloat)taskBarHeight;
++ (void)setTaskBarHeight:(CGFloat)height Animated:(BOOL)animated;
++ (BOOL)isTaskBarHidden;
++ (void)setTopBarHidden:(BOOL)topBarHidden withAnimation:(NSInteger)animation;
++ (void)setTopBarHidden:(BOOL)topBarHidden;
++ (BOOL)isTopBarHidden;
++ (NSInteger)getRotatedOrientation;
++ (void)setStatusBarHidden:(BOOL)statusBarHidden withAnimation:(NSInteger)animation;
++ (void)setStatusBarHidden:(BOOL)statusBarHidden;
++ (BOOL)isStatusBarLandscape;
++ (BOOL)isStatusBarHidden;
 + (void)OnSystemStatusBarFrameChange;
-+ (void)OnSystemStatusBarOrientationChange:(long long)arg1;
-+ (id)getTopVisibleWindow;
-+ (id)mainWindow;
-+ (double)visibleHeight:(id)arg1;
-+ (struct CGRect)screenBoundsOri:(long long)arg1;
-+ (struct CGRect)windowBounds;
-+ (struct CGRect)screenBounds;
-+ (struct CGSize)screenSizeOri:(long long)arg1;
-+ (struct CGSize)screenSize;
-+ (double)mainScreenWidth;
-+ (double)screenWidth:(long long)arg1;
-+ (double)screenWidthCurOri;
-+ (double)screenHeight:(long long)arg1;
-+ (double)screenHeightCurOri;
-+ (double)navigationBarHeight:(long long)arg1;
-+ (double)navigationBarHeightCurOri;
-+ (double)navigationBarHeight;
-+ (double)statusBarHeight:(long long)arg1;
-+ (double)statusBarHeight;
++ (void)OnSystemStatusBarOrientationChange:(NSInteger)arg1;
++ (UIWindow *)getTopVisibleWindow;
++ (UIWindow *)mainWindow;
++ (CGFloat)visibleHeight:(id)arg1;
++ (CGRect)screenBoundsOri:(NSInteger)arg1;
++ (CGRect)windowBounds;
++ (CGRect)screenBounds;
++ (CGSize)screenSizeOri:(NSInteger)arg1;
++ (CGSize)screenSize;
++ (CGFloat)mainScreenWidth;
++ (CGFloat)screenWidth:(NSInteger)width;
++ (CGFloat)screenWidthCurOri;
++ (CGFloat)screenHeight:(NSInteger)height;
++ (CGFloat)screenHeightCurOri;
++ (CGFloat)navigationBarHeight:(NSInteger)height;
++ (CGFloat)navigationBarHeightCurOri;
++ (CGFloat)navigationBarHeight;
++ (CGFloat)statusBarHeight:(NSInteger)arg1;
++ (CGFloat)statusBarHeight;
 
 @end
 

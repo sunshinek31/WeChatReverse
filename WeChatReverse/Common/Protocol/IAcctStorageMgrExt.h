@@ -4,14 +4,10 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class NSData;
-
 @protocol IAcctStorageMgrExt <NSObject>
 
 @optional
-- (void)onSyncBufferChanged:(NSData *)arg1 isMerged:(_Bool)arg2;
+- (void)onSyncBufferChanged:(NSData *)bufferData isMerged:(BOOL)isMerged;
 - (void)onSettingChange;
 @end
 
