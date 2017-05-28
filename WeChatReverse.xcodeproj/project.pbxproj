@@ -11,6 +11,8 @@
 		6B3BBE151EDAC097002602B6 /* MMExtensionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE141EDAC097002602B6 /* MMExtensionCenter.m */; };
 		6B3BBE171EDACF5C002602B6 /* UiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE161EDACF5C002602B6 /* UiUtil.m */; };
 		6B3BBE191EDAD281002602B6 /* CContactMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE181EDAD281002602B6 /* CContactMgr.m */; };
+		6B3BBE231EDAE8FE002602B6 /* iConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE221EDAE8FE002602B6 /* iConsole.m */; };
+		6B3BBE261EDAE9E5002602B6 /* iConsoleWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE251EDAE9E5002602B6 /* iConsoleWindow.m */; };
 		6B4C7D681ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C7D671ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m */; };
 		6B4C7D6C1ED3FC1A00CAF1EB /* UIViewController+ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C7D6B1ED3FC1A00CAF1EB /* UIViewController+ModalView.m */; };
 		6B5163BB1ED916320089CEAC /* WCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163BA1ED916320089CEAC /* WCActionSheet.m */; };
@@ -129,6 +131,10 @@
 		6B3BBE141EDAC097002602B6 /* MMExtensionCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExtensionCenter.m; sourceTree = "<group>"; };
 		6B3BBE161EDACF5C002602B6 /* UiUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiUtil.m; sourceTree = "<group>"; };
 		6B3BBE181EDAD281002602B6 /* CContactMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CContactMgr.m; sourceTree = "<group>"; };
+		6B3BBE211EDAE8FE002602B6 /* iConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iConsole.h; sourceTree = "<group>"; };
+		6B3BBE221EDAE8FE002602B6 /* iConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iConsole.m; sourceTree = "<group>"; };
+		6B3BBE241EDAE9E5002602B6 /* iConsoleWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iConsoleWindow.h; path = WeChatReverse/ViewController/iConsoleWindow.h; sourceTree = SOURCE_ROOT; };
+		6B3BBE251EDAE9E5002602B6 /* iConsoleWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iConsoleWindow.m; path = WeChatReverse/ViewController/iConsoleWindow.m; sourceTree = SOURCE_ROOT; };
 		6B4C7D671ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTagNewDetailViewController.m; sourceTree = "<group>"; };
 		6B4C7D6A1ED3FC1A00CAF1EB /* UIViewController+ModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ModalView.h"; path = "WeChatReverse/ViewController/UIViewController+ModalView.h"; sourceTree = SOURCE_ROOT; };
 		6B4C7D6B1ED3FC1A00CAF1EB /* UIViewController+ModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ModalView.m"; path = "WeChatReverse/ViewController/UIViewController+ModalView.m"; sourceTree = SOURCE_ROOT; };
@@ -5130,8 +5136,6 @@
 		6BA4E5F51EC77B0300283DB5 /* IBeaconNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBeaconNotification.h; sourceTree = "<group>"; };
 		6BA4E5F61EC77B0300283DB5 /* IBeaconPageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBeaconPageInfo.h; sourceTree = "<group>"; };
 		6BA4E6041EC77B0300283DB5 /* Icons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Icons.h; sourceTree = "<group>"; };
-		6BA4E6051EC77B0300283DB5 /* iConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iConsole.h; sourceTree = "<group>"; };
-		6BA4E6061EC77B0300283DB5 /* iConsoleWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iConsoleWindow.h; sourceTree = "<group>"; };
 		6BA4E60C1EC77B0300283DB5 /* IDCHostItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCHostItem.h; sourceTree = "<group>"; };
 		6BA4E6421EC77B0400283DB5 /* ImageAutoControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAutoControl.h; sourceTree = "<group>"; };
 		6BA4E6471EC77B0400283DB5 /* ImageDownloadLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadLoader.h; sourceTree = "<group>"; };
@@ -12204,8 +12208,6 @@
 				6BA4E5F51EC77B0300283DB5 /* IBeaconNotification.h */,
 				6BA4E5F61EC77B0300283DB5 /* IBeaconPageInfo.h */,
 				6BA4E6041EC77B0300283DB5 /* Icons.h */,
-				6BA4E6051EC77B0300283DB5 /* iConsole.h */,
-				6BA4E6061EC77B0300283DB5 /* iConsoleWindow.h */,
 				6BA4E60C1EC77B0300283DB5 /* IDCHostItem.h */,
 				6BA4E6421EC77B0400283DB5 /* ImageAutoControl.h */,
 				6BA4E6471EC77B0400283DB5 /* ImageDownloadLoader.h */,
@@ -18073,6 +18075,8 @@
 				6BA405841EC77F8300283DB5 /* WSLocalWebViewController.h */,
 				6BF8477A1ED7395C00EAD5E1 /* WX */,
 				6BA4058E1EC77F8300283DB5 /* ZipViewController.h */,
+				6B3BBE211EDAE8FE002602B6 /* iConsole.h */,
+				6B3BBE221EDAE8FE002602B6 /* iConsole.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -18349,6 +18353,8 @@
 				6B80319B1EC8B69F0090657F /* MMUIWindow.m */,
 				6B5163B91ED916320089CEAC /* WCActionSheet.h */,
 				6B5163BA1ED916320089CEAC /* WCActionSheet.m */,
+				6B3BBE241EDAE9E5002602B6 /* iConsoleWindow.h */,
+				6B3BBE251EDAE9E5002602B6 /* iConsoleWindow.m */,
 			);
 			path = Window;
 			sourceTree = "<group>";
@@ -19116,7 +19122,9 @@
 				6B5163BB1ED916320089CEAC /* WCActionSheet.m in Sources */,
 				6B80317F1EC8ACA00090657F /* MMUIResponder.m in Sources */,
 				6B80319F1EC8B7770090657F /* ResourceMonitor.m in Sources */,
+				6B3BBE231EDAE8FE002602B6 /* iConsole.m in Sources */,
 				6B8031901EC8B2BC0090657F /* CMainControll.m in Sources */,
+				6B3BBE261EDAE9E5002602B6 /* iConsoleWindow.m in Sources */,
 				6B5163BD1ED919820089CEAC /* ContactSelectView.m in Sources */,
 				6B8031A31EC8B83D0090657F /* MMSMBaseViewController.m in Sources */,
 				6B8031821EC8ACF50090657F /* MicroMessengerAppDelegate.m in Sources */,

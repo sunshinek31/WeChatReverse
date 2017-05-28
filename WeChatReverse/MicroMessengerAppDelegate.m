@@ -24,6 +24,11 @@
 @synthesize m_nsToken = m_nsToken;
 @synthesize m_mainController = m_mainController;
 
+- (void)dealloc
+{
+    
+}
+
 #pragma mark - UIApplication delegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -57,6 +62,150 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
+}
+
+//- (void)applicationDidReceiveMemoryWarning:(id)arg1;
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    
+}
+
+//- (void)application:(UIApplication *)application didUpdateUserActivity:(id)arg2;
+- (void)application:(UIApplication *)application didUpdateUserActivity:(NSUserActivity *)userActivity
+{
+    
+}
+
+//- (void)application:(id)arg1 didFailToContinueUserActivityWithType:(id)arg2 error:(id)arg3;
+- (void)application:(UIApplication *)application didFailToContinueUserActivityWithType:(NSString *)userActivityType error:(NSError *)error
+{
+    
+}
+
+//- (BOOL)application:(id)arg1 continueUserActivity:(id)arg2 restorationHandler:(CDUnknownBlockType)arg3;
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler
+{
+    return YES;
+}
+
+//- (BOOL)application:(id)arg1 willContinueUserActivityWithType:(id)arg2;
+- (BOOL)application:(UIApplication *)application willContinueUserActivityWithType:(NSString *)userActivityType
+{
+    return YES;
+}
+
+//- (void)application:(id)arg1 handleWatchKitExtensionRequest:(id)arg2 reply:(CDUnknownBlockType)arg3;
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary * _Nullable))reply
+{
+    
+}
+
+//- (void)application:(id)arg1 performActionForShortcutItem:(id)arg2 completionHandler:(CDUnknownBlockType)arg3;
+-(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    
+}
+
+//- (BOOL)application:(id)arg1 openURL:(id)arg2 sourceApplication:(id)arg3 annotation:(id)arg4;
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return YES;
+}
+
+//- (void)application:(id)arg1 didChangeStatusBarFrame:(struct CGRect)arg2;
+- (void)application:(UIApplication *)application didChangeStatusBarFrame:(CGRect)oldStatusBarFrame
+{
+    
+}
+
+//- (void)application:(id)arg1 willChangeStatusBarFrame:(struct CGRect)arg2;
+- (void)application:(UIApplication *)application willChangeStatusBarFrame:(CGRect)newStatusBarFrame
+{
+    
+}
+
+//- (void)application:(id)arg1 willChangeStatusBarOrientation:(long long)arg2 duration:(double)arg3;
+- (void)application:(UIApplication *)application willChangeStatusBarOrientation:(UIInterfaceOrientation)newStatusBarOrientation duration:(NSTimeInterval)duration
+{
+    
+}
+
+//- (void)application:(id)arg1 didChangeStatusBarOrientation:(long long)arg2;
+- (void)application:(UIApplication *)application didChangeStatusBarOrientation:(UIInterfaceOrientation)oldStatusBarOrientation
+{
+    
+}
+
+
+//- (void)application:(id)arg1 handleEventsForBackgroundURLSession:(id)arg2 completionHandler:(CDUnknownBlockType)arg3;
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler
+{
+    
+}
+
+//- (void)application:(id)arg1 handleActionWithIdentifier:(id)arg2 forRemoteNotification:(id)arg3 withResponseInfo:(id)arg4 completionHandler:(CDUnknownBlockType)arg5;
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)())completionHandler
+{
+    
+}
+
+//- (void)application:(id)arg1 handleActionWithIdentifier:(id)arg2 forRemoteNotification:(id)arg3 completionHandler:(CDUnknownBlockType)arg4;
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler
+{
+    
+}
+
+//- (void)application:(id)arg1 handleActionWithIdentifier:(id)arg2 forLocalNotification:(id)arg3 withResponseInfo:(id)arg4 completionHandler:(CDUnknownBlockType)arg5;
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)())completionHandler
+{
+    
+}
+
+//- (void)application:(id)arg1 handleActionWithIdentifier:(id)arg2 forLocalNotification:(id)arg3 completionHandler:(CDUnknownBlockType)arg4;
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void (^)())completionHandler
+{
+    
+}
+
+//- (void)application:(id)arg1 performFetchWithCompletionHandler:(CDUnknownBlockType)arg2;
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    
+}
+
+//- (void)application:(id)arg1 didReceiveRemoteNotification:(id)arg2 fetchCompletionHandler:(CDUnknownBlockType)arg3;
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    
+}
+
+//- (void)application:(id)arg1 didReceiveLocalNotification:(id)arg2;
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    
+}
+
+//- (void)application:(id)arg1 didReceiveRemoteNotification:(id)arg2;
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    
+}
+//- (void)application:(id)arg1 didFailToRegisterForRemoteNotificationsWithError:(id)arg2;
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    
+}
+
+//- (void)application:(id)arg1 didRegisterForRemoteNotificationsWithDeviceToken:(id)arg2;
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    
+}
+
+//- (void)application:(id)arg1 didRegisterUserNotificationSettings:(id)arg2;
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+{
+    
 }
 
 #pragma mark - MMCommonAdapterDelegate
@@ -98,14 +247,15 @@
     
 }
 
+#pragma mark - UIAlertView delegate
 
-
-#pragma mark -
-
-- (void)setupMMCommonAdapter
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     
 }
+
+
+#pragma mark -
 
 - (BOOL)isWeWorkURL:(id)arg1
 {
@@ -114,17 +264,220 @@
 
 - (void)setInBackground:(BOOL)arg1
 {
-    mInBackground = arg1;
+    
 }
 
 - (BOOL)getInBackground
 {
-    return mInBackground;
+    return NO;
 }
 
-#pragma mark - UIAlertView delegate
+- (void)setUserAgent
+{
+    
+}
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)closeMainFrameWithoutReset
+{
+    
+}
+
+- (void)delayStopMain
+{
+    
+}
+
+- (void)closeMainFrameInternal
+{
+    
+}
+
+- (NSInteger)GetAppVerCompareWithLastRun
+{
+    return 0;
+}
+- (void)saveAppVersion
+{
+    
+}
+
+- (void)detectAppFirstRunOrFirstRunAfterUpgrade
+{
+    
+}
+
+- (void)firstStartAfterUpgradeDowngrade
+{
+    
+}
+
+- (void)didReceiveLocalMemoryWarning:(id)arg1
+{
+    
+}
+
+- (void)clearURLCache
+{
+    
+}
+
+- (void)clearServiceMemory
+{
+    
+}
+
+- (void)handleMemoryWarning
+{
+    
+}
+
+- (void)setupForShortcut
+{
+    
+}
+
+- (BOOL)application:(id)arg1 handleOpenURL:(id)arg2 bundleID:(id)arg3 annotation:(id)arg4
+{
+    return NO;
+}
+
+- (id)decodeUrlAttrs:(id)arg1
+{
+    return nil;
+}
+
+- (BOOL)handleOpenURL:(id)arg1 bundleID:(id)arg2
+{
+    return NO;
+}
+
+- (void)process3rdAppSupportContentFlagFromOpenUrl:(id *)arg1 andUrlStr:(id *)arg2 appID:(id)arg3
+{
+    
+}
+
+- (void)handleOpenPush
+{
+    
+}
+
+- (void)resetBadge
+{
+    
+}
+
+- (double)getMainWindowHeight
+{
+    return 0;
+}
+
+- (double)getMainWindowWidth
+{
+    return 0;
+}
+
+- (void)ClearBackGroundFetch
+{
+    
+}
+
+- (void)jumpToChatWhenReceivePush:(id)arg1 remotePush:(BOOL)arg2
+{
+    
+}
+
+- (void)doSendTokenTimeOut
+{
+    
+}
+
+- (void)doSendToken:(id)arg1 error:(BOOL)arg2
+{
+    
+}
+
+- (void)mainUISetting
+{
+    
+}
+
+- (void)monitorResource
+{
+    
+}
+
+- (void)mainThreadMonitorStart
+{
+    
+}
+
+- (void)continueMainLaunching:(id)arg1
+{
+    
+}
+
+- (void)tryProtectLaunchBeforeDeviceFirstUnlock
+{
+    
+}
+
+- (void)beforeMainLauching
+{
+    
+}
+
+- (void)logEssencialInfo
+{
+    
+}
+
+- (void)clearServiceObject
+{
+    
+}
+
+- (void)initServiceObject
+{
+    
+}
+
+- (void)registerLazyExtensionListener
+{
+    
+}
+
+- (void)registerClsMethodObserver
+{
+    
+}
+
+- (void)releaseSeviceCenter
+{
+    
+}
+
+- (void)RenamePath
+{
+    
+}
+
+- (void)handleMMSafeModeDidEndNotification:(id)arg1
+{
+    
+}
+
+- (BOOL)shouldEnterSafeMode
+{
+    return NO;
+}
+
+- (void)setupMMCommonAdapter
+{
+    
+}
+
+//- (void)apnsSilentPushTimeOut:(CDUnknownBlockType)arg1;
+- (void)apnsSilentPushTimeOut:(CDUnknownBlockType)arg1
 {
     
 }
