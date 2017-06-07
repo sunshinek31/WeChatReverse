@@ -33,7 +33,10 @@
 - (void)removeObjectFromLbsContactListAtIndex:(unsigned long long)arg1;
 - (void)insertLbsContactList:(id)arg1 atIndexes:(id)arg2;
 - (void)insertObject:(id)arg1 inLbsContactListAtIndex:(unsigned long long)arg2;
+
+
 - (id)objectInLbsContactListAtIndex:(unsigned long long)arg1;
+
 - (void)getLbsContactList:(id *)arg1 range:(struct _NSRange)arg2;
 - (unsigned long long)countOfLbsContactList;
 - (void)removeFromLbsContactList:(id)arg1;

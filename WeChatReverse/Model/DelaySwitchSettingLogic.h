@@ -8,26 +8,44 @@
 
 @interface DelaySwitchSettingLogic : MMObject
 {
-    _Bool m_bNeedToSync;
+    BOOL m_bNeedToSync;
 }
 
-- (void)CreateSettingExtStautsEventType:(unsigned int)arg1 andValue:(_Bool)arg2 andBitset:(unsigned int)arg3;
-- (void)CreateSettingEventType:(unsigned int)arg1 andValue:(_Bool)arg2 andBitset:(unsigned int)arg3;
-- (void)setWCPayTransferDelaySwitch:(int)arg1;
-- (void)processPluginSetting:(id)arg1 withType:(int)arg2 andValue:(_Bool)arg3;
-- (void)processMessageNotifycationSetting:(id)arg1 withType:(int)arg2 andValue:(_Bool)arg3;
-- (void)processIndividualPrivacySetting:(id)arg1 withType:(int)arg2 andValue:(_Bool)arg3;
-- (void)processContactProfileSetting:(id)arg1 withType:(int)arg2 andValue:(_Bool)arg3;
-- (void)processChatProfileSetting:(id)arg1 withType:(int)arg2 andValue:(_Bool)arg3;
-- (void)pluginSwitchSetting:(int)arg1 andValue:(_Bool)arg2;
-- (void)messageNotifycationSwitchSetting:(int)arg1 andValue:(_Bool)arg2;
-- (void)individualPrivacySwitchSetting:(int)arg1 andValue:(_Bool)arg2;
-- (void)contactProfileSwitchSetting:(id)arg1 withType:(int)arg2 andValue:(_Bool)arg3;
-- (void)chatProfileSwitchSetting:(id)arg1 withType:(int)arg2 andValue:(_Bool)arg3;
+- (void)CreateSettingExtStautsEventType:(unsigned int)eventType andValue:(BOOL)value andBitset:(unsigned int)bitset;
+- (void)CreateSettingEventType:(unsigned int)eventType andValue:(BOOL)arg2 andBitset:(unsigned int)arg3;
+- (void)setWCPayTransferDelaySwitch:(int)aWCPayTransferDelaySwitch;
+- (void)processPluginSetting:(NSString *)userName withType:(int)type andValue:(BOOL)value;
+- (void)processMessageNotifycationSetting:(NSString *)userName withType:(int)type andValue:(BOOL)value;
+- (void)processIndividualPrivacySetting:(NSString *)userName withType:(int)type andValue:(BOOL)value;
+
+/**
+ 开始配置
+ 
+ @param userName 唯一用户名
+ @param type 绑定的配置类型: 目前 1-星标好友,2-不让看朋友圈,3-不看朋友圈,4-黑名单
+ @param value switch开关
+ */
+- (void)processContactProfileSetting:(NSString *)userName withType:(int)type andValue:(BOOL)value;
+- (void)processChatProfileSetting:(NSString *)userName withType:(int)type andValue:(BOOL)value;
+- (void)pluginSwitchSetting:(int)arg1 andValue:(BOOL)value;
+- (void)messageNotifycationSwitchSetting:(int)arg1 andValue:(BOOL)value;
+- (void)individualPrivacySwitchSetting:(int)arg1 andValue:(BOOL)value;
+/**
+ 通讯对象配置开关设定
+ 
+ @param userName 唯一用户名
+ @param type 绑定的配置类型: 目前 1-星标好友,2-不让看朋友圈,3-不看朋友圈,4-黑名单
+ @param value switch开关
+ */
+- (void)contactProfileSwitchSetting:(NSString *)userName withType:(int)type andValue:(BOOL)value;
+- (void)chatProfileSwitchSetting:(id)arg1 withType:(int)type andValue:(BOOL)value;
+/**
+ 提交所有配置操作
+ 
+ */
 - (void)commitAllSwitchSetting;
 - (void)enterBackground;
-- (void)dealloc;
-- (id)init;
+
 
 @end
 

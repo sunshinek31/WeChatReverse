@@ -96,7 +96,14 @@
 
 - (void)oplogRet:(int)ret errMsg:(OplogErrMsg *)errorMsg eventID:(NSUInteger)eventID cgiWrap:(ProtobufCGIWrap *)aProtobufCGIWrap
 {
+    NSString *key = [NSString stringWithFormat:@"%u",8];
     
+    MMExtensionCenter *extensionCenter = [[MMServiceCenter defaultCenter]getService:[MMExtensionCenter class]];
+    MMExtension *extension = [extensionCenter getExtension:@protocol(IOplogExt)];
+    
+    if (extension) {
+        [extension unregisterExtension:self forKey:nil];
+    }
 }
 
 #pragma mark -
@@ -193,7 +200,7 @@
     
     NSUInteger uiType = contact.m_uiType;
     
-    NSUInteger n = uiType &! 0x1;
+    NSUInteger n = uiType&~(1<<0);
     
     [contact setM_uiType:n];
     
@@ -204,7 +211,7 @@
         
         [self startLoadingNonBlock];
         
-        NSString *key = [NSString stringWithFormat:@"%u",6];
+        NSString *key = [NSString stringWithFormat:@"%lu",(unsigned long)r];
         
         MMExtensionCenter *extensionCenter = [[MMServiceCenter defaultCenter] getService:[MMExtensionCenter class]];
         
@@ -212,7 +219,7 @@
         
         if (extension) {
             
-            [extension registerExtension:self forKey:@"64"];
+            [extension registerExtension:self forKey:key];
         }
     }
     

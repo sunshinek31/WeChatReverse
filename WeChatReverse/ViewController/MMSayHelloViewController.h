@@ -5,12 +5,8 @@
 //
 
 #import "MMUIViewController.h"
-
 #import "PBMessageObserverDelegate.h"
-#import "UIAlertViewDelegate.h"
-#import "UITableViewDataSource.h"
-#import "UITableViewDelegate.h"
-#import "UITextFieldDelegate.h"
+#import "MMSayHelloViewControllerDelegate.h"
 
 @class CContact, NSString, UITextField;
 
@@ -23,38 +19,18 @@
     id <MMSayHelloViewControllerDelegate> m_delegate;
 }
 
-@property(nonatomic) __weak id <MMSayHelloViewControllerDelegate> delegate; // @synthesize delegate=m_delegate;
-@property(retain, nonatomic) CContact *helloReceiver; // @synthesize helloReceiver=m_helloReceiver;
-@property(retain, nonatomic) NSString *helloContent; // @synthesize helloContent=m_helloContent;
-@property(retain, nonatomic) UITextField *sayHelloTextView; // @synthesize sayHelloTextView=m_sayHelloTextView;
-- (void).cxx_destruct;
-- (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
+@property(nonatomic, weak) id <MMSayHelloViewControllerDelegate> delegate; // @synthesize delegate=m_delegate;
+@property(strong, nonatomic) CContact *helloReceiver; // @synthesize helloReceiver=m_helloReceiver;
+@property(strong, nonatomic) NSString *helloContent; // @synthesize helloContent=m_helloContent;
+@property(strong, nonatomic) UITextField *sayHelloTextView; // @synthesize sayHelloTextView=m_sayHelloTextView;
+
 - (void)quitSayHello;
-- (_Bool)textField:(id)arg1 shouldChangeCharactersInRange:(struct _NSRange)arg2 replacementString:(id)arg3;
-- (_Bool)textFieldShouldReturn:(id)arg1;
 - (void)updateWordCount:(id)arg1;
-- (id)tableView:(id)arg1 titleForHeaderInSection:(long long)arg2;
-- (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2;
-- (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2;
-- (long long)numberOfSectionsInTableView:(id)arg1;
-- (void)viewDidDisappear:(_Bool)arg1;
-- (void)viewWillDisappear:(_Bool)arg1;
-- (void)viewDidAppear:(_Bool)arg1;
-- (void)viewWillAppear:(_Bool)arg1;
-- (void)viewDidUnload;
-- (void)viewDidLoad;
 - (void)onCancelSendSayHello;
 - (void)onSendSayHello:(id)arg1;
-- (id)filterString:(id)arg1;
-- (_Bool)doSayHello:(id)arg1;
-- (void)dealloc;
-- (id)init;
+- (NSString *)filterString:(NSString *)content;
+- (BOOL)doSayHello:(id)arg1;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

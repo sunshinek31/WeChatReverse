@@ -10,9 +10,9 @@
 @class PKPushPayload, PKPushRegistry, PKPushCredentials;
 
 @protocol PKPushRegistryDelegate <NSObject>
-- (void)pushRegistry:(PKPushRegistry *)arg1 didReceiveIncomingPushWithPayload:(PKPushPayload *)arg2 forType:(NSString *)arg3;
-- (void)pushRegistry:(PKPushRegistry *)arg1 didUpdatePushCredentials:(PKPushCredentials *)arg2 forType:(NSString *)arg3;
+- (void)pushRegistry:(PKPushRegistry *)pushRegistry didReceiveIncomingPushWithPayload:(PKPushPayload *)pushPayload forType:(NSString *)type;
+- (void)pushRegistry:(PKPushRegistry *)pushRegistry didUpdatePushCredentials:(PKPushCredentials *)pushPayload forType:(NSString *)type;
 
 @optional
-- (void)pushRegistry:(PKPushRegistry *)arg1 didInvalidatePushTokenForType:(NSString *)arg2;
+- (void)pushRegistry:(PKPushRegistry *)pushRegistry didInvalidatePushTokenForType:(NSString *)type;
 @end

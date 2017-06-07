@@ -10,4 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "WeChatReverseTypedef.h"
+#import "UIViewController+ModalView.h"
+#import "MMServiceCenter.h"
+#import "MMExtensionCenter.h"
 #endif

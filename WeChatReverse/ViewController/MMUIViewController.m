@@ -1,11 +1,12 @@
 //
 //  MMUIViewController.m
-//  WeChatReverse
+//  SweetHeart
 //
-//  Created by sunshinek31 on 2017/5/26.
-//  Copyright © 2017年 sunshinek31. All rights reserved.
+//  Created by sunshinek31 on 2017/5/17.
+//
 //
 
+#import "MMLoadingView.h"
 #import "MMUIViewController.h"
 
 @implementation MMUIViewController
@@ -148,7 +149,7 @@
     
 }
 
-#pragma mark - MMUIViewControllerDelegate 
+#pragma mark - MMUIViewControllerDelegate
 
 - (MMUIViewController *)getViewController
 {
@@ -171,7 +172,7 @@
 {
     return NO;
 }
-#pragma mark - 
+#pragma mark -
 
 - (id)mmNavigationController:(UINavigationController *)navigationController animationControllerForOperation:(NSInteger)arg2 fromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController
 {
@@ -678,7 +679,7 @@
     
 }
 
-- (void)adjustTableViewInset:(id)arg1
+- (void)adjustTableViewInset:(UIEdgeInsets)edgeInsets
 {
     
 }

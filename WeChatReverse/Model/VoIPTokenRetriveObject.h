@@ -19,21 +19,13 @@
 @property(retain, nonatomic) VoIPTokenRegisterObject *m_secondTryRegister;
 @property(retain, nonatomic) VoIPTokenRegisterObject *m_register;
 
-- (void)onVoIPTokenRegisterObjectOk;
-- (void)onVoIPTokenRegisterObjectError;
-- (void)onPreQuit;
-- (void)onAuthOK;
-- (void)goRegister;
-- (void)pushRegistry:(id)arg1 didInvalidatePushTokenForType:(id)arg2;
-- (void)pushRegistry:(id)arg1 didReceiveIncomingPushWithPayload:(id)arg2 forType:(id)arg3;
-- (void)pushRegistry:(id)arg1 didUpdatePushCredentials:(id)arg2 forType:(id)arg3;
-- (void)voipRegistration;
-- (id)init;
-- (void)dealloc;
 
-// Remaining properties
-//@property(readonly, copy) NSString *debugDescription;
-//@property(readonly, copy) NSString *description;
-//@property(readonly) unsigned long long hash;
-//@property(readonly) Class superclass;
+/**
+ 前往注册
+ */
+- (void)goRegister;
+- (void)voipRegistration;
+
+
+
 @end

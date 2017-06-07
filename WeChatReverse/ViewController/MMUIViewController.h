@@ -4,6 +4,7 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
+
 #import "IUiUtilExt.h"
 #import "MMUIViewControllerDelegate.h"
 
@@ -29,7 +30,7 @@
     NSMutableDictionary *m_dicTopOffsetAutolayout;
     NSMutableArray *m_arrEndUserOpInfo;
     MMDelegateProxy<UIGestureRecognizerDelegate> *m_interactivePopGestureRecognizerDelegate;
-//    UIResponder *previousResponder;
+    //    UIResponder *previousResponder;
     UIBarButtonItem *m_leftBarBtnItem;
     UIBarButtonItem *m_rightBarBtnItem;
     UIColor *m_titleColor;
@@ -58,7 +59,6 @@
 
 /**
  控制器切换操作
-
  @param navigationController 导航控制器
  @param arg2 <#arg2 description#>
  @param fromViewController 开始
@@ -92,8 +92,6 @@ animationControllerForOperation:(NSInteger)arg2
 - (BOOL)useCustomNavibar;
 - (BOOL)useTransparentNavibar;
 - (BOOL)useBlackStatusbar;
-
-
 
 - (void)viewWillDismiss:(BOOL)animated;
 - (void)viewWillPresent:(BOOL)animated;
@@ -153,7 +151,7 @@ animationControllerForOperation:(NSInteger)arg2
 - (void)adjustView;
 - (void)willAppear;
 - (void)setIsPopByClickingURL;
-- (void)handleUrl:(id)arg1 DisableFirstGetA8Key:(BOOL)arg2 extraInfo:(id)arg3;
+- (void)handleUrl:(id)url DisableFirstGetA8Key:(BOOL)shouldDisable extraInfo:(id)extraInfo;
 - (void)restoreNavigationBarBkg;
 - (void)removeNavigationBarBkg;
 - (void)resetTableViewOffset:(id)arg1;
@@ -164,8 +162,8 @@ animationControllerForOperation:(NSInteger)arg2
 
 
 - (void)viewDidTransitionToNewSize;
-- (void)setAutolayoutTopOffset:(CGFloat)offset forView:(id)arg2;
-- (void)setAutolayoutContentInset:(UIEdgeInsets)edgeInsets forScrollView:(id)arg2;
+- (void)setAutolayoutTopOffset:(CGFloat)offset forView:(UIView *)view;
+- (void)setAutolayoutContentInset:(UIEdgeInsets)edgeInsets forScrollView:(UIScrollView *)scrollView;
 - (CGFloat)getSearchBarSearchingY;
 - (CGFloat)getVisibleHeightOri:(NSInteger)height;
 - (CGFloat)getVisibleHeight;
@@ -177,18 +175,17 @@ animationControllerForOperation:(NSInteger)arg2
 - (void)disMissSelf;
 - (void)adjustViewAndNavBarRect;
 - (void)adjustSubviewRects;
-- (void)adjustTableViewInset:(id)arg1;
+- (void)adjustTableViewInset:(UIEdgeInsets)edgeInsets;
 - (void)adjustTableViewRect;
 - (void)stopLoading;
 - (void)startLoadingNonBlock;
 - (void)startLoadingBlocked;
-- (void)startLoadingWithText:(id)arg1 block:(BOOL)isBlock;
-- (void)stopLoadingWithFailText:(id)arg1;
-- (void)stopLoadingWithOKText:(id)arg1;
-- (void)startLoadingWithText:(id)arg1;
+- (void)startLoadingWithText:(NSString *)text block:(BOOL)isBlock;
+- (void)stopLoadingWithFailText:(NSString *)failText;
+- (void)stopLoadingWithOKText:(NSString *)OKText;
+- (void)startLoadingWithText:(NSString *)text;
 - (void)stopBizLoading;
 - (void)startBizLoading;
 - (void)setWCBizAuthTitle:(id)arg1;
 
 @end
-

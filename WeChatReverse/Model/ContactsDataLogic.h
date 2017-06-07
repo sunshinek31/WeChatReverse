@@ -34,7 +34,7 @@
 @property(readonly, nonatomic) unsigned int m_uiNormalContact; // @synthesize m_uiNormalContact;
 @property(nonatomic) unsigned int m_uiScene; // @synthesize m_uiScene;
 @property(nonatomic) __weak id <ContactsDataLogicDelegate> m_delegate; // @synthesize m_delegate;
-- (void).cxx_destruct;
+
 - (void)FilterSearchResultOfNormalContacts:(id)arg1;
 - (void)onFTSContactSearchResultChanged:(_Bool)arg1;
 - (void)onUnInstallPlugin:(int)arg1;

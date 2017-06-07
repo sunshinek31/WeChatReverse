@@ -5,10 +5,9 @@
 //
 
 #import "MMUIViewController.h"
-
+#import "SeePeopleNearByLogicController.h"
 #import "PeopleNearByListHeaderViewDelegate.h"
-#import "UITableViewDataSource.h"
-#import "UITableViewDelegate.h"
+#import "PeopleNearByListViewControllerDelegate.h"
 
 @class LbsContactInfoList, MFBannerBtn, MMTableView, NSArray, NSMutableDictionary, NSString, PeopleNearByListHeaderView, SeePeopleNearByLogicController;
 
@@ -19,54 +18,38 @@
     MMTableView *m_tableView;
     SeePeopleNearByLogicController *m_logicController;
     NSMutableDictionary *m_userHeaderImageCache;
-    long long m_iRoomMemberCount;
+    NSInteger m_iRoomMemberCount;
     id <PeopleNearByListViewControllerDelegate> m_delegate;
     MFBannerBtn *m_bannerBtn;
     NSArray *m_lbsPoiList;
-    unsigned long long m_abtestResult;
+    NSUInteger m_abtestResult;
 }
 
-@property(retain, nonatomic) NSArray *lbsPoiList; // @synthesize lbsPoiList=m_lbsPoiList;
-@property(nonatomic) long long iRoomMemberCount; // @synthesize iRoomMemberCount=m_iRoomMemberCount;
-@property(retain, nonatomic) NSMutableDictionary *userHeaderImageCache; // @synthesize userHeaderImageCache=m_userHeaderImageCache;
-@property(retain, nonatomic) SeePeopleNearByLogicController *logicController; // @synthesize logicController=m_logicController;
-@property(retain, nonatomic) MMTableView *tableView; // @synthesize tableView=m_tableView;
-@property(retain, nonatomic) LbsContactInfoList *lbsContactList; // @synthesize lbsContactList=m_lbsContactList;
-- (void).cxx_destruct;
-- (void)viewDidLayoutSubviews;
+@property(strong, nonatomic) NSArray *lbsPoiList; // @synthesize lbsPoiList=m_lbsPoiList;
+@property(nonatomic) NSInteger iRoomMemberCount; // @synthesize iRoomMemberCount=m_iRoomMemberCount;
+@property(strong, nonatomic) NSMutableDictionary *userHeaderImageCache; // @synthesize userHeaderImageCache=m_userHeaderImageCache;
+@property(strong, nonatomic) SeePeopleNearByLogicController *logicController; // @synthesize logicController=m_logicController;
+@property(strong, nonatomic) MMTableView *tableView; // @synthesize tableView=m_tableView;
+@property(strong, nonatomic) LbsContactInfoList *lbsContactList; // @synthesize lbsContactList=m_lbsContactList;
+
+- (void)setDelegate:(id <PeopleNearByListViewControllerDelegate>)delegate;
 - (void)adjustSubviewRects;
-- (void)onChatRoomNearByBtnClicked;
-- (void)reloadWithLbsPoiList:(id)arg1;
-- (void)reloadWithLbsContactInfoList:(id)arg1;
-- (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2;
-- (id)genLBSPeopleCell:(id)arg1 cellForRowAtIndexPath:(id)arg2;
-- (id)genLBSPoiCell:(id)arg1 cellForRowAtIndexPath:(id)arg2;
-- (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2;
-- (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2;
-- (long long)numberOfSectionsInTableView:(id)arg1;
-- (void)viewDidDisappear:(_Bool)arg1;
-- (void)viewWillDisappear:(_Bool)arg1;
-- (void)viewDidAppear:(_Bool)arg1;
-- (void)viewWillAppear:(_Bool)arg1;
-- (void)viewDidUnload;
-- (void)viewDidLoad;
+- (void)reloadWithLbsPoiList:(id)poiList;
+- (void)reloadWithLbsContactInfoList:(id)contactInfoList;
+- (id)genLBSPeopleCell:(id)cell cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (id)genLBSPoiCell:(id)cell cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+
 - (void)checkBannerLogic;
 - (void)createBannerBtn;
 - (void)startBindQQ;
 - (void)startUploadAddressbook;
 - (void)startBindPhone;
-- (_Bool)isLBSPeopleIndex:(id)arg1;
+- (BOOL)isLBSPeopleIndex:(id)arg1;
 - (id)getCachedHeaderImageForUser:(id)arg1;
 - (void)showChatRoomView;
-- (void)dealloc;
-- (id)init;
-- (void)setDelegate:(id)arg1;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
+
+
 
 @end
 

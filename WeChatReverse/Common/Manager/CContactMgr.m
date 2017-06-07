@@ -226,17 +226,17 @@
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 chatState:(unsigned int)arg2
+- (BOOL)setContact:(CContact *)contact chatState:(unsigned int)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 antispamTicket:(id)arg2
+- (BOOL)setContact:(CContact *)contact antispamTicket:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 textTranslateOpen:(BOOL)arg2 sync:(BOOL)arg3
+- (BOOL)setContact:(CContact *)contact textTranslateOpen:(BOOL)arg2 sync:(BOOL)arg3
 {
     return NO;
 }
@@ -246,27 +246,27 @@
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 sessionTop:(BOOL)arg2 sync:(BOOL)arg3
+- (BOOL)setContact:(CContact *)contact sessionTop:(BOOL)arg2 sync:(BOOL)arg3
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 notifyOpen:(BOOL)arg2 sync:(BOOL)arg3
+- (BOOL)setContact:(CContact *)contact notifyOpen:(BOOL)arg2 sync:(BOOL)arg3
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 hideHashPhone:(BOOL)arg2 sync:(BOOL)arg3
+- (BOOL)setContact:(CContact *)contact hideHashPhone:(BOOL)arg2 sync:(BOOL)arg3
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 watchContact:(BOOL)arg2 sync:(BOOL)arg3
+- (BOOL)setContact:(CContact *)contact watchContact:(BOOL)arg2 sync:(BOOL)arg3
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 favour:(BOOL)arg2 sync:(BOOL)arg3
+- (BOOL)setContact:(CContact *)contact favour:(BOOL)arg2 sync:(BOOL)arg3
 {
     return NO;
 }
@@ -276,12 +276,12 @@
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 typeBit:(unsigned int)typeBit set:(BOOL)set sync:(BOOL)sync
+- (BOOL)setContact:(CContact *)contact typeBit:(unsigned int)typeBit set:(BOOL)set sync:(BOOL)sync
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 typeBit:(unsigned int)typeBit set:(BOOL)set sync:(BOOL)sync localSet:(BOOL)localSet
+- (BOOL)setContact:(CContact *)contact typeBit:(unsigned int)typeBit set:(BOOL)set sync:(BOOL)sync localSet:(BOOL)localSet
 {
     return NO;
 }
@@ -311,42 +311,42 @@
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 chatRoomAccessType:(unsigned int)arg2
+- (BOOL)setContact:(CContact *)contact chatRoomAccessType:(unsigned int)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 RoomDetail:(id)arg2
+- (BOOL)setContact:(CContact *)contact RoomDetail:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 chatRoomData:(id)arg2
+- (BOOL)setContact:(CContact *)contact chatRoomData:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 owner:(id)arg2
+- (BOOL)setContact:(CContact *)contact owner:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 snsBlack:(BOOL)arg2
+- (BOOL)setContact:(CContact *)contact snsBlack:(BOOL)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 mobileIdentify:(id)arg2
+- (BOOL)setContact:(CContact *)contact mobileIdentify:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 googleContactName:(id)arg2
+- (BOOL)setContact:(CContact *)contact googleContactName:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 googleContactNickName:(id)arg2
+- (BOOL)setContact:(CContact *)contact googleContactNickName:(id)arg2
 {
     return NO;
 }
@@ -356,17 +356,17 @@
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 nickName:(id)arg2
+- (BOOL)setContact:(CContact *)contact nickName:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 cardUrl:(id)arg2
+- (BOOL)setContact:(CContact *)contact cardUrl:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 cardDesc:(id)arg2
+- (BOOL)setContact:(CContact *)contact cardDesc:(NSString *)desc
 {
     return NO;
 }
@@ -376,12 +376,12 @@
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 remark:(id)arg2
+- (BOOL)setContact:(CContact *)contact remark:(id)arg2
 {
     return NO;
 }
 
-- (BOOL)setContact:(id)arg1 remark:(id)arg2 hideHashPhone:(BOOL)arg3
+- (BOOL)setContact:(CContact *)contact remark:(id)arg2 hideHashPhone:(BOOL)arg3
 {
     return NO;
 }

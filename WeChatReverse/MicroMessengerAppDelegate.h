@@ -10,7 +10,7 @@
 #import "CAppObserverCenter.h"
 #import "CAppViewControllerManager.h"
 #import "CMainControll.h"
-#import "MMCommonAdapterDelegate.h"
+#import "MMCommonAdapter.h"
 #import "ResourceMonitorDelegate.h"
 #import "MMServiceCenter.h"
 #import "MMUIWindow.h"

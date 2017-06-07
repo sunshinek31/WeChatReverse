@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "MMService.h"
-
 #import "EmoticonDescMgrExt.h"
 #import "IContactMgrExt.h"
 #import "IEnterpriseMsgExt.h"
@@ -27,7 +25,6 @@
     NSMutableDictionary *m_dicAtMeType;
 }
 
-- (void).cxx_destruct;
 - (void)checkAndMergeTopFlag;
 - (void)onContactListUpdate:(unsigned int)arg1;
 - (void)OnChangeNotifyStatus:(id)arg1 withStatus:(_Bool)arg2;
@@ -113,12 +110,6 @@
 - (void)onServiceReloadData;
 - (void)dealloc;
 - (void)onServiceInit;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

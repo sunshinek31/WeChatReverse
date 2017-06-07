@@ -10,4 +10,19 @@
 
 @implementation WAAppMsgItem
 
+- (id)toXML
+{
+    return nil;
+}
+
+- (WAAppMsgItem *)copyWithZone:(NSZone *)zone
+{
+    return nil;
+}
+
+- (BOOL)fromXML:(struct XmlReaderNode_t *)arg1
+{
+    return NO;
+}
+
 @end

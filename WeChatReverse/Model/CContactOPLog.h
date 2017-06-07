@@ -25,7 +25,7 @@
 - (BOOL)add_ModifyContact:(id)arg1 addScene:(NSUInteger)addScene delScene:(NSUInteger)delScene sync:(BOOL)isSync;
 - (BOOL)isSkipContact:(id)arg1;
 - (void)add_SkipContact:(id)arg1;
-- (instancetype)init;
+
 
 @end
 

@@ -4,17 +4,12 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 @interface CAESCrypt : NSObject
-{
-}
 
-+ (id)AESECBDecryptWithKey:(id)arg1 Data:(id)arg2 Final:(_Bool)arg3;
-+ (id)AESECBEncryptWithKey:(id)arg1 Data:(id)arg2 Final:(_Bool)arg3;
++ (id)AESECBDecryptWithKey:(id)arg1 Data:(id)arg2 Final:(BOOL)arg3;
++ (id)AESECBEncryptWithKey:(id)arg1 Data:(id)arg2 Final:(BOOL)arg3;
 + (id)AESDecryptWithKey:(id)arg1 Data:(id)arg2;
 + (id)AESEncryptWithKey:(id)arg1 Data:(id)arg2;
-- (id)init;
 
 @end
 

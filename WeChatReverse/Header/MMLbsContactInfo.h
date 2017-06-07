@@ -68,7 +68,7 @@
 @property(retain, nonatomic) NSString *country; // @synthesize country=Country;
 @property(retain, nonatomic) NSString *nickName; // @synthesize nickName=NickName;
 @property(retain, nonatomic) NSString *userName; // @synthesize userName=UserName;
-- (void).cxx_destruct;
+
 - (_Bool)isInMyContactList;
 - (id)description;
 - (id)keyPaths;

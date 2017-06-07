@@ -18,7 +18,7 @@
 
 @interface SeePeopleNearbyViewController : MMUIViewController <SeePeopleNearByUIDelegate, settingMyAccountExtInfoDelegate, UIAlertViewDelegate, WCActionSheetDelegate, MMTipsViewControllerDelegate, PeopleNearByListViewControllerDelegate, VerifyPhoneDelegate>
 {
-    PeopleNearByListViewController *m_peopleListView;
+    PeopleNearByListViewController *m_peopleListView; // tableview
     SeePeopleNearByLogicController *m_logicController;
     MMLoadingView *m_loadingView;
     LBSErrorViewController *m_findNothingView;
@@ -30,7 +30,7 @@
 @property(retain, nonatomic) LBSErrorViewController *findNothingView; // @synthesize findNothingView=m_findNothingView;
 @property(retain, nonatomic) SeePeopleNearByLogicController *logicController; // @synthesize logicController=m_logicController;
 @property(retain, nonatomic) PeopleNearByListViewController *peopleListView; // @synthesize peopleListView=m_peopleListView;
-- (void).cxx_destruct;
+
 - (void)viewDidLayoutSubviews;
 - (void)viewWillAppear:(_Bool)arg1;
 - (void)bindPhoneReturn;
@@ -43,25 +43,35 @@
 - (void)confirmClearMyLbsData:(id)arg1;
 - (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;
 - (void)SettingMyAccountExtInfoExit;
+
 - (void)onJoinChatRoomFailed;
 - (void)onJoinChatRoomFinishedWithResult:(id)arg1;
 - (void)onJoinChatRoomStart;
+
 - (void)onGetCertificationFinish;
 - (void)onSelectedWithLbsPoiItem:(id)arg1;
+
 - (void)onSelectedWithLbsContactInfo:(id)arg1;
 - (void)showPeopleInfoView:(id)arg1;
 - (void)showContactInfoView:(id)arg1;
+
+
 - (void)onUpdateLbsContactInfoError:(int)arg1;
+
 - (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2;
+
 - (void)onGetLBSRecommendPoiList:(id)arg1;
 - (void)onUpdateLbsContactInfoFinishedWithData:(id)arg1;
+
 - (void)onClearMyLbsDataFinishedWithResult:(_Bool)arg1;
 - (void)goBackToRootView;
 - (void)showMessage:(id)arg1;
 - (void)onRefreshMyFriends;
 - (void)onClearMyLbsData;
+
 - (void)willAppear;
 - (void)viewDidLoad;
+
 - (void)setTitleNavView;
 - (id)getSexImage;
 - (void)setRightNavBtn;
@@ -71,17 +81,13 @@
 - (void)onClickNeverPromptForAgree:(id)arg1;
 - (void)promptForProfileExtInfo;
 - (_Bool)isProfileExtInfoOK;
+
 - (void)stopLoading;
 - (void)startLoading;
 - (void)startLoadingWithText:(id)arg1;
 - (void)dealloc;
 - (id)init;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

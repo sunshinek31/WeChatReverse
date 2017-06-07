@@ -5,25 +5,21 @@
 //
 
 #import "MMObject.h"
-
 #import "PBMessageObserverDelegate.h"
 
 @interface ContactRemarkLogic : MMObject <PBMessageObserverDelegate>
-{
-}
 
-- (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
-- (_Bool)deleteCardImg:(id)arg1;
+- (BOOL)deleteCardImg:(id)arg1;
 - (void)onUploadCardImg:(id)arg1;
-- (_Bool)uploadCardImg:(id)arg1 image:(id)arg2 clientId:(id)arg3 startPos:(unsigned int)arg4;
-- (_Bool)uploadCardImg:(id)arg1 image:(id)arg2;
+- (BOOL)uploadCardImg:(id)arg1 image:(id)arg2 clientId:(id)arg3 startPos:(unsigned int)pos;
+- (BOOL)uploadCardImg:(id)arg1 image:(id)arg2;
 - (void)onDownloadCardImg:(id)arg1;
 - (void)downloadCardImg:(id)arg1;
 - (void)tryDeleteInvalidateCardImg:(id)arg1;
 - (id)getCardImg:(id)arg1;
 - (id)pathForCardImage:(id)arg1 url:(id)arg2;
 - (id)listCardImgFile;
-- (void)dealloc;
+
 
 @end
 

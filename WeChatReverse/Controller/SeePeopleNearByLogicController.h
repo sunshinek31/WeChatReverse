@@ -9,6 +9,7 @@
 #import "ICertInfoMgrExt.h"
 #import "LocationRetrieveDelegate.h"
 #import "PBMessageObserverDelegate.h"
+#import "SeePeopleNearByUIDelegate.h"
 
 @class CLLocation, LbsContactInfoList, LocationRetriever, NSRecursiveLock, NSString;
 
@@ -25,34 +26,21 @@
     CLLocation *m_location;
 }
 
-@property(retain, nonatomic) CLLocation *m_location; // @synthesize m_location;
-@property(retain, nonatomic) LocationRetriever *m_locationRetrieve; // @synthesize m_locationRetrieve;
-@property(retain, nonatomic) LbsContactInfoList *m_lbsContactList; // @synthesize m_lbsContactList;
-- (void).cxx_destruct;
-- (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
-- (_Bool)CreateJoinLBSRoomEvent:(id)arg1;
-- (void)tryJoinChatRoom;
-- (void)OnUpdateCertInfo;
+@property(strong, nonatomic) CLLocation *m_location; // @synthesize m_location;
+@property(strong, nonatomic) LocationRetriever *m_locationRetrieve; // @synthesize m_locationRetrieve;
+@property(strong, nonatomic) LbsContactInfoList *m_lbsContactList; // @synthesize m_lbsContactList;
+
 - (void)onSelectedWithLbsPoiItem:(id)arg1;
 - (void)onSelectedWithLbsContactInfo:(id)arg1;
-- (_Bool)CreateLBSFindEvent:(id)arg1;
-- (_Bool)CreateLBSPoiListEvent:(id)arg1;
-- (_Bool)CreateClearLBSDataEvent;
-- (void)onRetrieveLocationError:(int)arg1;
-- (void)onRetrieveLocationTimeOut:(id)arg1;
-- (void)onRetrieveLocationOK:(id)arg1;
-- (_Bool)clearMyLbsData;
+- (BOOL)CreateJoinLBSRoomEvent:(id)arg1;
+- (void)tryJoinChatRoom;
+- (BOOL)CreateLBSFindEvent:(id)arg1;
+- (BOOL)CreateLBSPoiListEvent:(id)arg1;
+- (BOOL)CreateClearLBSDataEvent;
+- (BOOL)clearMyLbsData;
 - (void)cancelUpdateLbsContactInfo;
 - (void)updateLbsContactInfo;
-- (void)dealloc;
-- (id)initWithDelegate:(id)arg1;
-- (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
+- (instancetype)initWithDelegate:(id<SeePeopleNearByUIDelegate>)delegate;
 
 @end
 
