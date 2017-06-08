@@ -79,26 +79,34 @@
 - (BOOL)setHDHeadUpdated:(id)arg1;
 - (BOOL)setContact:(CContact *)contact chatState:(unsigned int)arg2;
 - (BOOL)setContact:(CContact *)contact antispamTicket:(id)arg2;
-- (BOOL)setContact:(CContact *)contact textTranslateOpen:(BOOL)arg2 sync:(BOOL)arg3;
+- (BOOL)setContact:(CContact *)contact textTranslateOpen:(BOOL)arg2 sync:(BOOL)shouldSync;
 - (BOOL)setLocalContactToUntopSession:(id)arg1;
-- (BOOL)setContact:(CContact *)contact sessionTop:(BOOL)arg2 sync:(BOOL)arg3;
-- (BOOL)setContact:(CContact *)contact notifyOpen:(BOOL)arg2 sync:(BOOL)arg3;
-- (BOOL)setContact:(CContact *)contact hideHashPhone:(BOOL)arg2 sync:(BOOL)arg3;
-- (BOOL)setContact:(CContact *)contact watchContact:(BOOL)arg2 sync:(BOOL)arg3;
-- (BOOL)setContact:(CContact *)contact favour:(BOOL)arg2 sync:(BOOL)arg3;
+- (BOOL)setContact:(CContact *)contact sessionTop:(BOOL)arg2 sync:(BOOL)shouldSync;
+- (BOOL)setContact:(CContact *)contact notifyOpen:(BOOL)arg2 sync:(BOOL)shouldSync;
+- (BOOL)setContact:(CContact *)contact hideHashPhone:(BOOL)arg2 sync:(BOOL)shouldSync;
+- (BOOL)setContact:(CContact *)contact watchContact:(BOOL)arg2 sync:(BOOL)shouldSync;
+/**
+ 星标朋友配置
+ 
+ @param contact 通讯对象
+ @param shouldFavour 是否设置为星标朋友:YES-是,NO-不是
+ @param shouldSync 是否同步
+ @return 方法调用标识
+ */
+- (BOOL)setContact:(CContact *)contact favour:(BOOL)shouldFavour sync:(BOOL)shouldSync;
 - (BOOL)setLocalContact:(id)arg1 notifyOpen:(BOOL)arg2;
 - (BOOL)setContact:(CContact *)contact typeBit:(unsigned int)typeBit set:(BOOL)set sync:(BOOL)sync;
 - (BOOL)setContact:(CContact *)contact typeBit:(unsigned int)typeBit set:(BOOL)set sync:(BOOL)sync localSet:(BOOL)localSet;
-- (BOOL)setNoBlack:(id)arg1 sync:(BOOL)arg2;
-- (BOOL)setBlack:(id)arg1 sync:(BOOL)arg2;
-- (BOOL)setNoBlack:(id)arg1;
-- (BOOL)setBlack:(id)arg1;
-- (BOOL)setBlack:(id)arg1 blackFlag:(BOOL)arg2 sync:(BOOL)arg3;
-- (BOOL)setContact:(CContact *)contact chatRoomAccessType:(unsigned int)arg2;
-- (BOOL)setContact:(CContact *)contact RoomDetail:(id)arg2;
-- (BOOL)setContact:(CContact *)contact chatRoomData:(id)arg2;
-- (BOOL)setContact:(CContact *)contact owner:(id)arg2;
-- (BOOL)setContact:(CContact *)contact snsBlack:(BOOL)arg2;
+- (BOOL)setNoBlack:(id)noBlack sync:(BOOL)shouldSync;
+- (BOOL)setBlack:(id)black sync:(BOOL)shouldSync;
+- (BOOL)setNoBlack:(id)noBlack;
+- (BOOL)setBlack:(id)black;
+- (BOOL)setBlack:(id)black blackFlag:(BOOL)shouldBlackFlag sync:(BOOL)shouldSync;
+- (BOOL)setContact:(CContact *)contact chatRoomAccessType:(unsigned int)type;
+- (BOOL)setContact:(CContact *)contact RoomDetail:(id)roomDetail;
+- (BOOL)setContact:(CContact *)contact chatRoomData:(id)chatRoomData;
+- (BOOL)setContact:(CContact *)contact owner:(id)owner;
+- (BOOL)setContact:(CContact *)contact snsBlack:(BOOL)shouldSnsBlack;
 - (BOOL)setContact:(CContact *)contact mobileIdentify:(id)arg2;
 - (BOOL)setContact:(CContact *)contact googleContactName:(id)arg2;
 - (BOOL)setContact:(CContact *)contact googleContactNickName:(id)arg2;

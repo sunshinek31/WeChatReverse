@@ -4,22 +4,20 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class CBaseContact, NSString;
+@class CBaseContact;
 
 @protocol WCNetworkMediaPlayerDelegate <NSObject>
 - (void)onClosePlayer;
 
 @optional
-- (_Bool)needHiddenMoreMenu;
-- (void)onShareVideoToTimeline:(_Bool)arg1;
+- (BOOL)needHiddenMoreMenu;
+- (void)onShareVideoToTimeline:(BOOL)shouldShare;
 - (void)onCancelShareVideoToFriend;
-- (void)onShareVideoToFriend:(CBaseContact *)arg1;
+- (void)onShareVideoToFriend:(CBaseContact *)aCBaseContact;
 - (void)onClickFavVideoMenu;
-- (void)willAnimateRotation:(_Bool)arg1;
+- (void)willAnimateRotation:(BOOL)animated;
 - (void)onClosePlayerForViewDetail:(NSString *)arg1;
-- (_Bool)stopAtLastVideoFrameWhenPlayEnd;
+- (BOOL)stopAtLastVideoFrameWhenPlayEnd;
 - (void)onEndPlayer;
 - (void)onPausePlayer;
 - (void)onStartPlayer;

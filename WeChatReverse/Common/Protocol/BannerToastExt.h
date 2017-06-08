@@ -4,15 +4,11 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class NSString;
-
 @protocol BannerToastExt <NSObject>
 
 @optional
-- (void)onReceiveSecurityBannerMsg:(NSString *)arg1 withWording:(NSString *)arg2;
-- (void)onReceiveNewFriendRecommandMsg:(NSString *)arg1;
+- (void)onReceiveSecurityBannerMsg:(NSString *)securityBannerMsg withWording:(NSString *)wording;
+- (void)onReceiveNewFriendRecommandMsg:(NSString *)recommandMsg;
 - (void)onBannerUpdate;
 @end
 

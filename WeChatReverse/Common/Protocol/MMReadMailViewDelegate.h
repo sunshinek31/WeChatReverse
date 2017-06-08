@@ -4,13 +4,11 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
+@class CMessageWrap;
 
-@class NSString;
-
-@protocol TypingControllerDelgate <NSObject>
+@protocol MMReadMailViewDelegate <NSObject>
 
 @optional
-- (void)updateTypingTitle:(NSString *)arg1;
+- (void)deleteMail:(CMessageWrap *)aCMessageWrap;
 @end
 

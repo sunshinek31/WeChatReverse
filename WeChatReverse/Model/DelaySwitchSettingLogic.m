@@ -8,6 +8,7 @@
 
 #import "DelaySwitchSettingLogic.h"
 #import "NewSyncService.h"
+#import "CContactMgr.h"
 
 @implementation DelaySwitchSettingLogic
 
@@ -52,7 +53,41 @@
 }
 
 - (void) processContactProfileSetting:(NSString *)userName withType:(int)type andValue:(BOOL)value {
-    ;
+    
+    if (type != 0) {
+        
+        MMServiceCenter *serviceCenter = [MMServiceCenter defaultCenter];
+        CContactMgr *contactMgr;
+        CContact *aContact;
+        switch (type) {
+            case 1:
+                
+                contactMgr = [serviceCenter getService:[CContactMgr class]];
+                aContact = [contactMgr getContactByName:userName];
+                
+                if (aContact == nil) {
+                    
+                }else{
+                    
+                    [contactMgr setContact:aContact favour:YES sync:NO];
+                }
+                
+                break;
+            case 2:
+                
+                break;
+            case 3:
+                
+                break;
+                
+            case 4:
+                break;
+            default:
+                break;
+        }
+    }
+    
+    
 }
 
 - (void) processChatProfileSetting:(id)arg1 withType:(int)type andValue:(BOOL)value {

@@ -266,7 +266,7 @@
     return NO;
 }
 
-- (BOOL)setContact:(CContact *)contact favour:(BOOL)arg2 sync:(BOOL)arg3
+- (BOOL)setContact:(CContact *)contact favour:(BOOL)shouldFavour sync:(BOOL)shouldSync
 {
     return NO;
 }

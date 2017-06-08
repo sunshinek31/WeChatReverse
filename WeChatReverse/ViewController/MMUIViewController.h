@@ -93,21 +93,104 @@ animationControllerForOperation:(NSInteger)arg2
 - (BOOL)useTransparentNavibar;
 - (BOOL)useBlackStatusbar;
 
+/**
+ viewWillDismiss
+ 
+ @param animated animated
+ */
 - (void)viewWillDismiss:(BOOL)animated;
+
+/**
+ viewWillPresent
+ 
+ @param animated animated description
+ */
 - (void)viewWillPresent:(BOOL)animated;
+
+/**
+ viewDidPop
+ 
+ @param animated animated description
+ */
 - (void)viewDidPop:(BOOL)animated;
+
+/**
+ viewWillPop
+ 
+ @param animated animated description
+ */
 - (void)viewWillPop:(BOOL)animated;
+
+/**
+ viewDidPush
+ 
+ @param animated animated description
+ */
 - (void)viewDidPush:(BOOL)animated;
+
+/**
+ viewWillPush
+ 
+ @param animated animated description
+ */
 - (void)viewWillPush:(BOOL)animated;
+
+/**
+ viewDidBeDismissed
+ 
+ @param animated animated description
+ */
 - (void)viewDidBeDismissed:(BOOL)animated;
+
+/**
+ viewWillBeDismissed
+ 
+ @param animated animated description
+ */
 - (void)viewWillBeDismissed:(BOOL)animated;
+
+/**
+ viewDidBePresented
+ 
+ @param animated animated description
+ */
 - (void)viewDidBePresented:(BOOL)animated;
+
+/**
+ viewWillBePresented
+ 
+ @param animated animated description
+ */
 - (void)viewWillBePresented:(BOOL)animated;
+
+/**
+ viewDidBePoped
+ 
+ @param animated animated description
+ */
 - (void)viewDidBePoped:(BOOL)animated;
+
+/**
+ viewWillBePoped
+ 
+ @param animated animated description
+ */
 - (void)viewWillBePoped:(BOOL)animated;
+
+/**
+ viewDidBePushed
+ 
+ @param animated animated description
+ */
 - (void)viewDidBePushed:(BOOL)animated;
+
+/**
+ viewWillBePushed
+ 
+ @param animated animated description
+ */
 - (void)viewWillBePushed:(BOOL)animated;
-- (void)viewDidDisappear:(BOOL)animated;
+
 - (void)setBackBarButton;
 - (void)removeDuplicateBarButton;
 - (UIButton *)getNavigationRightButton:(UIButton *)rightButton;
@@ -172,20 +255,92 @@ animationControllerForOperation:(NSInteger)arg2
 - (CGFloat)getContentViewY;
 
 
+/**
+ disMissSelf
+ */
 - (void)disMissSelf;
+
+/**
+ adjustViewAndNavBarRect
+ */
 - (void)adjustViewAndNavBarRect;
+
+/**
+ adjustSubviewRects
+ */
 - (void)adjustSubviewRects;
+
+/**
+ adjustTableViewInset
+ 
+ @param edgeInsets edgeInsets description
+ */
 - (void)adjustTableViewInset:(UIEdgeInsets)edgeInsets;
+
+/**
+ adjustTableViewRect
+ */
 - (void)adjustTableViewRect;
+
+/**
+ stopLoading
+ */
 - (void)stopLoading;
+
+/**
+ startLoadingNonBlock
+ */
 - (void)startLoadingNonBlock;
+
+/**
+ startLoadingBlocked
+ */
 - (void)startLoadingBlocked;
+
+/**
+ startLoadingWithText
+ 
+ @param text text description
+ @param isBlock isBlock description
+ */
 - (void)startLoadingWithText:(NSString *)text block:(BOOL)isBlock;
+
+/**
+ stopLoadingWithFailText
+ 
+ @param failText failText description
+ */
 - (void)stopLoadingWithFailText:(NSString *)failText;
+
+/**
+ stopLoadingWithOKText
+ 
+ @param OKText OKText description
+ */
 - (void)stopLoadingWithOKText:(NSString *)OKText;
+
+/**
+ startLoadingWithText
+ 
+ @param text text description
+ */
 - (void)startLoadingWithText:(NSString *)text;
+
+/**
+ stopBizLoading
+ */
 - (void)stopBizLoading;
+
+/**
+ startBizLoading
+ */
 - (void)startBizLoading;
+
+/**
+ setWCBizAuthTitle
+ 
+ @param arg1 arg1 description
+ */
 - (void)setWCBizAuthTitle:(id)arg1;
 
 @end

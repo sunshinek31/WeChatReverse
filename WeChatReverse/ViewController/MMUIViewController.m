@@ -56,7 +56,10 @@
 {
     
 }
-
+- (void)viewDidDisappear:(BOOL)animated
+{
+    
+}
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -360,11 +363,6 @@
 }
 
 - (void)viewWillBePushed:(BOOL)animated
-{
-    
-}
-
-- (void)viewDidDisappear:(BOOL)animated
 {
     
 }

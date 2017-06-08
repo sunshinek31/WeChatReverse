@@ -4,11 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-@class NSString;
-
-@protocol IMsgRevokeExt
+@protocol TypingControllerDelgate <NSObject>
 
 @optional
-- (void)OnMsgRevoked:(NSString *)arg1 n64MsgId:(long long)arg2 SysMsg:(NSString *)arg3;
+- (void)updateTypingTitle:(NSString *)title;
 @end
 
