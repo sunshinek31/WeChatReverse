@@ -191,16 +191,68 @@ animationControllerForOperation:(NSInteger)arg2
  */
 - (void)viewWillBePushed:(BOOL)animated;
 
+/**
+ setBackBarButton
+ */
 - (void)setBackBarButton;
+
+/**
+ removeDuplicateBarButton
+ */
 - (void)removeDuplicateBarButton;
+
+/**
+ getNavigationRightButton
+ 
+ @param rightButton rightButton description
+ @return return value description
+ */
 - (UIButton *)getNavigationRightButton:(UIButton *)rightButton;
+
+/**
+ getNavigationLeftButton
+ 
+ @param leftButton leftButton description
+ @return return value description
+ */
 - (UIButton *)getNavigationLeftButton:(UIButton *)leftButton;
 
+/**
+ willAppearanceTransition
+ */
 - (void)willAppearanceTransition;
+
+/**
+ isPresentedIn
+ 
+ @return return value description
+ */
 - (BOOL)isPresentedIn;
+
+/**
+ isPushedIn
+ 
+ @return return value description
+ */
 - (BOOL)isPushedIn;
+
+/**
+ tagForCurrentPage
+ 
+ @return return value description
+ */
 - (id)tagForCurrentPage;
+
+/**
+ tagForActivePage
+ 
+ @return return value description
+ */
 - (id)tagForActivePage;
+
+/**
+ resetViewStatus
+ */
 - (void)resetViewStatus;
 - (void)startForcedRotationToPortrait;
 - (BOOL)isSvrErrorTipForbidden;
@@ -226,12 +278,40 @@ animationControllerForOperation:(NSInteger)arg2
 - (void)setTitleView:(UIView *)titleView;
 - (UIColor *)getTitleColor;
 - (void)setTitleColor:(UIColor *)color;
+
+/**
+ willShow
+ */
 - (void)willShow;
+
+/**
+ willDisshow
+ */
 - (void)willDisshow;
+
+/**
+ didDisshow
+ */
 - (void)didDisshow;
+
+/**
+ didAppear
+ */
 - (void)didAppear;
+
+/**
+ willDisappear
+ */
 - (void)willDisappear;
+
+/**
+ adjustView
+ */
 - (void)adjustView;
+
+/**
+ willAppear
+ */
 - (void)willAppear;
 - (void)setIsPopByClickingURL;
 - (void)handleUrl:(id)url DisableFirstGetA8Key:(BOOL)shouldDisable extraInfo:(id)extraInfo;
