@@ -19,11 +19,14 @@
 #import "WCActionSheet.h"
 #import "MMInputToolViewDelegate.h"
 #import "MMInputToolViewCustomizationDelegate.h"
+#import "MMQuickSendEmoticonView.h"
+#import "MMQuickSendEmoticonViewDelegate.h"
 
 @class ALAssetsLibrary, CAGradientLayer, EmoticonBoardView, MMEmoticonView, MMGrowTextView, MMTransparentButton, NSString, NSURL, RecordView, SelectAttachmentView, SelectAttachmentViewController, ShortVideoToolbar, UIButton, UIView, VoiceInputView;
 
-@interface MMInputToolView : MMUIView <UITextViewDelegate, ISysCallCheckExt, WCActionSheetDelegate, MMGrowTextViewDelegate, MMTransparentButtonDelegate, SelectAttachmentViewControllerDelegate, VoiceInputViewDelegate, EmoticonBoardViewDelegate, BaseEmoticonViewDelegate, IRecordPermissionCheckExt, EmoticonDescMgrExt, ShortVideoBarDelegate>
+@interface MMInputToolView : MMUIView <UITextViewDelegate, ISysCallCheckExt, WCActionSheetDelegate, MMGrowTextViewDelegate, MMTransparentButtonDelegate, SelectAttachmentViewControllerDelegate, VoiceInputViewDelegate, EmoticonBoardViewDelegate, BaseEmoticonViewDelegate, IRecordPermissionCheckExt, EmoticonDescMgrExt, ShortVideoBarDelegate, MMQuickSendEmoticonViewDelegate>
 {
+    UIButton *_inputModeChangeButton;
     VoiceInputView *_voiceInputView;
     SelectAttachmentView *_attachmentView;
     UIButton *_sendCaptrueView;
@@ -31,7 +34,7 @@
     UIView *m_quickSendEmoticonView;
     MMEmoticonView *m_emoticonView;
     SelectAttachmentViewController *m_selectAttachmentViewController;
-    long long iMuteCount;
+    NSInteger iMuteCount;
     int _recordStatus;
     id <MMInputToolViewCustomizationDelegate> _uiDelegate;
     NSURL *_nsLastCaptrueAssetURL;
@@ -40,43 +43,40 @@
     int _preSightInputMode;
     int _preSightPositionMode;
     int _preSightContentMode;
-    double _bizInputBtnWidth;
+    CGFloat _bizInputBtnWidth;
     BOOL _showToolViewAfterAnimation;
-    double _keyboardTop;
+    CGFloat _keyboardTop;
     UIView *_bkgView;
     BOOL _isDetectingExternalKeyboard;
     UIView *m_keyboardBackgroundView;
     SEL mRecordSelector;
 }
 
-@property(retain, nonatomic) CAGradientLayer *toolViewShadowLayer;
-@property(nonatomic) unsigned long long fMaxLength;
-@property(retain, nonatomic) UIView *m_quickSendEmoticonView; // @synthesize m_quickSendEmoticonView;
-@property(retain, nonatomic) MMEmoticonView *m_emoticonView; // @synthesize m_emoticonView;
-@property(retain, nonatomic) UIButton *m_quickSendEmoticonBackView; // @synthesize m_quickSendEmoticonBackView;
+@property(strong, nonatomic) CAGradientLayer *toolViewShadowLayer;
+@property(strong, nonatomic) MMQuickSendEmoticonView *quickSendEmoticonView;
+@property(nonatomic) NSUInteger fMaxLength;
 @property(nonatomic) SEL mRecordSelector; // @synthesize mRecordSelector;
 @property(nonatomic, weak) id <MMInputToolViewCustomizationDelegate> _uiDelegate; // @synthesize _uiDelegate;
 @property(nonatomic) BOOL m_bPositioning; // @synthesize m_bPositioning;
-@property(retain, nonatomic) RecordView *recordView;
+@property(strong, nonatomic) RecordView *recordView;
 @property(nonatomic) int contentMode;
 @property(nonatomic) int positionMode;
 @property(nonatomic) int inputMode;
 @property(nonatomic, weak) id <MMInputToolViewDelegate> delegate;
-@property(nonatomic) long long keyboardHeight;
-@property(retain, nonatomic) MMTransparentButton *recordButton;
-@property(retain, nonatomic) UIView *recordingTipsView;
-@property(retain, nonatomic) UIButton *expressionDoneButton;
-@property(retain, nonatomic) UIButton *expressionButton;
-@property(retain, nonatomic) UIButton *attachmentButton;
-@property(retain, nonatomic) MMGrowTextView *textView;
-@property(retain, nonatomic) EmoticonBoardView *expressionView;
-@property(retain, nonatomic) ShortVideoToolbar *sightToolbar;
-@property(retain, nonatomic) UIView *toolView;
-@property(retain, nonatomic) UIButton *inputModeChangeButton;
-@property(nonatomic, weak) NSString *text;
-@property(nonatomic) long long iKeyboardAnimationCurve;
-@property(nonatomic) double fKeyboardAnimationDuration;
-
+@property(nonatomic) NSInteger keyboardHeight;
+@property(strong, nonatomic) MMTransparentButton *recordButton;
+@property(strong, nonatomic) UIView *recordingTipsView;
+@property(strong, nonatomic) UIButton *expressionDoneButton;
+@property(strong, nonatomic) UIButton *expressionButton;
+@property(strong, nonatomic) UIButton *attachmentButton;
+@property(strong, nonatomic) MMGrowTextView *textView;
+@property(strong, nonatomic) EmoticonBoardView *expressionView;
+@property(strong, nonatomic) ShortVideoToolbar *sightToolbar;
+@property(strong, nonatomic) UIView *toolView;
+@property(strong, nonatomic) UIButton *inputModeChangeButton; // @synthesize
+@property(nonatomic) NSInteger iKeyboardAnimationCurve;
+@property(nonatomic) CGFloat fKeyboardAnimationDuration;
+@property(nonatomic ,weak) NSString *text;
 
 #
 - (BOOL)hasGroupPayEntry;
@@ -193,6 +193,7 @@
 - (void)toRecordStautsPerparing;
 - (void)toRecordStautsIdle;
 
+////////////
 
 @end
 

@@ -9,9 +9,6 @@
 #import "MMInputToolView.h"
 
 @implementation MMInputToolView
-@synthesize m_quickSendEmoticonView = m_quickSendEmoticonView;
-@synthesize m_quickSendEmoticonBackView = m_quickSendEmoticonBackView;
-@synthesize m_emoticonView = m_emoticonView;
 @synthesize mRecordSelector = mRecordSelector;
 @dynamic _uiDelegate;
 @synthesize m_bPositioning = m_bPositioning;
@@ -57,6 +54,17 @@
 - (BOOL)becomeFirstResponder
 {
     return NO;
+}
+#pragma mark -
+
+- (void)onMMQuickSendEmoticonViewClickEmoticonWrap:(CEmoticonWrap *)aCEmoticonWrap index:(NSUInteger)index
+{
+    
+}
+
+- (void)onGetEmoticonDesc:(id)arg1 emoticonWrapList:(id)arg2 abTestItem:(id)arg3
+{
+    
 }
 
 #pragma mark -
@@ -534,7 +542,11 @@
 }
 - (void)TextViewDidEnter:(NSString *)text
 {
+    [self.quickSendEmoticonView hide];
     
+    if ([_delegate respondsToSelector:@selector(SendTextMessageToolView:)]) {
+        [_delegate SendTextMessageToolView:text];
+    }
 }
 - (void)TextViewHeightDidChanged:(UITextView *)textView
 {

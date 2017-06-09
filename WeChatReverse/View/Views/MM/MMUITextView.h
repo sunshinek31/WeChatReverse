@@ -4,15 +4,13 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UITextView.h"
-
 @interface MMUITextView : UITextView
 {
-    _Bool isDictationPlaceholderShow;
+    BOOL isDictationPlaceholderShow;
 }
 
-@property(nonatomic) _Bool isDictationPlaceholderShow; // @synthesize isDictationPlaceholderShow;
-- (void)removeDictationResultPlaceholder:(id)arg1 willInsertResult:(_Bool)arg2;
+@property(nonatomic) BOOL isDictationPlaceholderShow; // @synthesize isDictationPlaceholderShow;
+- (void)removeDictationResultPlaceholder:(id)arg1 willInsertResult:(BOOL)arg2;
 - (id)insertDictationResultPlaceholder;
 - (void)dictationRecordingDidEnd;
 - (void)dictationRecognitionFailed;
