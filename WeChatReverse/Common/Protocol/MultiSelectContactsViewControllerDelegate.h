@@ -9,11 +9,11 @@
  多选通讯录成员视图控制器协议
  */
 @protocol MultiSelectContactsViewControllerDelegate <NSObject>
-- (void)onMultiSelectContactReturn:(NSArray *)arg1;
+- (void)onMultiSelectContactReturn:(NSArray *)contactList;
 
 @optional
 - (int)getFTSCommonScene;
 - (void)onMultiSelectContactCancelForSns;
-- (void)onMultiSelectContactReturnForSns:(NSArray *)arg1;
+- (void)onMultiSelectContactReturnForSns:(NSArray *)contactList;
 @end
 

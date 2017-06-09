@@ -43,7 +43,7 @@
 - (BOOL)canLongPressOnHeadImage:(CBaseContact *)aCBaseContact;
 - (void)deleteNode:(CMessageWrap *)aCMessageWrap;
 - (void)StartDownloadShortVideo:(CMessageWrap *)aCMessageWrap;
-- (void)StartDownloadVideo:(CMessageWrap *)aCMessageWrap DownloadMode:(unsigned long long)arg2;
+- (void)StartDownloadVideo:(CMessageWrap *)aCMessageWrap DownloadMode:(NSUInteger)downloadMode;
 - (void)StartDownloadVideo:(CMessageWrap *)aCMessageWrap;
 - (void)StartUploadVideo:(CMessageWrap *)aCMessageWrap;
 - (void)StopDownloadVideo:(CMessageWrap *)aCMessageWrap;

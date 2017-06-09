@@ -39,6 +39,6 @@
 - (void)OnModMsg:(NSString *)arg1 MsgWrap:(CMessageWrap *)msgWrap;
 - (void)OnAddMsg:(NSString *)arg1 MsgWrap:(CMessageWrap *)msgWrap;
 - (void)OnPreAddMsg:(NSString *)arg1 MsgWrap:(CMessageWrap *)msgWrap;
-- (void)OnChangeMsg:(NSString *)arg1 OpCode:(unsigned int)arg2;
+- (void)OnChangeMsg:(NSString *)arg1 OpCode:(unsigned int)opCode;
 @end
 

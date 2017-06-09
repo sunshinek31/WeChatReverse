@@ -18,28 +18,7 @@
 
 - (BOOL)isSeachActive;
 
-- (BOOL)searchDisplayController:(id)arg1 shouldReloadTableForSearchScope:(long long)arg2;
-- (BOOL)searchDisplayController:(id)arg1 shouldReloadTableForSearchString:(id)arg2;
-- (void)searchDisplayController:(id)arg1 didHideSearchResultsTableView:(id)arg2;
-- (void)searchDisplayController:(id)arg1 willHideSearchResultsTableView:(id)arg2;
-- (void)searchDisplayController:(id)arg1 didShowSearchResultsTableView:(id)arg2;
-- (void)searchDisplayController:(id)arg1 willShowSearchResultsTableView:(id)arg2;
-- (void)searchDisplayController:(id)arg1 willUnloadSearchResultsTableView:(id)arg2;
-- (void)searchDisplayController:(id)arg1 didLoadSearchResultsTableView:(id)arg2;
-- (void)searchDisplayControllerDidEndSearch:(id)arg1;
-- (void)searchDisplayControllerWillEndSearch:(id)arg1;
-- (void)searchDisplayControllerDidBeginSearch:(id)arg1;
-- (void)searchDisplayControllerWillBeginSearch:(id)arg1;
-- (void)SearchBarBecomeUnActive;
-- (void)searchBarCancelButtonClicked:(id)arg1;
-- (void)searchBarBookmarkButtonClicked:(id)arg1;
-- (void)searchBarSearchButtonClicked:(id)arg1;
-- (BOOL)searchBar:(id)arg1 shouldChangeTextInRange:(struct _NSRange)arg2 replacementText:(id)arg3;
-- (void)searchBar:(id)arg1 textDidChange:(id)arg2;
-- (void)searchBarTextDidEndEditing:(id)arg1;
-- (BOOL)searchBarShouldEndEditing:(id)arg1;
-- (void)searchBarTextDidBeginEditing:(id)arg1;
-- (BOOL)searchBarShouldBeginEditing:(id)arg1;
+
 - (BOOL)statusBarFontOriginalWhite;
 
 @end

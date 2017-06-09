@@ -53,7 +53,7 @@
     unsigned int m_uLastMoreMsgTime;
     BOOL m_bKeyboardShow;
     BOOL m_bToolViewHidden;
-    unsigned long long m_moreMsgIndex;
+    NSUInteger m_moreMsgIndex;
     BOOL m_bReadtToLoadMoreMsg;
     id <BaseMsgContentDelgate> m_delegate;
     id <BaseMsgContentInBackgroundThreadDelgate> m_backgroundThreadDelegate;
@@ -71,17 +71,17 @@
     MultiTalkTipsView *m_multiTalkTipsView;
     BOOL m_bViewUnloaded;
     struct CGPoint m_pTableViewOffset;
-    long long m_keyboardHeight;
+    NSInteger m_keyboardHeight;
     NSString *m_text;
     int m_inputMode;
     int m_positionMode;
     int m_contentMode;
-    double m_fKeyboardAnimationDuration;
+    CGFloat m_fKeyboardAnimationDuration;
     MsgSearchHelper *m_oMsgSearchHelper;
     int m_iInitTableViewContentOffset;
     BOOL m_bNeedAdjustTableViewContentOffset;
     unsigned int m_uiSearchResultNodeViewHeight;
-    long long m_uiInterfaceOrientation;
+    NSInteger m_uiInterfaceOrientation;
     MMLoadingView *m_loadingView;
     ShareMessageConfirmLogicHelper *_shareMessageConfirmLogicHelper;
     MMMultiSelectToolView *_multiSelectView;
@@ -101,7 +101,7 @@
     struct CGPoint m_decelerateTarget;
     CMessageWrap *m_firstUnReadMsg;
     FirstUnReadTipView *m_jumpFirstUnReadBtn;
-    unsigned long long m_unreadCount;
+    NSUInteger m_unreadCount;
     MMScrollActionSheet *m_scrollActionSheet;
     MMUIWindow *m_fullScreenWindow;
     BaseChatViewModel *m_fullScreenNodeData;
@@ -117,7 +117,7 @@
     struct _NSRange m_scrollingInvisibleRange;
     BOOL m_needLayoutOnMenuHide;
     BOOL m_needScrollOnMenuHide;
-    unsigned long long m_lastSectionCount;
+    NSUInteger m_lastSectionCount;
     BOOL m_scrollingToFirstUnRead;
     CMessageWrap *m_lastMsgInNewArray;
     UIView *m_footerView;
@@ -125,7 +125,7 @@
     BOOL m_needLoadMoreWhenScrollToFistUnRead;
     BOOL m_needHideFirstUnReadBtn;
     BOOL m_bMovingToMainFrameTab;
-    double m_bannerHeight;
+    CGFloat m_bannerHeight;
     BOOL m_isPeekPreview;
     MsgImgFullScreenWindow *m_imgFullScreenWnd;
     UIView *m_snapshotView;
@@ -150,183 +150,65 @@
 @property(nonatomic, weak) id <BaseMsgContentInBackgroundThreadDelgate> m_backgroundThreadDelegate; // @synthesize m_backgroundThreadDelegate;
 @property(nonatomic, weak) id <BaseMsgContentDelgate> m_delegate; // @synthesize m_delegate;
 
-#pragma mark - ChatViewModelDelegate
-- (void)reloadNodeWithMessageWrap:(CMessageWrap *)messageWrap;
+#pragma mark - IUiUtilExt
+- (void)onTopBarFrameChanged;
 
-#pragma mark - MsgSearchHelperDelegate
-- (void)msgSearchBarDoSearch;
-- (void)msgSearchBarCancel;
-- (UITableView *)getParentTableView;
-- (CBaseContact *)chatContactForMessageWrap:(CMessageWrap *)messageWrap;
-- (void)didSelectSearchResultForMessageWrap:(CMessageWrap *)messageWrap;
-- (NSMutableArray *)QueryMsgText:(NSString *)arg1 FromID:(unsigned int)fromID FromCreateTime:(unsigned int)fromCreateTime Limit:(unsigned int)limir LeftCount:(unsigned int *)leftCount;
-- (void)didSelectSearchResultForMessageWrap:(CMessageWrap *)messageWrap indexPath:(NSIndexPath *)indexPath;
-- (void)msgSearchBarSearchByTime;
-- (void)msgSearchBarSearchByName;
-
-#pragma mark - MsgImgFullScreenWindowDelegate
-- (void)onJumpToViewDetail:(NSString *)arg1;
-
-
-#pragma mark - IdleTimerUtilExt
-- (void)onIdleTimerUtilVoipQuit;
-
-
-#pragma mark - BannerToastExt
-- (void)onReceiveSecurityBannerMsg:(NSString *)securityBannerMsg withWording:(NSString *)wording;
-
-#pragma mark - BadRoomLogicControllerDelegate
-
-- (void)onLoadFirstUnreadMsg:(CMessageWrap *)unreadMsgWrap;
-- (void)onLoadMessageFail;
-- (void)onLoadMoreMessage;
-- (void)onLoadFirstScreenMsg:(BOOL)shouldLoad;
-
-#pragma mark - TypingControllerDelgate
-- (void)updateTypingTitle:(NSString *)title;
-
-
-#pragma mark - MsgImgFullScreenViewControllerDelegate
-- (void)onMsgImgPreviewDataRequired:(MsgImgPreviewData *)aMsgImagePreviewData;
-- (void)onCurrentPageMsgReMoved:(CMessageWrap *)aCMessageWrapaCMessageWrap;
-- (void)onMsgImgWindowWillHideToMsg:(CMessageWrap *)aCMessageWrap;
-- (void)onSightViewDetail:(NSString *)arg1 vc:(MsgImgFullScreenViewController *)aMsgImgFullScreenViewController;
-- (void)onImgMsgLocate:(CMessageWrap *)aCMessageWrap vc:(MsgImgFullScreenViewController *)aMsgImgFullScreenViewController;
-- (void)onPlayAttachVideo:(CMessageWrap *)aCMessageWrap vc:(MsgImgFullScreenViewController *)aMsgImgFullScreenViewController;
-
-#pragma mark - ChatBackgroundExt
-- (void)onChatBackgroundChanged:(NSString *)userName;
-
-#pragma mark - StreamVoiceInputViewControllerDelegate
-
-- (void)onSendTextMsg:(NSString *)textMsg;
-- (void)streamVoiceInputFullScreenExit;
-- (void)streamVoiceInputFullScreenEnter;
-- (void)streamVoiceInputBoardWillHide;
-- (void)streamVoiceInputBoardDidHide;
-- (void)streamVoiceInputBoardDidShow;
-
-
-#pragma mark - tableViewDelegate
-
-- (void)didFinishedLoading:(id)arg1;
-- (void)touchesEnded_TableView:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesBegan_TableView:(NSSet *)touches withEvent:(UIEvent *)event;
-
-#pragma mark - MessageNodeViewDelegate
-
-- (void)onClickPlayMusicBtn:(CMessageWrap *)aCMessageWrap isPlay:(BOOL)isPlay;
-- (void)onClickFavMenu:(CMessageWrap *)aCMessageWrap;
-- (void)onClickVoiceTranslate:(CMessageWrap *)aCMessageWrap;
-- (void)onClickTextFloatPreView:(CMessageWrap *)aCMessageWrap;
-- (void)onClickTranslateMsg:(CMessageWrap *)aCMessageWrap translateInfo:(TranslateInfo *)aTranslateInfo;
-- (void)clickNewAASysMsg:(NSString *)arg1 withMsgLocalID:(unsigned int)arg2;
-- (void)shareMsgToOpenSDKByNodeView:(CMessageWrap *)aCMessageWrap;
-- (void)clickWeAppReceiveSessionMsg;
-- (void)clickReceiveBrandMsg;
-- (void)clickShieldBrandMsg;
-- (void)clickLinkToDealWithSysXml:(CMessageWrap *)aCMessageWrap fromScene:(NSString *)arg2;
-- (void)clickLinkToExpose;
-- (void)onFullScreenWindowWillHide;
-- (void)willShowMenuController:(id)arg1;
-- (BOOL)isMsgLastSend:(CMessageWrap *)aCMessageWrap;
-
-#pragma mark - contactInfoDelegate
-- (void)contactInfoReturn;
-
-#pragma mark - MMInputToolViewDelegate
-- (void)onToolViewDidMoveToWindow;
-- (BOOL)shouldHideToolViewOnKeyboardHide;
-- (BOOL)shouldInitWXEmoticonView;
+#pragma mark - BaseMsgContentDelgate
+- (id)GetContact;
+- (id)getLeftBarButton;
+- (void)onLoadDownMoreMessage:(id)arg1;
+- (BOOL)isChatStatusNotifyOpen;
 
 - (void)showSightDraftBoxView;
 - (void)showAttachmentView;
 - (void)traitCollectionDidChange:(id)arg1;
 - (void)previewingContext:(id)arg1 commitViewController:(id)arg2;
-- (id)previewingContext:(id)arg1 viewControllerForLocation:(struct CGPoint)arg2;
-- (id)previewActionItems;
+- (id)previewingContext:(id)arg1 viewControllerForLocation:(CGPoint)location;
 - (BOOL)isPeekPreview;
 - (void)setIsPeekPreview:(BOOL)arg1;
-- (struct CGRect)getVisibleRectInScreen:(id)arg1;
-- (struct CGRect)getInnerVisibleRectInScreen:(struct CGRect)arg1;
-- (long long)getMessageNodePosition:(id)arg1;
-
+- (CGRect)getVisibleRectInScreen:(id)arg1;
+- (CGRect)getInnerVisibleRectInScreen:(CGRect)screenBounds;
+- (NSInteger)getMessageNodePosition:(id)arg1;
 - (void)onSYncEnd;
-- (void)MessageReturn:(unsigned int)arg1 MessageInfo:(id)arg2 Event:(unsigned int)arg3;
 - (void)showReceiveMsgTips;
 - (void)stopReceiveMsg;
 - (void)startReceiveMsgWithTips:(id)arg1;
-- (double)getInvisibleHeight;
+- (CGFloat)getInvisibleHeight;
 - (BOOL)isContactSizeOverScreen;
 - (void)endSearchAndDisplay;
-- (void)scrollActionSheet:(id)arg1 didSelecteItem:(id)arg2;
-- (void)OnMultiMsgMoreOperation:(id)arg1;
 - (void)ShowMultiSelectMoreOperation:(id)arg1;
-- (void)OnMultiEmailMessage:(id)arg1;
-- (void)OnMultiForwardMessage;
-- (void)OnMultiDeleteMessage:(id)arg1;
-- (void)OnMultiFavAddMessage;
 - (void)showAlertTooMany;
-- (void)onMoreOperateWithMsgId:(id)arg1;
-- (void)onVideoVoipViewDidAppear:(id)arg1;
-- (void)didRotateFromInterfaceOrientation:(long long)arg1;
-- (void)willAnimateRotationToInterfaceOrientation:(long long)arg1 duration:(double)arg2;
-- (void)rotate:(long long)arg1 duration:(double)arg2;
-- (void)onTrackRoomTipsViewClick;
-- (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2;
+- (void)didRotateFromInterfaceOrientation:(NSInteger)arg1;
+- (void)rotate:(NSInteger)arg1 duration:(CGFloat)arg2;
 - (void)hideMultiTalkTips;
 - (void)hideTrackRoomTips;
 - (void)showMultiTalkTips;
 - (void)showTrackRoomTips;
 - (void)updateBanner;
 - (BOOL)shouldHideOrginInputToolView;
-- (double)getCustomizedAreaWidth;
+- (CGFloat)getCustomizedAreaWidth;
 - (void)loadingAfterForwardMessageOK;
 - (void)stopLoadingAndAndShowErrorWithText:(id)arg1;
 - (void)stopLoadingAndShowOkWithText:(id)arg1;
-- (void)stopLoading;
 - (void)showLoadingViewWithText:(id)arg1;
 - (void)showLoadingView;
 - (void)updateChatRoomData:(id)arg1;
-- (id)GetCurrentViewController;
-- (BOOL)canShowEnterpriseBrandEntry;
-- (BOOL)canShowLocation;
-- (BOOL)canShowFavEntry;
-- (void)initAllowNameCardFollowRedEnvelope;
-- (void)initAllowWxTalkFollowSight;
-- (void)initAllowRecommendApp;
-- (void)initAllowMultiTalk;
-- (void)initAllowWxTalk;
 - (BOOL)isAllowWxTalk;
-- (void)initAllowVoiceInput;
 - (BOOL)isAllowVoiceInput;
-- (void)initAllowVoip;
 - (BOOL)isAllowVoip;
-
-- (id)documentInteractionControllerViewControllerForPreview:(id)arg1;
-- (void)OnAppDataPreview:(id)arg1 MsgWrap:(id)arg2;
-- (NSInteger)preferredInterfaceOrientationForPresentation;
 - (void)PreviewAppNode:(id)arg1 MsgWrap:(id)arg2 Pop:(BOOL)arg3;
 - (void)updateToolViewOrigin;
-- (void)onTopBarFrameChanged;
-- (void)adjustViewAndNavBarRect;
 - (void)adjustDeleteViewRect;
 - (void)hideToolViewAnimated:(BOOL)arg1;
 - (void)onDeleteAllMsg;
 - (void)ReloadView;
 - (void)Reset;
-
 - (void)resetToolView;
-
-- (void)OnSendMessageCancel:(id)arg1;
-- (void)OnSendMessageFail:(id)arg1 WithError:(int)arg2;
-- (void)OnSendMessageOK:(id)arg1;
 - (void)MenuControllerWillHide:(id)arg1;
 - (void)MenuControllerWillShow:(id)arg1;
 - (void)lockerTimesup;
 - (void)beginLockerTimer;
 - (void)stopLockerTimesup;
-- (void)onTipViewClick:(id)arg1;
 - (id)getLastContentMessageNodeFromArray:(id)arg1;
 - (id)getFirstContentMessageNodeFromArray:(id)arg1;
 - (void)scrollToFirstUnReadMessage:(id)arg1;
@@ -334,41 +216,24 @@
 - (NSUInteger)getFirstUnReadSplitNodeIndex;
 - (void)onScrollToFirstUnReadMsg;
 - (void)tryAddUnReadSplitNode;
-- (void)updateFirstUnReadButtonOnShowBanner:(double)arg1;
+- (void)updateFirstUnReadButtonOnShowBanner:(CGFloat)arg1;
 - (void)animateHideFirstUnReadButton;
 - (void)animateShowFirstUnReadButton;
 - (void)tryShowFirstUnReadButtonAnimated;
 - (void)onTrySHowFirstUnReadButton;
-- (double)getVisibleHeight;
-- (double)getTableViewVisibleHeightWithOrientation:(long long)arg1;
-
-
+- (CGFloat)getTableViewVisibleHeightWithOrientation:(NSInteger)arg1;
 - (void)removeVoipAndPhoneTip;
 - (void)removeVoiceTip;
-
 - (void)tryMoveToMainFrame;
-
 - (void)onViewDisappear;
-
-
 - (void)statEnterMsgChat;
 - (void)didExitRoom;
 - (void)willEnterRoom;
-
-- (id)tagForCurrentPage;
-- (id)tagForActivePage;
-- (void)viewDidAppear:(BOOL)arg1;
-- (BOOL)shouldEnableKeyboardInteractivePop;
-- (BOOL)shouldInteractivePop;
-- (void)willDismissAndShow;
-
 - (void)trySetInputToolviewFirstResponder;
 - (void)fixInputToolViewKeyboard;
 - (void)SetVoiceEnabled:(BOOL)arg1;
-- (id)GetContact;
 - (void)updateMessageNodeStatus:(id)arg1;
 - (void)onDeleteMessage:(id)arg1;
-- (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;
 - (void)handleDeleteAllMessage;
 - (void)deleteAllMessage;
 - (void)handleAfterDeleteAllMessage;
@@ -379,77 +244,29 @@
 - (void)updateDeleteCount;
 - (void)sendShortVideoMsgWithAsset:(id)arg1;
 - (void)sendShortVideoMsg:(id)arg1 thumbImg:(id)arg2 statInfo:(id)arg3;
-- (void)onSightPictureTaken:(id)arg1 withFrontCamera:(BOOL)arg2;
-- (void)onShortVideoTaken:(id)arg1 thumbImg:(id)arg2 sentImmediately:(BOOL)arg3 isMuted:(BOOL)arg4;
-- (id)chatUserNameForSightStatistics;
-- (void)onTextDeleteAll;
-- (BOOL)hasCardPkgEntry;
-- (BOOL)hasGroupPayEntry;
-- (BOOL)hasRedEnvelopesEntry;
-- (BOOL)hasTransferMoneyEntry;
-- (BOOL)hasServiceEntry;
-- (id)getServiceAppList;
-- (id)getAttachmentViewServiceAppList;
-- (void)openServiceApp:(id)arg1;
-- (void)redEnvelopesLogic;
-- (void)transferMoneyLogic;
-- (void)openServiceAppListController;
-- (void)onOpenMyCardPkgViewController;
-- (void)openMyFavoritesListController;
-- (BOOL)canShowSight;
-- (void)onOpenTrackRoom:(unsigned int)arg1;
-- (BOOL)shouldShowOpenTrackRoom;
 - (void)editStreamVoiceTxtDone;
 - (void)editStreamVoiceTxtReturn;
-- (void)onStreamVoiceInputButtonClick;
-- (void)onGroupPayButtonClick;
-- (void)onSelectLocation;
-- (void)onVideoVoipInvite;
-- (void)onVoipInvite;
 - (void)doJoinExistMultiTalk;
-- (void)onMultiTalkButtonClick;
-- (void)onShareCard;
-- (void)SendEmoticonMesssageToolView:(id)arg1;
-- (void)openCameraController;
-- (void)openMediaBrowser;
-- (void)CancelRecording;
-- (void)StopRecording;
-- (void)StartRecording;
-- (void)TextDidChanged:(id)arg1 selectedRange:(struct _NSRange)arg2;
 - (void)reloadMessagesInternal;
-- (void)onPositionModeChangeTo:(int)arg1 Animated:(BOOL)arg2;
-- (void)HasCustomInputToolViewAndDontNeedShowToolView:(BOOL *)arg1;
-- (void)ToolViewPositionDidChanged:(BOOL)arg1 animated:(BOOL)arg2;
-- (void)adjustTableViewRect;
-- (void)updateTableContentOffsetAnimated:(BOOL)arg1 OffsetDelta:(double)arg2;
-- (void)scrollTableToBottomAnimated:(BOOL)arg1 init:(BOOL)arg2;
-- (void)updateTableLayoutAnimateDuration:(double)arg1 Orientation:(long long)arg2;
-- (void)SendEmojiArtMessageToolView:(id)arg1;
-- (void)SendTextMessageToolView:(id)arg1;
+- (void)updateTableContentOffsetAnimated:(BOOL)animated OffsetDelta:(CGFloat)offset;
+- (void)scrollTableToBottomAnimated:(BOOL)animated init:(BOOL)shouldInit;
+- (void)updateTableLayoutAnimateDuration:(CGFloat)arg1 Orientation:(NSInteger)arg2;
 - (void)AsyncSendMessage:(id)arg1;
-- (id)getCurrentChatName;
-- (void)sendCaptruedImage:(id)arg1;
-- (void)pasteImage:(id)arg1;
 - (void)onTouchDown;
 - (void)onPan:(id)arg1;
-
-
-
 - (id)indexPathForCellKey:(id)arg1;
-- (void)makeCell:(id)arg1 indexPath:(id)arg2;
-- (void)viewDidLayoutSubviews;
+- (void)makeCell:(id)arg1 indexPath:(NSIndexPath *)indexPath;
 - (void)initView;
 - (void)adjustTableViewOffset;
 - (void)reloadBackgroundView;
 - (void)initSearchBar;
 - (void)resetMsgSearchHelper;
 - (void)initMsgSearchHelper:(int)arg1;
-- (double)getSearchBarHeight;
+- (CGFloat)getSearchBarHeight;
 - (BOOL)showTrackExitAlert;
 - (void)onBackButtonClicked:(id)arg1;
 - (void)initNavigationView;
 - (void)updateRightBar;
-- (id)getLeftBarButton;
 - (id)getRightBarButton;
 - (void)openHomePage:(id)arg1;
 - (void)openVoiceCall;
@@ -457,9 +274,6 @@
 - (id)getVoipBarButton;
 - (id)getHomePageBarButton;
 - (void)initMultiSelectToolView;
-
-- (BOOL)isViewControllerAnimated;
-- (BOOL)ShouldShowKeyboardAnimation;
 - (void)initToolView;
 - (void)initToolEmoticonView;
 - (void)initTableView;
@@ -469,46 +283,18 @@
 - (void)updateOpBtnState:(BOOL)arg1;
 - (void)MoreMsgBtnUpdate:(unsigned int)arg1 unReadCount:(unsigned int)arg2;
 - (void)initData;
-- (void)initDeepLinkConfig;
-- (void)onLoadDownMoreMessage:(id)arg1;
 - (void)onSightTipsOK;
-- (BOOL)canBecomeFirstResponder;
 - (void)setTableFooterView:(BOOL)arg1;
 - (void)initHistroyMessageNodeData;
 - (void)addMessageNode:(id)arg1 layout:(BOOL)arg2 addMoreMsg:(BOOL)arg3;
-- (void)OnRevokeMsg:(id)arg1 MsgWrap:(id)arg2 ResultCode:(unsigned int)arg3 ResultMsg:(id)arg4 EducationMsg:(id)arg5;
-- (void)OnMsgRevoked:(id)arg1 n64MsgId:(long long)arg2 SysMsg:(id)arg3;
 - (id)addSplitNode:(id)arg1 addMoreMsg:(BOOL)arg2;
 - (void)addTimeNode:(id)arg1 layout:(BOOL)arg2 addMoreMsg:(BOOL)arg3;
 - (id)getMessageChatContactByMessageWrap:(id)arg1;
 - (BOOL)isShowHeadImage:(id)arg1;
-- (void)newMessageFromContactInfo:(id)arg1;
-- (void)addToContactsFromContactInfo:(id)arg1;
 - (void)showAlertWithTitle:(id)arg1;
-- (void)switchEarMode;
 - (void)jumpToUserProfile:(id)arg1 Displayname:(id)arg2 Scence:(unsigned int)arg3 fromBanner:(BOOL)arg4;
-- (void)jumpToUserProfile:(id)arg1 Displayname:(id)arg2 Scence:(unsigned int)arg3;
-- (void)onMassSendSendAgain:(id)arg1;
-- (void)onForwardMessageOK;
-- (void)onHideKeyboard;
-- (void)onScrollToBottom;
-- (void)tagLink:(id)arg1 messageWrap:(id)arg2;
-- (void)deleteMail:(id)arg1;
-- (void)longPressOnHeadImageForDebug:(id)arg1;
-- (void)longPressOnHeadImage:(id)arg1;
-- (BOOL)canLongPressOnHeadImage:(id)arg1;
-- (void)deleteNode:(id)arg1;
-- (BOOL)isMsgCanRevoke:(id)arg1;
 - (id)getLastSentMsg;
-- (BOOL)isChatStatusNotifyOpen;
-- (void)revokeMsgByNodeView:(id)arg1;
-- (void)StartDownloadShortVideo:(id)arg1;
-- (void)StartDownloadVideo:(id)arg1 DownloadMode:(NSUInteger)arg2;
-- (void)StartDownloadVideo:(id)arg1;
-- (void)StartUploadVideo:(id)arg1;
-- (void)StopDownloadVideo:(id)arg1;
-- (void)StopUploadVideo:(id)arg1;
-- (struct CGRect)getNodeRectInScreen:(unsigned int)arg1;
+- (CGRect)getNodeRectInScreen:(unsigned int)arg1;
 - (id)GetMessageNodeDataArray;
 - (id)GetMessagesWrapArray;
 - (void)ShowVolumeTips;
@@ -520,33 +306,19 @@
 - (void)OnEndPlaying:(id)arg1;
 - (void)showPlayVoiceTipsIfNeed;
 - (void)BeginPlaying:(id)arg1 FromTouch:(BOOL)arg2;
-- (void)SetMsgPlayed:(id)arg1;
 - (void)setSecurityTipShow:(BOOL)arg1;
 - (void)setAddFriendTipShow:(BOOL)arg1 contact:(id)arg2;
 - (void)showAddFriendTip:(BOOL)arg1;
-- (double)getSecurityBannerTipHeight;
-- (double)getAddFriendTipHeight;
-- (double)getTipsHeight;
+- (CGFloat)getSecurityBannerTipHeight;
+- (CGFloat)getAddFriendTipHeight;
+- (CGFloat)getTipsHeight;
 - (void)checkShowSecurityBannerTip:(BOOL)arg1;
 - (void)checkShowRecommandFriendTip:(BOOL)arg1;
 - (void)checkTips:(BOOL)arg1;
-- (void)onShareVideoToTimeline:(BOOL)arg1;
-- (void)onShareVideoToFriend:(id)arg1;
-- (void)onClickFavVideoMenu;
-- (void)onClosePlayerForViewDetail:(id)arg1;
 - (void)jumpToDetail:(id)arg1;
-- (void)onClosePlayer;
-- (BOOL)stopAtLastVideoFrameWhenPlayEnd;
 - (void)JumpToViewStreamVideo:(id)arg1;
-- (void)onMultiSelectContactReturn:(id)arg1;
 - (id)contactShareMsgFromUser:(id)arg1 toUser:(id)arg2 sharedContact:(id)arg3;
-- (void)onExposeTemplateMsg:(id)arg1;
-- (void)onPerformIconAction:(id)arg1;
-- (void)onPerformExposeAction:(id)arg1;
 - (void)showExposeViewController;
-- (void)onPerformAction:(id)arg1;
-- (void)onTipsViewClose:(id)arg1;
-- (void)onTipsViewClick:(id)arg1;
 - (void)showEarModeTips;
 - (void)readerViewClickedWithMsg:(id)arg1;
 - (void)headerImageClickedWithMsg:(id)arg1;
@@ -561,8 +333,6 @@
 - (void)tapVideoStatus_NodeView:(id)arg1 DownloadMode:(NSUInteger)arg2;
 - (void)tapVideoStatus_NodeView:(id)arg1;
 - (void)tapStatus_NodeView:(id)arg1;
-- (void)hasTapReaderNodeView;
-- (id)getViewController;
 - (void)PreviewImage:(id)arg1 soundable:(BOOL)arg2 snapshotView:(id)arg3;
 - (void)PreviewImage:(id)arg1;
 - (void)unHighLightSelectSearchCell;
@@ -576,8 +346,7 @@
 - (void)ScrollToBottomAnimatedAndLoadMoreNode;
 - (id)getNavigationButton:(id)arg1;
 - (void)updateTitleView:(id)arg1;
-- (void)viewDidTransitionToNewSize;
-- (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2;
+- (id)getTitleLableViewWithMaxWidth:(CGFloat)arg1 title:(id)arg2;
 - (void)locateTableViewWithLocalID:(unsigned int)arg1;
 - (NSUInteger)getMsgContentSizeHeight:(unsigned int)arg1;
 - (NSUInteger)getCurContentSizeHeight;
