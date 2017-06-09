@@ -1383,7 +1383,7 @@
 }
 - (void)onReturn:(id)arg1
 {
-    
+    [self DismissMyselfAnimated:YES];
 }
 - (void)onEditMessage:(id)arg1
 {

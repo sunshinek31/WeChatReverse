@@ -159,6 +159,34 @@
 - (void)onLoadDownMoreMessage:(id)arg1;
 - (BOOL)isChatStatusNotifyOpen;
 
+- (void)initView;
+- (void)initSearchBar;
+- (void)initMultiSelectToolView;
+- (void)initToolView;
+- (void)initToolEmoticonView;
+- (void)initTableView;
+- (void)initTableHeaderView;
+- (void)initNavigationView;
+- (void)initData;
+
+#pragma mark - loading
+- (void)loadingAfterForwardMessageOK;
+- (void)stopLoadingAndAndShowErrorWithText:(id)arg1;
+- (void)stopLoadingAndShowOkWithText:(id)arg1;
+- (void)showLoadingViewWithText:(id)arg1;
+- (void)showLoadingView;
+
+#pragma mark - tap
+- (void)tapAppNodeView:(id)arg1;
+- (void)tapFriendCard_NodeView:(id)arg1 WithContact:(id)arg2 WithMsg:(id)arg3;
+- (void)tapPushMail_NodeView:(id)arg1 withPushMailWrap:(id)arg2;
+- (void)tapWeAppImage_NodeView:(id)arg1;
+- (void)tapImage_NodeView:(id)arg1;
+- (void)tapLocation_NodeView:(id)arg1;
+- (void)tapVideoStatus_NodeView:(id)arg1 DownloadMode:(NSUInteger)arg2;
+- (void)tapVideoStatus_NodeView:(id)arg1;
+- (void)tapStatus_NodeView:(id)arg1;
+
 - (void)showSightDraftBoxView;
 - (void)showAttachmentView;
 - (void)traitCollectionDidChange:(id)arg1;
@@ -187,11 +215,6 @@
 - (void)updateBanner;
 - (BOOL)shouldHideOrginInputToolView;
 - (CGFloat)getCustomizedAreaWidth;
-- (void)loadingAfterForwardMessageOK;
-- (void)stopLoadingAndAndShowErrorWithText:(id)arg1;
-- (void)stopLoadingAndShowOkWithText:(id)arg1;
-- (void)showLoadingViewWithText:(id)arg1;
-- (void)showLoadingView;
 - (void)updateChatRoomData:(id)arg1;
 - (BOOL)isAllowWxTalk;
 - (BOOL)isAllowVoiceInput;
@@ -239,6 +262,7 @@
 - (void)handleAfterDeleteAllMessage;
 - (void)onHideMultiSelectView;
 - (void)onFinishMultiSelect:(id)arg1;
+
 - (void)onReturn:(id)arg1;
 - (void)onEditMessage:(id)arg1;
 - (void)updateDeleteCount;
@@ -256,16 +280,15 @@
 - (void)onPan:(id)arg1;
 - (id)indexPathForCellKey:(id)arg1;
 - (void)makeCell:(id)arg1 indexPath:(NSIndexPath *)indexPath;
-- (void)initView;
+
 - (void)adjustTableViewOffset;
 - (void)reloadBackgroundView;
-- (void)initSearchBar;
 - (void)resetMsgSearchHelper;
 - (void)initMsgSearchHelper:(int)arg1;
 - (CGFloat)getSearchBarHeight;
 - (BOOL)showTrackExitAlert;
 - (void)onBackButtonClicked:(id)arg1;
-- (void)initNavigationView;
+
 - (void)updateRightBar;
 - (id)getRightBarButton;
 - (void)openHomePage:(id)arg1;
@@ -273,16 +296,13 @@
 - (void)openVideoCall;
 - (id)getVoipBarButton;
 - (id)getHomePageBarButton;
-- (void)initMultiSelectToolView;
-- (void)initToolView;
-- (void)initToolEmoticonView;
-- (void)initTableView;
+
 - (void)reloadTableHeaderView:(BOOL)arg1;
 - (void)startVoiceAnimatingAtNodeId:(unsigned int)arg1;
-- (void)initTableHeaderView;
+
 - (void)updateOpBtnState:(BOOL)arg1;
 - (void)MoreMsgBtnUpdate:(unsigned int)arg1 unReadCount:(unsigned int)arg2;
-- (void)initData;
+
 - (void)onSightTipsOK;
 - (void)setTableFooterView:(BOOL)arg1;
 - (void)initHistroyMessageNodeData;
@@ -324,15 +344,7 @@
 - (void)headerImageClickedWithMsg:(id)arg1;
 - (void)headerImageClicked:(id)arg1;
 - (void)PlayVideo:(id)arg1 soundable:(BOOL)arg2;
-- (void)tapAppNodeView:(id)arg1;
-- (void)tapFriendCard_NodeView:(id)arg1 WithContact:(id)arg2 WithMsg:(id)arg3;
-- (void)tapPushMail_NodeView:(id)arg1 withPushMailWrap:(id)arg2;
-- (void)tapWeAppImage_NodeView:(id)arg1;
-- (void)tapImage_NodeView:(id)arg1;
-- (void)tapLocation_NodeView:(id)arg1;
-- (void)tapVideoStatus_NodeView:(id)arg1 DownloadMode:(NSUInteger)arg2;
-- (void)tapVideoStatus_NodeView:(id)arg1;
-- (void)tapStatus_NodeView:(id)arg1;
+
 - (void)PreviewImage:(id)arg1 soundable:(BOOL)arg2 snapshotView:(id)arg3;
 - (void)PreviewImage:(id)arg1;
 - (void)unHighLightSelectSearchCell;

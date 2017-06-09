@@ -4,14 +4,12 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 @protocol MMInputToolViewCustomizationDelegate <NSObject>
 
 @optional
-- (double)getExtraToolViewHegith;
-- (_Bool)showKeyboardImmediately;
-- (_Bool)shouldHideOrginInputToolView;
-- (double)getCustomizedAreaWidth;
+- (CGFloat)getExtraToolViewHegith;
+- (BOOL)showKeyboardImmediately;
+- (BOOL)shouldHideOrginInputToolView;
+- (CGFloat)getCustomizedAreaWidth;
 @end
 

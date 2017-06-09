@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B053AAC1EEA6ABC000448D5 /* MMInputToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B053AAB1EEA6ABC000448D5 /* MMInputToolView.m */; };
 		6B3AA9DB1EE67C3B00E63CEB /* ContactInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3AA9DA1EE67C3B00E63CEB /* ContactInfoViewController.m */; };
 		6B3AA9DD1EE6871500E63CEB /* MMSayHelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3AA9DC1EE6871500E63CEB /* MMSayHelloViewController.m */; };
 		6B3BBDDC1EDAB755002602B6 /* CContactOPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBDDB1EDAB755002602B6 /* CContactOPLog.m */; };
@@ -154,6 +155,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B053AAB1EEA6ABC000448D5 /* MMInputToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInputToolView.m; sourceTree = "<group>"; };
 		6B3AA9DA1EE67C3B00E63CEB /* ContactInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactInfoViewController.m; sourceTree = "<group>"; };
 		6B3AA9DC1EE6871500E63CEB /* MMSayHelloViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSayHelloViewController.m; sourceTree = "<group>"; };
 		6B3BBDDB1EDAB755002602B6 /* CContactOPLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CContactOPLog.m; sourceTree = "<group>"; };
@@ -274,7 +276,7 @@
 		6BA4002F1EC77EE600283DB5 /* MMGridViewCellDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMGridViewCellDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400301EC77EE600283DB5 /* MMGridViewDataSource-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMGridViewDataSource-Protocol.h"; sourceTree = "<group>"; };
 		6BA400311EC77EE600283DB5 /* MMGridViewLayoutStrategy-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMGridViewLayoutStrategy-Protocol.h"; sourceTree = "<group>"; };
-		6BA400321EC77EE600283DB5 /* MMGrowTextViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMGrowTextViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA400321EC77EE600283DB5 /* MMGrowTextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGrowTextViewDelegate.h; sourceTree = "<group>"; };
 		6BA400331EC77EE600283DB5 /* MMHeadImageAnnotationViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMHeadImageAnnotationViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400341EC77EE600283DB5 /* MMHorizontalTableViewDataSource-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMHorizontalTableViewDataSource-Protocol.h"; sourceTree = "<group>"; };
 		6BA400351EC77EE600283DB5 /* MMHorizontalTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHorizontalTableViewDelegate.h; sourceTree = "<group>"; };
@@ -289,7 +291,7 @@
 		6BA4003E1EC77EE600283DB5 /* MMImageScrollViewHelperDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMImageScrollViewHelperDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4003F1EC77EE600283DB5 /* MMImgageBrowseViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMImgageBrowseViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400401EC77EE600283DB5 /* MMInputAccessoryViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMInputAccessoryViewDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA400411EC77EE700283DB5 /* MMInputToolViewCustomizationDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMInputToolViewCustomizationDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA400411EC77EE700283DB5 /* MMInputToolViewCustomizationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInputToolViewCustomizationDelegate.h; sourceTree = "<group>"; };
 		6BA400421EC77EE700283DB5 /* MMInputToolViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInputToolViewDelegate.h; sourceTree = "<group>"; };
 		6BA400431EC77EE700283DB5 /* MMJSApiVerifyMgrDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMJSApiVerifyMgrDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400451EC77EE700283DB5 /* MMLanguagePackageDownloadMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMLanguagePackageDownloadMgrExt-Protocol.h"; sourceTree = "<group>"; };
@@ -351,7 +353,7 @@
 		6BA4007F1EC77EE700283DB5 /* MMThemeManagerExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMThemeManagerExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA400801EC77EE700283DB5 /* MMTipsViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMTipsViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400811EC77EE700283DB5 /* MMToastViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMToastViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA400821EC77EE700283DB5 /* MMTransparentButtonDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMTransparentButtonDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA400821EC77EE700283DB5 /* MMTransparentButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTransparentButtonDelegate.h; sourceTree = "<group>"; };
 		6BA400831EC77EE700283DB5 /* MMTwitterAuthExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMTwitterAuthExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA400841EC77EE700283DB5 /* MMUIHookViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMUIHookViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400851EC77EE700283DB5 /* MMUIViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUIViewControllerDelegate.h; sourceTree = "<group>"; };
@@ -509,7 +511,7 @@
 		6BA401201EC77EE900283DB5 /* SearchContactDataProviderDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SearchContactDataProviderDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401211EC77EE900283DB5 /* SearchGuideViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SearchGuideViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401221EC77EE900283DB5 /* SeePeopleNearByUIDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeePeopleNearByUIDelegate.h; sourceTree = "<group>"; };
-		6BA401231EC77EE900283DB5 /* SelectAttachmentViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SelectAttachmentViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA401231EC77EE900283DB5 /* SelectAttachmentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectAttachmentViewControllerDelegate.h; sourceTree = "<group>"; };
 		6BA401241EC77EE900283DB5 /* SelectAttachmentViewDataSource-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SelectAttachmentViewDataSource-Protocol.h"; sourceTree = "<group>"; };
 		6BA401251EC77EE900283DB5 /* SelectAttachmentViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SelectAttachmentViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401261EC77EE900283DB5 /* SelectContactsViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SelectContactsViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -552,7 +554,7 @@
 		6BA4014B1EC77EEA00283DB5 /* ShareTo3rdAppManageCellDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareTo3rdAppManageCellDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4014C1EC77EEA00283DB5 /* ShareUploadTaskConfirmLogicHelperDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareUploadTaskConfirmLogicHelperDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4014D1EC77EEA00283DB5 /* ShareViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareViewDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA4014E1EC77EEA00283DB5 /* ShortVideoBarDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShortVideoBarDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA4014E1EC77EEA00283DB5 /* ShortVideoBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortVideoBarDelegate.h; sourceTree = "<group>"; };
 		6BA4014F1EC77EEA00283DB5 /* SightAssetPreviewViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SightAssetPreviewViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401501EC77EEA00283DB5 /* SightCaptureDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SightCaptureDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401511EC77EEA00283DB5 /* SightCaptureLogic-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SightCaptureLogic-Protocol.h"; sourceTree = "<group>"; };
@@ -676,7 +678,7 @@
 		6BA401C91EC77EEC00283DB5 /* ViewLocationDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewLocationDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401CA1EC77EEC00283DB5 /* ViewMemLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewMemLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401CB1EC77EEC00283DB5 /* VoiceComponentExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VoiceComponentExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA401CC1EC77EEC00283DB5 /* VoiceInputViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VoiceInputViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA401CC1EC77EEC00283DB5 /* VoiceInputViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceInputViewDelegate.h; sourceTree = "<group>"; };
 		6BA401CD1EC77EEC00283DB5 /* VoicePrintGetResourceDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VoicePrintGetResourceDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401CE1EC77EEC00283DB5 /* VoicePrintGetTicketDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VoicePrintGetTicketDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401CF1EC77EEC00283DB5 /* VoicePrintHandlerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VoicePrintHandlerDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -7908,7 +7910,7 @@
 		6BA4FF6F1EC77EE500283DB5 /* IQQSessionExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQQSessionExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF701EC77EE500283DB5 /* IRadarSearchExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRadarSearchExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF711EC77EE500283DB5 /* IRecordDownloadExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRecordDownloadExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FF721EC77EE500283DB5 /* IRecordPermissionCheckExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRecordPermissionCheckExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FF721EC77EE500283DB5 /* IRecordPermissionCheckExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRecordPermissionCheckExt.h; sourceTree = "<group>"; };
 		6BA4FF731EC77EE500283DB5 /* IRemoteControlCheckExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRemoteControlCheckExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF741EC77EE500283DB5 /* IRemoteControlMusicPlayerExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRemoteControlMusicPlayerExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF751EC77EE500283DB5 /* IRsaCertMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRsaCertMgrExt-Protocol.h"; sourceTree = "<group>"; };
@@ -7932,7 +7934,7 @@
 		6BA4FF871EC77EE500283DB5 /* IStrangerContactMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStrangerContactMgrExt.h; sourceTree = "<group>"; };
 		6BA4FF881EC77EE500283DB5 /* IStreamVoiceInputExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IStreamVoiceInputExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF891EC77EE500283DB5 /* ISvrErrorExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ISvrErrorExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FF8A1EC77EE500283DB5 /* ISysCallCheckExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ISysCallCheckExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FF8A1EC77EE500283DB5 /* ISysCallCheckExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISysCallCheckExt.h; sourceTree = "<group>"; };
 		6BA4FF8B1EC77EE500283DB5 /* ISysNewXmlMsgExtendOperation-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ISysNewXmlMsgExtendOperation-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF8C1EC77EE500283DB5 /* ITemplateMsgRecvExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ITemplateMsgRecvExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF8D1EC77EE500283DB5 /* ITrackPresentExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ITrackPresentExt-Protocol.h"; sourceTree = "<group>"; };
@@ -8084,7 +8086,7 @@
 		6BB5DA7B1EC7734F001AF22F /* BadRoomMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BadRoomMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DA7C1EC7734F001AF22F /* BannerToastExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerToastExt.h; sourceTree = "<group>"; };
 		6BB5DA7D1EC7734F001AF22F /* BaseAudioPlayerNotifyExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseAudioPlayerNotifyExt-Protocol.h"; sourceTree = "<group>"; };
-		6BB5DA7E1EC7734F001AF22F /* BaseEmoticonViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseEmoticonViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BB5DA7E1EC7734F001AF22F /* BaseEmoticonViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEmoticonViewDelegate.h; sourceTree = "<group>"; };
 		6BB5DA7F1EC7734F001AF22F /* BaseMsgContentDelgate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMsgContentDelgate.h; sourceTree = "<group>"; };
 		6BB5DA801EC7734F001AF22F /* BaseMsgContentInBackgroundThreadDelgate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMsgContentInBackgroundThreadDelgate.h; sourceTree = "<group>"; };
 		6BB5DA811EC7734F001AF22F /* BaseScanLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseScanLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -8200,7 +8202,7 @@
 		6BB5DAEF1EC7734F001AF22F /* EmoticonBackupOperateMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmoticonBackupOperateMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DAF01EC7734F001AF22F /* EmoticonBoardPageCollectionControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmoticonBoardPageCollectionControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DAF11EC7734F001AF22F /* EmoticonBoardRecommendViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmoticonBoardRecommendViewDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BB5DAF21EC7734F001AF22F /* EmoticonBoardViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmoticonBoardViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BB5DAF21EC7734F001AF22F /* EmoticonBoardViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmoticonBoardViewDelegate.h; sourceTree = "<group>"; };
 		6BB5DAF31EC7734F001AF22F /* EmoticonBoughtListMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmoticonBoughtListMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DAF41EC7734F001AF22F /* EmoticonButtonDescExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmoticonButtonDescExt-Protocol.h"; sourceTree = "<group>"; };
 		6BB5DAF51EC7734F001AF22F /* EmoticonCustomManageAddLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmoticonCustomManageAddLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -11040,6 +11042,7 @@
 				6BA407CE1EC7809E00283DB5 /* MMImageView.h */,
 				6BA407CF1EC7809E00283DB5 /* MMInputAccessoryView.h */,
 				6BA407D01EC7809E00283DB5 /* MMInputToolView.h */,
+				6B053AAB1EEA6ABC000448D5 /* MMInputToolView.m */,
 				6BA407D11EC7809E00283DB5 /* MMLoadingView.h */,
 				6BA407D21EC7809E00283DB5 /* MMLocationPinView.h */,
 				6BA407D31EC7809E00283DB5 /* MMLockOverlayView.h */,
@@ -14867,7 +14870,7 @@
 				6BB5DA7B1EC7734F001AF22F /* BadRoomMgrExt-Protocol.h */,
 				6BB5DA7C1EC7734F001AF22F /* BannerToastExt.h */,
 				6BB5DA7D1EC7734F001AF22F /* BaseAudioPlayerNotifyExt-Protocol.h */,
-				6BB5DA7E1EC7734F001AF22F /* BaseEmoticonViewDelegate-Protocol.h */,
+				6BB5DA7E1EC7734F001AF22F /* BaseEmoticonViewDelegate.h */,
 				6BB5DA7F1EC7734F001AF22F /* BaseMsgContentDelgate.h */,
 				6BB5DA801EC7734F001AF22F /* BaseMsgContentInBackgroundThreadDelgate.h */,
 				6BB5DA811EC7734F001AF22F /* BaseScanLogicDelegate-Protocol.h */,
@@ -14983,7 +14986,7 @@
 				6BB5DAEF1EC7734F001AF22F /* EmoticonBackupOperateMgrExt-Protocol.h */,
 				6BB5DAF01EC7734F001AF22F /* EmoticonBoardPageCollectionControllerDelegate-Protocol.h */,
 				6BB5DAF11EC7734F001AF22F /* EmoticonBoardRecommendViewDelegate-Protocol.h */,
-				6BB5DAF21EC7734F001AF22F /* EmoticonBoardViewDelegate-Protocol.h */,
+				6BB5DAF21EC7734F001AF22F /* EmoticonBoardViewDelegate.h */,
 				6BB5DAF31EC7734F001AF22F /* EmoticonBoughtListMgrExt-Protocol.h */,
 				6BB5DAF41EC7734F001AF22F /* EmoticonButtonDescExt-Protocol.h */,
 				6BB5DAF51EC7734F001AF22F /* EmoticonCustomManageAddLogicDelegate-Protocol.h */,
@@ -15283,7 +15286,7 @@
 				6BA4FF6F1EC77EE500283DB5 /* IQQSessionExt-Protocol.h */,
 				6BA4FF701EC77EE500283DB5 /* IRadarSearchExt-Protocol.h */,
 				6BA4FF711EC77EE500283DB5 /* IRecordDownloadExt-Protocol.h */,
-				6BA4FF721EC77EE500283DB5 /* IRecordPermissionCheckExt-Protocol.h */,
+				6BA4FF721EC77EE500283DB5 /* IRecordPermissionCheckExt.h */,
 				6BA4FF731EC77EE500283DB5 /* IRemoteControlCheckExt-Protocol.h */,
 				6BA4FF741EC77EE500283DB5 /* IRemoteControlMusicPlayerExt-Protocol.h */,
 				6BA4FF751EC77EE500283DB5 /* IRsaCertMgrExt-Protocol.h */,
@@ -15307,7 +15310,7 @@
 				6BA4FF871EC77EE500283DB5 /* IStrangerContactMgrExt.h */,
 				6BA4FF881EC77EE500283DB5 /* IStreamVoiceInputExt-Protocol.h */,
 				6BA4FF891EC77EE500283DB5 /* ISvrErrorExt-Protocol.h */,
-				6BA4FF8A1EC77EE500283DB5 /* ISysCallCheckExt-Protocol.h */,
+				6BA4FF8A1EC77EE500283DB5 /* ISysCallCheckExt.h */,
 				6BA4FF8B1EC77EE500283DB5 /* ISysNewXmlMsgExtendOperation-Protocol.h */,
 				6BA4FF8C1EC77EE500283DB5 /* ITemplateMsgRecvExt-Protocol.h */,
 				6BA4FF8D1EC77EE500283DB5 /* ITrackPresentExt-Protocol.h */,
@@ -15473,7 +15476,7 @@
 				6BA4002F1EC77EE600283DB5 /* MMGridViewCellDelegate-Protocol.h */,
 				6BA400301EC77EE600283DB5 /* MMGridViewDataSource-Protocol.h */,
 				6BA400311EC77EE600283DB5 /* MMGridViewLayoutStrategy-Protocol.h */,
-				6BA400321EC77EE600283DB5 /* MMGrowTextViewDelegate-Protocol.h */,
+				6BA400321EC77EE600283DB5 /* MMGrowTextViewDelegate.h */,
 				6BA400331EC77EE600283DB5 /* MMHeadImageAnnotationViewDelegate-Protocol.h */,
 				6BA400341EC77EE600283DB5 /* MMHorizontalTableViewDataSource-Protocol.h */,
 				6BA400351EC77EE600283DB5 /* MMHorizontalTableViewDelegate.h */,
@@ -15488,7 +15491,7 @@
 				6BA4003E1EC77EE600283DB5 /* MMImageScrollViewHelperDelegate-Protocol.h */,
 				6BA4003F1EC77EE600283DB5 /* MMImgageBrowseViewDelegate-Protocol.h */,
 				6BA400401EC77EE600283DB5 /* MMInputAccessoryViewDelegate-Protocol.h */,
-				6BA400411EC77EE700283DB5 /* MMInputToolViewCustomizationDelegate-Protocol.h */,
+				6BA400411EC77EE700283DB5 /* MMInputToolViewCustomizationDelegate.h */,
 				6BA400421EC77EE700283DB5 /* MMInputToolViewDelegate.h */,
 				6BA400431EC77EE700283DB5 /* MMJSApiVerifyMgrDelegate-Protocol.h */,
 				6BA400451EC77EE700283DB5 /* MMLanguagePackageDownloadMgrExt-Protocol.h */,
@@ -15550,7 +15553,7 @@
 				6BA4007F1EC77EE700283DB5 /* MMThemeManagerExt-Protocol.h */,
 				6BA400801EC77EE700283DB5 /* MMTipsViewControllerDelegate-Protocol.h */,
 				6BA400811EC77EE700283DB5 /* MMToastViewControllerDelegate-Protocol.h */,
-				6BA400821EC77EE700283DB5 /* MMTransparentButtonDelegate-Protocol.h */,
+				6BA400821EC77EE700283DB5 /* MMTransparentButtonDelegate.h */,
 				6BA400831EC77EE700283DB5 /* MMTwitterAuthExt-Protocol.h */,
 				6BA400841EC77EE700283DB5 /* MMUIHookViewDelegate-Protocol.h */,
 				6BA400851EC77EE700283DB5 /* MMUIViewControllerDelegate.h */,
@@ -15708,7 +15711,7 @@
 				6BA401201EC77EE900283DB5 /* SearchContactDataProviderDelegate-Protocol.h */,
 				6BA401211EC77EE900283DB5 /* SearchGuideViewDelegate-Protocol.h */,
 				6BA401221EC77EE900283DB5 /* SeePeopleNearByUIDelegate.h */,
-				6BA401231EC77EE900283DB5 /* SelectAttachmentViewControllerDelegate-Protocol.h */,
+				6BA401231EC77EE900283DB5 /* SelectAttachmentViewControllerDelegate.h */,
 				6BA401241EC77EE900283DB5 /* SelectAttachmentViewDataSource-Protocol.h */,
 				6BA401251EC77EE900283DB5 /* SelectAttachmentViewDelegate-Protocol.h */,
 				6BA401261EC77EE900283DB5 /* SelectContactsViewControllerDelegate-Protocol.h */,
@@ -15751,7 +15754,7 @@
 				6BA4014B1EC77EEA00283DB5 /* ShareTo3rdAppManageCellDelegate-Protocol.h */,
 				6BA4014C1EC77EEA00283DB5 /* ShareUploadTaskConfirmLogicHelperDelegate-Protocol.h */,
 				6BA4014D1EC77EEA00283DB5 /* ShareViewDelegate-Protocol.h */,
-				6BA4014E1EC77EEA00283DB5 /* ShortVideoBarDelegate-Protocol.h */,
+				6BA4014E1EC77EEA00283DB5 /* ShortVideoBarDelegate.h */,
 				6BA4014F1EC77EEA00283DB5 /* SightAssetPreviewViewDelegate-Protocol.h */,
 				6BA401501EC77EEA00283DB5 /* SightCaptureDelegate-Protocol.h */,
 				6BA401511EC77EEA00283DB5 /* SightCaptureLogic-Protocol.h */,
@@ -15875,7 +15878,7 @@
 				6BA401C91EC77EEC00283DB5 /* ViewLocationDelegate-Protocol.h */,
 				6BA401CA1EC77EEC00283DB5 /* ViewMemLogicDelegate-Protocol.h */,
 				6BA401CB1EC77EEC00283DB5 /* VoiceComponentExt-Protocol.h */,
-				6BA401CC1EC77EEC00283DB5 /* VoiceInputViewDelegate-Protocol.h */,
+				6BA401CC1EC77EEC00283DB5 /* VoiceInputViewDelegate.h */,
 				6BA401CD1EC77EEC00283DB5 /* VoicePrintGetResourceDelegate-Protocol.h */,
 				6BA401CE1EC77EEC00283DB5 /* VoicePrintGetTicketDelegate-Protocol.h */,
 				6BA401CF1EC77EEC00283DB5 /* VoicePrintHandlerDelegate-Protocol.h */,
@@ -19262,6 +19265,7 @@
 				6B3BBDDC1EDAB755002602B6 /* CContactOPLog.m in Sources */,
 				6B8031AF1EC8BB000090657F /* VoIPTokenRegisterObject.m in Sources */,
 				6B5163C61ED920880089CEAC /* WAAppMsgItem.m in Sources */,
+				6B053AAC1EEA6ABC000448D5 /* MMInputToolView.m in Sources */,
 				6BF847831ED73B1700EAD5E1 /* MMLanguageMgr.m in Sources */,
 				6B8031951EC8B43B0090657F /* ResourceInfo.m in Sources */,
 				6B8031A91EC8B94B0090657F /* VoIPTokenRetriveObject.m in Sources */,

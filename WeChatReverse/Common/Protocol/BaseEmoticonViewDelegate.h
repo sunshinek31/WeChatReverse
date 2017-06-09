@@ -4,15 +4,29 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class CEmoticonWrap, NSString;
+@class CEmoticonWrap;
 
 @protocol BaseEmoticonViewDelegate <NSObject>
 
 @optional
+
+/**
+ deleteEmoticon
+ */
 - (void)deleteEmoticon;
-- (void)didSelectorSelfDefinedEmotcion:(CEmoticonWrap *)arg1;
+
+/**
+ didSelectorSelfDefinedEmotcion
+
+ @param aCEmoticonWrap aCEmoticonWrap description
+ */
+- (void)didSelectorSelfDefinedEmotcion:(CEmoticonWrap *)aCEmoticonWrap;
+
+/**
+ didSelectorEmoticon
+
+ @param arg1 arg1 description
+ */
 - (void)didSelectorEmoticon:(NSString *)arg1;
 @end
 
