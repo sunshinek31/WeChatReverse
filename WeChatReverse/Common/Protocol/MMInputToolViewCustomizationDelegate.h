@@ -7,9 +7,9 @@
 @protocol MMInputToolViewCustomizationDelegate <NSObject>
 
 @optional
-- (CGFloat)getExtraToolViewHegith;
-- (BOOL)showKeyboardImmediately;
-- (BOOL)shouldHideOrginInputToolView;
-- (CGFloat)getCustomizedAreaWidth;
+- (double)getExtraToolViewHegith;
+- (_Bool)showKeyboardImmediately;
+- (_Bool)shouldHideOrginInputToolView;
+- (double)getCustomizedAreaWidth;
 @end
 

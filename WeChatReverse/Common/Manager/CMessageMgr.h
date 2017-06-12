@@ -23,7 +23,7 @@
 #import "RecordUploadCDNMgrDelegate.h"
 #import "UploadImageCDNMgrDelegate.h"
 
-@class CDownloadVideoMgr, CEmoticonDownloadMgr, CEmoticonUploadMgr, CMessageDB, CUploadVideoMgr, DownloadImageCDNMgr, DownloadImageMgr, DownloadVideoCDNMgr, MessagePatternCacheMgr, NSDate, NSMutableDictionary, NSObject<OS_dispatch_semaphore>, NSString, OpenDownloadCDNMgr, OpenDownloadMgr, OpenUploadCDNMgr, OpenUploadMgr, RecordDownloadCDNMgr, RecordUploadCDNMgr, ShortVideoDownloadMgr, ThumbDownloadMgr, UploadImageCDNMgr, UploadImageMgr, UploadVideoCDNMgr;
+@class CDownloadVideoMgr, CEmoticonDownloadMgr, CEmoticonUploadMgr, CMessageDB, CUploadVideoMgr, DownloadImageCDNMgr, DownloadImageMgr, DownloadVideoCDNMgr, MessagePatternCacheMgr, NSDate, NSMutableDictionary, NSString, OpenDownloadCDNMgr, OpenDownloadMgr, OpenUploadCDNMgr, OpenUploadMgr, RecordDownloadCDNMgr, RecordUploadCDNMgr, ShortVideoDownloadMgr, ThumbDownloadMgr, UploadImageCDNMgr, UploadImageMgr, UploadVideoCDNMgr;
 
 @interface CMessageMgr : MMService <IMessageWrapImgExt, IClearDataMgrExt, MessageWrapImgDelegate, MessageObserverDelegate, MMService, IAudioToMessageExt, IVideoExt, IEmoticonExt, PBMessageObserverDelegate, MMKernelExt, IMsgExt, UploadImageCDNMgrDelegate, OpenDownloadCDNMgrDelegate, OpenUploadMgrDelegate, OpenUploadCDNMgrDelegate, RecordUploadCDNMgrDelegate>
 {
@@ -55,7 +55,7 @@
 
 + (id)GetPathOfOpenUploadCDNFile;
 + (id)GetPathOfOpenUploadFile;
-- (void).cxx_destruct;
+
 - (void)updateVideoDownloadModeWithClientId:(id)arg1 downloadMode:(unsigned long long)arg2;
 - (_Bool)IsVideoDataAvailableByClientMediaId:(id)arg1 offset:(unsigned int)arg2 length:(unsigned int)arg3;
 - (_Bool)RequestVideoDataByClientMediaID:(id)arg1 offset:(unsigned int)arg2 length:(unsigned int)arg3 durationSec:(unsigned int)arg4;

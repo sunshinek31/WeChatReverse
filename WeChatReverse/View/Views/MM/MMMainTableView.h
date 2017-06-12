@@ -12,7 +12,7 @@
 }
 
 @property(nonatomic) __weak id <MainTableDelegate> m_mainTableDelegate; // @synthesize m_mainTableDelegate;
-- (void).cxx_destruct;
+
 - (void)ensureHierarchy;
 - (void)setContentInset:(struct UIEdgeInsets)arg1;
 - (void)setScrollIndicatorInsets:(struct UIEdgeInsets)arg1;
