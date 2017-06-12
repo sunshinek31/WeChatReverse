@@ -5,7 +5,6 @@
 //
 
 #import "MMTabBarBaseViewController.h"
-
 #import "CreateChatLogicDelegate.h"
 #import "IAcctStorageMgrExt.h"
 #import "IAutoSetRemarkExt.h"
@@ -20,13 +19,7 @@
 #import "MainFrameHeaderDelegate.h"
 #import "MainTableDelegate.h"
 #import "SelectContactsViewControllerDelegate.h"
-#import "UIAlertViewDelegate.h"
-#import "UIGestureRecognizerDelegate.h"
-#import "UISearchBarDelegate.h"
-#import "UISearchDisplayDelegate.h"
-#import "UITableViewDataSource.h"
-#import "UITableViewDelegate.h"
-#import "WCActionSheetDelegate.h"
+#import "WCActionSheet.h"
 #import "WCBarMessageWindowDelegate.h"
 #import "contactInfoDelegate.h"
 #import "mainFrameLogicControllerDelegate.h"
@@ -40,29 +33,29 @@
     UIImageView *logoImageView;
     MFTitleView *m_titleView;
     MMLoadingView *m_loadingView;
-    _Bool m_bSearching;
+    BOOL m_bSearching;
     struct CGPoint m_tableContentOffset;
-    _Bool m_bFromReg;
+    BOOL m_bFromReg;
     unsigned int m_uiTipStatus;
     CreateChatLogic *m_createChatLogic;
-    _Bool m_tableViewReady;
+    BOOL m_tableViewReady;
     MainFrameHeaderLogic *m_headerLogic;
     NSString *m_nsTitle;
     int m_voiceSearchLevelNumber;
     VoiceSearchMutilLevelViewController *voiceSearchMultilLevelViewController;
-    _Bool m_bFirstInitView;
-    _Bool m_bOnMemoryWarningToFinishedSearchBar;
+    BOOL m_bFirstInitView;
+    BOOL m_bOnMemoryWarningToFinishedSearchBar;
     struct CGPoint m_tableViewOffset;
-    _Bool m_bIsLastViewStatusBarHidden;
-    _Bool m_hasAddBlurEffectView;
-    _Bool m_needResetTableViewOffset;
+    BOOL m_bIsLastViewStatusBarHidden;
+    BOOL m_hasAddBlurEffectView;
+    BOOL m_needResetTableViewOffset;
     double m_preContentOffset;
     WCBarMessageWindow *m_barMessageWindow;
-    _Bool m_forbidShowTip;
+    BOOL m_forbidShowTip;
     MMSessionInfo *_peekedSession;
-    _Bool m_firstLoadFinished;
-    _Bool m_searchDimmingViewRemoved;
-    _Bool m_canSearchAfterInit;
+    BOOL m_firstLoadFinished;
+    BOOL m_searchDimmingViewRemoved;
+    BOOL m_canSearchAfterInit;
     double m_messageCellHeight;
     long long m_lastRowNum;
     unsigned int _startTime;
@@ -73,8 +66,8 @@
 @property(retain, nonatomic) UIDynamicAnimator *animator; // @synthesize animator=_animator;
 @property(retain, nonatomic) NSString *m_nsTitle; // @synthesize m_nsTitle;
 @property(retain, nonatomic) CreateChatLogic *m_createChatLogic; // @synthesize m_createChatLogic;
-@property(nonatomic) _Bool m_bFromReg; // @synthesize m_bFromReg;
-- (void).cxx_destruct;
+@property(nonatomic) BOOL m_bFromReg; // @synthesize m_bFromReg;
+
 - (id)tagForCurrentPage;
 - (void)traitCollectionDidChange:(id)arg1;
 - (void)previewingContext:(id)arg1 commitViewController:(id)arg2;
@@ -98,27 +91,27 @@
 - (void)onVideoVoipViewDidAppear:(id)arg1;
 - (void)updateItem:(id)arg1;
 - (void)onAuthOK;
-- (void)displayControllerSetActive:(_Bool)arg1 animated:(_Bool)arg2;
+- (void)displayControllerSetActive:(BOOL)arg1 animated:(BOOL)arg2;
 - (id)getSessionInfoByContact:(id)arg1;
 - (void)SearchBarBecomeUnActive;
-- (_Bool)shouldShowTabbar;
+- (BOOL)shouldShowTabbar;
 - (void)SearchBarBecomeActive;
 - (void)addBlurEffectView;
 - (void)setSearchTableResultText:(id)arg1;
 - (void)OnVoiceSearchButtonDown;
-- (void)updateViewWhenSelectTab:(_Bool)arg1;
+- (void)updateViewWhenSelectTab:(BOOL)arg1;
 - (void)changeNetworkStatus:(unsigned int)arg1;
 - (unsigned int)getTotalUnreadCount;
 - (void)clearResource;
 - (void)newMessageByContact:(id)arg1 msgWrapToAdd:(id)arg2;
-- (void)newMessageByContact:(id)arg1 msgWrapToAdd:(id)arg2 animated:(_Bool)arg3;
-- (void)newMessageByContact:(id)arg1 msgWrapToAdd:(id)arg2 animated:(_Bool)arg3 FromOtherTab:(_Bool)arg4;
-- (void)newMessageByContact:(id)arg1 msgWrapToAdd:(id)arg2 animated:(_Bool)arg3 FromOtherTab:(_Bool)arg4 reuse:(_Bool)arg5 extraInfo:(id)arg6;
+- (void)newMessageByContact:(id)arg1 msgWrapToAdd:(id)arg2 animated:(BOOL)arg3;
+- (void)newMessageByContact:(id)arg1 msgWrapToAdd:(id)arg2 animated:(BOOL)arg3 FromOtherTab:(BOOL)arg4;
+- (void)newMessageByContact:(id)arg1 msgWrapToAdd:(id)arg2 animated:(BOOL)arg3 FromOtherTab:(BOOL)arg4 reuse:(BOOL)arg5 extraInfo:(id)arg6;
 - (void)resetTableViewOffset:(id)arg1;
 - (void)tapStatusBarMessage;
 - (void)animationShow;
 - (void)newMessageFromContactInfo:(id)arg1;
-- (void)popToMainFrameAnimated:(_Bool)arg1;
+- (void)popToMainFrameAnimated:(BOOL)arg1;
 - (void)updateStatusBar;
 - (void)stopLoading;
 - (void)startLoading;
@@ -140,9 +133,8 @@
 - (void)MMVoiceSearchBarCancelButtonClicked:(id)arg1;
 - (void)MMVoiceSearchBarSearchButtonClicked:(id)arg1;
 - (void)MMVoiceSearchBar:(id)arg1 textDidChange:(id)arg2;
-- (_Bool)MMVoiceSearchBarShouldBeginEditing:(id)arg1;
+- (BOOL)MMVoiceSearchBarShouldBeginEditing:(id)arg1;
 - (void)cancelSearch;
-- (void)tableView:(id)arg1 commitEditingStyle:(long long)arg2 forRowAtIndexPath:(id)arg3;
 - (void)showBrandUnsubscribeActionSheet:(unsigned long long)arg1;
 - (void)handleBrandUnsubscribe:(id)arg1;
 - (void)handleCommitEdit:(unsigned long long)arg1;
@@ -150,30 +142,22 @@
 - (void)showEditActionSheet:(unsigned long long)arg1;
 - (id)getDestructiveBtnTitle:(unsigned long long)arg1;
 - (id)getActionSheetTitle:(unsigned long long)arg1;
-- (void)tableView:(id)arg1 willDisplayCell:(id)arg2 forRowAtIndexPath:(id)arg3;
-- (void)tableView:(id)arg1 didEndEditingRowAtIndexPath:(id)arg2;
-- (void)tableView:(id)arg1 willBeginEditingRowAtIndexPath:(id)arg2;
-- (long long)tableView:(id)arg1 editingStyleForRowAtIndexPath:(id)arg2;
-- (_Bool)tableView:(id)arg1 canEditRowAtIndexPath:(id)arg2;
-- (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2;
 - (void)handleSelectIndexPath:(id)arg1 tableView:(id)arg2;
 - (void)openContactInfoView:(id)arg1;
-- (_Bool)isNeedMutilLevelView:(id)arg1;
-- (_Bool)isNeedShowProfileInVoiceSearch:(int)arg1;
-- (_Bool)isOpenPluginContactInfoView:(id)arg1;
+- (BOOL)isNeedMutilLevelView:(id)arg1;
+- (BOOL)isNeedShowProfileInVoiceSearch:(int)arg1;
+- (BOOL)isOpenPluginContactInfoView:(id)arg1;
 - (void)openPluginContactInfoView:(id)arg1;
-- (double)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2;
-- (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2;
-- (void)makeCellBackGroundBySession:(id)arg1 cell:(id)arg2 showTopList:(_Bool)arg3;
-- (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2;
+- (void)makeCellBackGroundBySession:(id)arg1 cell:(id)arg2 showTopList:(BOOL)arg3;
 - (long long)getSectionType:(long long)arg1;
-- (long long)numberOfSectionsInTableView:(id)arg1;
-- (id)tableView:(id)arg1 titleForDeleteConfirmationButtonForRowAtIndexPath:(id)arg2;
-- (void)openMessageContentView:(id)arg1 startSendMessage:(_Bool)arg2 msgWrapToAdd:(id)arg3 animated:(_Bool)arg4 jumpToFirstUnreadNode:(_Bool)arg5 indexPath:(id)arg6 reuse:(_Bool)arg7 extraInfo:(id)arg8;
 - (void)tryMoveToMainFrameTab;
-- (void)openMessageContentView:(id)arg1 startSendMessage:(_Bool)arg2 msgWrapToAdd:(id)arg3 animated:(_Bool)arg4 jumpToFirstUnreadNode:(_Bool)arg5 indexPath:(id)arg6;
-- (void)openMessageContentView:(id)arg1 startSendMessage:(_Bool)arg2 msgWrapToAdd:(id)arg3 animated:(_Bool)arg4 jumpToFirstUnreadNode:(_Bool)arg5;
-- (void)openEnterpriseChatSessionListView:(id)arg1 animated:(_Bool)arg2;
+
+#pragma mark - 进入聊天视图控制器页面
+- (void)openMessageContentView:(id)arg1 startSendMessage:(BOOL)arg2 msgWrapToAdd:(id)arg3 animated:(BOOL)arg4 jumpToFirstUnreadNode:(BOOL)arg5 indexPath:(id)arg6 reuse:(BOOL)arg7 extraInfo:(id)arg8;
+- (void)openMessageContentView:(id)arg1 startSendMessage:(BOOL)arg2 msgWrapToAdd:(id)arg3 animated:(BOOL)arg4 jumpToFirstUnreadNode:(BOOL)arg5 indexPath:(id)arg6;
+- (void)openMessageContentView:(id)arg1 startSendMessage:(BOOL)arg2 msgWrapToAdd:(id)arg3 animated:(BOOL)arg4 jumpToFirstUnreadNode:(BOOL)arg5;
+
+- (void)openEnterpriseChatSessionListView:(id)arg1 animated:(BOOL)arg2;
 - (void)openEnterpriseBrandSessionView:(id)arg1;
 - (void)openWeAppSessionView;
 - (void)openBrandSessionView;
@@ -186,15 +170,15 @@
 - (void)tryHideSearchGuideView;
 - (void)tryInitViewOfSearchController;
 - (void)removeSearchDimmingView;
-- (_Bool)isSeachActive;
+- (BOOL)isSeachActive;
 - (void)onMainWindowFrameChanged;
 - (void)hideSearchBar;
-- (_Bool)shouldShowTitleWindow;
+- (BOOL)shouldShowTitleWindow;
 - (void)finishSearchBarImmediately;
-- (_Bool)hasShowSearchBar;
+- (BOOL)hasShowSearchBar;
 - (void)resetSearchBar;
 - (id)getVoiceSearchBar;
-- (_Bool)isTopRightMenuShowID:(id)arg1;
+- (BOOL)isTopRightMenuShowID:(id)arg1;
 - (void)initBarItem;
 - (void)reloadHeaderView;
 - (void)initSearchController;
@@ -204,14 +188,14 @@
 - (void)unLoadView;
 - (void)unLoadData;
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(_Bool)arg1;
-- (void)viewDidPush:(_Bool)arg1;
-- (void)viewDidPop:(_Bool)arg1;
-- (void)viewWillPop:(_Bool)arg1;
+- (void)viewDidDisappear:(BOOL)arg1;
+- (void)viewDidPush:(BOOL)arg1;
+- (void)viewDidPop:(BOOL)arg1;
+- (void)viewWillPop:(BOOL)arg1;
 - (void)removeMainFrameTip;
-- (void)viewDidAppear:(_Bool)arg1;
-- (void)viewWillDisappear:(_Bool)arg1;
-- (void)viewWillAppear:(_Bool)arg1;
+- (void)viewDidAppear:(BOOL)arg1;
+- (void)viewWillDisappear:(BOOL)arg1;
+- (void)viewWillAppear:(BOOL)arg1;
 - (void)setTableViewContentInsetForSearchBar;
 - (void)initView;
 - (void)showInviteFriendList;
@@ -224,7 +208,7 @@
 - (void)updateRow:(unsigned int)arg1;
 - (void)removeRow:(unsigned int)arg1;
 - (void)insertRow:(unsigned int)arg1;
-- (_Bool)checkHeaderRowValid:(unsigned int)arg1;
+- (BOOL)checkHeaderRowValid:(unsigned int)arg1;
 - (void)reloadAll;
 - (void)onShowPhoneFriend;
 - (void)onShowGoogleFriend;
@@ -259,16 +243,10 @@
 - (void)showWCPayView;
 - (void)showMyWCView;
 - (void)onSelectContactReturn:(id)arg1 atScene:(unsigned int)arg2;
-- (_Bool)onFilterContactCandidate:(id)arg1;
+- (BOOL)onFilterContactCandidate:(id)arg1;
 - (void)createVideoVOIPChat;
 - (void)createVoiceVOIPChat;
 - (void)onCreateNewMessage;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

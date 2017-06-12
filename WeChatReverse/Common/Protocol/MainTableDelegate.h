@@ -4,13 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class NSString;
-
-@protocol IAutoSetRemarkExt <NSObject>
-
-@optional
-- (void)onSetStrangerRemark:(NSString *)arg1;
+@protocol MainTableDelegate
+- (CGFloat)getContentViewY;
+- (CGFloat)getMainTableBottomInset;
+- (CGFloat)getMainTableHeight;
 @end
 

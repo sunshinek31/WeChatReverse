@@ -9,10 +9,8 @@
 #import "IQQMailExt.h"
 #import "ITranslateMsgMgrExt.h"
 #import "TipsViewDelegate.h"
-#import "UIAlertViewDelegate.h"
 #import "addContactToChatRoomDelegate.h"
 
-@class NSString, UIImageView;
 
 @interface WeixinContentLogicController : BaseMsgContentLogicController <IQQMailExt, UIAlertViewDelegate, addContactToChatRoomDelegate, TipsViewDelegate, ITranslateMsgMgrExt>
 {
@@ -21,7 +19,7 @@
 }
 
 @property(retain, nonatomic) UIImageView *toolView; // @synthesize toolView=_toolView;
-- (void).cxx_destruct;
+
 - (void)clickLinkToDealWithSysXml:(id)arg1 fromScene:(id)arg2;
 - (void)onClickReceiveBrandMsg;
 - (void)onClickShieldBrandMsg;

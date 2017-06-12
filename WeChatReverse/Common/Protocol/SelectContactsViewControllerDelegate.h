@@ -7,7 +7,7 @@
 @class CContact;
 
 @protocol SelectContactsViewControllerDelegate
-- (void)onSelectContactReturn:(CContact *)arg1 atScene:(unsigned int)arg2;
-- (_Bool)onFilterContactCandidate:(CContact *)arg1;
+- (void)onSelectContactReturn:(CContact *)aContact atScene:(unsigned int)scene;
+- (BOOL)onFilterContactCandidate:(CContact *)aContact;
 @end
 
