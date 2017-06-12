@@ -4,11 +4,7 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class NSArray, NSString;
-
 @protocol ITrackPresentExt <NSObject>
-- (void)OnTrackRoomMemberChange:(NSString *)arg1 withNewMemberList:(NSArray *)arg2;
+- (void)OnTrackRoomMemberChange:(NSString *)changedRoom withNewMemberList:(NSArray *)newMemberList;
 @end
 

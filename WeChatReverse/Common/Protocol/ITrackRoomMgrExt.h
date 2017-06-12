@@ -4,19 +4,17 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class NSArray, NSString, TrackPOIItem;
+@class TrackPOIItem;
 
 @protocol ITrackRoomMgrExt <NSObject>
 
 @optional
 - (void)OnTrackRoomStateDidChangedTo:(int)arg1;
 - (void)OnHeadingChanged:(double)arg1;
-- (void)OnTrackRoomError:(int)arg1 Message:(NSString *)arg2;
-- (void)OnGetRoomPOI:(TrackPOIItem *)arg1;
+- (void)OnTrackRoomError:(int)arg1 Message:(NSString *)message;
+- (void)OnGetRoomPOI:(TrackPOIItem *)aTrackPOIItem;
 - (void)OnExitTrackRoom;
-- (void)OnRefreshTrackRoom:(NSArray *)arg1 Type:(int)arg2;
+- (void)OnRefreshTrackRoom:(NSArray *)arg1 Type:(int)type;
 - (void)OnJoinTrackRoomOK:(NSString *)arg1;
 - (void)OnOpenTrackRoom:(NSString *)arg1;
 - (void)OnSta;

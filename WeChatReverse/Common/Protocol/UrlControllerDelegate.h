@@ -4,10 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class NSString, UIViewController;
-
 @protocol UrlControllerDelegate <NSObject>
 - (UIViewController *)getViewController;
 - (void)verifyContactByUsrNameWithOpCode:(unsigned int)arg1 userName:(NSString *)arg2;
