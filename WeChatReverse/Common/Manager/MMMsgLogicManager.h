@@ -39,11 +39,24 @@
 - (void)PushOtherBaseMsgControllerByContact:(id)arg1 navigationController:(id)arg2 animated:(_Bool)arg3 searchScene:(int)arg4;
 - (void)PushOtherBaseMsgControllerByContact:(id)arg1 navigationController:(id)arg2 animated:(_Bool)arg3;
 - (void)PushLBSRoomLogicControllerByContact:(id)arg1 navigationController:(id)arg2 animated:(_Bool)arg3;
-- (void)PushLogicControllerByContact:(id)arg1 navigationController:(id)arg2 animated:(_Bool)arg3 jumpToLocationNode:(id)arg4 reuse:(_Bool)arg5 extraInfo:(id)arg6;
 - (void)cleanUnuseLogicController;
-- (void)PushLogicControllerByContact:(id)arg1 navigationController:(id)arg2 animated:(_Bool)arg3 jumpToLocationNode:(id)arg4 reuse:(_Bool)arg5;
-- (void)PushLogicControllerByContact:(id)arg1 navigationController:(id)arg2 animated:(_Bool)arg3 jumpToLocationNode:(id)arg4;
-- (void)PushLogicController:(id)arg1 navigationController:(id)arg2 animated:(_Bool)arg3;
+
+
+/**
+ 推送聊天页面逻辑
+ 
+ @param aContact 通讯对象
+ @param navigationController 页面从属导航控制器
+ @param animated 动画标识
+ @param locationNode 节点
+ @param reuse 重用
+ @param extraInfo 额外属性: @{@"AllUnReadCount":@(0)}--未读消息数
+ */
+- (void)PushLogicControllerByContact:(CContact *)aContact navigationController:(UINavigationController *)navigationController animated:(BOOL)animated jumpToLocationNode:(id)locationNode reuse:(BOOL)reuse extraInfo:(NSMutableDictionary *)extraInfo;
+- (void)PushLogicControllerByContact:(CContact *)aContact navigationController:(UINavigationController *)navigationController animated:(BOOL)animated jumpToLocationNode:(id)locationNode reuse:(BOOL)reuse;
+- (void)PushLogicControllerByContact:(CContact *)aContact navigationController:(UINavigationController *)navigationController animated:(BOOL)animated jumpToLocationNode:(id)locationNode;
+- (void)PushLogicController:(id)controller navigationController:(UINavigationController *)navigationController animated:(BOOL)animated;
+
 - (id)GetReuseableLogicControllerFromCacheWithContact:(Class)arg1;
 - (id)GetLogicControllerFromCacheWithContact:(id)arg1;
 - (void)setMsgLogicToCache:(id)arg1;

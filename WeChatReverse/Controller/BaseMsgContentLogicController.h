@@ -50,6 +50,14 @@
 
 @class AutoplayController, BaseMsgContentViewController, CBaseContact, CContact, CContactVerifyLogic, CMessageWrap, ForwardMessageLogicController, GameController, ImageController, ImplicitAnimationController, MMPickLocationViewController, MMUIViewController, MultiSelectController, MyFavoritesListViewController, NSMutableDictionary, NSString, PlayingController, RecordController, ShakeController, ShareDataToOpenSDKController, ShareFriendOnChatLogicController, ShareMessageConfirmLogicHelper, TypingController, UINavigationController, UrlController;
 
+
+/**
+ 消息逻辑控制器
+ 
+ 和BaseMsgContentViewController关系紧密
+ @important BaseMsgContentLogicController的构造时机, 早于BaseMsgContentViewController
+ 并且BaseMsgContentLogicController需要通过MMMsgLogicManager来实现BaseMsgContentViewController视图控制器的页面跳转
+ */
 @interface BaseMsgContentLogicController : MMObject <MMNewMultiSelectContactsViewControllerDelegate, ForwardMessageLogicDelegate, BaseMsgContentDelgate, BaseMsgContentInBackgroundThreadDelgate, WCActionSheetDelegate, ImageControllerDelegate, contactInfoDelegate, UINavigationControllerDelegate, MessageObserverDelegate, TypingControllerDelgate, MsgDelegate, IMsgExt, ILinkEventExt, contactVerifyLogicDelegate, UrlControllerDelegate, IContactMgrExt, IMMNewSessionMgrExt, RecordControllerDelegate, PlayControllerDelegate, AutoplayController, ShakeControllerDelegate, ShareFriendOnChatDelegate, MFMailComposeViewControllerDelegate, MMPickLocationViewControllerDelegate, ImplicitAnimationControllerDelegate, IVOIPUILogicMgrExt, MMInputToolViewCustomizationDelegate, IWXTalkPresentExt, IWXTalkieExt, ITrackPresentExt, ITrackRoomMgrExt, UIAlertViewDelegate, MultiSelectContollerDelegate, ViewLocationDelegate, MultiTalkMgrExt, MyFavoritesListViewControllerDelegate, IMsgRevokeExt, FavForwardLogicDelegate, WCCardPackageViewControllerDelegate, ShareMessageConfirmLogicHelperDelegate, SessionSelectControllerDelegate>
 {
     BaseMsgContentViewController *m_viewController;
@@ -105,7 +113,7 @@
 @property(nonatomic) __weak UINavigationController *navigationController; // @synthesize navigationController=m_navigationController;
 @property(retain, nonatomic) CMessageWrap *m_msgResend; // @synthesize m_msgResend;
 @property(retain, nonatomic) CBaseContact *m_contact; // @synthesize m_contact;
-- (void).cxx_destruct;
+
 - (id)previewActionItems;
 - (double)getImplicitAnimationBottomBoundaryY;
 - (id)getImplicitAnimationParentView;

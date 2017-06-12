@@ -6,18 +6,18 @@
 
 #import "MMObject.h"
 
-@class NSMutableArray;
+@protocol AutoplayController;
 
 @interface AutoplayController : MMObject
 {
     NSMutableArray *m_arrMesLocalIDs;
     id <AutoplayController> m_delegate;
-    _Bool m_bCanPlay;
-    _Bool m_bCanStart;
+    BOOL m_bCanPlay;
+    BOOL m_bCanStart;
 }
 
-@property(nonatomic) __weak id <AutoplayController> m_delegate; // @synthesize m_delegate;
-- (void).cxx_destruct;
+@property(nonatomic, weak) id <AutoplayController> m_delegate; // @synthesize m_delegate;
+
 - (void)dealloc;
 - (void)Reset;
 - (void)systemActived:(id)arg1;
@@ -28,16 +28,23 @@
 - (void)onBeginPlayVideo;
 - (void)onStopRecording;
 - (void)onStartPlaying:(id)arg1;
-- (void)onEndPlaying:(unsigned int)arg1 isForceStopped:(_Bool)arg2;
+- (void)onEndPlaying:(unsigned int)arg1 isForceStopped:(BOOL)arg2;
 - (void)onBeginStartRecording;
 - (void)onMessageDownloaded:(unsigned int)arg1;
 - (void)onMessagePlayed:(unsigned int)arg1;
 - (void)AddMessageLocalID:(unsigned int)arg1;
 - (void)PlayList;
-- (_Bool)isPlayOK;
+- (BOOL)isPlayOK;
 - (id)init;
 - (void)UnRegister;
 - (void)Register;
 
 @end
 
+@protocol AutoplayController <NSObject>
+- (BOOL)canAutoplayWhenMessageDownloaded;
+
+@optional
+- (void)PlayNodeAtId:(unsigned int)arg1;
+- (NSArray *)GetMessagesNodeArray;
+@end
