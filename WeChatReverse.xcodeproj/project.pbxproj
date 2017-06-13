@@ -11,6 +11,8 @@
 		6B0170FE1EEA85F400E728D5 /* MMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0170FD1EEA85F400E728D5 /* MMTextView.m */; };
 		6B0171001EEA86A400E728D5 /* MMUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0170FF1EEA86A400E728D5 /* MMUITextView.m */; };
 		6B053AAC1EEA6ABC000448D5 /* MMInputToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B053AAB1EEA6ABC000448D5 /* MMInputToolView.m */; };
+		6B05F3621EEFC60400B45857 /* SendMessageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B05F3611EEFC60400B45857 /* SendMessageMgr.m */; };
+		6B05F3681EEFC98400B45857 /* CAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B05F3671EEFC98400B45857 /* CAppUtil.m */; };
 		6B3A42301EEE2A20003E2B25 /* NewMainFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A422F1EEE2A20003E2B25 /* NewMainFrameViewController.m */; };
 		6B3A42321EEE2E58003E2B25 /* MMTabBarBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A42311EEE2E58003E2B25 /* MMTabBarBaseViewController.m */; };
 		6B3A42341EEE3707003E2B25 /* MMMsgLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A42331EEE3707003E2B25 /* MMMsgLogicManager.m */; };
@@ -169,6 +171,8 @@
 		6B0170FD1EEA85F400E728D5 /* MMTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTextView.m; sourceTree = "<group>"; };
 		6B0170FF1EEA86A400E728D5 /* MMUITextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMUITextView.m; sourceTree = "<group>"; };
 		6B053AAB1EEA6ABC000448D5 /* MMInputToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInputToolView.m; sourceTree = "<group>"; };
+		6B05F3611EEFC60400B45857 /* SendMessageMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendMessageMgr.m; sourceTree = "<group>"; };
+		6B05F3671EEFC98400B45857 /* CAppUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAppUtil.m; sourceTree = "<group>"; };
 		6B1C6B241EEAE17500FF0C06 /* ProductTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductTableView.h; sourceTree = "<group>"; };
 		6B3A422F1EEE2A20003E2B25 /* NewMainFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMainFrameViewController.m; sourceTree = "<group>"; };
 		6B3A42311EEE2E58003E2B25 /* MMTabBarBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTabBarBaseViewController.m; sourceTree = "<group>"; };
@@ -431,7 +435,7 @@
 		6BA400B71EC77EE800283DB5 /* MyFavoritesViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyFavoritesViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400B81EC77EE800283DB5 /* MyUIScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIScrollViewDelegate.h; sourceTree = "<group>"; };
 		6BA400B91EC77EE800283DB5 /* NavigateLogicControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NavigateLogicControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA400BA1EC77EE800283DB5 /* NetworkStatusDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkStatusDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA400BA1EC77EE800283DB5 /* NetworkStatusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStatusDelegate.h; sourceTree = "<group>"; };
 		6BA400BB1EC77EE800283DB5 /* NewChatRoomMemberItemViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewChatRoomMemberItemViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400BC1EC77EE800283DB5 /* NewContactsSearchPanelViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewContactsSearchPanelViewDelegate.h; sourceTree = "<group>"; };
 		6BA400BD1EC77EE800283DB5 /* NewQRCodeScannerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewQRCodeScannerDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -1189,7 +1193,7 @@
 		6BA403B71EC77EF500283DB5 /* WXCMultiTalkApiDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXCMultiTalkApiDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA403B81EC77EF500283DB5 /* WXCNetWorkDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXCNetWorkDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA403B91EC77EF500283DB5 /* WXCNetWorkProxyDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXCNetWorkProxyDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA403BA1EC77EF500283DB5 /* WXCNetworkStatusDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXCNetworkStatusDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA403BA1EC77EF500283DB5 /* WXCNetworkStatusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCNetworkStatusDelegate.h; sourceTree = "<group>"; };
 		6BA403BB1EC77EF500283DB5 /* WXGBackupBasicLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXGBackupBasicLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA403BC1EC77EF500283DB5 /* WXGBackupEntryViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXGBackupEntryViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA403BD1EC77EF500283DB5 /* WXGBackupImportMessageHelperDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXGBackupImportMessageHelperDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -4589,7 +4593,6 @@
 		6BA4E1FB1EC77A9400283DB5 /* CMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMail.h; sourceTree = "<group>"; };
 		6BA4E1FC1EC77A9400283DB5 /* CMailContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMailContact.h; sourceTree = "<group>"; };
 		6BA4E1FD1EC77A9400283DB5 /* CMailContactInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMailContactInfo.h; sourceTree = "<group>"; };
-		6BA4E1FE1EC77A9400283DB5 /* CMainControll-.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMainControll-.h"; sourceTree = "<group>"; };
 		6BA4E1FF1EC77A9400283DB5 /* CmdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdItem.h; sourceTree = "<group>"; };
 		6BA4E2001EC77A9400283DB5 /* CmdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdList.h; sourceTree = "<group>"; };
 		6BA4E2011EC77A9400283DB5 /* CMediaNoteContactInfoAssist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMediaNoteContactInfoAssist.h; sourceTree = "<group>"; };
@@ -9720,6 +9723,7 @@
 				6BA406101EC77FF700283DB5 /* ScanStreetViewMgr.h */,
 				6BA406111EC77FF700283DB5 /* SearchGuideWebDataMgr.h */,
 				6BA406121EC77FF700283DB5 /* SendMessageMgr.h */,
+				6B05F3611EEFC60400B45857 /* SendMessageMgr.m */,
 				6BA406131EC77FF700283DB5 /* SessionActionStatMgr.h */,
 				6BA406141EC77FF700283DB5 /* ShakeBgImgDownloadMgr.h */,
 				6BA406151EC77FF700283DB5 /* ShakeCardMgr.h */,
@@ -10800,7 +10804,6 @@
 				6BA4E1FB1EC77A9400283DB5 /* CMail.h */,
 				6BA4E1FC1EC77A9400283DB5 /* CMailContact.h */,
 				6BA4E1FD1EC77A9400283DB5 /* CMailContactInfo.h */,
-				6BA4E1FE1EC77A9400283DB5 /* CMainControll-.h */,
 			);
 			name = CMail;
 			sourceTree = "<group>";
@@ -12015,6 +12018,7 @@
 				6BA4E02A1EC777E400283DB5 /* BraceletRankUtils.h */,
 				6BA4E02B1EC777E400283DB5 /* BrandServiceSearchCommonUtil.h */,
 				6BA4E02C1EC777E400283DB5 /* CAppUtil.h */,
+				6B05F3671EEFC98400B45857 /* CAppUtil.m */,
 				6BA4E02D1EC777E400283DB5 /* CControlUtil.h */,
 				6BA4E02E1EC777E400283DB5 /* ChatRoomUtils.h */,
 				6BA4E02F1EC777E400283DB5 /* CommonUtility.h */,
@@ -15764,7 +15768,7 @@
 				6BA400B71EC77EE800283DB5 /* MyFavoritesViewControllerDelegate-Protocol.h */,
 				6BA400B81EC77EE800283DB5 /* MyUIScrollViewDelegate.h */,
 				6BA400B91EC77EE800283DB5 /* NavigateLogicControllerDelegate-Protocol.h */,
-				6BA400BA1EC77EE800283DB5 /* NetworkStatusDelegate-Protocol.h */,
+				6BA400BA1EC77EE800283DB5 /* NetworkStatusDelegate.h */,
 				6BA400BB1EC77EE800283DB5 /* NewChatRoomMemberItemViewDelegate-Protocol.h */,
 				6BA400BC1EC77EE800283DB5 /* NewContactsSearchPanelViewDelegate.h */,
 				6BA400BD1EC77EE800283DB5 /* NewQRCodeScannerDelegate-Protocol.h */,
@@ -16522,7 +16526,7 @@
 				6BA403B71EC77EF500283DB5 /* WXCMultiTalkApiDelegate-Protocol.h */,
 				6BA403B81EC77EF500283DB5 /* WXCNetWorkDelegate-Protocol.h */,
 				6BA403B91EC77EF500283DB5 /* WXCNetWorkProxyDelegate-Protocol.h */,
-				6BA403BA1EC77EF500283DB5 /* WXCNetworkStatusDelegate-Protocol.h */,
+				6BA403BA1EC77EF500283DB5 /* WXCNetworkStatusDelegate.h */,
 				6BA403BB1EC77EF500283DB5 /* WXGBackupBasicLogicDelegate-Protocol.h */,
 				6BA403BC1EC77EF500283DB5 /* WXGBackupEntryViewControllerDelegate-Protocol.h */,
 				6BA403BD1EC77EF500283DB5 /* WXGBackupImportMessageHelperDelegate-Protocol.h */,
@@ -19367,6 +19371,7 @@
 				6B95075B1EDC786B0074133A /* MMCommonAdapter.m in Sources */,
 				6B8031871EC8B01F0090657F /* CAppObserverCenter.m in Sources */,
 				6B5163C31ED91CD90089CEAC /* ContactSettingViewController.m in Sources */,
+				6B05F3681EEFC98400B45857 /* CAppUtil.m in Sources */,
 				6B4C7D6C1ED3FC1A00CAF1EB /* UIViewController+ModalView.m in Sources */,
 				6B4C7D681ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m in Sources */,
 				6BEB30431EE6AFD500548D56 /* DelaySwitchSettingLogic.m in Sources */,
@@ -19378,6 +19383,7 @@
 				6BEB30411EE69BFA00548D56 /* PeopleNearByListViewController.m in Sources */,
 				6BED846D1EEE7EF600F84BEC /* CMessageMgr.m in Sources */,
 				6B71B5911ED7DA410010DFEF /* WCDeviceM7Logic.m in Sources */,
+				6B05F3621EEFC60400B45857 /* SendMessageMgr.m in Sources */,
 				6BF538621EC76BAE00D8D56C /* AppDelegate.m in Sources */,
 				6B5163BB1ED916320089CEAC /* WCActionSheet.m in Sources */,
 				6B3A42301EEE2A20003E2B25 /* NewMainFrameViewController.m in Sources */,

@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "MMService.h"
-
 #import "IAudioToMessageExt.h"
 #import "IClearDataMgrExt.h"
 #import "IEmoticonExt.h"
@@ -248,8 +246,6 @@
 - (_Bool)SaveMesVoice:(id)arg1 MsgWrap:(id)arg2;
 - (_Bool)SaveMsgThumb:(id)arg1 MsgWrap:(id)arg2;
 - (_Bool)SaveMesImg:(id)arg1 MsgWrap:(id)arg2;
-- (void)dealloc;
-- (id)init;
 - (void)MainThreadNotifyToExt:(id)arg1;
 - (void)AsyncOnPushMsg:(id)arg1;
 - (void)AsyncOnDelMsg:(id)arg1 MsgWrap:(id)arg2;

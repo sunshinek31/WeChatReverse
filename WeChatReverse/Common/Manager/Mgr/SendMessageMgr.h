@@ -6,33 +6,23 @@
 
 #import "MMService.h"
 
-#import "MMService.h"
-
 @class NSRecursiveLock, NSString;
 
 @interface SendMessageMgr : MMService <MMService>
 {
     NSRecursiveLock *m_oLock;
-    unsigned long long m_uiQueueCount;
-    _Bool m_isMigrated;
+    NSUInteger m_uiQueueCount;
+    BOOL m_isMigrated;
 }
 
-- (void).cxx_destruct;
 - (id)getPBPath;
-- (unsigned long long)GetCountOfSendMessage;
+- (NSUInteger)GetCountOfSendMessage;
 - (id)getSendMessages;
 - (void)DeleteSendMessageByChatName:(id)arg1 localId:(unsigned int)arg2;
-- (void)AddMsgToSendTable:(id)arg1 MsgWrap:(id)arg2;
+- (void)AddMsgToSendTable:(id)arg1 MsgWrap:(id)msgWrap;
 - (void)saveMessages:(id)arg1;
 - (id)loadMessages;
 - (void)migrateSendMessage:(id)arg1;
-- (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

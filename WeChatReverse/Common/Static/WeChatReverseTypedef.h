@@ -29,6 +29,9 @@ struct XmlReaderNode_t {
     int _field9;
 };
 
+typedef struct {
+    
+} vector_a9c0768e;
 
 typedef struct  {
     
