@@ -16,7 +16,7 @@
 }
 
 @property(readonly, nonatomic) BaseChatCellView *cellView; // @synthesize cellView=m_cellView;
-- (void).cxx_destruct;
+
 - (void)layoutSubviews;
 - (void)didEndDisplayed;
 - (void)willBeDisplayed;

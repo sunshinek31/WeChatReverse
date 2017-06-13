@@ -44,6 +44,20 @@
     [sendMsgMgr AddMsgToSendTable:nil MsgWrap:msgWrap];
     
     [[CAppUtil getMainController] SendMsg:nil];
+    
+    
+    [self HandleMsgList:nil MsgList:nil];
+    
+    [self AsyncOnPreAddMsg:nil MsgWrap:msgWrap];
+    [self AsyncOnAddMsgForSession:nil MsgWrap:msgWrap];
+    
+    [self ModMsg:nil MsgWrap:msgWrap];
+}
+
+// See: -[CMessageMgr AsyncOnPreAddMsg:MsgWrap];
+- (void)AsyncOnPreAddMsg:(id)arg1 MsgWrap:(id)arg2
+{
+    
 }
 
 #pragma mark -

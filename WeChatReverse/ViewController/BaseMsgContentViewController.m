@@ -7,6 +7,9 @@
 //
 
 #import "BaseMsgContentViewController.h"
+#import "CMessageWrap.h"
+#import "BaseMessageViewModel.h"
+#import "MMTableView.h"
 
 @implementation BaseMsgContentViewController
 @synthesize m_msgReceivingTipsView = m_msgReceivingTipsView;
@@ -1569,10 +1572,33 @@
 {
     
 }
-- (void)addMessageNode:(id)arg1 layout:(BOOL)arg2 addMoreMsg:(BOOL)arg3
+
+- (void)addMessageNode:(CMessageWrap *)msgWrap layout:(BOOL)layout addMoreMsg:(BOOL)moreMsg
 {
+    if ([CMessageWrap isPreViewMsg]) {
+        
+        [self findNodeDataByLocalId:0];
+    }
     
+    [CMessageWrap isSenderFromMsgWrap:nil];
+    
+    [self addSplitNode:nil addMoreMsg:moreMsg];
+    
+    [self addTimeNode:nil layout:layout addMoreMsg:moreMsg];
+    
+    [m_delegate GetContact];
+    
+    [self isShowHeadImage:nil];
+    
+    [self getMessageChatContactByMessageWrap:msgWrap];
+    
+    [BaseMessageViewModel createMessageViewModelWithMessageWrap:msgWrap contact:nil chatContact:nil];
+    
+    [m_tableView reloadData];
+//    df
+    [self updateMessageNodeStatus:nil];
 }
+
 - (id)addSplitNode:(id)arg1 addMoreMsg:(BOOL)arg2
 {
     return nil;

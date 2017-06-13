@@ -24,6 +24,11 @@
 		6B3BBE191EDAD281002602B6 /* CContactMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE181EDAD281002602B6 /* CContactMgr.m */; };
 		6B3BBE231EDAE8FE002602B6 /* iConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE221EDAE8FE002602B6 /* iConsole.m */; };
 		6B3BBE261EDAE9E5002602B6 /* iConsoleWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BBE251EDAE9E5002602B6 /* iConsoleWindow.m */; };
+		6B41088F1EEFD92F00C26913 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B41088E1EEFD92F00C26913 /* ChatTableViewCell.m */; };
+		6B4108911EEFD94A00C26913 /* MultiSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4108901EEFD94A00C26913 /* MultiSelectTableViewCell.m */; };
+		6B4108931EEFD9DB00C26913 /* BaseMessageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4108921EEFD9DB00C26913 /* BaseMessageViewModel.m */; };
+		6B4108951EEFDA0900C26913 /* BaseChatViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4108941EEFDA0900C26913 /* BaseChatViewModel.m */; };
+		6B4108971EEFDA8100C26913 /* CMessageWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4108961EEFDA8100C26913 /* CMessageWrap.m */; };
 		6B4C7D681ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C7D671ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m */; };
 		6B4C7D6C1ED3FC1A00CAF1EB /* UIViewController+ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C7D6B1ED3FC1A00CAF1EB /* UIViewController+ModalView.m */; };
 		6B5163BB1ED916320089CEAC /* WCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163BA1ED916320089CEAC /* WCActionSheet.m */; };
@@ -188,6 +193,11 @@
 		6B3BBE221EDAE8FE002602B6 /* iConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iConsole.m; sourceTree = "<group>"; };
 		6B3BBE241EDAE9E5002602B6 /* iConsoleWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iConsoleWindow.h; path = WeChatReverse/View/Window/iConsoleWindow.h; sourceTree = SOURCE_ROOT; };
 		6B3BBE251EDAE9E5002602B6 /* iConsoleWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iConsoleWindow.m; path = WeChatReverse/View/Window/iConsoleWindow.m; sourceTree = SOURCE_ROOT; };
+		6B41088E1EEFD92F00C26913 /* ChatTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		6B4108901EEFD94A00C26913 /* MultiSelectTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiSelectTableViewCell.m; sourceTree = "<group>"; };
+		6B4108921EEFD9DB00C26913 /* BaseMessageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseMessageViewModel.m; sourceTree = "<group>"; };
+		6B4108941EEFDA0900C26913 /* BaseChatViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseChatViewModel.m; sourceTree = "<group>"; };
+		6B4108961EEFDA8100C26913 /* CMessageWrap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMessageWrap.m; sourceTree = "<group>"; };
 		6B4C7D671ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTagNewDetailViewController.m; sourceTree = "<group>"; };
 		6B4C7D6A1ED3FC1A00CAF1EB /* UIViewController+ModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ModalView.h"; path = "WeChatReverse/Common/Category/UIViewController+ModalView.h"; sourceTree = SOURCE_ROOT; };
 		6B4C7D6B1ED3FC1A00CAF1EB /* UIViewController+ModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ModalView.m"; path = "WeChatReverse/Common/Category/UIViewController+ModalView.m"; sourceTree = SOURCE_ROOT; };
@@ -7871,7 +7881,7 @@
 		6BA4FF331EC77EE400283DB5 /* IMapDirectionsMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMapDirectionsMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF341EC77EE400283DB5 /* IMassSendExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMassSendExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF351EC77EE400283DB5 /* IMemberCardListLogicExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMemberCardListLogicExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FF361EC77EE400283DB5 /* IMessageNodeStatusExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMessageNodeStatusExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FF361EC77EE400283DB5 /* IMessageNodeStatusExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMessageNodeStatusExt.h; sourceTree = "<group>"; };
 		6BA4FF371EC77EE400283DB5 /* IMessageWrapExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMessageWrapExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF381EC77EE400283DB5 /* IMessageWrapForBizExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMessageWrapForBizExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF391EC77EE400283DB5 /* IMessageWrapImgExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMessageWrapImgExt.h; sourceTree = "<group>"; };
@@ -9924,28 +9934,6 @@
 			path = Mgr;
 			sourceTree = "<group>";
 		};
-		6B3BBDDD1EDAB7ED002602B6 /* AA */ = {
-			isa = PBXGroup;
-			children = (
-				6BA4E0A41EC77A9300283DB5 /* AAAlertItem.h */,
-				6BA4E0A51EC77A9300283DB5 /* AACloseNotifyRes.h */,
-				6BA4E0A61EC77A9300283DB5 /* AACloseRes.h */,
-				6BA4E0A71EC77A9300283DB5 /* AALaunchByMoneyRes.h */,
-				6BA4E0A81EC77A9300283DB5 /* AALaunchByPersonRes.h */,
-				6BA4E0A91EC77A9300283DB5 /* AALaunchItem.h */,
-				6BA4E0AA1EC77A9300283DB5 /* AAListRecord.h */,
-				6BA4E0AB1EC77A9300283DB5 /* AAOperationRes.h */,
-				6BA4E0AC1EC77A9300283DB5 /* AAPayer.h */,
-				6BA4E0AD1EC77A9300283DB5 /* AAPayRes.h */,
-				6BA4E0AE1EC77A9300283DB5 /* AAPayUrgeRes.h */,
-				6BA4E0AF1EC77A9300283DB5 /* AAQueryDetailRes.h */,
-				6BA4E0B01EC77A9300283DB5 /* AAQueryListRes.h */,
-				6BA4E0B11EC77A9300283DB5 /* AARealNameItem.h */,
-				6BA4E0B21EC77A9300283DB5 /* AAReceiver.h */,
-			);
-			name = AA;
-			sourceTree = "<group>";
-		};
 		6B3BBDDE1EDAB803002602B6 /* Action */ = {
 			isa = PBXGroup;
 			children = (
@@ -10771,19 +10759,6 @@
 			name = Add;
 			sourceTree = "<group>";
 		};
-		6B3BBE0B1EDABBA7002602B6 /* AB */ = {
-			isa = PBXGroup;
-			children = (
-				6BA4E0B41EC77A9300283DB5 /* ABTestExpKeyItem.h */,
-				6BA4E0B51EC77A9300283DB5 /* ABTestItem.h */,
-				6BA4E0B61EC77A9300283DB5 /* ABTestListWrap.h */,
-				6BA4E0B71EC77A9300283DB5 /* ABtestPoint.h */,
-				6BA4E0B81EC77A9300283DB5 /* ABtestPointPeriod.h */,
-				6BA4E0B31EC77A9300283DB5 /* ABtestCase.h */,
-			);
-			name = AB;
-			sourceTree = "<group>";
-		};
 		6B3BBE0C1EDABBC7002602B6 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -10806,20 +10781,6 @@
 				6BA4E1FD1EC77A9400283DB5 /* CMailContactInfo.h */,
 			);
 			name = CMail;
-			sourceTree = "<group>";
-		};
-		6B3BBE0E1EDABBEF002602B6 /* CM */ = {
-			isa = PBXGroup;
-			children = (
-				6BA4E2021EC77A9400283DB5 /* CMessage.h */,
-				6BA4E2031EC77A9400283DB5 /* CMessageDB.h */,
-				6BA4E2041EC77A9400283DB5 /* CMessageWrap.h */,
-				6BA4E2051EC77A9400283DB5 /* CMMDB.h */,
-				6BA4E2061EC77A9400283DB5 /* CMMKVCommReport.h */,
-				6BA4E2071EC77A9400283DB5 /* CMMVector.h */,
-				6BA4E2081EC77A9400283DB5 /* CModUserImgWrap.h */,
-			);
-			name = CM;
 			sourceTree = "<group>";
 		};
 		6B3BBE0F1EDABC09002602B6 /* CUpload */ = {
@@ -10873,6 +10834,56 @@
 				6BA4E2711EC77A9400283DB5 /* DelayInfo.h */,
 			);
 			name = Delay;
+			sourceTree = "<group>";
+		};
+		6B4108981EEFDAC500C26913 /* CM */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E2021EC77A9400283DB5 /* CMessage.h */,
+				6BA4E2031EC77A9400283DB5 /* CMessageDB.h */,
+				6BA4E2041EC77A9400283DB5 /* CMessageWrap.h */,
+				6B4108961EEFDA8100C26913 /* CMessageWrap.m */,
+				6BA4E2051EC77A9400283DB5 /* CMMDB.h */,
+				6BA4E2061EC77A9400283DB5 /* CMMKVCommReport.h */,
+				6BA4E2071EC77A9400283DB5 /* CMMVector.h */,
+				6BA4E2081EC77A9400283DB5 /* CModUserImgWrap.h */,
+			);
+			path = CM;
+			sourceTree = "<group>";
+		};
+		6B4108991EEFDB1300C26913 /* AA */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0A41EC77A9300283DB5 /* AAAlertItem.h */,
+				6BA4E0A51EC77A9300283DB5 /* AACloseNotifyRes.h */,
+				6BA4E0A61EC77A9300283DB5 /* AACloseRes.h */,
+				6BA4E0A71EC77A9300283DB5 /* AALaunchByMoneyRes.h */,
+				6BA4E0A81EC77A9300283DB5 /* AALaunchByPersonRes.h */,
+				6BA4E0A91EC77A9300283DB5 /* AALaunchItem.h */,
+				6BA4E0AA1EC77A9300283DB5 /* AAListRecord.h */,
+				6BA4E0AB1EC77A9300283DB5 /* AAOperationRes.h */,
+				6BA4E0AC1EC77A9300283DB5 /* AAPayer.h */,
+				6BA4E0AD1EC77A9300283DB5 /* AAPayRes.h */,
+				6BA4E0AE1EC77A9300283DB5 /* AAPayUrgeRes.h */,
+				6BA4E0AF1EC77A9300283DB5 /* AAQueryDetailRes.h */,
+				6BA4E0B01EC77A9300283DB5 /* AAQueryListRes.h */,
+				6BA4E0B11EC77A9300283DB5 /* AARealNameItem.h */,
+				6BA4E0B21EC77A9300283DB5 /* AAReceiver.h */,
+			);
+			path = AA;
+			sourceTree = "<group>";
+		};
+		6B41089A1EEFDB1900C26913 /* AB */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E0B41EC77A9300283DB5 /* ABTestExpKeyItem.h */,
+				6BA4E0B51EC77A9300283DB5 /* ABTestItem.h */,
+				6BA4E0B61EC77A9300283DB5 /* ABTestListWrap.h */,
+				6BA4E0B71EC77A9300283DB5 /* ABtestPoint.h */,
+				6BA4E0B81EC77A9300283DB5 /* ABtestPointPeriod.h */,
+				6BA4E0B31EC77A9300283DB5 /* ABtestCase.h */,
+			);
+			path = AB;
 			sourceTree = "<group>";
 		};
 		6B4C7D651ED3FAE600CAF1EB /* Contact */ = {
@@ -12051,6 +12062,36 @@
 		6BA4E0631EC7797100283DB5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				6BA4E0641EC7798000283DB5 /* ChatTableViewCell.h */,
+				6B41088E1EEFD92F00C26913 /* ChatTableViewCell.m */,
+				6BA4E0651EC7798000283DB5 /* ContactsItemCell.h */,
+				6BA4E0661EC7798000283DB5 /* DesignerPortfolioCell.h */,
+				6BA4E0671EC7798000283DB5 /* EmoticonBoardPageCollectionEmoticonGridCell.h */,
+				6BA4E0681EC7798000283DB5 /* EmoticonBoardPageCollectionQQEmojiCell.h */,
+				6BA4E0691EC7798000283DB5 /* EmoticonBoardPageCollectionRecommendCell.h */,
+				6BA4E06A1EC7798000283DB5 /* EmoticonCustomManageCell.h */,
+				6BA4E06B1EC7798000283DB5 /* EmoticonManageCell.h */,
+				6BA4E06C1EC7798000283DB5 /* EmoticonStoreDetailDonorCell.h */,
+				6BA4E06D1EC7798000283DB5 /* EmotionCell.h */,
+				6BA4E06E1EC7798000283DB5 /* EmotionPurchasedCell.h */,
+				6BA4E06F1EC7798000283DB5 /* EmotionStoreDesignerEmojiCell.h */,
+				6BA4E0701EC7798000283DB5 /* EmotionStoreRewardDonorCell.h */,
+				6BA4E0711EC7798000283DB5 /* EnterpriseSearchContactCell.h */,
+				6BA4E0721EC7798000283DB5 /* FavMultiMenuTableViewCell.h */,
+				6BA4E0731EC7798000283DB5 /* FileItemCell.h */,
+				6BA4E0741EC7798000283DB5 /* FindContactSearchCell.h */,
+				6BA4E0751EC7798000283DB5 /* FTSAddressBookFriendCell.h */,
+				6BA4E0761EC7798000283DB5 /* FTSContactCell.h */,
+				6BA4E0771EC7798000283DB5 /* FTSCreateChatRoomCell.h */,
+				6BA4E0781EC7798000283DB5 /* FTSFavCell.h */,
+				6BA4E0791EC7798000283DB5 /* FTSFeatureCell.h */,
+				6BA4E07A1EC7798000283DB5 /* FTSFirstTitleCell.h */,
+				6BA4E07B1EC7798000283DB5 /* FTSMoreCell.h */,
+				6BA4E07C1EC7798000283DB5 /* FTSMsgCell.h */,
+				6BA4E07D1EC7798000283DB5 /* FTSSearchCell.h */,
+				6BA4E07E1EC7798000283DB5 /* FTSTitleCell.h */,
+				6BA4E07F1EC7798000283DB5 /* FTSWCGameCell.h */,
+				6BA4E0801EC7798000283DB5 /* FTSWebSearchCell.h */,
 				6BA40EA81EC784AC00283DB5 /* GameCenterClassifyCell.h */,
 				6BA40EA91EC784AC00283DB5 /* GameCenterFriendPlayInfoCell.h */,
 				6BA40EAA1EC784AC00283DB5 /* GameCenterFriendRankCell.h */,
@@ -12088,7 +12129,10 @@
 				6BA40ECA1EC784AC00283DB5 /* MMStoreEmotionStoreListCell.h */,
 				6BA40ECB1EC784AC00283DB5 /* MMTableViewCell.h */,
 				6BFEE79C1EE54A40001CB482 /* MMTableViewCell.m */,
+				6BFEE79E1EE54A7E001CB482 /* MMTableViewCellInfo.h */,
+				6BFEE79F1EE54A7E001CB482 /* MMTableViewCellInfo.m */,
 				6BA40ECC1EC784AC00283DB5 /* MultiSelectTableViewCell.h */,
+				6B4108901EEFD94A00C26913 /* MultiSelectTableViewCell.m */,
 				6BA40ECD1EC784AC00283DB5 /* MultiTalkContactCell.h */,
 				6BA40ECE1EC784AC00283DB5 /* NewContactsItemCell.h */,
 				6BA40ECF1EC784AC00283DB5 /* NewMainFrameCell.h */,
@@ -12144,37 +12188,6 @@
 				6BA40F011EC784AC00283DB5 /* WCWatchContactsCell.h */,
 				6BA40F021EC784AC00283DB5 /* WXGBackupSessionItemCell.h */,
 				6BA40F031EC784AC00283DB5 /* WXGMigrationSessionItemCell.h */,
-				6BA4E0641EC7798000283DB5 /* ChatTableViewCell.h */,
-				6BA4E0651EC7798000283DB5 /* ContactsItemCell.h */,
-				6BA4E0661EC7798000283DB5 /* DesignerPortfolioCell.h */,
-				6BA4E0671EC7798000283DB5 /* EmoticonBoardPageCollectionEmoticonGridCell.h */,
-				6BA4E0681EC7798000283DB5 /* EmoticonBoardPageCollectionQQEmojiCell.h */,
-				6BA4E0691EC7798000283DB5 /* EmoticonBoardPageCollectionRecommendCell.h */,
-				6BA4E06A1EC7798000283DB5 /* EmoticonCustomManageCell.h */,
-				6BA4E06B1EC7798000283DB5 /* EmoticonManageCell.h */,
-				6BA4E06C1EC7798000283DB5 /* EmoticonStoreDetailDonorCell.h */,
-				6BA4E06D1EC7798000283DB5 /* EmotionCell.h */,
-				6BA4E06E1EC7798000283DB5 /* EmotionPurchasedCell.h */,
-				6BA4E06F1EC7798000283DB5 /* EmotionStoreDesignerEmojiCell.h */,
-				6BA4E0701EC7798000283DB5 /* EmotionStoreRewardDonorCell.h */,
-				6BA4E0711EC7798000283DB5 /* EnterpriseSearchContactCell.h */,
-				6BA4E0721EC7798000283DB5 /* FavMultiMenuTableViewCell.h */,
-				6BA4E0731EC7798000283DB5 /* FileItemCell.h */,
-				6BA4E0741EC7798000283DB5 /* FindContactSearchCell.h */,
-				6BA4E0751EC7798000283DB5 /* FTSAddressBookFriendCell.h */,
-				6BA4E0761EC7798000283DB5 /* FTSContactCell.h */,
-				6BA4E0771EC7798000283DB5 /* FTSCreateChatRoomCell.h */,
-				6BA4E0781EC7798000283DB5 /* FTSFavCell.h */,
-				6BA4E0791EC7798000283DB5 /* FTSFeatureCell.h */,
-				6BA4E07A1EC7798000283DB5 /* FTSFirstTitleCell.h */,
-				6BA4E07B1EC7798000283DB5 /* FTSMoreCell.h */,
-				6BA4E07C1EC7798000283DB5 /* FTSMsgCell.h */,
-				6BA4E07D1EC7798000283DB5 /* FTSSearchCell.h */,
-				6BA4E07E1EC7798000283DB5 /* FTSTitleCell.h */,
-				6BA4E07F1EC7798000283DB5 /* FTSWCGameCell.h */,
-				6BA4E0801EC7798000283DB5 /* FTSWebSearchCell.h */,
-				6BFEE79E1EE54A7E001CB482 /* MMTableViewCellInfo.h */,
-				6BFEE79F1EE54A7E001CB482 /* MMTableViewCellInfo.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -15385,7 +15398,7 @@
 				6BA4FF331EC77EE400283DB5 /* IMapDirectionsMgrExt-Protocol.h */,
 				6BA4FF341EC77EE400283DB5 /* IMassSendExt-Protocol.h */,
 				6BA4FF351EC77EE400283DB5 /* IMemberCardListLogicExt-Protocol.h */,
-				6BA4FF361EC77EE400283DB5 /* IMessageNodeStatusExt-Protocol.h */,
+				6BA4FF361EC77EE400283DB5 /* IMessageNodeStatusExt.h */,
 				6BA4FF371EC77EE400283DB5 /* IMessageWrapExt-Protocol.h */,
 				6BA4FF381EC77EE400283DB5 /* IMessageWrapForBizExt-Protocol.h */,
 				6BA4FF391EC77EE400283DB5 /* IMessageWrapImgExt.h */,
@@ -17790,11 +17803,13 @@
 				6BB5DDB91EC775FC001AF22F /* AppWCCardMessageViewModel.h */,
 				6BB5DDBA1EC775FC001AF22F /* AttributedReaderMessageViewModel.h */,
 				6BB5DDBB1EC775FC001AF22F /* BaseChatViewModel.h */,
+				6B4108941EEFDA0900C26913 /* BaseChatViewModel.m */,
 				6BB5DDBC1EC775FC001AF22F /* BaseMessageViewModel.h */,
 				6BB5DDBD1EC775FC001AF22F /* ChatSplitViewModel.h */,
 				6BB5DDBE1EC775FC001AF22F /* ChatTimeViewModel.h */,
 				6BB5DDBF1EC775FC001AF22F /* CommonMessageViewModel.h */,
 				6BB5DDC01EC775FC001AF22F /* EmoticonMessageViewModel.h */,
+				6B4108921EEFD9DB00C26913 /* BaseMessageViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -18381,14 +18396,14 @@
 		6BF5389A1EC76D2300D8D56C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6B41089A1EEFDB1900C26913 /* AB */,
+				6B4108991EEFDB1300C26913 /* AA */,
 				6BA4E09E1EC77A9300283DB5 /* __BlueChannel.h */,
 				6BA4E09F1EC77A9300283DB5 /* __BlueDevice.h */,
 				6BA4E0A01EC77A9300283DB5 /* __CThreadWarp.h */,
 				6BA4E0A11EC77A9300283DB5 /* __DeviceInfo.h */,
 				6BA4E0A21EC77A9300283DB5 /* __ThreadWarp.h */,
 				6BA4E0A31EC77A9300283DB5 /* __WCDeviceSendDataTask.h */,
-				6B3BBDDD1EDAB7ED002602B6 /* AA */,
-				6B3BBE0B1EDABBA7002602B6 /* AB */,
 				6BA4E0B91EC77A9300283DB5 /* AccelerometerFilter.h */,
 				6B3BBDDF1EDAB81A002602B6 /* Account */,
 				6B3BBDDE1EDAB803002602B6 /* Action */,
@@ -18503,7 +18518,7 @@
 				6BA4E1F81EC77A9400283DB5 /* CleanTaskInfo.h */,
 				6BA4E1F91EC77A9400283DB5 /* CliReportKVDataPackage.h */,
 				6BA4E1FA1EC77A9400283DB5 /* CLocalInfo.h */,
-				6B3BBE0E1EDABBEF002602B6 /* CM */,
+				6B4108981EEFDAC500C26913 /* CM */,
 				6B3BBE0D1EDABBE4002602B6 /* CMail */,
 				6BA4E1FF1EC77A9400283DB5 /* CmdItem.h */,
 				6BA4E2001EC77A9400283DB5 /* CmdList.h */,
@@ -19359,6 +19374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BE5EA811EE7E82000D086BB /* MMUIViewController.m in Sources */,
+				6B4108911EEFD94A00C26913 /* MultiSelectTableViewCell.m in Sources */,
 				6BE732E21EDFFA010086075C /* WCHomepageMgr.m in Sources */,
 				6B3A42341EEE3707003E2B25 /* MMMsgLogicManager.m in Sources */,
 				6BFEE7AD1EE556B7001CB482 /* MMTableViewSectionInfo.m in Sources */,
@@ -19375,12 +19391,14 @@
 				6B4C7D6C1ED3FC1A00CAF1EB /* UIViewController+ModalView.m in Sources */,
 				6B4C7D681ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m in Sources */,
 				6BEB30431EE6AFD500548D56 /* DelaySwitchSettingLogic.m in Sources */,
+				6B41088F1EEFD92F00C26913 /* ChatTableViewCell.m in Sources */,
 				6B80318D1EC8B2470090657F /* CAppViewControllerManager.m in Sources */,
 				6BD57CE91EE94D8A00735833 /* MMSearchBarDisplayController.m in Sources */,
 				6B526D241EE28BF40057D99D /* NewContactsSearchPanelView.m in Sources */,
 				6BFEE7AA1EE55653001CB482 /* MMTableViewInfo.m in Sources */,
 				6B0171001EEA86A400E728D5 /* MMUITextView.m in Sources */,
 				6BEB30411EE69BFA00548D56 /* PeopleNearByListViewController.m in Sources */,
+				6B4108951EEFDA0900C26913 /* BaseChatViewModel.m in Sources */,
 				6BED846D1EEE7EF600F84BEC /* CMessageMgr.m in Sources */,
 				6B71B5911ED7DA410010DFEF /* WCDeviceM7Logic.m in Sources */,
 				6B05F3621EEFC60400B45857 /* SendMessageMgr.m in Sources */,
@@ -19414,6 +19432,7 @@
 				6BFEE7A71EE55638001CB482 /* MMTableView.m in Sources */,
 				6B0170FE1EEA85F400E728D5 /* MMTextView.m in Sources */,
 				6BFEE7A01EE54A7E001CB482 /* MMTableViewCellInfo.m in Sources */,
+				6B4108971EEFDA8100C26913 /* CMessageWrap.m in Sources */,
 				6B8031981EC8B50A0090657F /* MMServiceCenter.m in Sources */,
 				6BFEE7A21EE55519001CB482 /* MMUIView.m in Sources */,
 				6BFEE79D1EE54A40001CB482 /* MMTableViewCell.m in Sources */,
@@ -19421,6 +19440,7 @@
 				6BE5EA401EE7A8EE00D086BB /* NewSyncService.m in Sources */,
 				6B0170FC1EEA810A00E728D5 /* MMGrowTextView.m in Sources */,
 				6B3BBDDC1EDAB755002602B6 /* CContactOPLog.m in Sources */,
+				6B4108931EEFD9DB00C26913 /* BaseMessageViewModel.m in Sources */,
 				6B8031AF1EC8BB000090657F /* VoIPTokenRegisterObject.m in Sources */,
 				6B5163C61ED920880089CEAC /* WAAppMsgItem.m in Sources */,
 				6B053AAC1EEA6ABC000448D5 /* MMInputToolView.m in Sources */,

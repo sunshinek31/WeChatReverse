@@ -306,7 +306,7 @@
 - (void)onSightTipsOK;
 - (void)setTableFooterView:(BOOL)arg1;
 - (void)initHistroyMessageNodeData;
-- (void)addMessageNode:(id)arg1 layout:(BOOL)arg2 addMoreMsg:(BOOL)arg3;
+- (void)addMessageNode:(CMessageWrap *)msgWrap layout:(BOOL)layout addMoreMsg:(BOOL)moreMsg;
 - (id)addSplitNode:(id)arg1 addMoreMsg:(BOOL)arg2;
 - (void)addTimeNode:(id)arg1 layout:(BOOL)arg2 addMoreMsg:(BOOL)arg3;
 - (id)getMessageChatContactByMessageWrap:(id)arg1;

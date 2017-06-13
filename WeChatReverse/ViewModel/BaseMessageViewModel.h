@@ -39,7 +39,7 @@
 @property(readonly, nonatomic) _Bool isSender; // @synthesize isSender=m_isSender;
 @property(retain, nonatomic) CMessageWrap *messageWrap; // @synthesize messageWrap=m_messageWrap;
 @property(retain, nonatomic) CBaseContact *contact; // @synthesize contact=m_contact;
-- (void).cxx_destruct;
+
 - (void)onMessageUpdateStatus;
 - (id)chatRoomDisplayName;
 - (struct CGSize)measureContentViewSize:(struct CGSize)arg1;
@@ -53,12 +53,6 @@
 - (void)dealloc;
 - (id)initWithMessageWrap:(id)arg1 contact:(id)arg2 chatContact:(id)arg3;
 @property(readonly, nonatomic) unsigned int msgStatus;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

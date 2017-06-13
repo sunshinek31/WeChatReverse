@@ -51,6 +51,11 @@
     NSMutableDictionary *m_dicSentFailMsg;
 }
 
+
+#pragma mark - IMsgExt
+- (void)OnModMsg:(NSString *)arg1 MsgWrap:(CMessageWrap *)msgWrap;
+
+#pragma mark -
 + (id)GetPathOfOpenUploadCDNFile;
 + (id)GetPathOfOpenUploadFile;
 
@@ -76,7 +81,6 @@
 - (void)enterForeground;
 - (void)reSendAllMsgFromNotificationDone;
 - (id)getSentFailMsgs;
-- (void)OnModMsg:(id)arg1 MsgWrap:(id)arg2;
 - (void)onAuthOK;
 - (id)getSemaphore;
 - (_Bool)IsRecordMsgDownloading:(id)arg1;
@@ -267,6 +271,7 @@
 - (id)escapeKeywordForQueryString:(id)arg1;
 - (_Bool)isContact:(id)arg1 ConfirmToQueryString:(id)arg2;
 - (void)BackGroundAddHelloMsg:(id)arg1;
+#pragma mark -
 
 @end
 

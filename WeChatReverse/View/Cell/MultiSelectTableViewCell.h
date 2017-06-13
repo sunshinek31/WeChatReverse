@@ -4,10 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UITableViewCell.h"
-
-@class UIImageView;
-
 @interface MultiSelectTableViewCell : UITableViewCell
 {
     UIImageView *m_selectedImageView;
@@ -25,7 +21,7 @@
 @property(nonatomic) _Bool m_bIsEditting; // @synthesize m_bIsEditting;
 @property(nonatomic) _Bool m_bNeedOffset; // @synthesize m_bNeedOffset;
 @property(readonly, nonatomic) _Bool m_bSelected; // @synthesize m_bSelected;
-- (void).cxx_destruct;
+
 - (id)hitTest:(struct CGPoint)arg1 withEvent:(id)arg2;
 - (void)layoutSubviews;
 - (void)setEditing:(_Bool)arg1 animated:(_Bool)arg2;
