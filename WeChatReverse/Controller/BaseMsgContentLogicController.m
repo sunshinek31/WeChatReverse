@@ -7,6 +7,9 @@
 //
 
 #import "BaseMsgContentLogicController.h"
+#import "CMessageMgr.h"
+#import "CMessageWrap.h"
+#import "CContact.h"
 
 @implementation BaseMsgContentLogicController
 
@@ -324,9 +327,12 @@
 {
     
 }
-- (void)SendTextMessage:(NSString *)arg1
+- (void)SendTextMessage:(NSString *)textMsg
 {
-    
+    CMessageMgr *msgMgr = [[MMServiceCenter defaultCenter]getService:[CMessageMgr class]];
+    CMessageWrap *msgWrap = [self FormTextMsg:m_contact.m_nsUsrName withText:textMsg];
+    [msgMgr AddMsg:textMsg MsgWrap:msgWrap];
+    [self saveDraft:@""];
 }
 - (void)SendMessageWrap:(CMessageWrap *)arg1
 {

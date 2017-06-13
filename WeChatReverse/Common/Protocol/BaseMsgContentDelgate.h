@@ -85,7 +85,7 @@
 - (void)SendNotGameEmoticonMessage:(CMessageWrap *)arg1 errorMsg:(NSString *)arg2;
 - (void)SendEmoticonMessage:(CEmoticonWrap *)arg1;
 - (void)SendEmojiArtMessage:(NSString *)arg1;
-- (void)SendTextMessage:(NSString *)arg1;
+- (void)SendTextMessage:(NSString *)msg;    /**< 发送文本消息 */
 - (void)SendMessageWrap:(CMessageWrap *)arg1;
 - (CMessageWrap *)GetMessageFromImage:(UIImage *)arg1;
 - (void)SendImageMessage:(UIImage *)arg1 ImageInfo:(ImageInfo *)arg2;
