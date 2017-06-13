@@ -20,6 +20,8 @@
 
 @property(retain, nonatomic) UIImageView *toolView; // @synthesize toolView=_toolView;
 
+
+
 - (void)clickLinkToDealWithSysXml:(id)arg1 fromScene:(id)arg2;
 - (void)onClickReceiveBrandMsg;
 - (void)onClickShieldBrandMsg;
@@ -82,19 +84,12 @@
 - (_Bool)CanSendVoiceMsg;
 - (_Bool)CanSendImageMsg:(id)arg1;
 - (_Bool)CanSendTextMsg:(id)arg1;
-- (id)FormImageMsg:(id)arg1 withImage:(id)arg2 withData:(id)arg3;
-- (id)FormImageMsg:(id)arg1 withImage:(id)arg2 withData:(id)arg3 withImageInfo:(id)arg4;
-- (id)FormImageMsg:(id)arg1 withImage:(id)arg2;
-- (id)FormTextMsg:(id)arg1 withText:(id)arg2;
 - (void)ResendMsg:(id)arg1 MsgWrap:(id)arg2;
-- (void)ModMsg:(id)arg1 MsgWrap:(id)arg2;
-- (void)AddMsg:(id)arg1 MsgWrap:(id)arg2;
-- (void)DelMsg:(id)arg1 MsgList:(id)arg2 DelAll:(_Bool)arg3;
 - (void)clearContactVerifyFlag;
 - (void)clearAllMsg;
-- (void)ClearUnRead:(id)arg1 FromID:(unsigned int)arg2 ToID:(unsigned int)arg3;
 - (id)GetDownMsg:(id)arg1 FromID:(unsigned int)arg2 Limit:(unsigned int)arg3 LeftCount:(unsigned int *)arg4 LeftUnreadCount:(unsigned int *)arg5;
-- (id)GetMsg:(id)arg1 FromID:(unsigned int)arg2 Limit:(unsigned int)arg3 LeftCount:(unsigned int *)arg4 LeftUnreadCount:(unsigned int *)arg5;
+
+
 
 @end
 
