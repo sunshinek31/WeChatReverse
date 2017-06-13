@@ -372,7 +372,7 @@
 		6BA4007C1EC77EE700283DB5 /* MMStepSliderDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMStepSliderDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4007D1EC77EE700283DB5 /* MMStoreEmotionTagSelectDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMStoreEmotionTagSelectDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4007E1EC77EE700283DB5 /* MMTableViewInfoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewInfoDelegate.h; sourceTree = "<group>"; };
-		6BA4007F1EC77EE700283DB5 /* MMThemeManagerExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMThemeManagerExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4007F1EC77EE700283DB5 /* MMThemeManagerExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMThemeManagerExt.h; sourceTree = "<group>"; };
 		6BA400801EC77EE700283DB5 /* MMTipsViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMTipsViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400811EC77EE700283DB5 /* MMToastViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMToastViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400821EC77EE700283DB5 /* MMTransparentButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTransparentButtonDelegate.h; sourceTree = "<group>"; };
@@ -7775,7 +7775,7 @@
 		6BA4FED61EC77EE400283DB5 /* IAPExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FED71EC77EE400283DB5 /* IAppDataExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAppDataExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FED81EC77EE400283DB5 /* IAPPEmoticonDownloadExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPPEmoticonDownloadExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FED91EC77EE400283DB5 /* IAppMsgPathMgr-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAppMsgPathMgr-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FED91EC77EE400283DB5 /* IAppMsgPathMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAppMsgPathMgr.h; sourceTree = "<group>"; };
 		6BA4FEDA1EC77EE400283DB5 /* IAppTrafficExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAppTrafficExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FEDB1EC77EE400283DB5 /* IAppViewControllerManagerExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAppViewControllerManagerExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FEDC1EC77EE400283DB5 /* IAsyncTaskProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAsyncTaskProtocol-Protocol.h"; sourceTree = "<group>"; };
@@ -7953,7 +7953,7 @@
 		6BA4FF881EC77EE500283DB5 /* IStreamVoiceInputExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IStreamVoiceInputExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF891EC77EE500283DB5 /* ISvrErrorExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ISvrErrorExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF8A1EC77EE500283DB5 /* ISysCallCheckExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISysCallCheckExt.h; sourceTree = "<group>"; };
-		6BA4FF8B1EC77EE500283DB5 /* ISysNewXmlMsgExtendOperation-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ISysNewXmlMsgExtendOperation-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FF8B1EC77EE500283DB5 /* ISysNewXmlMsgExtendOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISysNewXmlMsgExtendOperation.h; sourceTree = "<group>"; };
 		6BA4FF8C1EC77EE500283DB5 /* ITemplateMsgRecvExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ITemplateMsgRecvExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF8D1EC77EE500283DB5 /* ITrackPresentExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITrackPresentExt.h; sourceTree = "<group>"; };
 		6BA4FF8E1EC77EE500283DB5 /* ITrackRoomMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITrackRoomMgrExt.h; sourceTree = "<group>"; };
@@ -7968,7 +7968,7 @@
 		6BA4FF971EC77EE500283DB5 /* IViewControllerExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IViewControllerExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF981EC77EE500283DB5 /* IVoiceInputExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IVoiceInputExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF991EC77EE500283DB5 /* IVoicePrintMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IVoicePrintMgrExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FF9A1EC77EE500283DB5 /* IVoiceReminderExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IVoiceReminderExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FF9A1EC77EE500283DB5 /* IVoiceReminderExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVoiceReminderExt.h; sourceTree = "<group>"; };
 		6BA4FF9B1EC77EE500283DB5 /* IVoiceSearchExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IVoiceSearchExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF9C1EC77EE500283DB5 /* IVoiceTransExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IVoiceTransExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF9D1EC77EE500283DB5 /* IVOIPCSSyncExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IVOIPCSSyncExt-Protocol.h"; sourceTree = "<group>"; };
@@ -8585,7 +8585,6 @@
 		6BB5DC5E1EC774DB001AF22F /* BrandSessionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandSessionMgr.h; sourceTree = "<group>"; };
 		6BB5DC5F1EC774DB001AF22F /* BrandStoryMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandStoryMgr.h; sourceTree = "<group>"; };
 		6BB5DC601EC774DB001AF22F /* BubbleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleManager.h; sourceTree = "<group>"; };
-		6BB5DC611EC774DB001AF22F /* CAppViewControllerManager-.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAppViewControllerManager-.h"; sourceTree = "<group>"; };
 		6BB5DC621EC774DB001AF22F /* CBottleContactMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBottleContactMgr.h; sourceTree = "<group>"; };
 		6BB5DC631EC774DB001AF22F /* CContactMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CContactMgr.h; sourceTree = "<group>"; };
 		6BB5DC641EC774DB001AF22F /* CdnComMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CdnComMgr.h; sourceTree = "<group>"; };
@@ -9504,7 +9503,6 @@
 				6BB5DC5F1EC774DB001AF22F /* BrandStoryMgr.h */,
 				6BB5DC601EC774DB001AF22F /* BubbleManager.h */,
 				6BB5DC561EC774DB001AF22F /* BeaconSearchMgr.h */,
-				6BB5DC611EC774DB001AF22F /* CAppViewControllerManager-.h */,
 				6B80318B1EC8B2470090657F /* CAppViewControllerManager.h */,
 				6B80318C1EC8B2470090657F /* CAppViewControllerManager.m */,
 				6BB5DC621EC774DB001AF22F /* CBottleContactMgr.h */,
@@ -15290,7 +15288,7 @@
 				6BA4FED61EC77EE400283DB5 /* IAPExt-Protocol.h */,
 				6BA4FED71EC77EE400283DB5 /* IAppDataExt-Protocol.h */,
 				6BA4FED81EC77EE400283DB5 /* IAPPEmoticonDownloadExt-Protocol.h */,
-				6BA4FED91EC77EE400283DB5 /* IAppMsgPathMgr-Protocol.h */,
+				6BA4FED91EC77EE400283DB5 /* IAppMsgPathMgr.h */,
 				6BA4FEDA1EC77EE400283DB5 /* IAppTrafficExt-Protocol.h */,
 				6BA4FEDB1EC77EE400283DB5 /* IAppViewControllerManagerExt-Protocol.h */,
 				6BA4FEDC1EC77EE400283DB5 /* IAsyncTaskProtocol-Protocol.h */,
@@ -15468,7 +15466,7 @@
 				6BA4FF881EC77EE500283DB5 /* IStreamVoiceInputExt-Protocol.h */,
 				6BA4FF891EC77EE500283DB5 /* ISvrErrorExt-Protocol.h */,
 				6BA4FF8A1EC77EE500283DB5 /* ISysCallCheckExt.h */,
-				6BA4FF8B1EC77EE500283DB5 /* ISysNewXmlMsgExtendOperation-Protocol.h */,
+				6BA4FF8B1EC77EE500283DB5 /* ISysNewXmlMsgExtendOperation.h */,
 				6BA4FF8C1EC77EE500283DB5 /* ITemplateMsgRecvExt-Protocol.h */,
 				6BA4FF8D1EC77EE500283DB5 /* ITrackPresentExt.h */,
 				6BA4FF8E1EC77EE500283DB5 /* ITrackRoomMgrExt.h */,
@@ -15483,7 +15481,7 @@
 				6BA4FF971EC77EE500283DB5 /* IViewControllerExt-Protocol.h */,
 				6BA4FF981EC77EE500283DB5 /* IVoiceInputExt-Protocol.h */,
 				6BA4FF991EC77EE500283DB5 /* IVoicePrintMgrExt-Protocol.h */,
-				6BA4FF9A1EC77EE500283DB5 /* IVoiceReminderExt-Protocol.h */,
+				6BA4FF9A1EC77EE500283DB5 /* IVoiceReminderExt.h */,
 				6BA4FF9B1EC77EE500283DB5 /* IVoiceSearchExt-Protocol.h */,
 				6BA4FF9C1EC77EE500283DB5 /* IVoiceTransExt-Protocol.h */,
 				6BA4FF9D1EC77EE500283DB5 /* IVOIPCSSyncExt-Protocol.h */,
@@ -15707,7 +15705,7 @@
 				6BA4007C1EC77EE700283DB5 /* MMStepSliderDelegate-Protocol.h */,
 				6BA4007D1EC77EE700283DB5 /* MMStoreEmotionTagSelectDelegate-Protocol.h */,
 				6BA4007E1EC77EE700283DB5 /* MMTableViewInfoDelegate.h */,
-				6BA4007F1EC77EE700283DB5 /* MMThemeManagerExt-Protocol.h */,
+				6BA4007F1EC77EE700283DB5 /* MMThemeManagerExt.h */,
 				6BA400801EC77EE700283DB5 /* MMTipsViewControllerDelegate-Protocol.h */,
 				6BA400811EC77EE700283DB5 /* MMToastViewControllerDelegate-Protocol.h */,
 				6BA400821EC77EE700283DB5 /* MMTransparentButtonDelegate.h */,

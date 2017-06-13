@@ -9,7 +9,6 @@
 #import "IAppMsgPathMgr.h"
 #import "IMsgExtendOperation.h"
 #import "ISysNewXmlMsgExtendOperation.h"
-#import "NSCopying.h"
 
 @class AppInnerJumpItem, AppProductItem, AppTVItem, CardTicketItem, EmoticonSharedItem, EmotionDesignerSharedItem, EmotionPageSharedItem, FavoritesItem, GiftCardItem, HardWareItem, ImageInfo, MMAsset, MMWCPushInfo, MallProductItem, MessageExpItem, NSArray, NSData, NSMutableArray, NSMutableDictionary, NSString, OpenSDKAppBrandItem, PushMailWrap, VideoUploadStatInfo, WAAppMsgItem, WCCanvasPageItem, WCPayInfoItem, iWatchAppMsgItem;
 
@@ -152,7 +151,7 @@
 @property(retain, nonatomic) NSString *m_nsFromUsr; // @synthesize m_nsFromUsr;
 @property(nonatomic) long long m_n64MesSvrID; // @synthesize m_n64MesSvrID;
 @property(nonatomic) unsigned int m_uiMesLocalID; // @synthesize m_uiMesLocalID;
-- (void).cxx_destruct;
+
 - (_Bool)isSentOK;
 - (_Bool)IsNewInvitationApprove;
 - (_Bool)IsNewInvitation;
