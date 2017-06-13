@@ -29,6 +29,10 @@
 		6B4108931EEFD9DB00C26913 /* BaseMessageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4108921EEFD9DB00C26913 /* BaseMessageViewModel.m */; };
 		6B4108951EEFDA0900C26913 /* BaseChatViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4108941EEFDA0900C26913 /* BaseChatViewModel.m */; };
 		6B4108971EEFDA8100C26913 /* CMessageWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4108961EEFDA8100C26913 /* CMessageWrap.m */; };
+		6B41089C1EEFDBFD00C26913 /* BaseChatCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B41089B1EEFDBFD00C26913 /* BaseChatCellView.m */; };
+		6B41089E1EEFDD9800C26913 /* TextMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B41089D1EEFDD9800C26913 /* TextMessageCellView.m */; };
+		6B4108A01EEFDEC500C26913 /* CommonMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B41089F1EEFDEC500C26913 /* CommonMessageCellView.m */; };
+		6B4108A21EEFDEE600C26913 /* BaseMessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4108A11EEFDEE600C26913 /* BaseMessageCellView.m */; };
 		6B4C7D681ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C7D671ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m */; };
 		6B4C7D6C1ED3FC1A00CAF1EB /* UIViewController+ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C7D6B1ED3FC1A00CAF1EB /* UIViewController+ModalView.m */; };
 		6B5163BB1ED916320089CEAC /* WCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163BA1ED916320089CEAC /* WCActionSheet.m */; };
@@ -198,6 +202,10 @@
 		6B4108921EEFD9DB00C26913 /* BaseMessageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseMessageViewModel.m; sourceTree = "<group>"; };
 		6B4108941EEFDA0900C26913 /* BaseChatViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseChatViewModel.m; sourceTree = "<group>"; };
 		6B4108961EEFDA8100C26913 /* CMessageWrap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMessageWrap.m; sourceTree = "<group>"; };
+		6B41089B1EEFDBFD00C26913 /* BaseChatCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseChatCellView.m; sourceTree = "<group>"; };
+		6B41089D1EEFDD9800C26913 /* TextMessageCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextMessageCellView.m; sourceTree = "<group>"; };
+		6B41089F1EEFDEC500C26913 /* CommonMessageCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMessageCellView.m; sourceTree = "<group>"; };
+		6B4108A11EEFDEE600C26913 /* BaseMessageCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseMessageCellView.m; sourceTree = "<group>"; };
 		6B4C7D671ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTagNewDetailViewController.m; sourceTree = "<group>"; };
 		6B4C7D6A1ED3FC1A00CAF1EB /* UIViewController+ModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ModalView.h"; path = "WeChatReverse/Common/Category/UIViewController+ModalView.h"; sourceTree = SOURCE_ROOT; };
 		6B4C7D6B1ED3FC1A00CAF1EB /* UIViewController+ModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ModalView.m"; path = "WeChatReverse/Common/Category/UIViewController+ModalView.m"; sourceTree = SOURCE_ROOT; };
@@ -387,7 +395,7 @@
 		6BA4007D1EC77EE700283DB5 /* MMStoreEmotionTagSelectDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMStoreEmotionTagSelectDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4007E1EC77EE700283DB5 /* MMTableViewInfoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewInfoDelegate.h; sourceTree = "<group>"; };
 		6BA4007F1EC77EE700283DB5 /* MMThemeManagerExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMThemeManagerExt.h; sourceTree = "<group>"; };
-		6BA400801EC77EE700283DB5 /* MMTipsViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMTipsViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA400801EC77EE700283DB5 /* MMTipsViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTipsViewControllerDelegate.h; sourceTree = "<group>"; };
 		6BA400811EC77EE700283DB5 /* MMToastViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMToastViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA400821EC77EE700283DB5 /* MMTransparentButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTransparentButtonDelegate.h; sourceTree = "<group>"; };
 		6BA400831EC77EE700283DB5 /* MMTwitterAuthExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMTwitterAuthExt-Protocol.h"; sourceTree = "<group>"; };
@@ -532,7 +540,7 @@
 		6BA401101EC77EE900283DB5 /* ReportStrategyExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReportStrategyExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA401111EC77EE900283DB5 /* ResourceBrowserFilterViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ResourceBrowserFilterViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401131EC77EE900283DB5 /* ReturnToSettingAccoutDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReturnToSettingAccoutDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA401141EC77EE900283DB5 /* RichTextLayoutDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RichTextLayoutDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA401141EC77EE900283DB5 /* RichTextLayoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextLayoutDelegate.h; sourceTree = "<group>"; };
 		6BA401151EC77EE900283DB5 /* RNCachingURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCachingURLProtocol.h; sourceTree = "<group>"; };
 		6BA401161EC77EE900283DB5 /* RoomContactSelectDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RoomContactSelectDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401171EC77EE900283DB5 /* RSHeadImageViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSHeadImageViewDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -647,7 +655,7 @@
 		6BA401841EC77EEB00283DB5 /* TakeOrSelectHeadImageLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TakeOrSelectHeadImageLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401851EC77EEB00283DB5 /* TenpayPasswordCtrlDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TenpayPasswordCtrlDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401861EC77EEB00283DB5 /* TenpaySecureCtrlDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TenpaySecureCtrlDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA401871EC77EEB00283DB5 /* TextFloatPreviewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TextFloatPreviewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA401871EC77EEB00283DB5 /* TextFloatPreviewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFloatPreviewDelegate.h; sourceTree = "<group>"; };
 		6BA401881EC77EEB00283DB5 /* TextLayoutDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TextLayoutDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401891EC77EEB00283DB5 /* textViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textViewDelegate.h; sourceTree = "<group>"; };
 		6BA4018A1EC77EEB00283DB5 /* TipsViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsViewDelegate.h; sourceTree = "<group>"; };
@@ -685,7 +693,7 @@
 		6BA401AB1EC77EEB00283DB5 /* UITextFieldDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextFieldDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401AD1EC77EEC00283DB5 /* UIViewControllerAnimatedTransitioning-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewControllerAnimatedTransitioning-Protocol.h"; sourceTree = "<group>"; };
 		6BA401AF1EC77EEC00283DB5 /* UIViewControllerTransitioningDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewControllerTransitioningDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA401B01EC77EEC00283DB5 /* UIViewForceTouchShakeProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewForceTouchShakeProtocol-Protocol.h"; sourceTree = "<group>"; };
+		6BA401B01EC77EEC00283DB5 /* UIViewForceTouchShakeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewForceTouchShakeProtocol.h; sourceTree = "<group>"; };
 		6BA401B11EC77EEC00283DB5 /* UIWebViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401B21EC77EEC00283DB5 /* UNUserNotificationCenterDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UNUserNotificationCenterDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA401B31EC77EEC00283DB5 /* UploadAFPMgrDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UploadAFPMgrDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -921,8 +929,8 @@
 		6BA4029D1EC77EEF00283DB5 /* WCFestivalRedEnvShareViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCFestivalRedEnvShareViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4029E1EC77EEF00283DB5 /* WCFindFriendLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCFindFriendLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA4029F1EC77EEF00283DB5 /* WCForceTouchPopProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCForceTouchPopProtocol-Protocol.h"; sourceTree = "<group>"; };
-		6BA402A01EC77EEF00283DB5 /* WCForceTouchPreviewProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCForceTouchPreviewProtocol-Protocol.h"; sourceTree = "<group>"; };
-		6BA402A11EC77EEF00283DB5 /* WCForceTouchTriggerLongPressProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCForceTouchTriggerLongPressProtocol-Protocol.h"; sourceTree = "<group>"; };
+		6BA402A01EC77EEF00283DB5 /* WCForceTouchPreviewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCForceTouchPreviewProtocol.h; sourceTree = "<group>"; };
+		6BA402A11EC77EEF00283DB5 /* WCForceTouchTriggerLongPressProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCForceTouchTriggerLongPressProtocol.h; sourceTree = "<group>"; };
 		6BA402A21EC77EEF00283DB5 /* WCGetAddressControlLogicDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCGetAddressControlLogicDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA402A31EC77EEF00283DB5 /* WCGetLatestAddressControlLogicExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCGetLatestAddressControlLogicExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA402A41EC77EEF00283DB5 /* WCGiftCardDetailViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCGiftCardDetailViewDelegate-Protocol.h"; sourceTree = "<group>"; };
@@ -7786,7 +7794,7 @@
 		6BA4FED41EC77EE400283DB5 /* IAddressBookFriendMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAddressBookFriendMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FED51EC77EE400283DB5 /* IAddressBookMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAddressBookMgrExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FED61EC77EE400283DB5 /* IAPExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FED71EC77EE400283DB5 /* IAppDataExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAppDataExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FED71EC77EE400283DB5 /* IAppDataExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAppDataExt.h; sourceTree = "<group>"; };
 		6BA4FED81EC77EE400283DB5 /* IAPPEmoticonDownloadExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPPEmoticonDownloadExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FED91EC77EE400283DB5 /* IAppMsgPathMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAppMsgPathMgr.h; sourceTree = "<group>"; };
 		6BA4FEDA1EC77EE400283DB5 /* IAppTrafficExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAppTrafficExt-Protocol.h"; sourceTree = "<group>"; };
@@ -7936,7 +7944,7 @@
 		6BA4FF6A1EC77EE500283DB5 /* IPublicWifiManagerExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IPublicWifiManagerExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF6B1EC77EE500283DB5 /* IPushSystemMsgExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IPushSystemMsgExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF6C1EC77EE500283DB5 /* IQQAccountMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQQAccountMgrExt-Protocol.h"; sourceTree = "<group>"; };
-		6BA4FF6D1EC77EE500283DB5 /* IQQContactMgrExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQQContactMgrExt-Protocol.h"; sourceTree = "<group>"; };
+		6BA4FF6D1EC77EE500283DB5 /* IQQContactMgrExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQQContactMgrExt.h; sourceTree = "<group>"; };
 		6BA4FF6E1EC77EE500283DB5 /* IQQMailExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQQMailExt.h; sourceTree = "<group>"; };
 		6BA4FF6F1EC77EE500283DB5 /* IQQSessionExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQQSessionExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA4FF701EC77EE500283DB5 /* IRadarSearchExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRadarSearchExt-Protocol.h"; sourceTree = "<group>"; };
@@ -9222,7 +9230,9 @@
 				6BB5DD2A1EC775CA001AF22F /* BackgroundMoveView.h */,
 				6BB5DD2B1EC775CA001AF22F /* BaseBottleView.h */,
 				6BB5DD2C1EC775CA001AF22F /* BaseChatCellView.h */,
+				6B41089B1EEFDBFD00C26913 /* BaseChatCellView.m */,
 				6BB5DD2D1EC775CA001AF22F /* BaseMessageCellView.h */,
+				6B4108A11EEFDEE600C26913 /* BaseMessageCellView.m */,
 				6B62F9DB1EEAE7D4008CD077 /* Bottle */,
 				6B62F9DC1EEAE7DC008CD077 /* Bracelet */,
 				6BB5DD351EC775CA001AF22F /* BrandArticleSearchBaseWebView.h */,
@@ -9234,6 +9244,7 @@
 				6BB5DD4A1EC775CA001AF22F /* CoinView.h */,
 				6BB5DD4B1EC775CA001AF22F /* ColorGradientView.h */,
 				6BB5DD4C1EC775CA001AF22F /* CommonMessageCellView.h */,
+				6B41089F1EEFDEC500C26913 /* CommonMessageCellView.m */,
 				6BB5DD4D1EC775CA001AF22F /* ContactsAllSelectPanelView.h */,
 				6BB5DD4E1EC775CA001AF22F /* ContactSelectView.h */,
 				6B5163BC1ED919820089CEAC /* ContactSelectView.m */,
@@ -9440,6 +9451,7 @@
 				6BA408661EC7809F00283DB5 /* TextFloatPreview.h */,
 				6BA408671EC7809F00283DB5 /* TextFlowView.h */,
 				6BA408681EC7809F00283DB5 /* TextMessageCellView.h */,
+				6B41089D1EEFDD9800C26913 /* TextMessageCellView.m */,
 				6BA408691EC7809F00283DB5 /* ThreeWayExpandImageView.h */,
 				6BA4086A1EC7809F00283DB5 /* ThrowBottleLogicView.h */,
 				6BA4086B1EC7809F00283DB5 /* TipsView.h */,
@@ -15303,7 +15315,7 @@
 				6BA4FED41EC77EE400283DB5 /* IAddressBookFriendMgrExt-Protocol.h */,
 				6BA4FED51EC77EE400283DB5 /* IAddressBookMgrExt-Protocol.h */,
 				6BA4FED61EC77EE400283DB5 /* IAPExt-Protocol.h */,
-				6BA4FED71EC77EE400283DB5 /* IAppDataExt-Protocol.h */,
+				6BA4FED71EC77EE400283DB5 /* IAppDataExt.h */,
 				6BA4FED81EC77EE400283DB5 /* IAPPEmoticonDownloadExt-Protocol.h */,
 				6BA4FED91EC77EE400283DB5 /* IAppMsgPathMgr.h */,
 				6BA4FEDA1EC77EE400283DB5 /* IAppTrafficExt-Protocol.h */,
@@ -15453,7 +15465,7 @@
 				6BA4FF6A1EC77EE500283DB5 /* IPublicWifiManagerExt-Protocol.h */,
 				6BA4FF6B1EC77EE500283DB5 /* IPushSystemMsgExt-Protocol.h */,
 				6BA4FF6C1EC77EE500283DB5 /* IQQAccountMgrExt-Protocol.h */,
-				6BA4FF6D1EC77EE500283DB5 /* IQQContactMgrExt-Protocol.h */,
+				6BA4FF6D1EC77EE500283DB5 /* IQQContactMgrExt.h */,
 				6BA4FF6E1EC77EE500283DB5 /* IQQMailExt.h */,
 				6BA4FF6F1EC77EE500283DB5 /* IQQSessionExt-Protocol.h */,
 				6BA4FF701EC77EE500283DB5 /* IRadarSearchExt-Protocol.h */,
@@ -15723,7 +15735,7 @@
 				6BA4007D1EC77EE700283DB5 /* MMStoreEmotionTagSelectDelegate-Protocol.h */,
 				6BA4007E1EC77EE700283DB5 /* MMTableViewInfoDelegate.h */,
 				6BA4007F1EC77EE700283DB5 /* MMThemeManagerExt.h */,
-				6BA400801EC77EE700283DB5 /* MMTipsViewControllerDelegate-Protocol.h */,
+				6BA400801EC77EE700283DB5 /* MMTipsViewControllerDelegate.h */,
 				6BA400811EC77EE700283DB5 /* MMToastViewControllerDelegate-Protocol.h */,
 				6BA400821EC77EE700283DB5 /* MMTransparentButtonDelegate.h */,
 				6BA400831EC77EE700283DB5 /* MMTwitterAuthExt-Protocol.h */,
@@ -15868,7 +15880,7 @@
 				6BA401101EC77EE900283DB5 /* ReportStrategyExt-Protocol.h */,
 				6BA401111EC77EE900283DB5 /* ResourceBrowserFilterViewControllerDelegate-Protocol.h */,
 				6BA401131EC77EE900283DB5 /* ReturnToSettingAccoutDelegate-Protocol.h */,
-				6BA401141EC77EE900283DB5 /* RichTextLayoutDelegate-Protocol.h */,
+				6BA401141EC77EE900283DB5 /* RichTextLayoutDelegate.h */,
 				6BA401151EC77EE900283DB5 /* RNCachingURLProtocol.h */,
 				6BA401161EC77EE900283DB5 /* RoomContactSelectDelegate-Protocol.h */,
 				6BA401171EC77EE900283DB5 /* RSHeadImageViewDelegate-Protocol.h */,
@@ -15983,7 +15995,7 @@
 				6BA401841EC77EEB00283DB5 /* TakeOrSelectHeadImageLogicDelegate-Protocol.h */,
 				6BA401851EC77EEB00283DB5 /* TenpayPasswordCtrlDelegate-Protocol.h */,
 				6BA401861EC77EEB00283DB5 /* TenpaySecureCtrlDelegate-Protocol.h */,
-				6BA401871EC77EEB00283DB5 /* TextFloatPreviewDelegate-Protocol.h */,
+				6BA401871EC77EEB00283DB5 /* TextFloatPreviewDelegate.h */,
 				6BA401881EC77EEB00283DB5 /* TextLayoutDelegate-Protocol.h */,
 				6BA401891EC77EEB00283DB5 /* textViewDelegate.h */,
 				6BA4018A1EC77EEB00283DB5 /* TipsViewDelegate.h */,
@@ -16021,7 +16033,7 @@
 				6BA401AB1EC77EEB00283DB5 /* UITextFieldDelegate-Protocol.h */,
 				6BA401AD1EC77EEC00283DB5 /* UIViewControllerAnimatedTransitioning-Protocol.h */,
 				6BA401AF1EC77EEC00283DB5 /* UIViewControllerTransitioningDelegate-Protocol.h */,
-				6BA401B01EC77EEC00283DB5 /* UIViewForceTouchShakeProtocol-Protocol.h */,
+				6BA401B01EC77EEC00283DB5 /* UIViewForceTouchShakeProtocol.h */,
 				6BA401B11EC77EEC00283DB5 /* UIWebViewDelegate-Protocol.h */,
 				6BA401B21EC77EEC00283DB5 /* UNUserNotificationCenterDelegate-Protocol.h */,
 				6BA401B31EC77EEC00283DB5 /* UploadAFPMgrDelegate-Protocol.h */,
@@ -16257,8 +16269,8 @@
 				6BA4029D1EC77EEF00283DB5 /* WCFestivalRedEnvShareViewDelegate-Protocol.h */,
 				6BA4029E1EC77EEF00283DB5 /* WCFindFriendLogicDelegate-Protocol.h */,
 				6BA4029F1EC77EEF00283DB5 /* WCForceTouchPopProtocol-Protocol.h */,
-				6BA402A01EC77EEF00283DB5 /* WCForceTouchPreviewProtocol-Protocol.h */,
-				6BA402A11EC77EEF00283DB5 /* WCForceTouchTriggerLongPressProtocol-Protocol.h */,
+				6BA402A01EC77EEF00283DB5 /* WCForceTouchPreviewProtocol.h */,
+				6BA402A11EC77EEF00283DB5 /* WCForceTouchTriggerLongPressProtocol.h */,
 				6BA402A21EC77EEF00283DB5 /* WCGetAddressControlLogicDelegate-Protocol.h */,
 				6BA402A31EC77EEF00283DB5 /* WCGetLatestAddressControlLogicExt-Protocol.h */,
 				6BA402A41EC77EEF00283DB5 /* WCGiftCardDetailViewDelegate-Protocol.h */,
@@ -19406,6 +19418,7 @@
 				6B5163BB1ED916320089CEAC /* WCActionSheet.m in Sources */,
 				6B3A42301EEE2A20003E2B25 /* NewMainFrameViewController.m in Sources */,
 				6B80317F1EC8ACA00090657F /* MMUIResponder.m in Sources */,
+				6B41089E1EEFDD9800C26913 /* TextMessageCellView.m in Sources */,
 				6B80319F1EC8B7770090657F /* ResourceMonitor.m in Sources */,
 				6BFEE78E1EE53D2B001CB482 /* RemarkViewController.m in Sources */,
 				6B62F9E21EEAEA6B008CD077 /* MMQuickSendEmoticonView.m in Sources */,
@@ -19414,6 +19427,8 @@
 				6B3BBE261EDAE9E5002602B6 /* iConsoleWindow.m in Sources */,
 				6B5163BD1ED919820089CEAC /* ContactSelectView.m in Sources */,
 				6BE732E51EE007A60086075C /* WCHomepageDataProvider_Sns.m in Sources */,
+				6B4108A01EEFDEC500C26913 /* CommonMessageCellView.m in Sources */,
+				6B4108A21EEFDEE600C26913 /* BaseMessageCellView.m in Sources */,
 				6B8031A31EC8B83D0090657F /* MMSMBaseViewController.m in Sources */,
 				6B8031821EC8ACF50090657F /* MicroMessengerAppDelegate.m in Sources */,
 				6BD57CE71EE943A200735833 /* BaseMsgContentViewController.m in Sources */,
@@ -19440,6 +19455,7 @@
 				6BE5EA401EE7A8EE00D086BB /* NewSyncService.m in Sources */,
 				6B0170FC1EEA810A00E728D5 /* MMGrowTextView.m in Sources */,
 				6B3BBDDC1EDAB755002602B6 /* CContactOPLog.m in Sources */,
+				6B41089C1EEFDBFD00C26913 /* BaseChatCellView.m in Sources */,
 				6B4108931EEFD9DB00C26913 /* BaseMessageViewModel.m in Sources */,
 				6B8031AF1EC8BB000090657F /* VoIPTokenRegisterObject.m in Sources */,
 				6B5163C61ED920880089CEAC /* WAAppMsgItem.m in Sources */,

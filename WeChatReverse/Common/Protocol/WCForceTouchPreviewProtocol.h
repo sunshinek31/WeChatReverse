@@ -4,17 +4,15 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 @class MMUIViewController, NSString, UIView, UIViewController;
 
 @protocol WCForceTouchPreviewProtocol <NSObject>
-- (_Bool)canPeek;
+- (BOOL)canPeek;
 
 @optional
-- (struct CGRect)previewingSourceRectForLocation:(struct CGPoint)arg1 inCoordinateView:(UIView *)arg2;
+- (CGRect)previewingSourceRectForLocation:(CGPoint)arg1 inCoordinateView:(UIView *)arg2;
 - (NSString *)urlForPreView:(MMUIViewController *)arg1;
 - (UIViewController *)viewControllerForPreview:(MMUIViewController *)arg1;
-- (UIViewController *)viewControllerToPreviewWithFromController:(MMUIViewController *)arg1 forLocation:(struct CGPoint)arg2 inCoordinateView:(UIView *)arg3;
+- (UIViewController *)viewControllerToPreviewWithFromController:(MMUIViewController *)arg1 forLocation:(CGPoint)arg2 inCoordinateView:(UIView *)arg3;
 @end
 

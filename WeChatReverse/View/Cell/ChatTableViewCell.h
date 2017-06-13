@@ -6,7 +6,7 @@
 
 #import "MultiSelectTableViewCell.h"
 
-@class BaseChatCellView;
+@class BaseChatCellView,TextMessageCellView;
 
 @interface ChatTableViewCell : MultiSelectTableViewCell
 {

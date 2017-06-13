@@ -5,9 +5,8 @@
 //
 
 #import "BaseChatCellView.h"
-
 #import "UIViewForceTouchShakeProtocol.h"
-#import "WCActionSheetDelegate.h"
+#import "WCActionSheet.h"
 #import "WCForceTouchPreviewProtocol.h"
 #import "WCForceTouchTriggerLongPressProtocol.h"
 
@@ -24,10 +23,15 @@
     _Bool m_isConverting3dTouchToLongPress;
 }
 
-- (void).cxx_destruct;
+@property(readonly, nonatomic) __weak UIView *forceTouchShakeView;
+@property(nonatomic) _Bool highlighted;
+
+
+#pragma mark - WCActionSheet
+- (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;
+
 - (struct CGRect)previewingSourceRectForLocation:(struct CGPoint)arg1 inCoordinateView:(id)arg2;
 - (_Bool)canPeek;
-@property(readonly, nonatomic) __weak UIView *forceTouchShakeView;
 - (void)onTouchCancel;
 - (void)onLongTouch;
 - (void)onTouchEnded;
@@ -55,9 +59,7 @@
 - (void)layoutContentView;
 - (void)layoutFinished;
 - (void)layoutInternal;
-@property(nonatomic) _Bool highlighted;
 - (void)dealloc;
-- (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;
 - (_Bool)canShowMoreMenuItem;
 - (void)onMore:(id)arg1;
 - (id)moreMenuItem;
@@ -87,11 +89,7 @@
 - (void)showOperationMenu;
 - (struct CGRect)targetRectForMenuController;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
+
 @property(readonly, nonatomic) BaseMessageViewModel *viewModel; // @dynamic viewModel;
 
 @end

@@ -11,7 +11,7 @@
 #import "MMTipsViewControllerDelegate.h"
 #import "RichTextLayoutDelegate.h"
 #import "TextFloatPreviewDelegate.h"
-#import "WCActionSheetDelegate.h"
+#import "WCActionSheet.h"
 
 @class MMTipsViewController, NSString, RichTextView, TextFloatPreview, TextMessageViewModel, UIButton, UIImageView, WCUIActionSheet;
 
@@ -25,14 +25,15 @@
     TextFloatPreview *m_floatPreview;
 }
 
-- (void).cxx_destruct;
+#pragma mark - ITranslateMsgMgrExt
+- (void)onTranslateMessageChanged:(CMessageWrap *)arg1;
+- (void)onTranslateMessageFailed:(CMessageWrap *)arg1 errTip:(NSString *)arg2;
+
 - (void)onPhoneClicked:(id)arg1 withRect:(struct CGRect)arg2;
 - (void)onLinkClicked:(id)arg1 withRect:(struct CGRect)arg2;
 - (void)onLinkHighlighted:(_Bool)arg1 url:(id)arg2;
 - (_Bool)handleMagicTapAction:(id)arg1;
 - (void)addMagicTapActions:(id)arg1;
-- (void)onTranslateMessageFailed:(id)arg1 errTip:(id)arg2;
-- (void)onTranslateMessageChanged:(id)arg1;
 - (void)onClickTipsBtn:(unsigned long long)arg1;
 - (void)onWindowHide;
 - (void)onHide;
@@ -68,11 +69,6 @@
 - (void)setViewModel:(id)arg1;
 - (void)dealloc;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 @property(readonly, nonatomic) TextMessageViewModel *viewModel; // @dynamic viewModel;
 
 @end

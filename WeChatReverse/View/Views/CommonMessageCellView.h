@@ -10,19 +10,19 @@
 #import "IContactMgrExt.h"
 #import "IQQContactMgrExt.h"
 #import "IStrangerContactMgrExt.h"
-#import "WCActionSheetDelegate.h"
+#import "WCActionSheet.h"
 
 @class AppMessageBlockButton, CTRichTextView, CommonMessageViewModel, MMCPLabel, MMHeadImageView, NSString, UIActivityIndicatorView, UIButton, UIView, YYAsyncImageView;
 
 @interface CommonMessageCellView : BaseMessageCellView <IAppDataExt, IContactMgrExt, IStrangerContactMgrExt, IQQContactMgrExt, WCActionSheetDelegate>
 {
-    struct CGRect m_bubbleBorderFrame;
+    CGRect m_bubbleBorderFrame;
     MMHeadImageView *m_headImageView;
     MMCPLabel *m_chatRoomNameLabel;
     YYAsyncImageView *m_bgImageView;
     YYAsyncImageView *m_maskImageView;
     UIActivityIndicatorView *m_sendingView;
-    UIButton *m_sendFailButton;
+    UIButton *m_sendFailButton; /**< 发送失败按钮 */
     UIButton *m_cancelButton;
     UIView *m_sourceViewInside;
     UIView *m_sourceViewBottom;
@@ -30,16 +30,26 @@
     CTRichTextView *m_crashWarningLabel;
 }
 
-- (void).cxx_destruct;
+
+#pragma mark - IQQContactMgrExt
+- (void)onModifyQQContact:(CQQContact *)arg1;
+
+#pragma mark - WCActionSheet
 - (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;
+
+#pragma mark - IStrangerContactMgrExt
+- (void)onStrangerContactUpdated:(NSString *)arg1 Contact:(CContact *)aContact;
+
+#pragma mark - IAppDataExt
+- (void)OnAppInfoChanged:(NSString *)arg1;
+- (void)OnAppWatermarkChanged:(NSString *)arg1;
+
+#pragma mark - IContactMgrExt
+- (void)onModifyContact:(CContact *)contact;
+
 - (_Bool)handleMagicTapAction:(id)arg1;
 - (_Bool)accessibilityPerformMagicTap;
 - (void)addMagicTapActions:(id)arg1;
-- (void)onModifyQQContact:(id)arg1;
-- (void)onStrangerContactUpdated:(id)arg1 Contact:(id)arg2;
-- (void)onModifyContact:(id)arg1;
-- (void)OnAppInfoChanged:(id)arg1;
-- (void)OnAppWatermarkChanged:(id)arg1;
 - (void)triggerLongPressFor3DTouchAtLocation:(struct CGPoint)arg1 inCoordinateView:(id)arg2;
 - (void)onAppButtonClicked:(id)arg1;
 - (void)onCancelButtonClicked:(id)arg1;
@@ -72,11 +82,9 @@
 - (void)setViewModel:(id)arg1;
 - (id)initWithViewModel:(id)arg1;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
+
+
+
 @property(readonly, nonatomic) CommonMessageViewModel *viewModel; // @dynamic viewModel;
 
 @end
