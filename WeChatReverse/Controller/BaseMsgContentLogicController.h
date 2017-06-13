@@ -116,6 +116,7 @@
 #pragma mark - BaseMsgContentDelgate
 
 
+
 #pragma mark -
 - (double)getImplicitAnimationBottomBoundaryY;
 - (id)getImplicitAnimationParentView;
@@ -127,12 +128,10 @@
 - (void)onWillEnterRoom;
 - (void)unsetSession;
 - (void)OnAddFriend:(id)arg1 MsgWrap:(id)arg2 OpCode:(unsigned int)arg3;
-- (id)getBackgroundView;
 - (void)dealloc;
 - (void)onVideoVoipViewDisappear;
 - (void)onVideoVoipViewDidAppear:(id)arg1;
 - (void)setExtraInfo:(id)arg1;
-- (id)getExtraInfo;
 - (void)onMultiTalkBannerChange:(id)arg1 status:(unsigned int)arg2;
 - (void)OnOpenTrackRoom:(id)arg1;
 - (void)OnTrackRoomMemberChange:(id)arg1 withNewMemberList:(id)arg2;
@@ -162,7 +161,6 @@
 - (void)processInsertedImage:(id)arg1 withData:(id)arg2 ImageInfo:(id)arg3;
 - (void)processInsertedImage:(id)arg1 ImageInfo:(id)arg2;
 - (void)DidEnterBackground:(id)arg1;
-- (_Bool)isShowHeadImage:(id)arg1;
 - (_Bool)CanRemoteRecord;
 - (id)GetContactName;
 - (struct CGPoint)CheckVoiceBtnPressLocation;
@@ -182,32 +180,8 @@
 - (id)getCurrentViewController;
 - (void)onMultiOprationComplete;
 - (void)setMultiSelectModeOnComplete:(CDUnknownBlockType)arg1;
-- (void)onMultiMsgSelected:(id)arg1 Username:(id)arg2;
-- (void)onMultiMsgDelete:(id)arg1;
-- (void)onMultiSelectCancel;
-- (void)downloadMultiMsg:(id)arg1 saveToAlbum:(_Bool)arg2;
-- (void)sendMultiMsgBySystemMail:(id)arg1;
-- (void)sendMultiMsgToBrandContact:(id)arg1 To:(id)arg2;
-- (void)sendMultiMsgByMail:(id)arg1;
-- (void)sendMultiMsgToFriend:(id)arg1;
-- (void)addMultiMsgToMyFav:(id)arg1;
-- (void)toBeEditing:(_Bool)arg1;
-- (id)GetRightBarBtn;
-- (_Bool)hasDownMoreMsg;
-- (_Bool)hasMoreMsg;
-- (void)StartPlayVideo:(id)arg1;
-- (void)StartDownloadShortVideo:(id)arg1;
-- (void)StartDownloadVideo:(id)arg1 DownloadMode:(unsigned long long)arg2;
-- (void)StartDownloadVideo:(id)arg1;
-- (void)StartUploadVideo:(id)arg1;
-- (void)StopDownloadVideo:(id)arg1;
-- (void)StopUploadVideo:(id)arg1;
-- (_Bool)canShowChatRoomInfo;
-- (void)resetWithMessageWrap:(id)arg1;
 - (id)QueryMsgText:(id)arg1 FromID:(unsigned int)arg2 FromCreateTime:(unsigned int)arg3 Limit:(unsigned int)arg4 LeftCount:(unsigned int *)arg5;
-- (void)SetMsgPlayed:(id)arg1;
 - (void)StartPlayMessage:(id)arg1;
-- (id)genMsgSource;
 - (void)QuicklySaveDraft:(id)arg1;
 - (void)SaveContentAndState;
 - (void)saveDraft:(id)arg1;
@@ -226,22 +200,15 @@
 - (void)onCardPackageViewSelectCardItem:(id)arg1;
 - (void)onCardPackageViewCancelSelectCard;
 - (id)getContactToForward;
-- (void)exitTracking;
-- (void)openTrackRoom:(id)arg1;
 - (void)AddLocationMessageWithLocation:(id)arg1;
 - (void)RecommenWego;
 - (void)OpenNativeUrl:(id)arg1;
 - (void)OpenUrl:(id)arg1;
-- (id)getPreviewForLink:(id)arg1;
-- (void)OnTagLink:(id)arg1 messageWrap:(id)arg2;
 - (void)SendImageMessage:(id)arg1 withData:(id)arg2 ImageInfo:(id)arg3;
 - (void)SendImageMessageByMMAsset:(id)arg1;
-- (id)tagForCurrentPage;
-- (_Bool)isChatStatusNotifyOpen;
 - (void)mailComposeController:(id)arg1 didFinishWithResult:(long long)arg2 error:(id)arg3;
 - (void)contactVerifyOk:(id)arg1 opCode:(unsigned int)arg2;
 - (void)verifyContactByUsrNameWithOpCode:(unsigned int)arg1 userName:(id)arg2;
-- (void)OnVideoPlayEnd:(id)arg1 isForceStop:(_Bool)arg2;
 - (void)onEndPlay:(unsigned int)arg1 isForceStop:(_Bool)arg2;
 - (void)onForceEarpieceModeChanged;
 - (_Bool)isShakeEnabled;
@@ -256,19 +223,6 @@
 - (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2;
 - (void)OnMsgRevoked:(id)arg1 n64MsgId:(long long)arg2 SysMsg:(id)arg3;
 - (void)OnRevokeMsg:(id)arg1 MsgWrap:(id)arg2 ResultCode:(unsigned int)arg3 ResultMsg:(id)arg4 EducationMsg:(id)arg5;
-- (void)viewDidRotateToOrientation:(long long)arg1;
-- (void)viewWillRotateToOrientation:(long long)arg1;
-- (void)openOpenSDKAppBrand:(id)arg1;
-- (void)openWaApp:(id)arg1;
-- (void)shareDataToOpenSDK:(id)arg1;
-- (void)RevokeMsg:(id)arg1;
-- (void)onClickPlayMusicBtn:(id)arg1 isPlay:(_Bool)arg2;
-- (void)onClickMsg:(id)arg1;
-- (void)onDeleteMsg:(id)arg1;
-- (void)onClickFavMenu:(id)arg1;
-- (void)onClickVoiceTranslate:(id)arg1;
-- (void)onClickTranslateMsg:(id)arg1 translateInfo:(id)arg2;
-- (void)onClickTextFloatPreView:(id)arg1;
 - (void)SetReadWithMessageWrap:(id)arg1 isNotifyModMsg:(_Bool)arg2;
 - (void)OnDelMsg:(id)arg1 DelAll:(_Bool)arg2;
 - (void)performDeleteMsg:(id)arg1;
@@ -307,6 +261,7 @@
 - (_Bool)isNeedCached;
 - (void)RestoreStatusAndRegisterFromCacheStatus;
 - (void)ClearStatusAndUnRegisterForCacheStatus;
+#pragma mark -
 
 @end
 
