@@ -17804,6 +17804,7 @@
 				6BB5DDC31EC7764E001AF22F /* AutoplayController.h */,
 				6BB5DDC41EC7764E001AF22F /* BadRoomLogicController.h */,
 				6BB5DDC51EC7764E001AF22F /* BaseMsgContentLogicController.h */,
+				6BED846E1EEE7F3900F84BEC /* BaseMsgContentLogicController.m */,
 				6BB5DDC61EC7764E001AF22F /* BaseScanLogicController.h */,
 				6BB5DDC71EC7764E001AF22F /* BrandActionReportLogicController.h */,
 				6BB5DDC81EC7764E001AF22F /* BrandArticleSearchController.h */,
@@ -17930,9 +17931,8 @@
 				6BA40D521EC7833A00283DB5 /* WCVideoCropCollectionAnimationController.h */,
 				6BA40D531EC7833A00283DB5 /* WCYoWindowController.h */,
 				6BA40D541EC7833A00283DB5 /* WeixinContentLogicController.h */,
-				6BA40D551EC7833A00283DB5 /* WXTalkDNSController.h */,
 				6B5FE88E1EEE6BC8005112D0 /* WeixinContentLogicController.m */,
-				6BED846E1EEE7F3900F84BEC /* BaseMsgContentLogicController.m */,
+				6BA40D551EC7833A00283DB5 /* WXTalkDNSController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
