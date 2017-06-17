@@ -13,6 +13,8 @@
 		6B053AAC1EEA6ABC000448D5 /* MMInputToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B053AAB1EEA6ABC000448D5 /* MMInputToolView.m */; };
 		6B05F3621EEFC60400B45857 /* SendMessageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B05F3611EEFC60400B45857 /* SendMessageMgr.m */; };
 		6B05F3681EEFC98400B45857 /* CAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B05F3671EEFC98400B45857 /* CAppUtil.m */; };
+		6B0B91E91EF51ED2006E7E80 /* DeallocHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B91E81EF51ED2006E7E80 /* DeallocHelper.m */; };
+		6B0B91EC1EF51F00006E7E80 /* MMNoRetainTimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B91EB1EF51F00006E7E80 /* MMNoRetainTimerTarget.m */; };
 		6B3A42301EEE2A20003E2B25 /* NewMainFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A422F1EEE2A20003E2B25 /* NewMainFrameViewController.m */; };
 		6B3A42321EEE2E58003E2B25 /* MMTabBarBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A42311EEE2E58003E2B25 /* MMTabBarBaseViewController.m */; };
 		6B3A42341EEE3707003E2B25 /* MMMsgLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A42331EEE3707003E2B25 /* MMMsgLogicManager.m */; };
@@ -44,6 +46,7 @@
 		6B5A43761EF4CC9800F9BAF2 /* CMMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A43751EF4CC9800F9BAF2 /* CMMDB.m */; };
 		6B5A437B1EF4CE8D00F9BAF2 /* SettingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A437A1EF4CE8D00F9BAF2 /* SettingUtil.m */; };
 		6B5A437E1EF4CEC600F9BAF2 /* LazyExtensionAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A437D1EF4CEC600F9BAF2 /* LazyExtensionAgent.m */; };
+		6B5A43811EF4D2C900F9BAF2 /* MMTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A43801EF4D2C900F9BAF2 /* MMTimer.m */; };
 		6B5FE88F1EEE6BC8005112D0 /* WeixinContentLogicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FE88E1EEE6BC8005112D0 /* WeixinContentLogicController.m */; };
 		6B62F9E21EEAEA6B008CD077 /* MMQuickSendEmoticonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B62F9E11EEAEA6B008CD077 /* MMQuickSendEmoticonView.m */; };
 		6B71B58C1ED7CEA80010DFEF /* MultiSelectContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B71B58B1ED7CEA80010DFEF /* MultiSelectContactsViewController.m */; };
@@ -187,6 +190,9 @@
 		6B053AAB1EEA6ABC000448D5 /* MMInputToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInputToolView.m; sourceTree = "<group>"; };
 		6B05F3611EEFC60400B45857 /* SendMessageMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendMessageMgr.m; sourceTree = "<group>"; };
 		6B05F3671EEFC98400B45857 /* CAppUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAppUtil.m; sourceTree = "<group>"; };
+		6B0B91E81EF51ED2006E7E80 /* DeallocHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeallocHelper.m; sourceTree = "<group>"; };
+		6B0B91EA1EF51F00006E7E80 /* MMNoRetainTimerTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMNoRetainTimerTarget.h; sourceTree = "<group>"; };
+		6B0B91EB1EF51F00006E7E80 /* MMNoRetainTimerTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMNoRetainTimerTarget.m; sourceTree = "<group>"; };
 		6B1C6B241EEAE17500FF0C06 /* ProductTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductTableView.h; sourceTree = "<group>"; };
 		6B3A422F1EEE2A20003E2B25 /* NewMainFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMainFrameViewController.m; sourceTree = "<group>"; };
 		6B3A42311EEE2E58003E2B25 /* MMTabBarBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTabBarBaseViewController.m; sourceTree = "<group>"; };
@@ -228,6 +234,8 @@
 		6B5A437A1EF4CE8D00F9BAF2 /* SettingUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingUtil.m; sourceTree = "<group>"; };
 		6B5A437C1EF4CEC600F9BAF2 /* LazyExtensionAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LazyExtensionAgent.h; sourceTree = "<group>"; };
 		6B5A437D1EF4CEC600F9BAF2 /* LazyExtensionAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyExtensionAgent.m; sourceTree = "<group>"; };
+		6B5A437F1EF4D2C900F9BAF2 /* MMTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTimer.h; sourceTree = "<group>"; };
+		6B5A43801EF4D2C900F9BAF2 /* MMTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTimer.m; sourceTree = "<group>"; };
 		6B5F21621EEAE5A100244EFD /* MMQuickSendEmoticonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMQuickSendEmoticonView.h; sourceTree = "<group>"; };
 		6B5FE88E1EEE6BC8005112D0 /* WeixinContentLogicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeixinContentLogicController.m; sourceTree = "<group>"; };
 		6B62F9D51EEAE6B4008CD077 /* MMGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMGridView.h; sourceTree = "<group>"; };
@@ -5644,7 +5652,6 @@
 		6BA4EA5B1EC77B6F00283DB5 /* MMMusicPlayerContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMusicPlayerContoller.h; sourceTree = "<group>"; };
 		6BA4EA621EC77B6F00283DB5 /* MMMusicPlayerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMusicPlayerUtils.h; sourceTree = "<group>"; };
 		6BA4EA641EC77B6F00283DB5 /* MMNewDelegateCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewDelegateCenter.h; sourceTree = "<group>"; };
-		6BA4EA6B1EC77B7000283DB5 /* MMNoRetainTimerTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNoRetainTimerTarget.h; sourceTree = "<group>"; };
 		6BA4EA6D1EC77B7000283DB5 /* MMObserverWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMObserverWrap.h; sourceTree = "<group>"; };
 		6BA4EA6E1EC77B7000283DB5 /* MMOnlineDeviceFunctionMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOnlineDeviceFunctionMsg.h; sourceTree = "<group>"; };
 		6BA4EA701EC77B7000283DB5 /* MMOOMCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOOMCrashReport.h; sourceTree = "<group>"; };
@@ -5713,7 +5720,6 @@
 		6BA4EB1D1EC77B7600283DB5 /* MMTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabbarItem.h; sourceTree = "<group>"; };
 		6BA4EB251EC77B7600283DB5 /* MMTagSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTagSearchBar.h; sourceTree = "<group>"; };
 		6BA4EB271EC77B7600283DB5 /* MMTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTheme.h; sourceTree = "<group>"; };
-		6BA4EB2B1EC77B7600283DB5 /* MMTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTimer.h; sourceTree = "<group>"; };
 		6BA4EB2C1EC77B7600283DB5 /* MMTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTimerLabel.h; sourceTree = "<group>"; };
 		6BA4EB331EC77B7600283DB5 /* MMTracerouteExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTracerouteExecutor.h; sourceTree = "<group>"; };
 		6BA4EB341EC77B7600283DB5 /* MMTracerouteStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTracerouteStep.h; sourceTree = "<group>"; };
@@ -12082,6 +12088,10 @@
 				6BA40DFA1EC783F700283DB5 /* WNNoteTextItemUtil.h */,
 				6BA40DFB1EC783F700283DB5 /* WNNoteVoiceItemUtil.h */,
 				6BA40DFC1EC783F700283DB5 /* WXCLogUtil.h */,
+				6B5A437F1EF4D2C900F9BAF2 /* MMTimer.h */,
+				6B5A43801EF4D2C900F9BAF2 /* MMTimer.m */,
+				6B0B91EA1EF51F00006E7E80 /* MMNoRetainTimerTarget.h */,
+				6B0B91EB1EF51F00006E7E80 /* MMNoRetainTimerTarget.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -12900,7 +12910,6 @@
 				6BA4EA5B1EC77B6F00283DB5 /* MMMusicPlayerContoller.h */,
 				6BA4EA621EC77B6F00283DB5 /* MMMusicPlayerUtils.h */,
 				6BA4EA641EC77B6F00283DB5 /* MMNewDelegateCenter.h */,
-				6BA4EA6B1EC77B7000283DB5 /* MMNoRetainTimerTarget.h */,
 				6BA4EA6D1EC77B7000283DB5 /* MMObserverWrap.h */,
 				6BA4EA6E1EC77B7000283DB5 /* MMOnlineDeviceFunctionMsg.h */,
 				6BA4EA701EC77B7000283DB5 /* MMOOMCrashReport.h */,
@@ -12969,7 +12978,6 @@
 				6BA4EB1D1EC77B7600283DB5 /* MMTabbarItem.h */,
 				6BA4EB251EC77B7600283DB5 /* MMTagSearchBar.h */,
 				6BA4EB271EC77B7600283DB5 /* MMTheme.h */,
-				6BA4EB2B1EC77B7600283DB5 /* MMTimer.h */,
 				6BA4EB2C1EC77B7600283DB5 /* MMTimerLabel.h */,
 				6BA4EB331EC77B7600283DB5 /* MMTracerouteExecutor.h */,
 				6BA4EB341EC77B7600283DB5 /* MMTracerouteStep.h */,
@@ -18060,6 +18068,7 @@
 				6BB5DDF01EC776F2001AF22F /* FileHelperContactInfoAssist.h */,
 				6BB5DDF11EC776F2001AF22F /* FTSBrowseReportHelper.h */,
 				6BB5DDF21EC776F2001AF22F /* FTSStatHelper.h */,
+				6B0B91E81EF51ED2006E7E80 /* DeallocHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -19417,6 +19426,7 @@
 				6B95075B1EDC786B0074133A /* MMCommonAdapter.m in Sources */,
 				6B8031871EC8B01F0090657F /* CAppObserverCenter.m in Sources */,
 				6B5163C31ED91CD90089CEAC /* ContactSettingViewController.m in Sources */,
+				6B5A43811EF4D2C900F9BAF2 /* MMTimer.m in Sources */,
 				6B05F3681EEFC98400B45857 /* CAppUtil.m in Sources */,
 				6B4C7D6C1ED3FC1A00CAF1EB /* UIViewController+ModalView.m in Sources */,
 				6B4C7D681ED3FB8100CAF1EB /* ContactTagNewDetailViewController.m in Sources */,
@@ -19485,6 +19495,7 @@
 				6B8031951EC8B43B0090657F /* ResourceInfo.m in Sources */,
 				6B8031A91EC8B94B0090657F /* VoIPTokenRetriveObject.m in Sources */,
 				6B5A43741EF4CC6E00F9BAF2 /* CMessageDB.m in Sources */,
+				6B0B91EC1EF51F00006E7E80 /* MMNoRetainTimerTarget.m in Sources */,
 				6B80318A1EC8B2130090657F /* MMObject.m in Sources */,
 				6BF5385F1EC76BAE00D8D56C /* main.m in Sources */,
 				6BFEE7901EE54604001CB482 /* ContactRemarkLogic.m in Sources */,
@@ -19494,6 +19505,7 @@
 				6B3BBE151EDAC097002602B6 /* MMExtensionCenter.m in Sources */,
 				6BF8476A1ED7304400EAD5E1 /* MMService.m in Sources */,
 				6B9507511EDBD0E80074133A /* MMExtensionDictionary.m in Sources */,
+				6B0B91E91EF51ED2006E7E80 /* DeallocHelper.m in Sources */,
 				6B3A42321EEE2E58003E2B25 /* MMTabBarBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

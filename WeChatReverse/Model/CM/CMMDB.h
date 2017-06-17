@@ -10,13 +10,13 @@
 
 @interface CMMDB : NSObject <WCDataBaseEventDelegate>
 {
-    NSRecursiveLock *m_lockMMDB;
+    NSRecursiveLock *m_lockMMDB; /**< 自旋锁 */
     NSMutableSet *m_setMessageCreatedTable;
     NSMutableSet *m_setMessageExtCreatedTable;
     OpLogDB *m_oplogWcdb;
-    MMTimer *m_backupTimer;
+    MMTimer *m_backupTimer;     /**< 计时器 */
     BOOL m_checkCorruption;
-    WCDataBase *m_db;
+    WCDataBase *m_db;           /**< 数据库 */
     NewContactDB *m_contactDB;
     WCDataBaseTable *m_tableContact;
     WCDataBaseTable *m_tableContactExt;
