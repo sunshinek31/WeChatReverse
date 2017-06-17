@@ -1592,7 +1592,7 @@
     
     [self getMessageChatContactByMessageWrap:msgWrap];
     
-    [BaseMessageViewModel createMessageViewModelWithMessageWrap:msgWrap contact:nil chatContact:nil];
+    BaseMessageViewModel *vm = [BaseMessageViewModel createMessageViewModelWithMessageWrap:msgWrap contact:nil chatContact:nil];
     
     [m_tableView reloadData];
 //    df

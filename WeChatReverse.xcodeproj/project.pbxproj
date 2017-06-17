@@ -40,6 +40,10 @@
 		6B5163C31ED91CD90089CEAC /* ContactSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163C21ED91CD90089CEAC /* ContactSettingViewController.m */; };
 		6B5163C61ED920880089CEAC /* WAAppMsgItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5163C51ED920880089CEAC /* WAAppMsgItem.m */; };
 		6B526D241EE28BF40057D99D /* NewContactsSearchPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B526D231EE28BF40057D99D /* NewContactsSearchPanelView.m */; };
+		6B5A43741EF4CC6E00F9BAF2 /* CMessageDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A43731EF4CC6E00F9BAF2 /* CMessageDB.m */; };
+		6B5A43761EF4CC9800F9BAF2 /* CMMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A43751EF4CC9800F9BAF2 /* CMMDB.m */; };
+		6B5A437B1EF4CE8D00F9BAF2 /* SettingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A437A1EF4CE8D00F9BAF2 /* SettingUtil.m */; };
+		6B5A437E1EF4CEC600F9BAF2 /* LazyExtensionAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A437D1EF4CEC600F9BAF2 /* LazyExtensionAgent.m */; };
 		6B5FE88F1EEE6BC8005112D0 /* WeixinContentLogicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FE88E1EEE6BC8005112D0 /* WeixinContentLogicController.m */; };
 		6B62F9E21EEAEA6B008CD077 /* MMQuickSendEmoticonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B62F9E11EEAEA6B008CD077 /* MMQuickSendEmoticonView.m */; };
 		6B71B58C1ED7CEA80010DFEF /* MultiSelectContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B71B58B1ED7CEA80010DFEF /* MultiSelectContactsViewController.m */; };
@@ -147,6 +151,7 @@
 		6BF847671ED72EF200EAD5E1 /* MMBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF847661ED72EF200EAD5E1 /* MMBarButton.m */; };
 		6BF8476A1ED7304400EAD5E1 /* MMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF847691ED7304400EAD5E1 /* MMService.m */; };
 		6BF847831ED73B1700EAD5E1 /* MMLanguageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF847821ED73B1700EAD5E1 /* MMLanguageMgr.m */; };
+		6BFA06041EF0DFFE00ACFFAC /* CommonMessageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA06031EF0DFFE00ACFFAC /* CommonMessageViewModel.m */; };
 		6BFEE78E1EE53D2B001CB482 /* RemarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEE78D1EE53D2B001CB482 /* RemarkViewController.m */; };
 		6BFEE7901EE54604001CB482 /* ContactRemarkLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEE78F1EE54604001CB482 /* ContactRemarkLogic.m */; };
 		6BFEE79D1EE54A40001CB482 /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEE79C1EE54A40001CB482 /* MMTableViewCell.m */; };
@@ -216,11 +221,17 @@
 		6B5163C41ED920880089CEAC /* WAAppMsgItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAAppMsgItem.h; sourceTree = "<group>"; };
 		6B5163C51ED920880089CEAC /* WAAppMsgItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAAppMsgItem.m; sourceTree = "<group>"; };
 		6B526D231EE28BF40057D99D /* NewContactsSearchPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewContactsSearchPanelView.m; sourceTree = "<group>"; };
+		6B5A43731EF4CC6E00F9BAF2 /* CMessageDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMessageDB.m; sourceTree = "<group>"; };
+		6B5A43751EF4CC9800F9BAF2 /* CMMDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMMDB.m; sourceTree = "<group>"; };
+		6B5A43771EF4CD0700F9BAF2 /* MMQuickSendEmoticonViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMQuickSendEmoticonViewDelegate.h; sourceTree = "<group>"; };
+		6B5A43781EF4CDFD00F9BAF2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		6B5A437A1EF4CE8D00F9BAF2 /* SettingUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingUtil.m; sourceTree = "<group>"; };
+		6B5A437C1EF4CEC600F9BAF2 /* LazyExtensionAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LazyExtensionAgent.h; sourceTree = "<group>"; };
+		6B5A437D1EF4CEC600F9BAF2 /* LazyExtensionAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyExtensionAgent.m; sourceTree = "<group>"; };
 		6B5F21621EEAE5A100244EFD /* MMQuickSendEmoticonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMQuickSendEmoticonView.h; sourceTree = "<group>"; };
 		6B5FE88E1EEE6BC8005112D0 /* WeixinContentLogicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeixinContentLogicController.m; sourceTree = "<group>"; };
 		6B62F9D51EEAE6B4008CD077 /* MMGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMGridView.h; sourceTree = "<group>"; };
 		6B62F9E11EEAEA6B008CD077 /* MMQuickSendEmoticonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMQuickSendEmoticonView.m; sourceTree = "<group>"; };
-		6B62F9E31EEAEAD8008CD077 /* MMQuickSendEmoticonViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMQuickSendEmoticonViewDelegate.h; path = "../../../../../../Desktop/wechat6.5.8 head/MMQuickSendEmoticonViewDelegate.h"; sourceTree = "<group>"; };
 		6B71B58B1ED7CEA80010DFEF /* MultiSelectContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSelectContactsViewController.m; sourceTree = "<group>"; };
 		6B71B58F1ED7DA410010DFEF /* WCDeviceM7Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDeviceM7Logic.h; sourceTree = "<group>"; };
 		6B71B5901ED7DA410010DFEF /* WCDeviceM7Logic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDeviceM7Logic.m; sourceTree = "<group>"; };
@@ -902,7 +913,7 @@
 		6BA402811EC77EEF00283DB5 /* WCContentItemViewExt-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCContentItemViewExt-Protocol.h"; sourceTree = "<group>"; };
 		6BA402821EC77EEF00283DB5 /* WCCreateNewGroupDemoViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCCreateNewGroupDemoViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA402831EC77EEF00283DB5 /* WCCreateNewGroupViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCCreateNewGroupViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
-		6BA402841EC77EEF00283DB5 /* WCDataBaseEventDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCDataBaseEventDelegate-Protocol.h"; sourceTree = "<group>"; };
+		6BA402841EC77EEF00283DB5 /* WCDataBaseEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDataBaseEventDelegate.h; sourceTree = "<group>"; };
 		6BA402851EC77EEF00283DB5 /* WCDataProviderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDataProviderDelegate.h; sourceTree = "<group>"; };
 		6BA402861EC77EEF00283DB5 /* WCDataUploaderDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCDataUploaderDelegate-Protocol.h"; sourceTree = "<group>"; };
 		6BA402871EC77EEF00283DB5 /* WCDBCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCDBCoding-Protocol.h"; sourceTree = "<group>"; };
@@ -5316,7 +5327,6 @@
 		6BA4E7B31EC77B3700283DB5 /* LangDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangDesc.h; sourceTree = "<group>"; };
 		6BA4E7B41EC77B3700283DB5 /* LanguagePackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguagePackage.h; sourceTree = "<group>"; };
 		6BA4E7B61EC77B3700283DB5 /* LayOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayOut.h; sourceTree = "<group>"; };
-		6BA4E7B71EC77B3700283DB5 /* LazyExtensionAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyExtensionAgent.h; sourceTree = "<group>"; };
 		6BA4E7B81EC77B3700283DB5 /* LbsContactInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LbsContactInfo.h; sourceTree = "<group>"; };
 		6BA4E7B91EC77B3700283DB5 /* LBSContactInfoAssist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSContactInfoAssist.h; sourceTree = "<group>"; };
 		6BA4E7BA1EC77B3700283DB5 /* LbsContactInfoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LbsContactInfoList.h; sourceTree = "<group>"; };
@@ -9123,6 +9133,7 @@
 		6BF847681ED7304400EAD5E1 /* MMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMService.h; sourceTree = "<group>"; };
 		6BF847691ED7304400EAD5E1 /* MMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMService.m; sourceTree = "<group>"; };
 		6BF847821ED73B1700EAD5E1 /* MMLanguageMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLanguageMgr.m; sourceTree = "<group>"; };
+		6BFA06031EF0DFFE00ACFFAC /* CommonMessageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMessageViewModel.m; sourceTree = "<group>"; };
 		6BFEE78D1EE53D2B001CB482 /* RemarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemarkViewController.m; sourceTree = "<group>"; };
 		6BFEE78F1EE54604001CB482 /* ContactRemarkLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactRemarkLogic.m; sourceTree = "<group>"; };
 		6BFEE79C1EE54A40001CB482 /* MMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewCell.m; sourceTree = "<group>"; };
@@ -10853,9 +10864,11 @@
 			children = (
 				6BA4E2021EC77A9400283DB5 /* CMessage.h */,
 				6BA4E2031EC77A9400283DB5 /* CMessageDB.h */,
+				6B5A43731EF4CC6E00F9BAF2 /* CMessageDB.m */,
 				6BA4E2041EC77A9400283DB5 /* CMessageWrap.h */,
 				6B4108961EEFDA8100C26913 /* CMessageWrap.m */,
 				6BA4E2051EC77A9400283DB5 /* CMMDB.h */,
+				6B5A43751EF4CC9800F9BAF2 /* CMMDB.m */,
 				6BA4E2061EC77A9400283DB5 /* CMMKVCommReport.h */,
 				6BA4E2071EC77A9400283DB5 /* CMMVector.h */,
 				6BA4E2081EC77A9400283DB5 /* CModUserImgWrap.h */,
@@ -11819,6 +11832,7 @@
 		6BA40F041EC786C500283DB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B5A43781EF4CDFD00F9BAF2 /* libsqlite3.0.tbd */,
 				6BA40F741EC788F000283DB5 /* JavaScriptCore.framework */,
 				6BA40F721EC788E700283DB5 /* CoreImage.framework */,
 				6BA40F701EC788DF00283DB5 /* CoreFoundation.framework */,
@@ -11959,6 +11973,38 @@
 		6BA4E0611EC778BC00283DB5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6BA4E0271EC777E400283DB5 /* AesUtil.h */,
+				6BA4E0281EC777E400283DB5 /* AudioUtil.h */,
+				6BA4E0291EC777E400283DB5 /* AVCaptureImageUtil.h */,
+				6BA4E02A1EC777E400283DB5 /* BraceletRankUtils.h */,
+				6BA4E02B1EC777E400283DB5 /* BrandServiceSearchCommonUtil.h */,
+				6BA4E02C1EC777E400283DB5 /* CAppUtil.h */,
+				6B05F3671EEFC98400B45857 /* CAppUtil.m */,
+				6BA4E02D1EC777E400283DB5 /* CControlUtil.h */,
+				6BA4E02E1EC777E400283DB5 /* ChatRoomUtils.h */,
+				6BA4E02F1EC777E400283DB5 /* CommonUtility.h */,
+				6BA4E0301EC777E400283DB5 /* CUtility.h */,
+				6BA4E0311EC777E400283DB5 /* DeviceUtility.h */,
+				6BA4E0321EC777E400283DB5 /* EditImageUtil.h */,
+				6BA4E0331EC777E400283DB5 /* EmoticonUtil.h */,
+				6BA4E0341EC777E400283DB5 /* EnterpriseUtil.h */,
+				6BA4E0351EC777E400283DB5 /* EventServiceUtil.h */,
+				6BA4E0361EC777E400283DB5 /* FastStrUtil.h */,
+				6BA4E0371EC777E400283DB5 /* FavoritesCommonUtil.h */,
+				6BA4E0381EC777E400283DB5 /* FavoritesNoteUtil.h */,
+				6BA4E0391EC777E400283DB5 /* FavoritesRecordUtil.h */,
+				6BA4E03A1EC777E400283DB5 /* FavoritesUtil.h */,
+				6BA4E03B1EC777E400283DB5 /* FBSDKInternalUtility.h */,
+				6BA4E03C1EC777E400283DB5 /* FBSDKLoginUtility.h */,
+				6BA4E03D1EC777E400283DB5 /* FBSDKTypeUtility.h */,
+				6BA4E03E1EC777E400283DB5 /* FBSDKUtility.h */,
+				6BA4E03F1EC777E400283DB5 /* ForwardMsgUtil.h */,
+				6BA4E0401EC777E400283DB5 /* FTSFavUtil.h */,
+				6BA4E0411EC777E400283DB5 /* FTSTopHitDynamicUtil.h */,
+				6BA4E0421EC777E400283DB5 /* FTSUiUtil.h */,
+				6BA4E0431EC777E400283DB5 /* FTSUtil.h */,
+				6BA4E0441EC777E400283DB5 /* FTSWebSearchUtil.h */,
+				6BA4E0451EC777E400283DB5 /* FunctionSwitchUtil.h */,
 				6BA40DB21EC783F700283DB5 /* GameCenterUtil.h */,
 				6BA40DB31EC783F700283DB5 /* IdleTimerUtil.h */,
 				6BA40DB41EC783F700283DB5 /* isaac64_util.h */,
@@ -11993,6 +12039,7 @@
 				6BA40DD11EC783F700283DB5 /* RadarSearchUIUtil.h */,
 				6BA40DD21EC783F700283DB5 /* RegularUtil.h */,
 				6BA40DD31EC783F700283DB5 /* SettingUtil.h */,
+				6B5A437A1EF4CE8D00F9BAF2 /* SettingUtil.m */,
 				6BA40DD41EC783F700283DB5 /* StoreEmotionUtil.h */,
 				6BA40DD51EC783F700283DB5 /* StreamVoiceInputUtil.h */,
 				6BA40DD61EC783F700283DB5 /* TokenizerUtil.h */,
@@ -12035,38 +12082,6 @@
 				6BA40DFA1EC783F700283DB5 /* WNNoteTextItemUtil.h */,
 				6BA40DFB1EC783F700283DB5 /* WNNoteVoiceItemUtil.h */,
 				6BA40DFC1EC783F700283DB5 /* WXCLogUtil.h */,
-				6BA4E0271EC777E400283DB5 /* AesUtil.h */,
-				6BA4E0281EC777E400283DB5 /* AudioUtil.h */,
-				6BA4E0291EC777E400283DB5 /* AVCaptureImageUtil.h */,
-				6BA4E02A1EC777E400283DB5 /* BraceletRankUtils.h */,
-				6BA4E02B1EC777E400283DB5 /* BrandServiceSearchCommonUtil.h */,
-				6BA4E02C1EC777E400283DB5 /* CAppUtil.h */,
-				6B05F3671EEFC98400B45857 /* CAppUtil.m */,
-				6BA4E02D1EC777E400283DB5 /* CControlUtil.h */,
-				6BA4E02E1EC777E400283DB5 /* ChatRoomUtils.h */,
-				6BA4E02F1EC777E400283DB5 /* CommonUtility.h */,
-				6BA4E0301EC777E400283DB5 /* CUtility.h */,
-				6BA4E0311EC777E400283DB5 /* DeviceUtility.h */,
-				6BA4E0321EC777E400283DB5 /* EditImageUtil.h */,
-				6BA4E0331EC777E400283DB5 /* EmoticonUtil.h */,
-				6BA4E0341EC777E400283DB5 /* EnterpriseUtil.h */,
-				6BA4E0351EC777E400283DB5 /* EventServiceUtil.h */,
-				6BA4E0361EC777E400283DB5 /* FastStrUtil.h */,
-				6BA4E0371EC777E400283DB5 /* FavoritesCommonUtil.h */,
-				6BA4E0381EC777E400283DB5 /* FavoritesNoteUtil.h */,
-				6BA4E0391EC777E400283DB5 /* FavoritesRecordUtil.h */,
-				6BA4E03A1EC777E400283DB5 /* FavoritesUtil.h */,
-				6BA4E03B1EC777E400283DB5 /* FBSDKInternalUtility.h */,
-				6BA4E03C1EC777E400283DB5 /* FBSDKLoginUtility.h */,
-				6BA4E03D1EC777E400283DB5 /* FBSDKTypeUtility.h */,
-				6BA4E03E1EC777E400283DB5 /* FBSDKUtility.h */,
-				6BA4E03F1EC777E400283DB5 /* ForwardMsgUtil.h */,
-				6BA4E0401EC777E400283DB5 /* FTSFavUtil.h */,
-				6BA4E0411EC777E400283DB5 /* FTSTopHitDynamicUtil.h */,
-				6BA4E0421EC777E400283DB5 /* FTSUiUtil.h */,
-				6BA4E0431EC777E400283DB5 /* FTSUtil.h */,
-				6BA4E0441EC777E400283DB5 /* FTSWebSearchUtil.h */,
-				6BA4E0451EC777E400283DB5 /* FunctionSwitchUtil.h */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -12568,7 +12583,6 @@
 				6BA4E7B31EC77B3700283DB5 /* LangDesc.h */,
 				6BA4E7B41EC77B3700283DB5 /* LanguagePackage.h */,
 				6BA4E7B61EC77B3700283DB5 /* LayOut.h */,
-				6BA4E7B71EC77B3700283DB5 /* LazyExtensionAgent.h */,
 				6BA4E7B81EC77B3700283DB5 /* LbsContactInfo.h */,
 				6BA4E7B91EC77B3700283DB5 /* LBSContactInfoAssist.h */,
 				6BA4E7BA1EC77B3700283DB5 /* LbsContactInfoList.h */,
@@ -15018,7 +15032,7 @@
 			children = (
 				6BED84691EEE7B5200F84BEC /* MMInputToolViewCustomizationDelegate.h */,
 				6BED846A1EEE7B9300F84BEC /* MMNewMultiSelectContactsViewControllerDelegate.h */,
-				6B62F9E31EEAEAD8008CD077 /* MMQuickSendEmoticonViewDelegate.h */,
+				6B5A43771EF4CD0700F9BAF2 /* MMQuickSendEmoticonViewDelegate.h */,
 				6BB5DA5C1EC7734F001AF22F /* ABNewPersonViewControllerDelegate-Protocol.h */,
 				6BB5DA5D1EC7734F001AF22F /* ABPeoplePickerNavigationControllerDelegate-Protocol.h */,
 				6BB5DA5E1EC7734F001AF22F /* ActionRecognitionDelegate-Protocol.h */,
@@ -16242,7 +16256,7 @@
 				6BA402811EC77EEF00283DB5 /* WCContentItemViewExt-Protocol.h */,
 				6BA402821EC77EEF00283DB5 /* WCCreateNewGroupDemoViewControllerDelegate-Protocol.h */,
 				6BA402831EC77EEF00283DB5 /* WCCreateNewGroupViewControllerDelegate-Protocol.h */,
-				6BA402841EC77EEF00283DB5 /* WCDataBaseEventDelegate-Protocol.h */,
+				6BA402841EC77EEF00283DB5 /* WCDataBaseEventDelegate.h */,
 				6BA402851EC77EEF00283DB5 /* WCDataProviderDelegate.h */,
 				6BA402861EC77EEF00283DB5 /* WCDataUploaderDelegate-Protocol.h */,
 				6BA402871EC77EEF00283DB5 /* WCDBCoding-Protocol.h */,
@@ -17820,6 +17834,7 @@
 				6BB5DDBD1EC775FC001AF22F /* ChatSplitViewModel.h */,
 				6BB5DDBE1EC775FC001AF22F /* ChatTimeViewModel.h */,
 				6BB5DDBF1EC775FC001AF22F /* CommonMessageViewModel.h */,
+				6BFA06031EF0DFFE00ACFFAC /* CommonMessageViewModel.m */,
 				6BB5DDC01EC775FC001AF22F /* EmoticonMessageViewModel.h */,
 				6B4108921EEFD9DB00C26913 /* BaseMessageViewModel.m */,
 			);
@@ -18098,6 +18113,8 @@
 			children = (
 				6BE5EA3E1EE7A8EE00D086BB /* NewSyncService.h */,
 				6BE5EA3F1EE7A8EE00D086BB /* NewSyncService.m */,
+				6B5A437C1EF4CEC600F9BAF2 /* LazyExtensionAgent.h */,
+				6B5A437D1EF4CEC600F9BAF2 /* LazyExtensionAgent.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -19389,6 +19406,7 @@
 				6B4108911EEFD94A00C26913 /* MultiSelectTableViewCell.m in Sources */,
 				6BE732E21EDFFA010086075C /* WCHomepageMgr.m in Sources */,
 				6B3A42341EEE3707003E2B25 /* MMMsgLogicManager.m in Sources */,
+				6B5A437E1EF4CEC600F9BAF2 /* LazyExtensionAgent.m in Sources */,
 				6BFEE7AD1EE556B7001CB482 /* MMTableViewSectionInfo.m in Sources */,
 				6B80319C1EC8B69F0090657F /* MMUIWindow.m in Sources */,
 				6BFEE7A51EE55613001CB482 /* MMTableViewUserInfo.m in Sources */,
@@ -19441,6 +19459,7 @@
 				6BE732CB1EDE8CA10086075C /* MMNewSessionMgr.m in Sources */,
 				6B3BBE171EDACF5C002602B6 /* UiUtil.m in Sources */,
 				6B3AA9DB1EE67C3B00E63CEB /* ContactInfoViewController.m in Sources */,
+				6BFA06041EF0DFFE00ACFFAC /* CommonMessageViewModel.m in Sources */,
 				6B3BBE191EDAD281002602B6 /* CContactMgr.m in Sources */,
 				6BEB303A1EE69A4500548D56 /* SeePeopleNearByLogicController.m in Sources */,
 				6BF847671ED72EF200EAD5E1 /* MMBarButton.m in Sources */,
@@ -19456,13 +19475,16 @@
 				6B0170FC1EEA810A00E728D5 /* MMGrowTextView.m in Sources */,
 				6B3BBDDC1EDAB755002602B6 /* CContactOPLog.m in Sources */,
 				6B41089C1EEFDBFD00C26913 /* BaseChatCellView.m in Sources */,
+				6B5A437B1EF4CE8D00F9BAF2 /* SettingUtil.m in Sources */,
 				6B4108931EEFD9DB00C26913 /* BaseMessageViewModel.m in Sources */,
 				6B8031AF1EC8BB000090657F /* VoIPTokenRegisterObject.m in Sources */,
 				6B5163C61ED920880089CEAC /* WAAppMsgItem.m in Sources */,
 				6B053AAC1EEA6ABC000448D5 /* MMInputToolView.m in Sources */,
 				6BF847831ED73B1700EAD5E1 /* MMLanguageMgr.m in Sources */,
+				6B5A43761EF4CC9800F9BAF2 /* CMMDB.m in Sources */,
 				6B8031951EC8B43B0090657F /* ResourceInfo.m in Sources */,
 				6B8031A91EC8B94B0090657F /* VoIPTokenRetriveObject.m in Sources */,
+				6B5A43741EF4CC6E00F9BAF2 /* CMessageDB.m in Sources */,
 				6B80318A1EC8B2130090657F /* MMObject.m in Sources */,
 				6BF5385F1EC76BAE00D8D56C /* main.m in Sources */,
 				6BFEE7901EE54604001CB482 /* ContactRemarkLogic.m in Sources */,

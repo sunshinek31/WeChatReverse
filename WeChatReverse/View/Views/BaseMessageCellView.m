@@ -10,4 +10,16 @@
 
 @implementation BaseMessageCellView
 
+- (void)layoutFinished
+{
+    [self updateNodeStatus];
+}
+
+// See: -[BaseMessageCellView layoutFinished];
+- (void)updateNodeStatus
+{
+    [m_sendOKView removeFromSuperview];
+    [self updateStatus];
+}
+
 @end

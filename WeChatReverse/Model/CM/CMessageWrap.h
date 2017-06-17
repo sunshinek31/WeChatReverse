@@ -160,7 +160,6 @@
 - (BOOL)isShowAppMessageBlockButton;
 - (BOOL)isShowAppBottomButton;
 - (id)keyDescription;
-@property(readonly, copy) NSString *description;
 - (id)getMsgExtBizId;
 - (BOOL)IsNeedAddMsgBizExt;
 - (BOOL)IsNeedChatExt;
@@ -213,9 +212,7 @@
 - (id)GetCdnDownloadThumbPathOfVideo;
 - (id)GetCdnDownloadPathOfVideo;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly) unsigned long long hash;
+
 @property(retain, nonatomic) NSString *m_AttachedContent; // @dynamic m_AttachedContent;
 @property(retain, nonatomic) NSString *m_aesKey; // @dynamic m_aesKey;
 @property(retain, nonatomic) NSArray *m_arrCustomWrap; // @dynamic m_arrCustomWrap;
@@ -380,7 +377,6 @@
 @property(nonatomic) unsigned int m_uiWeAppVersion; // @dynamic m_uiWeAppVersion;
 @property(retain, nonatomic) NSString *m_url; // @dynamic m_url;
 @property(nonatomic) unsigned int m_wordingType; // @dynamic m_wordingType;
-@property(readonly) Class superclass;
 
 @end
 

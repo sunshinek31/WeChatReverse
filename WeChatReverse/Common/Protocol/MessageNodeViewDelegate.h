@@ -15,12 +15,14 @@
 - (void)onClickTextFloatPreView:(CMessageWrap *)aCMessageWrap;
 - (void)onClickTranslateMsg:(CMessageWrap *)aCMessageWrap translateInfo:(TranslateInfo *)aTranslateInfo;
 - (void)clickNewAASysMsg:(NSString *)arg1 withMsgLocalID:(unsigned int)arg2;
+
 - (void)shareMsgToOpenSDKByNodeView:(CMessageWrap *)aCMessageWrap;
 - (void)clickWeAppReceiveSessionMsg;
 - (void)clickReceiveBrandMsg;
 - (void)clickShieldBrandMsg;
 - (void)clickLinkToDealWithSysXml:(CMessageWrap *)aCMessageWrap fromScene:(NSString *)arg2;
 - (void)clickLinkToExpose;
+
 - (void)onFullScreenWindowWillHide;
 - (void)willShowMenuController:(id)arg1;
 - (void)filterShowMenuItem:(NSMutableArray *)arg1 sender:(id)arg2;
@@ -42,13 +44,16 @@
 - (void)longPressOnHeadImage:(CBaseContact *)aCBaseContact;
 - (BOOL)canLongPressOnHeadImage:(CBaseContact *)aCBaseContact;
 - (void)deleteNode:(CMessageWrap *)aCMessageWrap;
+
 - (void)StartDownloadShortVideo:(CMessageWrap *)aCMessageWrap;
 - (void)StartDownloadVideo:(CMessageWrap *)aCMessageWrap DownloadMode:(NSUInteger)downloadMode;
 - (void)StartDownloadVideo:(CMessageWrap *)aCMessageWrap;
 - (void)StartUploadVideo:(CMessageWrap *)aCMessageWrap;
 - (void)StopDownloadVideo:(CMessageWrap *)aCMessageWrap;
 - (void)StopUploadVideo:(CMessageWrap *)aCMessageWrap;
+
 - (void)onExposeTemplateMsg:(CMessageWrap *)aCMessageWrap;
+
 - (void)readerViewClickedWithMsg:(CMessageWrap *)aCMessageWrap;
 - (void)headerImageClickedWithMsg:(CMessageWrap *)aCMessageWrap;
 - (void)headerImageClicked:(CBaseContact *)arg1;

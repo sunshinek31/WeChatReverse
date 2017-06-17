@@ -6,8 +6,6 @@
 
 #import "MMService.h"
 
-@class NSRecursiveLock, NSString;
-
 @interface SendMessageMgr : MMService <MMService>
 {
     NSRecursiveLock *m_oLock;

@@ -80,7 +80,7 @@
 - (void)dealloc;
 - (void)prepareForReuse;
 - (void)setViewModel:(id)arg1;
-- (id)initWithViewModel:(id)arg1;
+
 
 
 

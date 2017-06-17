@@ -7,6 +7,9 @@
 //
 
 #import "WeixinContentLogicController.h"
+#import "CMessageWrap.h"
+#import "SettingUtil.h"
+#import "MMNewSessionMgr.h"
 
 @implementation WeixinContentLogicController
 
@@ -43,8 +46,19 @@
 {
     return nil;
 }
-- (CMessageWrap *)FormTextMsg:(NSString *)textMsg withText:(NSString *)text
+
+// See: -[BaseMsgContentLogicController SendTextMessage:]
+- (CMessageWrap *)FormTextMsg:(NSString *)toUserName withText:(NSString *)text
 {
-    return nil;
+    CMessageWrap *msgWrap = [[CMessageWrap alloc]initWithMsgType:1];
+    MMNewSessionMgr *sessionMgr = [[MMServiceCenter defaultCenter]getService:[MMNewSessionMgr class]];
+    
+    [msgWrap setM_nsFromUsr:[SettingUtil getLocalUsrName:0]];
+    [msgWrap setM_nsContent:text];
+    [msgWrap setM_nsToUsr:toUserName];
+    [msgWrap setM_uiCreateTime:[sessionMgr GenSendMsgTime]];
+    [msgWrap setM_uiStatus:1];
+    
+    return msgWrap;
 }
 @end

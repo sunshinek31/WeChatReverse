@@ -30,7 +30,7 @@
 - (_Bool)canBeReused;
 - (void)prepareForReuse;
 - (void)setViewModel:(id)arg1;
-- (id)initWithViewModel:(id)arg1;
+- (instancetype)initWithViewModel:(BaseChatViewModel *)aBaseChatViewModel;
 
 @end
 

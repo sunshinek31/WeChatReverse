@@ -10,4 +10,10 @@
 
 @implementation TextMessageCellView
 
+- (void)updateStatus
+{
+    [super updateStatus];
+    
+    
+}
 @end

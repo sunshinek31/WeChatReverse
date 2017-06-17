@@ -10,4 +10,29 @@
 
 @implementation BaseChatCellView
 
+- (instancetype)initWithViewModel:(BaseChatViewModel *)aBaseChatViewModel
+{
+    self = [super init];
+    if (self) {
+        [self setViewModel:aBaseChatViewModel];
+    }
+    return self;
+}
+
+- (void)setViewModel:(BaseChatViewModel *)aBaseChatViewModel
+{
+    if (!m_viewModel) {
+        m_viewModel = aBaseChatViewModel;
+        
+        [self prepareForReuse];
+        [self setNeedsLayout];
+    }
+}
+
+- (void)prepareForReuse
+{
+    m_layoutSize = CGSizeZero;
+    
+    
+}
 @end
