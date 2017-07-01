@@ -4,17 +4,13 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UIView.h"
-
-#import "CAAnimationDelegate.h"
-
-@class NSString;
+#import "TipsViewDelegate.h"
 
 @interface TipsView : UIView <CAAnimationDelegate>
 {
-    id <TipsViewDelegate> _delegate;
+//    id <TipsViewDelegate> _delegate;
     id _oUsrData;
-    id _usrData;
+//    id _usrData;
 }
 
 + (void)showEditImageTips:(id)arg1;
@@ -36,7 +32,7 @@
 + (id)showChatRoomStatusTips:(id)arg1 text:(id)arg2 action:(id)arg3 delegate:(id)arg4;
 @property(retain, nonatomic) id usrData; // @synthesize usrData=_usrData;
 @property(nonatomic) __weak id <TipsViewDelegate> delegate; // @synthesize delegate=_delegate;
-- (void).cxx_destruct;
+
 - (void)setFriendName:(id)arg1;
 - (void)animationDidStop:(id)arg1 finished:(_Bool)arg2;
 - (void)performExposeAction;
@@ -69,11 +65,6 @@
 - (id)initWithUndismissType;
 - (id)init;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

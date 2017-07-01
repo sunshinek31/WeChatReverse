@@ -6,12 +6,7 @@
 
 #import "MMUIViewControllerDelegate.h"
 
-@class CContact;
-
-@protocol DelMemLogicDelegate <MMUIViewControllerDelegate>
-- (void)onDelMemLogicStop:(_Bool)arg1;
-
-@optional
-- (void)newMessageFromContactInfo:(CContact *)arg1;
+@protocol AddMemLogicDelegate <MMUIViewControllerDelegate>
+- (void)onAddMemLogicStop:(BOOL)arg1;
 @end
 

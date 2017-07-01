@@ -33,6 +33,9 @@ typedef struct {
     
 } vector_a9c0768e;
 
+typedef struct {
+} set_e30b9d5d;
+
 typedef struct  {
     
 } map_490096f0;

@@ -19,7 +19,7 @@
 }
 
 @property(retain, nonatomic) NSString *m_nsLocalUsrName; // @synthesize m_nsLocalUsrName;
-- (void).cxx_destruct;
+
 - (void)deleteSendMsgAfterUpdateMsgStatus:(unsigned int)arg1 userName:(id)arg2 localId:(unsigned int)arg3;
 - (void)NotifyFromEvent:(id)arg1 Message:(unsigned int)arg2 MessageInfo:(id)arg3;
 - (void)HandleSendFail:(unsigned int)arg1 MessageInfo:(id)arg2;

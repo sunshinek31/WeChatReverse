@@ -35,6 +35,7 @@
     
     [DeallocHelper attachToObject:nil key:"" whenDeallocDoThis:^(DeallocHelper *helper) {
         
+//        id r =  [DeallocHelper DettachObject:nil key:nil];
     }];
     
     return mmTimer;

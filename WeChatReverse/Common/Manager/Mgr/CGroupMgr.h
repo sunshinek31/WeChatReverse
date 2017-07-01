@@ -22,7 +22,7 @@
 }
 
 + (_Bool)IsReservedGroupTopic:(id)arg1;
-- (void).cxx_destruct;
+
 - (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
 - (void)OnGetNewXmlMsg:(id)arg1 Type:(id)arg2 MsgWrap:(id)arg3;
 - (void)OnOplogResp:(id)arg1;

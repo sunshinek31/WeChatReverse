@@ -18,7 +18,7 @@
 
 @property(readonly) struct INetCmdBase *m_netcmd; // @synthesize m_netcmd;
 @property(readonly) PrtlBase *m_prtl; // @synthesize m_prtl;
-- (void).cxx_destruct;
+
 - (void)OnCmdRecv;
 - (void)Stop;
 - (_Bool)Start:(unsigned int *)arg1 RetInfo:(id)arg2;

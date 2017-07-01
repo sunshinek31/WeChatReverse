@@ -28,7 +28,7 @@
 }
 
 @property(retain, nonatomic) MMPickLocationViewController *pickLocationViewController; // @synthesize pickLocationViewController=_pickLocationViewController;
-- (void).cxx_destruct;
+
 - (void)onCancelSeletctedLocation;
 - (id)onGetRightBarButton;
 - (void)peoplePickerNavigationController:(id)arg1 didSelectPerson:(void *)arg2 property:(int)arg3 identifier:(int)arg4;
@@ -62,12 +62,6 @@
 - (void)dealloc;
 - (void)viewWillDisappear:(_Bool)arg1;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

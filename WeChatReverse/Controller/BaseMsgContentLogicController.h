@@ -113,8 +113,6 @@
 @property(retain, nonatomic) CBaseContact *m_contact; // @synthesize m_contact;
 @property(nonatomic) _Bool isPeekPreview;
 
-#pragma mark - BaseMsgContentDelgate
-
 
 
 #pragma mark -

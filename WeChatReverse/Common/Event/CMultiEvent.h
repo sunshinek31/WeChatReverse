@@ -18,7 +18,6 @@
     NSOperationQueue *m_operationQueuEvent;
 }
 
-- (void).cxx_destruct;
 - (id)GetLock;
 - (id)FindEvent:(unsigned int)arg1;
 - (void)NotifyFromEvent:(id)arg1 Message:(unsigned int)arg2 MessageInfo:(id)arg3;

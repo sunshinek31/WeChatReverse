@@ -70,6 +70,9 @@
 @property(retain, nonatomic) NSString *m_nsToken; // @synthesize m_nsToken;
 @property(nonatomic) __weak id <NotifyFromMainCtrlDelegate> m_delNotifyFromMainCtrl; // @synthesize m_delNotifyFromMainCtrl;
 
+#pragma mark - PBMessageObserverDelegate
+- (void)MessageReturn:(ProtobufCGIWrap *)aProtobufCGIWrap Event:(unsigned int)event;
+
 - (void)didTrancerouteEnd;
 - (void)tracerouteExecutor:(id)arg1 startedPingingWithTTL:(id)arg2;
 - (void)tracerouteExecutor:(id)arg1 traceRouteStepDone:(id)arg2;
@@ -80,7 +83,6 @@
 - (void)TimerSync;
 - (void)onLoginOK;
 - (void)onAuthOK;
-- (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
 - (void)HandleRespForGetUpdateInfo:(id)arg1;
 - (void)CheckUpdate:(id)arg1;
 - (void)HandleRespForSendToken:(id)arg1;

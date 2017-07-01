@@ -33,7 +33,7 @@
 - (id)getVideoPath;
 - (void)dealloc;
 - (id)init;
-- (const map_490096f0 *)getValueTagIndexMap;
+//- (const map_490096f0 *)getValueTagIndexMap;
 - (id)getValueTypeTable;
 
 // Remaining properties

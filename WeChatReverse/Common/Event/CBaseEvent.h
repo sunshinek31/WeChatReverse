@@ -4,9 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 #import "NotifyFromPrtlDelegate.h"
+#import "NotifyFromMainCtrlDelegate.h"
+#import "NotifyFromEventDelegate.h"
 
 @class CMMDB, NSRecursiveLock, NSString, NSThread;
 
@@ -49,7 +49,7 @@
 @property(nonatomic) __weak id <NotifyFromEventDelegate> m_delNotifyFromEvent; // @synthesize m_delNotifyFromEvent;
 @property(nonatomic, getter=GetLastError) unsigned int m_uiError; // @synthesize m_uiError;
 @property(nonatomic, getter=GetEventType) unsigned int m_uiEventType; // @synthesize m_uiEventType;
-- (void).cxx_destruct;
+
 - (unsigned int)GetNetworkReachabilitySeed;
 - (_Bool)IsLogIn;
 - (void)NotifyFromPrtl:(unsigned int)arg1 MessageInfo:(id)arg2;

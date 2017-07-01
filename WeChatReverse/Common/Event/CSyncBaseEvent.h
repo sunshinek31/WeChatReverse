@@ -27,7 +27,7 @@
 @property(nonatomic) _Bool m_ignoreSession; // @synthesize m_ignoreSession=_m_ignoreSession;
 @property(retain, nonatomic) NSMutableSet *m_setGetUsrImgList; // @synthesize m_setGetUsrImgList;
 @property(retain, nonatomic) NSString *m_nsLocalUsrName; // @synthesize m_nsLocalUsrName;
-- (void).cxx_destruct;
+
 - (void)NotifyFromPrtl:(unsigned int)arg1 MessageInfo:(id)arg2;
 - (_Bool)HandleBatch:(_Bool)arg1 ShowPush:(_Bool)arg2;
 - (void)BatchModWxAppContact;
