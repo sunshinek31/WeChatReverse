@@ -12,6 +12,7 @@
 #import "WCAccountGraphicVerifyControlLogicDelegate.h"
 #import "WCAccountSafeDeviceControlLogicDelegate.h"
 #import "WCAccountVoice2ndVerifyControlLogicDelegate.h"
+#import "WCAccountManualAuthControlLogicDelegate.h"
 
 @class NSString, WCAccountGraphicVerifyControlLogic, WCAccountSafeDeviceControlLogic, WCAccountVoice2ndVerifyControlLogic;
 
@@ -34,7 +35,7 @@
 
 @property(nonatomic) _Bool m_bDontFillWTBuf; // @synthesize m_bDontFillWTBuf;
 @property(nonatomic) unsigned int m_uiCGIScene; // @synthesize m_uiCGIScene;
-- (void).cxx_destruct;
+
 - (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
 - (void)handleAuthResponse:(id)arg1;
 - (void)onStopCloseAcct;
@@ -58,12 +59,6 @@
 - (void)stopLoading;
 - (void)startLoading;
 - (id)initWithData:(id)arg1;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

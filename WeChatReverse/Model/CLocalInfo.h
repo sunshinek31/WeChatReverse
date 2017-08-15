@@ -4,10 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-#import "NSCoding.h"
-
 @class NSData, NSString;
 
 @interface CLocalInfo : NSObject <NSCoding>
@@ -63,7 +59,7 @@
 @property(retain, nonatomic) NSString *m_nsLastLoginName; // @synthesize m_nsLastLoginName;
 @property(retain, nonatomic) NSString *m_nsLastUserName; // @synthesize m_nsLastUserName;
 @property(retain, nonatomic) NSString *m_nsCurUsrName; // @synthesize m_nsCurUsrName;
-- (void).cxx_destruct;
+
 - (void)copyFromLocalInfo:(id)arg1;
 - (id)initWithCoder:(id)arg1;
 - (void)encodeWithCoder:(id)arg1;

@@ -7,6 +7,7 @@
 #import "MMObject.h"
 
 #import "WCBaseControlLogicDeleagte.h"
+#import "MMUIViewControllerDelegate.h"
 
 @class NSMutableArray, NSString;
 
@@ -24,7 +25,7 @@
 @property(readonly, nonatomic) __weak id <WCBaseControlLogicDeleagte> m_logicDelegate; // @synthesize m_logicDelegate;
 @property(readonly, nonatomic) __weak id <MMUIViewControllerDelegate> m_vcRootDelegate; // @synthesize m_vcRootDelegate;
 @property(nonatomic) unsigned int m_tag; // @synthesize m_tag;
-- (void).cxx_destruct;
+
 - (_Bool)isLogicCancel;
 - (_Bool)isLogicCompleteOK;
 - (_Bool)onError:(id)arg1;
@@ -62,12 +63,6 @@
 - (void)pause;
 - (void)resume;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

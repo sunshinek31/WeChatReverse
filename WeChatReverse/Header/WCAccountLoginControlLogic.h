@@ -15,6 +15,7 @@
 
 @class NSString, VoicePrintHandler, WCAccountManualAuthControlLogic;
 
+///KEY
 @interface WCAccountLoginControlLogic : WCAccountBaseControlLogic <IMMFacebookMgrExt, WCAccountLoginFirstViewControllerDelegate, WCAccountLoginFirstUserViewControllerDelegate, WCAccountLoginLastUserViewControllerDelegate, WCAccountManualAuthControlLogicDelegate, WCAccountBackDeviceFirstViewControllerDelegate>
 {
     _Bool m_bFromLogout;
@@ -25,13 +26,12 @@
     VoicePrintHandler *m_VPHandler;
 }
 
-- (void).cxx_destruct;
+
+
 - (void)OnLoginVerifyOverLimit;
 - (void)OnLoginVerifySucessWithRandomAuthKey:(id)arg1 andTicket:(id)arg2;
 - (_Bool)recoverFromArchive:(id)arg1;
 - (id)getArchive;
-- (_Bool)onManualAuthControlLogicError:(id)arg1;
-- (void)onManualAuthControlLogicStop:(unsigned long long)arg1 response:(id)arg2;
 - (void)onLastUserChangeAccountWithView:(id)arg1;
 - (void)onLastUserChangeAccount:(id)arg1;
 - (void)onLoginByQRCodeWithOneClickDisconnect;
@@ -66,12 +66,6 @@
 - (void)checkStopLogic;
 - (id)setRootviewController:(Class)arg1 withData:(id)arg2 shouldHideNavBar:(_Bool)arg3;
 - (id)setRootviewController:(Class)arg1 withData:(id)arg2;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

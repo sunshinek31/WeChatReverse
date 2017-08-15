@@ -10,13 +10,13 @@
 
 @class NSString, WCAccountControlData;
 
+///KEY
 @interface WCAccountBaseControlLogic : WCBaseControlLogic <VoicePrintHandlerDelegate>
 {
     WCAccountControlData *m_data;
     _Bool m_bDisableDataReport;
 }
 
-- (void).cxx_destruct;
 - (_Bool)recoverFromArchive:(id)arg1;
 - (id)getArchive;
 - (void)addTopViewController:(id)arg1;
@@ -35,12 +35,6 @@
 - (void)vcBecomeFirstResponder;
 - (void)stopLogic;
 - (id)initWithData:(id)arg1;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

@@ -100,6 +100,7 @@
 - (id)GetMsg:(id)arg1 Where:(const struct WCDBConditionBase *)arg2 order:(const struct WCDBConditionBase *)arg3 Limit:(unsigned int)arg4;
 - (const struct WCDBConditionBase *)orderOfAscCreateTimeAndMsgLocalId;
 - (const struct WCDBConditionBase *)orderOfDescCreateTimeAndMsgLocalId;
+- (unsigned int)GetValidNewBizMsgCountByChatName:(id)arg1 bizType:(int)arg2;
 - (void)AddBackupMsg:(id)arg1 MsgWrap:(id)arg2;
 - (void)AddMsg:(NSString *)toUserName MsgWrap:(CMessageWrap *)msgWrap withTimeFixed:(BOOL)timeFixed;
 - (void)AddMsg:(NSString *)toUserName MsgWrap:(CMessageWrap *)msgWrap;

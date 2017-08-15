@@ -8,8 +8,8 @@
 
 #import "MMKernelExt.h"
 #import "PushLoginURLCGIDelegate.h"
-#import "UIAlertViewDelegate.h"
-#import "WCActionSheetDelegate.h"
+#import "WCActionSheet.h"
+#import "WCAccountOneClickLoginViewControllerDelegate.h"
 
 @class NSString, PushLoginURLCGI, UIActivityIndicatorView, UIButton, UIImageView, UILabel;
 
@@ -29,7 +29,6 @@
     id <WCAccountOneClickLoginViewControllerDelegate> _delegate;
 }
 
-- (void).cxx_destruct;
 - (void)onManulLoginOK;
 - (void)setDelegate:(id)arg1;
 - (void)cancleOneClickLogin;
@@ -49,12 +48,6 @@
 - (void)viewDidAppear:(_Bool)arg1;
 - (void)dealloc;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

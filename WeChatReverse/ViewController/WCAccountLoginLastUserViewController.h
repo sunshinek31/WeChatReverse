@@ -7,6 +7,7 @@
 #import "WCAccountBaseViewController.h"
 
 #import "IMMLanguageMgrExt.h"
+#import "WCAccountLoginLastUserViewControllerDelegate.h"
 
 @class NSString, UIButton, UILabel, UIView, WCAccountTextFieldItem, WCBaseKeyboardToolBar;
 
@@ -24,7 +25,6 @@
     _Bool m_bUsePwdForLogin;
 }
 
-- (void).cxx_destruct;
 - (void)WCBaseInfoItemEditChanged:(id)arg1;
 - (void)setDelegate:(id)arg1;
 - (void)didReceiveMemoryWarning;
@@ -50,12 +50,6 @@
 - (_Bool)isLastLoginAcountTypePhone;
 - (void)dealloc;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

@@ -22,7 +22,7 @@
 
 @property(nonatomic) unsigned int m_uiReportStatus; // @synthesize m_uiReportStatus;
 @property(retain, nonatomic) NSString *m_nsStyleID; // @synthesize m_nsStyleID;
-- (void).cxx_destruct;
+
 - (void)viewDidTransitionToNewSize;
 - (_Bool)useIpadSytle;
 - (_Bool)recoverFromArchive:(id)arg1;
@@ -52,12 +52,6 @@
 - (void)refreshViewWithData:(id)arg1;
 - (void)setupWithData:(id)arg1;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

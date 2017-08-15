@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "MMService.h"
-
 #import "MMKernelExt.h"
 #import "MMService.h"
 #import "WCAccountAutoLoginControlLogicDelegate.h"
@@ -26,11 +24,13 @@
 @property _Bool m_isAutoLoginMode; // @synthesize m_isAutoLoginMode=_m_isAutoLoginMode;
 @property _Bool m_isLogin; // @synthesize m_isLogin=_m_isLogin;
 @property _Bool m_isInMainFrame; // @synthesize m_isInMainFrame=_m_isInMainFrame;
-- (void).cxx_destruct;
+
+#pragma mark - WCAccountAutoLoginControlLogicDelegate
+- (void)onCloseMainFrameWithoutStop;
+- (void)onWCAccountAutoLoginControlLogicStop:(unsigned long long)arg1;
+
 - (void)onManulLoginOK;
 - (void)onPreQuit;
-- (void)onWCAccountAutoLoginControlLogicStop:(unsigned long long)arg1;
-- (void)onCloseMainFrameWithoutStop;
 - (void)delayDeleteAutoLoginLogic;
 - (void)makeAutoAuth;
 - (void)deleteAccountSuccess;
@@ -46,11 +46,6 @@
 - (void)dealloc;
 - (id)init;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

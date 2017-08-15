@@ -10,6 +10,7 @@
 
 @class CLocalInfo, CSetting, CSettingExt, CUpdateInfo, NSData, NSRecursiveLock, NSString, SyncBufferInfo;
 
+///KEY
 @interface AccountStorageMgr : MMService <MMService>
 {
     NSRecursiveLock *m_oLock;

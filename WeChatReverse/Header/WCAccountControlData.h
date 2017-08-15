@@ -4,12 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-#import "NSCoding.h"
-
 @class AccountBindPhoneInfo, NSArray, NSData, NSDate, NSDictionary, NSString, UIImage, UnifyAuthResponse;
 
+///KEY
 @interface WCAccountControlData : NSObject <NSCoding>
 {
     unsigned int m_uiLoginType;
@@ -80,7 +77,7 @@
 @property(nonatomic) unsigned int m_uiFromScene; // @synthesize m_uiFromScene;
 @property(nonatomic) unsigned int m_uiLoginType; // @synthesize m_uiLoginType;
 @property(retain, nonatomic) NSString *m_nsEmail; // @synthesize m_nsEmail;
-- (void).cxx_destruct;
+
 - (void)ParseBindPhoneInfoFromStyle:(id)arg1;
 - (_Bool)isFromForgetPwd;
 - (_Bool)isFromLogin;

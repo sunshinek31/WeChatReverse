@@ -135,6 +135,7 @@
 - (void)OnAddMessageBySender:(id)arg1;
 - (void)MessageReturn:(unsigned int)arg1 MessageInfo:(id)arg2 Event:(unsigned int)arg3;
 - (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
+- (unsigned int)GetValidNewBizMsgCountByChatName:(id)arg1 bizType:(int)arg2;
 - (void)HandleSvrCmd:(id)arg1 MsgWrap:(id)arg2;
 - (void)DelMsgPatten:(id)arg1 MsgWrap:(id)arg2;
 - (id)GetLastMsgToUsr:(id)arg1;
