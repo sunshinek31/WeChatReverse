@@ -25,9 +25,7 @@
 @property _Bool m_isLogin; // @synthesize m_isLogin=_m_isLogin;
 @property _Bool m_isInMainFrame; // @synthesize m_isInMainFrame=_m_isInMainFrame;
 
-#pragma mark - WCAccountAutoLoginControlLogicDelegate
-- (void)onCloseMainFrameWithoutStop;
-- (void)onWCAccountAutoLoginControlLogicStop:(unsigned long long)arg1;
+
 
 - (void)onManulLoginOK;
 - (void)onPreQuit;

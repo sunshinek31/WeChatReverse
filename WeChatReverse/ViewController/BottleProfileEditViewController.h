@@ -10,8 +10,6 @@
 #import "MMPickerViewDelegate.h"
 #import "MMRegionPickerViewControllerDelegate.h"
 #import "MessageObserverDelegate.h"
-#import "UITableViewDataSource.h"
-#import "UITableViewDelegate.h"
 #import "WCActionSheetDelegate.h"
 #import "settingModifySignDelegate.h"
 

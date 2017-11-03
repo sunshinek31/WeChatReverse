@@ -26,6 +26,7 @@
 
 - (instancetype)initWithPath:(NSString *)path
 {
+    path = [path stringByStandardizingPath];
     std::shared_ptr<WCDB::CoreBase> core(new WCDB::Database(path.UTF8String));
     if (self = [super initWithCore:core]) {
         _database = (WCDB::Database *) _core.get();
@@ -49,6 +50,18 @@
 #endif //TARGET_OS_IPHONE
     }
     return self;
+}
+
+- (instancetype)initWithExistingTag:(WCTTag)tag
+{
+    std::shared_ptr<WCDB::CoreBase> core(new WCDB::Database(tag));
+    if (core->getType() != WCDB::CoreType::None) {
+        if (self = [super initWithCore:core]) {
+            _database = (WCDB::Database *) _core.get();
+        }
+        return self;
+    }
+    return nil;
 }
 
 - (void)setCipherKey:(NSData *)cipherKey

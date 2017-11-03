@@ -18,6 +18,8 @@
  * limitations under the License.
  */
 
+#ifndef WCDB_OMIT_DEPRECATED
+
 #import <Foundation/Foundation.h>
 #import <WCDB/WCTStatistics.h>
 
@@ -32,6 +34,8 @@ typedef void (^WCTTrace)(WCTTag, NSDictionary<NSString *, NSNumber *> *, NSInteg
  @see [WCTStatistics SetGlobalPerformanceTrace:]
  @param trace trace
  */
-+ (void)SetGlobalTrace:(WCTTrace)trace DEPRECATED_MSG_ATTRIBUTE("Use -SetGlobalPerformanceTrace: instead");
++ (void)SetGlobalTrace:(WCTTrace)trace DEPRECATED_MSG_ATTRIBUTE("-SetGlobalTrace: is deprecated since v1.0.3. Use -SetGlobalPerformanceTrace: instead");
 
 @end
+
+#endif //WCDB_OMIT_DEPRECATED

@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 @class WCDBConfigCheckpoint, WCDBConfigCorrupt, WCDBConfigHash, WCDBConfigMultiHandles, WCDBConfigMultiThread, WCDBConfigPerformance, WCDBConfigPerformanceOptimization, WCDBConfigResultCache, WCDBConfigSwitch, WCDBConfigTrash, WCDBConfigWalFrame;
 
 @interface WCDataBaseConfig : NSObject

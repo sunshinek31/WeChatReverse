@@ -4,10 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-#import "NSCoding.h"
-
 @class CNoDisturbInfo, NSData, NSMutableDictionary, NSString, SubscriptBrandInfo;
 
 @interface CSetting : NSObject <NSCoding>
@@ -200,7 +196,7 @@
 @property(nonatomic) unsigned int m_uiStatus; // @synthesize m_uiStatus;
 @property(nonatomic) _Bool m_bSyncNickName; // @synthesize m_bSyncNickName;
 @property(nonatomic) unsigned int m_uiUin; // @synthesize m_uiUin;
-- (void).cxx_destruct;
+
 - (id)getDicSetting;
 - (void)theadSafeRemoveObjectForKey:(id)arg1;
 - (void)theadSafeSetObject:(id)arg1 forKey:(id)arg2;

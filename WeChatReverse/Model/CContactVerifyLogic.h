@@ -5,10 +5,8 @@
 //
 
 #import "MMObject.h"
-
+#import "contactVerifyLogicDelegate.h"
 #import "PBMessageObserverDelegate.h"
-#import "UIAlertViewDelegate.h"
-#import "UITextFieldDelegate.h"
 
 @class MMLoadingView, NSArray, NSString, UIAlertView, UIView;
 
@@ -33,7 +31,7 @@
 @property(nonatomic) int m_qrAddScene; // @synthesize m_qrAddScene=_m_qrAddScene;
 @property(nonatomic) _Bool m_bNotShowAlert; // @synthesize m_bNotShowAlert;
 @property(nonatomic) __weak id <contactVerifyLogicDelegate> m_delegate; // @synthesize m_delegate;
-- (void).cxx_destruct;
+
 - (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
 - (_Bool)isBrandAccount;
 - (_Bool)isEnterpriseBrand;
@@ -67,12 +65,6 @@
 - (id)getLoadingText;
 - (void)reset;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

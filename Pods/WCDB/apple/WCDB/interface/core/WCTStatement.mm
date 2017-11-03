@@ -28,7 +28,7 @@
 
 @implementation WCTStatement
 
-- (instancetype)initWithCore:(const std::shared_ptr<WCDB::CoreBase> &)core andStatementHandle:(WCDB::RecyclableStatement &)statementHandle andError:(const WCDB::Error &)error
+- (instancetype)initWithCore:(const std::shared_ptr<WCDB::CoreBase> &)core andStatementHandle:(WCDB::RecyclableStatement &)statementHandle
 {
     if (self = [super initWithCore:core]) {
         _statementHandle = statementHandle;
@@ -84,7 +84,15 @@
     return result;
 }
 
-//get value, index begin with 0
+- (BOOL)bindValue:(WCTValue *)value byColumnName:(NSString *)columnName
+{
+    int index = [self getIndexByColumnName:columnName];
+    if (index != INT_MAX) {
+        return [self bindValue:value toIndex:index];
+    }
+    return NO;
+}
+
 - (WCTValue *)getValueAtIndex:(int)index
 {
     WCTValue *value = nil;
@@ -116,6 +124,29 @@
     return value;
 }
 
+- (WCTValue *)getValueByColumnName:(NSString *)columnName
+{
+    int index = [self getIndexByColumnName:columnName];
+    if (index != INT_MAX) {
+        return [self getValueAtIndex:index];
+    }
+    return nil;
+}
+
+- (int)getIndexByColumnName:(NSString *)columnName
+{
+    if (columnName) {
+        const char *rightColumnName = columnName.UTF8String;
+        for (int i = 0; i < _statementHandle->getColumnCount(); ++i) {
+            const char *leftColumnName = _statementHandle->getColumnName(i);
+            if (leftColumnName && strcmp(leftColumnName, rightColumnName) == 0) {
+                return i;
+            }
+        }
+    }
+    return INT_MAX;
+}
+
 - (void)resetBinding
 {
     _statementHandle->resetBinding();
@@ -131,12 +162,21 @@
     return (WCTColumnType) _statementHandle->getType(index);
 }
 
-- (int)getCount
+- (WCTColumnType)getTypeByColumnName:(NSString *)columnName
+{
+    int index = [self getIndexByColumnName:columnName];
+    if (index != INT_MAX) {
+        return [self getTypeAtIndex:index];
+    }
+    return WCTColumnTypeNil;
+}
+
+- (int)getColumnCount
 {
     return _statementHandle->getColumnCount();
 }
 
-- (NSString *)getNameAtIndex:(int)index
+- (NSString *)getColumnNameAtIndex:(int)index
 {
     const char *columnName = _statementHandle->getColumnName(index);
     return columnName ? @(columnName) : nil;

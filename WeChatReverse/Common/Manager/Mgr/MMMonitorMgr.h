@@ -4,17 +4,13 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-@class NSString, NSThread;
-
 @interface MMMonitorMgr : NSObject
 {
     NSThread *m_monitorThread;
     _Bool m_bStop;
     unsigned long long m_nIntervalTime;
     unsigned long long m_nLastTimeInterval;
-    struct vector<unsigned long, std::__1::allocator<unsigned long>> m_vecLastMainThreadCallStack;
+//    struct vector<unsigned long, std::__1::allocator<unsigned long>> m_vecLastMainThreadCallStack;
     unsigned long long m_nSum;
     _Bool m_isBackgroundStartUp;
     unsigned long long m_blockDiffTime;
@@ -29,11 +25,10 @@
     _Bool m_bMonitor;
 }
 
-+ (id)shareInstance;
++ (instancetype)shareInstance;
 @property(nonatomic) _Bool m_bLaunchLagMonitorOver; // @synthesize m_bLaunchLagMonitorOver;
 @property(nonatomic) _Bool m_bMonitor; // @synthesize m_bMonitor;
-- (id).cxx_construct;
-- (void).cxx_destruct;
+
 - (id)getLaunchBlockRecordFilePath;
 - (void)clearDumpInBackgroundFetch;
 - (void)setLaunchOverByTimer;

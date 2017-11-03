@@ -41,24 +41,16 @@
     ForwardMessageLogicController *m_forwardLogic;
     unsigned int _startTime;
     int m_uiAddFriendStatScene;
-//    int _m_qrCodeAddFriendScene;
-//    unsigned int _searchFromIndex;
-//    NSMutableDictionary *_verifyUserInfoList;
-//    NSString *_searchId;
-//    NSString *_searchKeyword;
-//    NSString *_searchExtraParamsString;
-//    CMessageWrap *_sourceMsg;
-//    NSString *_reportInfo;
 }
 
-@property(strong, nonatomic) NSString *reportInfo; // @synthesize reportInfo=_reportInfo;
-@property(strong, nonatomic) CMessageWrap *sourceMsg; // @synthesize sourceMsg=_sourceMsg;
-@property(strong, nonatomic) NSString *searchExtraParamsString; // @synthesize searchExtraParamsString=_searchExtraParamsString;
-@property(nonatomic) unsigned int searchFromIndex; // @synthesize searchFromIndex=_searchFromIndex;
-@property(strong, nonatomic) NSString *searchKeyword; // @synthesize searchKeyword=_searchKeyword;
-@property(strong, nonatomic) NSString *searchId; // @synthesize searchId=_searchId;
-@property(strong, nonatomic) NSMutableDictionary *verifyUserInfoList; // @synthesize verifyUserInfoList=_verifyUserInfoList;
-@property(nonatomic) int m_qrCodeAddFriendScene; // @synthesize m_qrCodeAddFriendScene=_m_qrCodeAddFriendScene;
+@property(strong, nonatomic) NSString *reportInfo;
+@property(strong, nonatomic) CMessageWrap *sourceMsg;
+@property(strong, nonatomic) NSString *searchExtraParamsString;
+@property(nonatomic) unsigned int searchFromIndex;
+@property(strong, nonatomic) NSString *searchKeyword;
+@property(strong, nonatomic) NSString *searchId;
+@property(strong, nonatomic) NSMutableDictionary *verifyUserInfoList;
+@property(nonatomic) int m_qrCodeAddFriendScene;
 @property(nonatomic) int m_uiAddFriendStatScene; // @synthesize m_uiAddFriendStatScene;
 @property(strong, nonatomic) id m_userData; // @synthesize m_userData;
 @property(nonatomic) int m_searchScene; // @synthesize m_searchScene;

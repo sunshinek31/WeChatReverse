@@ -81,11 +81,6 @@ WCTExpr::WCTExpr(const WCDB::Expr &expr)
 {
 }
 
-WCTExpr::operator WCTExprList() const
-{
-    return {*this};
-}
-
 WCTResult WCTExpr::as(const WCTProperty &property)
 {
     return WCTResult(*this).as(property);
@@ -112,6 +107,11 @@ WCTExpr WCTExpr::operator+() const
 WCTExpr WCTExpr::operator-() const
 {
     return WCTExpr(Expr::operator-(), *this);
+}
+
+WCTExpr WCTExpr::operator~() const
+{
+    return WCTExpr(Expr::operator~(), *this);
 }
 
 WCTExpr WCTExpr::operator||(const WCTExpr &operand) const
@@ -371,12 +371,42 @@ WCTExpr WCTExpr::total(bool distinct) const
     return WCTExpr(Expr::total(distinct), *this);
 }
 
+WCTExpr WCTExpr::abs(bool distinct) const
+{
+    return WCTExpr(Expr::abs(distinct), *this);
+}
+
+WCTExpr WCTExpr::hex(bool distinct) const
+{
+    return WCTExpr(Expr::hex(distinct), *this);
+}
+
+WCTExpr WCTExpr::length(bool distinct) const
+{
+    return WCTExpr(Expr::length(distinct), *this);
+}
+
+WCTExpr WCTExpr::lower(bool distinct) const
+{
+    return WCTExpr(Expr::lower(distinct), *this);
+}
+
+WCTExpr WCTExpr::upper(bool distinct) const
+{
+    return WCTExpr(Expr::upper(distinct), *this);
+}
+
+WCTExpr WCTExpr::round(bool distinct) const
+{
+    return WCTExpr(Expr::round(distinct), *this);
+}
+
 NSString *WCTExpr::getDescription() const
 {
     return [NSString stringWithUTF8String:WCDB::Expr::getDescription().c_str()];
 }
 
-WCTExpr WCTExpr::Function(NSString *function, const WCTExprList &exprList) const
+WCTExpr WCTExpr::Function(NSString *function, const WCTExprList &exprList)
 {
     return WCTExpr(Expr::Function(function.UTF8String, exprList));
 }
@@ -417,4 +447,24 @@ std::string WCTExpr::literalValue(WCTValue *value)
             break;
     }
     return "";
+}
+
+WCTExpr WCTExpr::Case(const WCTExpr &case_, const std::list<std::pair<WCTExpr, WCTExpr>> &when, const std::list<WCTExpr> &else_)
+{
+    return WCTExpr(Expr::Case(case_, when, else_));
+}
+
+WCTExprList::WCTExprList()
+    : std::list<const WCTExpr>()
+{
+}
+
+WCTExprList::WCTExprList(const WCTExpr &expr)
+    : std::list<const WCTExpr>({expr})
+{
+}
+
+WCTExprList::WCTExprList(std::initializer_list<const WCTExpr> il)
+    : std::list<const WCTExpr>(il.begin(), il.end())
+{
 }

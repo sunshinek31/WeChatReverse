@@ -26,7 +26,7 @@
     _Bool m_isChangingTheme;
     _Bool m_isInBackground;
     SvrErrorTipWindow *m_svrErrorTipWindow;
-    PreEnterWechatLogic *m_PreEnterWechatLogic;
+    PreEnterWechatLogic *m_PreEnterWechatLogic; /**< 应用模块预导航逻辑 */ 
     MMTabBarController *m_tabbarController;
 }
 

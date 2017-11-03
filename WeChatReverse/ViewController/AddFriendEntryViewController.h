@@ -5,10 +5,8 @@
 //
 
 #import "MMSearchBarDisplayController.h"
-
 #import "InviteFriendLogicDelegate.h"
 #import "MMTableViewInfoDelegate.h"
-#import "UIAlertViewDelegate.h"
 
 @class CrossfadeAnimationController, FindContactSearchViewCellInfo, InviteFriendLogic, MMTableViewInfo, MoreQRCodeViewController, NSString, UIButton, UILabel, UIView;
 
@@ -32,7 +30,7 @@
 @property(nonatomic) unsigned int searchScene; // @synthesize searchScene=_searchScene;
 @property(nonatomic) _Bool m_bShowInvite; // @synthesize m_bShowInvite=_m_bShowInvite;
 @property(retain, nonatomic) NSString *m_nsUserNameToFind; // @synthesize m_nsUserNameToFind;
-- (void).cxx_destruct;
+
 - (void)onMainWindowFrameChanged;
 - (void)initDeepLinkConfig;
 - (id)getVCWithDeepLinkName:(id)arg1;
@@ -64,12 +62,6 @@
 - (void)pluginsChanged:(id)arg1;
 - (unsigned int)getBottleUnreadCountAtTarbar;
 - (unsigned int)getBottleUnreadCount;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

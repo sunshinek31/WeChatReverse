@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 #import "MMDBRRepairerExt.h"
 
 @class NSString, WCDataBase, WCDataBaseTable;
@@ -30,7 +28,7 @@
 @property(retain, nonatomic) WCDataBaseTable *m_tableMessage; // @synthesize m_tableMessage;
 @property(retain, nonatomic) WCDataBaseTable *m_tableDataItem; // @synthesize m_tableDataItem;
 @property(retain, nonatomic) WCDataBase *m_db; // @synthesize m_db;
-- (void).cxx_destruct;
+
 - (void)willRepairDB:(unsigned int)arg1 needCatch:(_Bool *)arg2;
 - (void)updateMsgDelStat:(_Bool)arg1 forAdSnsObj:(id)arg2 timeLimit:(unsigned int)arg3;
 - (void)updateMsgDelStat:(_Bool)arg1 forSnsObjID:(unsigned long long)arg2 timeLimit:(unsigned int)arg3;

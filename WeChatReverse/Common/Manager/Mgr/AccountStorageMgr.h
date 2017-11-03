@@ -6,8 +6,6 @@
 
 #import "MMService.h"
 
-#import "MMService.h"
-
 @class CLocalInfo, CSetting, CSettingExt, CUpdateInfo, NSData, NSRecursiveLock, NSString, SyncBufferInfo;
 
 ///KEY
@@ -27,7 +25,7 @@
 }
 
 @property(copy, nonatomic) NSString *m_nsDocPath; // @synthesize m_nsDocPath;
-- (void).cxx_destruct;
+
 - (void)SetMmtlsCtrlFlag:(unsigned int)arg1;
 - (void)clearSyncBuffer;
 - (void)onServiceClearData;
@@ -63,11 +61,6 @@
 @property(copy, nonatomic) CSetting *m_oSetting; // @synthesize m_oSetting;
 @property(copy, nonatomic) CLocalInfo *m_oLocalInfo; // @synthesize m_oLocalInfo;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

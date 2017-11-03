@@ -5,21 +5,20 @@
 //
 
 #import "MMObject.h"
-
+#import "MMImagePickerManagerDelegate.h"
 #import "ImageBrowseDelegate.h"
 #import "MMImagePickerControllerDelegate.h"
-#import "MultiImagePickerControllerDelegate.h"
-#import "UIImagePickerControllerDelegate.h"
-#import "UINavigationControllerDelegate.h"
 
-@class MMImagePickerManagerOptionObj, NSMutableArray, NSString;
+@class MMImagePickerManagerOptionObj;
 
-@interface MMImagePickerManager : MMObject <MultiImagePickerControllerDelegate, MMImagePickerControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ImageBrowseDelegate>
-{
-    id <MMImagePickerManagerDelegate> m_delegate;
-    MMImagePickerManagerOptionObj *_optionObj;
-    NSMutableArray *_tempImagePool;
-}
+/**
+ 照片选择管理器
+ */
+@interface MMImagePickerManager : MMObject <MMImagePickerControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ImageBrowseDelegate>
+
+@property(strong, nonatomic) NSMutableArray *tempImagePool;
+@property(strong, nonatomic) MMImagePickerManagerOptionObj *optionObj;
+@property(nonatomic, weak) id <MMImagePickerManagerDelegate> m_delegate;
 
 + (_Bool)isCaptureByImagePicker:(id)arg1;
 + (id)getImagePickerControllerWithOptionObj:(id)arg1;
@@ -27,20 +26,14 @@
 + (id)getImagePickerFromPhotoLibraryWithOptionObj:(id)arg1 withManager:(id)arg2;
 + (void)showWithOptionObj:(id)arg1 inViewController:(id)arg2;
 + (_Bool)isSupportViewController:(id)arg1;
-@property(retain, nonatomic) NSMutableArray *tempImagePool; // @synthesize tempImagePool=_tempImagePool;
-@property(retain, nonatomic) MMImagePickerManagerOptionObj *optionObj; // @synthesize optionObj=_optionObj;
-@property(nonatomic) __weak id <MMImagePickerManagerDelegate> m_delegate; // @synthesize m_delegate;
-- (void).cxx_destruct;
+
+
 - (void)OnShowDidFinished;
 - (void)OnShowWillFinished;
 - (id)init;
 - (void)didSelectImage:(id)arg1 Data:(id)arg2 Finish:(_Bool)arg3 fromImagePicker:(id)arg4;
 - (void)didSelectImage:(id)arg1 Data:(id)arg2 fromImagePicker:(id)arg3;
 - (void)didSelectImage:(id)arg1 fromImagePicker:(id)arg2;
-- (void)sendImages:(id)arg1 originalInfos:(id)arg2 newInfos:(id)arg3;
-- (void)imagePickerController:(id)arg1 didFinishPickingImages:(id)arg2;
-- (void)MMImagePickerController:(id)arg1 didFinishPickingGifFileWithData:(id)arg2;
-- (void)MMVideoPickerControllerDidCancel:(id)arg1;
 - (void)MMVideoPickerController:(id)arg1 didFinishPickingSightWithInfo:(id)arg2;
 - (void)MMVideoPickerController:(id)arg1 didFinishPickingMediaWithInfo:(id)arg2;
 - (void)MMImagePickerControllerDidCancel:(id)arg1;
@@ -51,12 +44,6 @@
 - (void)imagePickerController:(id)arg1 didFinishPickingImage:(id)arg2 editingInfo:(id)arg3;
 - (void)navigationController:(id)arg1 willShowViewController:(id)arg2 animated:(_Bool)arg3;
 - (void)navigationController:(id)arg1 didShowViewController:(id)arg2 animated:(_Bool)arg3;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

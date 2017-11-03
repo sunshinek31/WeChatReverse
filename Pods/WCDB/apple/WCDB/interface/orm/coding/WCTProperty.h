@@ -29,8 +29,6 @@ public:
                 Class cls,
                 const std::shared_ptr<WCTColumnBinding> &columnBinding);
 
-    operator WCTPropertyList() const;
-
     //distinct
     WCTResultList distinct() const;
 
@@ -43,7 +41,7 @@ public:
     //index
     WCTIndex index(WCTOrderTerm term = WCTOrderedNotSet) const;
 
-    //function
+    //aggregate functions
     WCTExpr avg(bool distinct = false) const;
     WCTExpr count(bool distinct = false) const;
     WCTExpr groupConcat(bool distinct = false) const;
@@ -52,6 +50,14 @@ public:
     WCTExpr min(bool distinct = false) const;
     WCTExpr sum(bool distinct = false) const;
     WCTExpr total(bool distinct = false) const;
+
+    //core functions
+    WCTExpr abs(bool distinct = false) const;
+    WCTExpr hex(bool distinct = false) const;
+    WCTExpr length(bool distinct = false) const;
+    WCTExpr lower(bool distinct = false) const;
+    WCTExpr upper(bool distinct = false) const;
+    WCTExpr round(bool distinct = false) const;
 
     //def
     WCTColumnDef def(WCTColumnType type,
@@ -64,6 +70,7 @@ public:
     WCTExpr operator!() const;
     WCTExpr operator+() const;
     WCTExpr operator-() const;
+    WCTExpr operator~() const;
 
     //binary
     WCTExpr operator||(const WCTExpr &operand) const; //or, not concat
@@ -126,4 +133,13 @@ protected:
     WCTProperty(const WCDB::Column &column,
                 Class cls,
                 const std::shared_ptr<WCTColumnBinding> &columnBinding);
+};
+
+class WCTPropertyList : public std::list<const WCTProperty> {
+public:
+    WCTPropertyList();
+    WCTPropertyList(const WCTProperty &property);
+    WCTPropertyList(std::initializer_list<const WCTProperty> il);
+
+    WCTPropertyList inTable(NSString *tableName) const;
 };

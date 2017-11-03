@@ -73,7 +73,7 @@
     
 }
 
-- (MMService *)getService:(Class)serviceClass
+- (id)getService:(Class)serviceClass
 {
     return nil;
 }

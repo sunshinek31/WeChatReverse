@@ -21,6 +21,7 @@
 #import <Foundation/Foundation.h>
 #import <WCDB/WINQ.h>
 #import <WCDB/utility.hpp>
+#import <map>
 #import <unordered_map>
 
 #pragma mark - Chain Call
@@ -44,7 +45,11 @@ class WCTBinding;
 
 class WCTColumnBinding;
 typedef std::list<std::shared_ptr<WCTColumnBinding>> WCTColumnBindingList;
-typedef std::unordered_map<std::string, std::shared_ptr<WCTColumnBinding>>
+
+//Case insensitive
+typedef std::map<std::string,
+                 std::shared_ptr<WCTColumnBinding>,
+                 WCDB::CaseInsensiveComparetor>
     WCTColumnBindingMap;
 
 class WCTIndexBinding;
@@ -62,10 +67,10 @@ typedef std::unordered_map<std::string,
 @protocol WCTTableCoding;
 @protocol WCTColumnCoding;
 class WCTExpr;
-typedef std::list<const WCTExpr> WCTExprList;
+class WCTExprList;
 class WCTAnyProperty;
 class WCTProperty;
-typedef std::list<const WCTProperty> WCTPropertyList;
+class WCTPropertyList;
 class WCTResult;
 class WCTResultList;
 typedef WCTExpr WCTCondition;

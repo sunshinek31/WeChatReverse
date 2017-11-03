@@ -40,6 +40,7 @@ class HandlePool {
 public:
     static RecyclableHandlePool GetPool(const std::string &path,
                                         const Configs &defaultConfigs);
+    static RecyclableHandlePool GetPool(Tag tag);
     static void PurgeFreeHandlesInAllPool();
 
 protected:
@@ -86,6 +87,7 @@ protected:
     ConcurrentList<HandleWrap> m_handles;
     std::atomic<int> m_aliveHandleCount;
     static const int s_hardwareConcurrency;
+    static const int s_maxConcurrency;
 };
 
 } //namespace WCDB

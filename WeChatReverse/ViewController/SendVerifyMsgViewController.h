@@ -5,10 +5,7 @@
 //
 
 #import "MMUIViewController.h"
-
-#import "UITableViewDataSource.h"
-#import "UITableViewDelegate.h"
-#import "UITextFieldDelegate.h"
+#import "SendVerifyMsgViewControllerDelegate.h"
 #import "contactVerifyLogicDelegate.h"
 
 @class CContact, CContactVerifyLogic, CMessageWrap, MMTableView, NSString, UISwitch, UITextField;
@@ -23,15 +20,19 @@
     int _m_qrCodeAddFriendScene;
     CContact *m_oChatContact;
     CMessageWrap *m_oSourceMsg;
-    id <SendVerifyMsgViewControllerDelegate> _m_delegate;
+//    id <SendVerifyMsgViewControllerDelegate> _m_delegate;
 }
 
 @property(nonatomic) int m_qrCodeAddFriendScene; // @synthesize m_qrCodeAddFriendScene=_m_qrCodeAddFriendScene;
-@property(nonatomic) __weak id <SendVerifyMsgViewControllerDelegate> m_delegate; // @synthesize m_delegate=_m_delegate;
+@property(nonatomic) __weak id <SendVerifyMsgViewControllerDelegate> m_delegate; 
 @property(retain, nonatomic) CMessageWrap *m_oSourceMsg; // @synthesize m_oSourceMsg;
 @property(retain, nonatomic) CContact *m_oChatContact; // @synthesize m_oChatContact;
 @property(retain, nonatomic) CContact *m_oVerifyContact; // @synthesize m_oVerifyContact;
-- (void).cxx_destruct;
+
+#pragma mark - contactVerifyLogicDelegate
+- (void)contactVerifyOk:(NSArray *)arg1 opCode:(unsigned int)arg2;
+- (void)onContactVerifyFail;
+
 - (_Bool)textField:(id)arg1 shouldChangeCharactersInRange:(struct _NSRange)arg2 replacementString:(id)arg3;
 - (_Bool)textFieldShouldReturn:(id)arg1;
 - (void)updateWordCount:(id)arg1;
@@ -44,8 +45,6 @@
 - (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2;
 - (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2;
 - (long long)numberOfSectionsInTableView:(id)arg1;
-- (void)contactVerifyOk:(id)arg1 opCode:(unsigned int)arg2;
-- (void)onContactVerifyFail;
 - (void)onSendVerifyMsg;
 - (void)onHideKeyBoard;
 - (void)onReturn;
@@ -55,12 +54,6 @@
 - (void)viewDidLoad;
 - (void)dealloc;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

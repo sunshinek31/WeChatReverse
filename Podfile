@@ -6,7 +6,7 @@ xcodeproj "WeChatReverse.xcodeproj"
 
 target :WeChatReverse do
 
-pod 'WCDB'
+pod 'WCDB', '~> 1.0.4'
 
 end
 

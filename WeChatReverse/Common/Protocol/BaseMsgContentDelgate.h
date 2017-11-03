@@ -17,6 +17,12 @@
 - (NSArray *)previewActionItems;
 - (BOOL)shouldSearchedMsgHightlight;
 - (unsigned int)getSearchedMsgLocalID;
+
+/**
+ 是否使所有操作不可用
+
+ @return 可用标识
+ */
 - (BOOL)shouldDisableAllOperation;
 - (BOOL)ShouldShowSearchedAnyMsg;
 - (BOOL)ShouldShowSearchResultMessageArray;
@@ -24,14 +30,58 @@
 - (BOOL)ShouldShowSearchBar;
 - (NSString *)GetRightBarButtonTitle;
 - (NSString *)GetRightBarButtonImageName;
-- (void)StopPlaying:(CMessageWrap *)arg1;
-- (void)StartPlaying:(CMessageWrap *)arg1 FromTouch:(BOOL)arg2;
+
+/**
+ 停止播放
+
+ @param messageWrap 消息对象
+ */
+- (void)StopPlaying:(CMessageWrap *)messageWrap;
+
+/**
+ 开始播放消息
+
+ @param messageWrap 消息模型
+ @param fromTouch 是否来自用户点击
+ */
+- (void)StartPlaying:(CMessageWrap *)messageWrap FromTouch:(BOOL)fromTouch;
+
+/**
+ 正在录音
+
+ @return BOOL
+ */
 - (BOOL)IsRecording;
+
+/**
+ 关闭录音
+ */
 - (void)CancelRecording;
+
+/**
+ 停止录音
+ */
 - (void)StopRecording;
+
+/**
+ 开始录音
+ */
 - (void)StartRecording;
+
+/**
+ 获取联系对象
+
+ @return 联系对象
+ */
 - (CBaseContact *)GetContact;
-- (void)onTextChange:(NSString *)arg1 selectedRange:(struct _NSRange)arg2;
+
+/**
+ 文字变化操作
+
+ @param textChange 变化的文本
+ @param range 范围
+ */
+- (void)onTextChange:(NSString *)textChange selectedRange:(NSRange)range;
 - (void)setNeedUpdateTitle:(BOOL *)arg1;
 - (UIImage *)GetTitleImage;
 - (void)onSaveDraft;
@@ -43,8 +93,18 @@
 - (UIImage *)ImageOfHeaderButtonAtIndex:(unsigned int)arg1;
 - (NSString *)TitleOfHeaderButtonsAtIndex:(unsigned int)arg1;
 - (unsigned int)NumberOfHeaderButtons;
-- (void)ResendMessage:(CMessageWrap *)arg1;
+
+/**
+ 重发消息
+
+ @param messageWrap 消息对象
+ */
+- (void)ResendMessage:(CMessageWrap *)messageWrap;
 - (void)StateChanged;
+
+/**
+ 语音模式按钮点击
+ */
 - (void)VoiceModeClicked;
 - (void)ViewWillDisappear;
 - (void)ViewWillAppear;
@@ -61,8 +121,14 @@
 - (void)OpenEmoticonToolView:(MMInputToolView *)arg1;
 - (void)CustomToolViewEX:(MMInputToolView *)arg1;
 - (BOOL)onLoadDownMoreMessage;
+
+/**
+ 点击更多消息事件
+
+ @return 消息列表
+ */
 - (NSMutableArray *)onLoadMoreMessage;
-- (void)onSendCaptrueImage:(NSURL *)arg1;
+- (void)onSendCaptrueImage:(NSURL *)imageUrl;
 - (void)onOpenCameraController;
 - (void)onOpenMediaBrowser;
 - (void)DelMsgWithMsgList:(NSArray *)arg1 DelAll:(BOOL)arg2;
@@ -83,12 +149,38 @@
 - (void)onMultiTalkButtonClick;
 - (void)ShareCard;
 - (void)SendNotGameEmoticonMessage:(CMessageWrap *)arg1 errorMsg:(NSString *)arg2;
-- (void)SendEmoticonMessage:(CEmoticonWrap *)arg1;
+
+/**
+ 发送颜文字消息
+
+ @param emotionWrap 颜文字对象
+ */
+- (void)SendEmoticonMessage:(CEmoticonWrap *)emotionWrap;
 - (void)SendEmojiArtMessage:(NSString *)arg1;
 - (void)SendTextMessage:(NSString *)msg;    /**< 发送文本消息 */
-- (void)SendMessageWrap:(CMessageWrap *)arg1;
-- (CMessageWrap *)GetMessageFromImage:(UIImage *)arg1;
-- (void)SendImageMessage:(UIImage *)arg1 ImageInfo:(ImageInfo *)arg2;
+
+/**
+ 发送消息对象
+
+ @param messageWrap 消息
+ */
+- (void)SendMessageWrap:(CMessageWrap *)messageWrap;
+
+/**
+ 根据图片获取消息对象
+
+ @param image 图片
+ @return 消息对象
+ */
+- (CMessageWrap *)GetMessageFromImage:(UIImage *)image;
+
+/**
+ 发送图片消息
+
+ @param image 图片
+ @param imageInfo 图片消息封装
+ */
+- (void)SendImageMessage:(UIImage *)image ImageInfo:(ImageInfo *)imageInfo;
 - (BOOL)CanShowSight;
 - (BOOL)CanShowBanner;
 - (BOOL)CanOpenServiceAppList;
@@ -109,11 +201,23 @@
 - (BOOL)CanSendTextMsg:(NSString *)arg1;
 - (void)didShowFirstUnReadMessage;
 - (void)setLastCreateTime:(unsigned long long)arg1;
-- (NSMutableArray *)GetMessageArrayFrom:(unsigned int)arg1 createTime:(unsigned long long)arg2;
+- (NSMutableArray *)GetMessageArrayFrom:(unsigned int)arg1 createTime:(unsigned long long)timeStamp;
+
+/**
+ 获取第一条未读消息
+
+ @return 消息对象
+ */
 - (CMessageWrap *)GetFirstUnReadMessage;
 - (NSMutableArray *)GetSearchedResultContentMessageArray;
 - (NSMutableArray *)GetDownMessageArray;
-- (void)OpenContactInfo:(CBaseContact *)arg1;
+
+/**
+ 打开联系人信息
+
+ @param aContact 联系人对象
+ */
+- (void)OpenContactInfo:(CBaseContact *)aContact;
 - (void)OpenDetailInfo;
 
 @optional

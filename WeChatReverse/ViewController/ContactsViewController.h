@@ -12,8 +12,6 @@
 #import "MMVoiceSearchBarDelegate.h"
 #import "MMVoiceSearchDelegate.h"
 #import "MainTableDelegate.h"
-#import "UITableViewDataSource.h"
-#import "UITableViewDelegate.h"
 #import "VerifyPhoneDelegate.h"
 #import "WCActionSheetDelegate.h"
 
@@ -39,7 +37,7 @@
 
 @property(nonatomic) _Bool hasWechatOut; // @synthesize hasWechatOut=_hasWechatOut;
 @property(retain, nonatomic) NSMutableArray *m_brandContactGroupList; // @synthesize m_brandContactGroupList;
-- (void).cxx_destruct;
+
 - (void)checkDBAutoRecover;
 - (void)initDeepLinkConfig;
 - (id)getVCWithDeepLinkName:(id)arg1;
@@ -153,12 +151,6 @@
 - (void)showContactInfoView:(id)arg1;
 - (void)openContactInfoView:(int)arg1;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

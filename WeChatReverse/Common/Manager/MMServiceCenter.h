@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class MMService;
 
 @interface MMServiceCenter : NSObject
 {
@@ -21,6 +22,6 @@
 - (void)callTerminate;
 - (void)callEnterBackground;
 - (void)callEnterForeground;
-- (void)removeService:(Class)arg1;
-- (id)getService:(Class)arg1;
+- (void)removeService:(Class)serviceClass;
+- (id)getService:(Class)serviceClass;
 @end

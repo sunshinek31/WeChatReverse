@@ -7,6 +7,22 @@
 //
 
 #import "MicroMessengerAppDelegate.h"
+#import "MMMonitorMgr.h"
+#import "MMCustomDumpMgr.h"
+#import "MMThemeManager.h"
+#import "NSObject+MethodSwizzlingCategory.h"
+#import "NSObject+SafePerform.h"
+#import "NSObject+POP.h"
+#import "NSObject+NSObject_SBJSON.h"
+#import "MMStaticResourcePatchMgr.h"
+#import "MMSafeModeMgr.h"
+#import "MMAlbumDataProvider.h"
+#import "MMPerformanceDataReportMgr.h"
+#import "MMServiceCenter.h"
+#import "MMDBPerformanceMgr.h"
+#import "NotificationActionsMgr.h"
+#import "CAppViewControllerManager.h"
+#import "CMainControll.h"
 
 @interface MicroMessengerAppDelegate ()
 
@@ -32,7 +48,21 @@
 #pragma mark - UIApplication delegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [NSObject switchSomeCriticalMethod];
+    
+    m_isFirstLaunching = YES;
+    [MMMonitorMgr shareInstance];
+    
+    
+    [[MMCustomDumpMgr shareInstance] setupMMCommonAdapter];
+    
+    [[MMThemeManager sharedThemeManager]reloadThemeList];
+    
+    [self beforeMainLauching];
+    
+    [self continueMainLaunching:nil];
+    
     return YES;
 }
 
@@ -413,7 +443,38 @@
 
 - (void)continueMainLaunching:(id)arg1
 {
+    // TODO
+    // 账户登录控制
     
+    [[MMStaticResourcePatchMgr sharedInstance] loadPatchResource];
+    [[MMSafeModeMgr shareInstance] didEnterWeChat];
+    
+    [self registerLazyExtensionListener];
+    [self registerClsMethodObserver];
+    [self initServiceObject];
+    
+    [MMAlbumDataProvider tryInitAlbumChangeObserver];
+    
+    [[MMPerformanceDataReportMgr shareInstance] registerExtension];
+    [[MMPerformanceDataReportMgr shareInstance] loadIdKeyInfo];
+    
+    MMDBPerformanceMgr *dbPerformanceMgr =(MMDBPerformanceMgr *) [[MMServiceCenter defaultCenter] getService:[MMDBPerformanceMgr class]];
+    
+    if (m_appVerCompareWithLastRun == 0) {
+        
+    }
+    
+    m_appViewControllerMgr = [[CAppViewControllerManager alloc]initWithWindow:self.window];
+    
+    [m_appViewControllerMgr openView:m_uInitViewType launchOptions:nil isAppUpdated:NO];
+    
+    NotificationActionsMgr *actionMgr = [[MMServiceCenter defaultCenter] getService:[NotificationActionsMgr class]];
+    [actionMgr registerNotification];
+    
+    [actionMgr safePerformSelector:@selector(doSendTokenTimeOut) withObject:nil afterDelay:1];
+    
+    
+    [self mainThreadMonitorStart];
 }
 
 - (void)tryProtectLaunchBeforeDeviceFirstUnlock
@@ -423,7 +484,11 @@
 
 - (void)beforeMainLauching
 {
+    // TODO
     
+    CMainControll *mainControll;
+    
+    unsigned int start = [mainControll Start:nil];
 }
 
 - (void)logEssencialInfo

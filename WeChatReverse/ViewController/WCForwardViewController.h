@@ -5,7 +5,6 @@
 //
 
 #import "MMUIViewController.h"
-
 #import "BaseEmoticonViewDelegate.h"
 #import "ContactsSelectorControllerDelegate.h"
 #import "IMMGrowTextViewExt.h"
@@ -13,9 +12,6 @@
 #import "InputControllerDelegate.h"
 #import "MMTableViewInfoDelegate.h"
 #import "SelectorControllerDelegate.h"
-#import "UIAlertViewDelegate.h"
-#import "UIScrollViewDelegate.h"
-#import "UITextViewDelegate.h"
 #import "WCFacadeExt.h"
 #import "WCGroupTagViewControllerDelegate.h"
 #import "WCTimelinePOIPickerViewControllerDelegate.h"

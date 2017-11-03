@@ -18,4 +18,15 @@
     [appDelegate closeMainFrameWithoutReset];
 }
 
+#pragma mark - WCAccountAutoLoginControlLogicDelegate
+- (void)onCloseMainFrameWithoutStop
+{
+    
+}
+
+- (void)onWCAccountAutoLoginControlLogicStop:(unsigned long long)arg1
+{
+    
+}
+
 @end

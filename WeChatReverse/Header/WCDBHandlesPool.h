@@ -4,8 +4,6 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
 #import "WCDBHandleWrapProtocol.h"
 
 @class NSRecursiveLock, NSString, WCDBRWLock;
@@ -14,20 +12,18 @@
 {
     WCDBRWLock *m_handleLock;
     NSRecursiveLock *m_poolLock;
-    struct map<NSThread *__weak, WCDBHandleWrap *, std::__1::less<NSThread *__weak>, std::__1::allocator<std::__1::pair<NSThread *const __weak, WCDBHandleWrap *>>> m_usedHandles;
-    struct vector<WCDBHandleWrap *, std::__1::allocator<WCDBHandleWrap *>> m_freeHandles;
+//    struct map<NSThread *__weak, WCDBHandleWrap *, std::__1::less<NSThread *__weak>, std::__1::allocator<std::__1::pair<NSThread *const __weak, WCDBHandleWrap *>>> m_usedHandles;
+//    struct vector<WCDBHandleWrap *, std::__1::allocator<WCDBHandleWrap *>> m_freeHandles;
     NSString *m_dbPath;
     NSString *m_dbFilePath;
     unsigned int m_dataBaseId;
-    struct map<WCDBMultiThreadStatus, long, std::__1::less<WCDBMultiThreadStatus>, std::__1::allocator<std::__1::pair<const WCDBMultiThreadStatus, long>>> m_multiThreadStatictics;
+//    struct map<WCDBMultiThreadStatus, long, std::__1::less<WCDBMultiThreadStatus>, std::__1::allocator<std::__1::pair<const WCDBMultiThreadStatus, long>>> m_multiThreadStatictics;
     long long m_lastStaticticsTime;
-    id <WCDBHandlesPoolProtocol> _m_delegate;
 }
 
-@property __weak id <WCDBHandlesPoolProtocol> m_delegate; // @synthesize m_delegate=_m_delegate;
+//@property __weak id <WCDBHandlesPoolProtocol> m_delegate; // @synthesize m_delegate=_m_delegate;
 @property(readonly, nonatomic) unsigned int m_dataBaseId; // @synthesize m_dataBaseId;
-- (id).cxx_construct;
-- (void).cxx_destruct;
+
 - (void)reportStaticticsMultiThread;
 - (void)staticticsMultiThread:(id)arg1;
 - (void)handleWrapWillEnd:(id)arg1;
@@ -39,12 +35,6 @@
 - (_Bool)generateHandle;
 - (void)dealloc;
 - (id)initWithPath:(id)arg1 filePath:(id)arg2 dataBaseId:(unsigned int)arg3 delegate:(id)arg4;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

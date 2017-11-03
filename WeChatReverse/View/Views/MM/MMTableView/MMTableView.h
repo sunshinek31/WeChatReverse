@@ -7,34 +7,61 @@
 #import "MMDelegateCenterExt.h"
 #import "tableViewDelegate.h"
 
-@class MMDelegateProxy<UITableViewDataSource>, MMDelegateProxy<UITableViewDelegate>, NSString, UIColor, UIView;
+@class MMDelegateProxy<UITableViewDataSource>, MMDelegateProxy<UITableViewDelegate>, MMTableViewIndexView, NSString, UIColor, UIView;
 
 @interface MMTableView : UITableView <MMDelegateCenterExt>
 {
     MMDelegateProxy<UITableViewDataSource> *dataSourceProxy;
     MMDelegateProxy<UITableViewDelegate> *delegateProxy;
     id <tableViewDelegate> m_delegateProxy;
-    BOOL cancelButtonTouchsTrack;
+    _Bool cancelButtonTouchsTrack;
     Class cancelTouchsTrackClass;
     UIView *_footerView;
     UIView *_footerViewBackground;
-//    UIColor *_tailColor;
-    BOOL m_dontDrawFooterLine;
-//    BOOL _isMainView;
+    UIColor *_tailColor;
+    _Bool m_dontDrawFooterLine;
+    MMTableViewIndexView *_indexView;
+    _Bool _isMainView;
     id <tableViewDelegate> m_delegate;
 }
 
-@property(nonatomic) BOOL isMainView; // @synthesize isMainView=_isMainView;
-@property(strong, nonatomic) UIColor *tailColor; // @synthesize tailColor=_tailColor;
+@property(nonatomic) _Bool isMainView; // @synthesize isMainView=_isMainView;
+@property(retain, nonatomic) UIColor *tailColor; // @synthesize tailColor=_tailColor;
 @property(nonatomic) Class cancelTouchsTrackClass; // @synthesize cancelTouchsTrackClass;
-@property(nonatomic) BOOL cancelButtonTouchsTrack; // @synthesize cancelButtonTouchsTrack;
-@property(nonatomic, weak) id <tableViewDelegate> m_delegate; // @synthesize m_delegate;
+@property(nonatomic) _Bool cancelButtonTouchsTrack; // @synthesize cancelButtonTouchsTrack;
 
-- (void)setWrapperViewBackgroundcolor:(UIColor *)backgroundcolor;
-- (void)drawFooterLine:(BOOL)arg1;
+- (void)setWidth:(double)arg1;
+- (void)useMMTableViewIndexViewWithDelegate:(id)arg1;
+- (void)deleteRowsAtIndexPaths:(id)arg1 withRowAnimation:(long long)arg2;
+- (void)reloadRowsAtIndexPaths:(id)arg1 withRowAnimation:(long long)arg2;
+- (void)setTableFooterView:(id)arg1;
+- (void)addSubview:(id)arg1;
+- (void)setContentOffset:(struct CGPoint)arg1 animated:(_Bool)arg2;
+- (void)setContentOffset:(struct CGPoint)arg1;
+- (void)setFrame:(struct CGRect)arg1;
+- (void)drawFooterLine:(_Bool)arg1;
+- (void)setContentInset:(struct UIEdgeInsets)arg1;
 - (void)setContentInsetTop:(double)arg1 andBottom:(double)arg2;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (id)hitTest:(struct CGPoint)arg1 withEvent:(id)arg2;
+- (id)initWithFrame:(struct CGRect)arg1 style:(long long)arg2;
 - (void)reloadDataAnimated;
+- (void)setContentSize:(struct CGSize)arg1;
+- (long long)firstSectionIndex;
+- (void)reloadHeaderView;
+- (void)reloadIndexView;
+- (void)reloadData;
+- (_Bool)touchesShouldCancelInContentView:(id)arg1;
+- (void)touchesCancelled:(id)arg1 withEvent:(id)arg2;
+- (void)touchesEnded:(id)arg1 withEvent:(id)arg2;
+- (void)touchesMoved:(id)arg1 withEvent:(id)arg2;
+- (void)touchesBegan:(id)arg1 withEvent:(id)arg2;
 - (void)onClearMyDelegate:(id)arg1 forProtocols:(id)arg2;
+@property(nonatomic) __weak id <tableViewDelegate> m_delegate; // @synthesize m_delegate;
+- (void)setDataSource:(id)arg1;
+- (void)setDelegate:(id)arg1;
+
 
 @end
 

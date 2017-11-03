@@ -4,16 +4,11 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UINavigationController.h"
-
-@class UIViewController;
-
 @interface MMUINavigationController : UINavigationController
 {
     UIViewController *_popingViewController;
 }
 
-- (void).cxx_destruct;
 - (id)navigationController:(id)arg1 animationControllerForOperation:(long long)arg2 fromViewController:(id)arg3 toViewController:(id)arg4;
 - (void)layoutViewsForTaskBar;
 - (void)viewWillLayoutSubviews;

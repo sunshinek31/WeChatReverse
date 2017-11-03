@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    @autoreleasepool{
+        [[NSThread currentThread] setName:@"AFNetworking"];
+        NSRunLoop *runloop = [NSRunLoop currentRunLoop];
+        [runloop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+        [runloop run];
+    }
 }
 
 

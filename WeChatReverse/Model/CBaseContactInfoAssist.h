@@ -5,12 +5,11 @@
 //
 
 #import "MMObject.h"
-
 #import "IContactMgrExt.h"
 #import "PBMessageObserverDelegate.h"
-#import "UIAlertViewDelegate.h"
 #import "WCActionSheetDelegate.h"
 #import "contactVerifyLogicDelegate.h"
+#import "ContactInfoAssistDelegate.h"
 
 @class CContact, MMHDHeadImageView, MMHeadImageView, MMLoadingView, NSString, UILabel, UIView;
 
@@ -30,7 +29,7 @@
 @property(retain, nonatomic) MMHeadImageView *m_headView; // @synthesize m_headView;
 @property(retain, nonatomic) CContact *m_contact; // @synthesize m_contact;
 @property(nonatomic) __weak id <ContactInfoAssistDelegate> m_delegate; // @synthesize m_delegate;
-- (void).cxx_destruct;
+
 - (void)baseViewWillBePoped;
 - (void)onContactUpdated;
 - (void)MessageReturn:(id)arg1 Event:(unsigned int)arg2;
@@ -60,12 +59,6 @@
 - (void)updateFooterView;
 - (void)updateNickNameLabel;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

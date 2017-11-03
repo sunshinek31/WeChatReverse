@@ -4,14 +4,12 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "MMService.h"
-
 #import "MMDBPerformReporterDelegate.h"
 #import "MMDBPerfromStrategyDelegate.h"
 #import "MMService.h"
 #import "ReportStrategyExt.h"
 
-@class MMDBPerformReporter, MMDBPerformStrategyHandler, MMDBPerformStrategyInfo, NSObject<OS_dispatch_queue>, NSString, WCDBPerformanceCollector;
+@class MMDBPerformReporter, MMDBPerformStrategyHandler, MMDBPerformStrategyInfo, WCDBPerformanceCollector;
 
 @interface MMDBPerformanceMgr : MMService <MMDBPerfromStrategyDelegate, MMDBPerformReporterDelegate, ReportStrategyExt, MMService>
 {
@@ -24,7 +22,7 @@
 }
 
 @property(retain) MMDBPerformStrategyInfo *m_strategyInfo; // @synthesize m_strategyInfo;
-- (void).cxx_destruct;
+
 - (void)fetchPerformanceAndCheckReport;
 - (void)onTimerDoTheJob;
 - (void)onReceiveStrategy:(int)arg1 withContene:(id)arg2;
@@ -43,12 +41,6 @@
 - (void)onServiceInit;
 - (void)dealloc;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

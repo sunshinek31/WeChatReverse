@@ -18,10 +18,6 @@
 #import "MMRefreshTableFooterDelegate.h"
 #import "MMSightCameraViewControllerDelegate.h"
 #import "MMTipsViewControllerDelegate.h"
-#import "UIAlertViewDelegate.h"
-#import "UIGestureRecognizerDelegate.h"
-#import "UITableViewDataSource.h"
-#import "UITableViewDelegate.h"
 #import "WCActionSheetDelegate.h"
 #import "WCAdvertiseActionFloatForABTestDelegate.h"
 #import "WCBarMessageWindowDelegate.h"
@@ -42,6 +38,7 @@
 #import "WCTimelineCellABTestTipExt.h"
 #import "scrollViewDelegate.h"
 #import "tableViewDelegate.h"
+#import "WCTimeLineViewControllerDelegate.h"
 
 @class EmoticonBoardView, MMHeadImageView, MMTableView, MMTipsViewController, MMUILabel, MMURLHandler, NSArray, NSMutableArray, NSMutableDictionary, NSString, UIButton, UIImageView, UIView, WCADPageWrap, WCAdvertiseActionFloatForABTest, WCAdvertiseActionFloatView, WCBarMessageWindow, WCDataItem, WCInputController, WCListHeaderView, WCOperateFloatView, WCPlainTextTipFullScreenView, WCTimeLineFooterView, WCTimeLineHeaderView, WCUserComment;
 
@@ -50,7 +47,7 @@
     NSMutableDictionary *m_cellHeightCache;
     NSMutableDictionary *m_cellShowItemCache;
     NSMutableDictionary *m_hasPredownload;
-    struct map<long, TimeLineSectionType, std::__1::less<long>, std::__1::allocator<std::__1::pair<const long, TimeLineSectionType>>> m_sectionIndexToType;
+//    struct map<long, TimeLineSectionType, std::__1::less<long>, std::__1::allocator<std::__1::pair<const long, TimeLineSectionType>>> m_sectionIndexToType;
     MMTableView *m_tableView;
     WCTimeLineHeaderView *m_headRefreshView;
     WCTimeLineFooterView *m_footerView;
@@ -117,8 +114,7 @@
 @property(nonatomic) _Bool m_hasNewPhotoWhenEnter; // @synthesize m_hasNewPhotoWhenEnter;
 @property(nonatomic) _Bool m_hasRefrashHead; // @synthesize m_hasRefrashHead;
 @property(nonatomic) __weak id <WCTimeLineViewControllerDelegate> m_delegate; // @synthesize m_delegate;
-- (id).cxx_construct;
-- (void).cxx_destruct;
+
 - (void)abTestViewHiddenWrap;
 - (void)onExposeCancel;
 - (void)onExposeComplete;

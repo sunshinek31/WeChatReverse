@@ -12,7 +12,6 @@
 #import "MMKernelExt.h"
 #import "MessageObserverDelegate.h"
 #import "PasswordLogicDelegate.h"
-#import "UIAlertViewDelegate.h"
 #import "WCAccountBindPhoneControlLogicDelegate.h"
 #import "WCAccountSetPasswordViewControllerDelegate.h"
 #import "initLogicControllerDelegate.h"
@@ -40,8 +39,6 @@
     WCUIAlertView *m_globalAlert;
 }
 
-- (id).cxx_construct;
-- (void).cxx_destruct;
 - (void)showTrustedFriendsVC:(id)arg1;
 - (void)parseShowTrustedFriends:(id)arg1;
 - (void)onTabBarRootViewControllerDidAppear;
@@ -118,12 +115,6 @@
 - (void)onShowRatingDone;
 - (void)checkShowRating;
 - (void)cleanSetting;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

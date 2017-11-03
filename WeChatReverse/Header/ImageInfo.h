@@ -4,12 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "NSObject.h"
-
-#import "NSCopying.h"
-
-@class NSURL;
-
+/**
+ 图片信息封装
+ */
 @interface ImageInfo : NSObject <NSCopying>
 {
     unsigned int m_uiImageSource;
@@ -18,8 +15,8 @@
 
 @property(retain, nonatomic) NSURL *m_nuImageSourceURL; // @synthesize m_nuImageSourceURL;
 @property(nonatomic) unsigned int m_uiImageSource; // @synthesize m_uiImageSource;
-- (void).cxx_destruct;
-- (id)copyWithZone:(struct _NSZone *)arg1;
+
+- (id)copyWithZone:(NSZone *)arg1;
 - (id)init;
 
 @end

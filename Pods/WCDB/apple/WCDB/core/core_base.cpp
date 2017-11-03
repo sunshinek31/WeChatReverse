@@ -24,7 +24,7 @@
 namespace WCDB {
 
 CoreBase::CoreBase(const RecyclableHandlePool &pool, CoreType type)
-    : m_pool(pool), m_type(type)
+    : m_pool(pool), m_type(pool != nullptr ? type : CoreType::None)
 {
 }
 
@@ -68,8 +68,22 @@ bool CoreBase::isTableExists(RecyclableHandle &handle,
 {
     bool result = false;
     if (handle) {
-        result = handle->isTableExists(tableName);
-        error = handle->getError();
+        Error::setThreadedSlient(true);
+        static const ColumnResultList resultList = {ColumnResult(Expr(1))};
+        StatementSelect select =
+            StatementSelect().select(resultList).from(tableName).limit(0);
+        std::shared_ptr<StatementHandle> statementHandle =
+            handle->prepare(select);
+        Error::setThreadedSlient(false);
+        if (statementHandle) {
+            statementHandle->step();
+            result = statementHandle->isOK();
+            if (!result) {
+                error = statementHandle->getError();
+            }
+        } else {
+            error = handle->getError();
+        }
     }
     return result;
 }

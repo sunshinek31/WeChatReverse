@@ -55,14 +55,11 @@
     BOOL m_bToolViewHidden;
     NSUInteger m_moreMsgIndex;
     BOOL m_bReadtToLoadMoreMsg;
-    id <BaseMsgContentDelgate> m_delegate;
-    id <BaseMsgContentInBackgroundThreadDelgate> m_backgroundThreadDelegate;
     Class m_delegateClass;
     MMTimer *m_LockerTimer;
     MMTableView *m_tableView;
     UIActivityIndicatorView *m_activityView;
     UIView *m_headerView;
-    MMInputToolView *_inputToolView;
     UIView *m_backgroundView;
     NSMutableArray *m_arrDeleteRows;
     UIView *m_deleteContainView;
@@ -147,7 +144,7 @@
 @property(strong, nonatomic) UIView *m_msgReceivingTipsView; // @synthesize m_msgReceivingTipsView;
 @property(strong, nonatomic) MMTimer *m_LockerTimer; // @synthesize m_LockerTimer;
 @property(strong, nonatomic) MMInputToolView *toolView; // @synthesize toolView=_inputToolView;
-@property(nonatomic, weak) id <BaseMsgContentInBackgroundThreadDelgate> m_backgroundThreadDelegate; // @synthesize m_backgroundThreadDelegate;
+@property(nonatomic, weak) id <BaseMsgContentInBackgroundThreadDelgate> m_backgroundThreadDelegate;
 @property(nonatomic, weak) id <BaseMsgContentDelgate> m_delegate; // @synthesize m_delegate;
 
 #pragma mark - IUiUtilExt
@@ -363,9 +360,34 @@
 - (NSUInteger)getMsgContentSizeHeight:(unsigned int)arg1;
 - (NSUInteger)getCurContentSizeHeight;
 - (NSUInteger)getLastNodePreContentSizeHeight;
-- (id)findNodeViewByLocalId:(unsigned int)arg1;
-- (id)findNodeDataByLocalId:(unsigned int)arg1;
+
+/**
+ 根据消息id, 查找消息cell
+
+ @param localId 消息id
+ @return cell
+ */
+- (id)findNodeViewByLocalId:(unsigned int)localId;
+
+/**
+ 根据消息id, 查找消息对象
+
+ @param localId 消息id
+ @return message
+ */
+- (id)findNodeDataByLocalId:(unsigned int)localId;
+
+/**
+ 删除目标节点的消息数据
+
+ 撤回消息
+ @param arg1 目标
+ */
 - (void)removeObjectsFromMessageNodeDatas:(id)arg1;
+
+/**
+ 删除所有消息节点数据
+ */
 - (void)removeAllObjectsFromMessageNodeDatas;
 - (NSUInteger)findNodeIndexByLocalId:(unsigned int)arg1;
 

@@ -5,7 +5,7 @@
 //
 
 #import "MMObject.h"
-
+#import "ContactsDataLogicDelegate.h"
 #import "IContactMgrExt.h"
 #import "IFTSContactMgrExt.h"
 #import "PluginUtilExt.h"
@@ -96,12 +96,6 @@
 - (unsigned int)getEnterpriseBrandCount;
 - (_Bool)shouldShowBrandGroup;
 - (void)processOnModifyContact;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

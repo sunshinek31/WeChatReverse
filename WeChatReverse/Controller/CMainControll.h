@@ -11,7 +11,7 @@
 #import "NotifyFromEventDelegate.h"
 #import "PBMessageObserverDelegate.h"
 
-@class CMMDB, CNetworkStatus, MMTimer, MMTracerouteExecutor, NSDate, NSMutableArray, NSMutableString, NSRecursiveLock, NSString;
+@class CMMDB, CNetworkStatus, MMTimer, MMTracerouteExecutor, NSDate,CAppObserverCenter, NSMutableArray, NSMutableString, NSRecursiveLock, NSString;
 
 @interface CMainControll : MMObject <NotifyFromEventDelegate, NetworkStatusDelegate, MMKernelExt, PBMessageObserverDelegate>
 {
@@ -119,7 +119,7 @@
 - (void)HandleAuthAtFirstTime;
 - (void)StopAllEvent;
 - (void)Stop;
-- (unsigned int)Start:(id)arg1;
+- (unsigned int)Start:(CAppObserverCenter *)appObserverCenter;
 - (void)LoadLastSvrID;
 - (void)dealloc;
 - (id)init;

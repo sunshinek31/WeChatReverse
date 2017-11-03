@@ -11,7 +11,6 @@
 #import "MMSearchBarDelegate.h"
 #import "PBMessageObserverDelegate.h"
 #import "SearchContactDataProviderDelegate.h"
-#import "UIAlertViewDelegate.h"
 #import "contactInfoDelegate.h"
 
 @class CContact, FTSWebSearchController, MMLoadingView, MMSearchBar, MMUILabel, MMUIViewController, NSString, SearchContactDataProvider, UITextField, UIView;
@@ -26,16 +25,6 @@
     UIView *m_backGroundView;
     UIView *m_backGroundBlurView;
     unsigned int _requestEventID;
-    _Bool _didSearchContactDone;
-    _Bool _isSearching;
-    _Bool _bShowNoResult;
-    _Bool _bHasShownWebSearchCell;
-    _Bool _bHasOperateOnlineResult;
-    CContact *_foundContact;
-    unsigned long long _searchContactState;
-    SearchContactDataProvider *_searchContactDataProvider;
-    MMUILabel *_nonResultLabel;
-    FTSWebSearchController *_webSearchLogicController;
 }
 
 @property(nonatomic) _Bool bHasOperateOnlineResult; // @synthesize bHasOperateOnlineResult=_bHasOperateOnlineResult;
@@ -50,7 +39,7 @@
 @property(retain, nonatomic) CContact *foundContact; // @synthesize foundContact=_foundContact;
 @property(retain, nonatomic) NSString *m_nsUserNameToFind; // @synthesize m_nsUserNameToFind;
 @property(retain, nonatomic) UITextField *m_userNameTextField; // @synthesize m_userNameTextField;
-- (void).cxx_destruct;
+
 - (void)onTestCrash;
 - (void)logWebSearchClickByKeyword:(id)arg1 clickType:(unsigned int)arg2;
 - (void)onWebSearchViewDidShow;
@@ -118,12 +107,6 @@
 - (void)layoutViews;
 - (id)initWithContentController:(id)arg1 backGroundView:(id)arg2;
 - (void)dealloc;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

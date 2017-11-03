@@ -29,7 +29,7 @@
 @property(retain, nonatomic) MMStaticResourcePatchConfig *m_patchConfig; // @synthesize m_patchConfig;
 @property(retain, nonatomic) NSRecursiveLock *m_lock; // @synthesize m_lock;
 @property(retain, nonatomic) NSMutableDictionary *m_resouceMapping; // @synthesize m_resouceMapping;
-- (void).cxx_destruct;
+
 - (void)reportIDKeyData:(unsigned int)arg1 key:(unsigned int)arg2;
 - (void)setNewResClientVersion:(unsigned int)arg1;
 - (void)clearResVersion;
@@ -48,12 +48,6 @@
 - (void)registerExtension;
 - (void)dealloc;
 - (id)init;
-
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) unsigned long long hash;
-@property(readonly) Class superclass;
 
 @end
 

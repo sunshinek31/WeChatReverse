@@ -14,3 +14,38 @@ int main(int argc, char * argv[]) {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([MicroMessengerAppDelegate class]));
     }
 }
+
+void m1()
+{
+    BOOL isRunning = NO;
+    do {
+        isRunning = [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    } while (isRunning);
+}
+
+void createPortSource()
+{
+    CFMessagePortRef port = CFMessagePortCreateLocal(kCFAllocatorDefault, CFSTR("com.someport"), NULL, NULL, NULL);
+    CFRunLoopSourceRef source = CFMessagePortCreateRunLoopSource(kCFAllocatorDefault, port, 0);
+    
+    CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopCommonModes);
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
